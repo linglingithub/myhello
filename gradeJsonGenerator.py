@@ -11,7 +11,7 @@ import demjson
 
 home = expanduser("~")
 
-grade_id = 7
+grade_id = 8
 #csv_name = home + '/Downloads/g' + str(grade_id) + '.csv'
 csv_name = home + '/Downloads/Afficient Academy K-8 Outline - Grade ' + str(grade_id) + ' Official.csv'
 csv_weight_name = home + '/Downloads/g' + str(grade_id) + '_weights.csv'
@@ -64,7 +64,7 @@ with open (csv_name,'r') as cf:
     print headers
 
     for row in f_csv:
-        print row[0], row[1], row[2], row[3], row[4], row[6], row[7], row[8], row[9]
+        print row[0], row[1], row[2], row[3], row[4] #, row[6], row[7], row[8], row[9]
         if row[1].startswith("Chapter "):
             chapter_id = row[1][len("Chapter ")-1:row[1].index(":")].strip()
             chapter_name = row[1][row[1].index(":")+1:].strip()
@@ -85,10 +85,13 @@ with open (csv_name,'r') as cf:
             weight = row[3].strip()
             if weight is None or weight == "":
                 weight = "0"
+
+            '''
             total_time_for_learning = row[6].strip()
             score_of_learning = row[7].strip()
             time_for_advance_one_level_in_proficiency = row[8].strip()
             score_of_advance_one_level_in_proficiency = row[9].strip()
+            '''
             common_core_map = row[2].strip()
 
             skill_new["skill_id"] = skill_id
@@ -114,11 +117,14 @@ with open (csv_name,'r') as cf:
                         skill_new["testskill"] = True
                 else:
                     skill_new["testskill"] = False
+
+            '''
             skill_new["total_time_for_learning"] = total_time_for_learning
             skill_new["score_of_learning"] = score_of_learning
             skill_new["time_for_advance_one_level_in_proficiency"] = time_for_advance_one_level_in_proficiency
             skill_new["score_of_advance_one_level_in_proficiency"] = score_of_advance_one_level_in_proficiency
             skill_new["common_core_map"] = common_core_map
+            '''
 
             jdata["chapters"][-1]["skills"].append(skill_new)
 
