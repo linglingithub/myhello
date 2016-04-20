@@ -10,8 +10,8 @@ import re
 
 home = expanduser("~")
 
-grade_id = 5
-problem_count_csv = home + '/Documents/g'+ str(grade_id) +'_problem_count.csv'
+grade_id = 8
+problem_count_csv = home + '/Downloads/g'+ str(grade_id) +'_problem_count.csv'
 problem_count_out = home + '/Documents/g'+ str(grade_id) +'_problem_count_out.json'
 
 schema_test_session  = ["problem_id","skill","exercise"]
@@ -20,6 +20,7 @@ schema_problem_count = ["skill","democount","assistedexercisecount","numberofPro
 
 def generateProblemCountJson():
     json_str=""
+    print "problem_count_csv: ", problem_count_csv
     with open(problem_count_csv, "r") as f_obj:
         json_data=csv_reader(f_obj)
 
