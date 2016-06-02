@@ -104,13 +104,13 @@ with open (csv_name,'r') as cf:
             skill_new["weight"] = weight
             skill_new["democount"] = 0
             skill_new["assistedexercisecount"] = 0
-            if section in skill_weight:
+            if grade_id > 2 and grade_id <= 7 and section in skill_weight:
                 if skill_weight[section] == 'y':
                     skill_new["testskill"] = True
                 else:
                     skill_new["testskill"] = False
             else:
-                if grade_id == 2:
+                if grade_id == 2 or grade_id >= 8:
                     if weight == "0":
                         skill_new["testskill"] = False
                     else:
