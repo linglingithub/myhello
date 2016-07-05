@@ -11,9 +11,10 @@ import demjson
 
 home = expanduser("~")
 
-grade_id = 8
+grade_id = 9
 #csv_name = home + '/Downloads/g' + str(grade_id) + '.csv'
-csv_name = home + '/Downloads/Afficient Academy K-8 Outline - Grade ' + str(grade_id) + ' Official.csv'
+#csv_name = home + '/Downloads/Afficient Academy K-8 Outline - Grade ' + str(grade_id) + ' Official.csv'
+csv_name = home + '/Downloads/Copy of Afficient Academy 9-12 Outline - Algebra 1 Official.csv'
 csv_weight_name = home + '/Downloads/g' + str(grade_id) + '_weights.csv'
 json_name = home + '/Documents/math_grade.json'
 out_file = home + '/Documents/g' + str(grade_id) + '.json'
@@ -22,25 +23,25 @@ out_file = home + '/Documents/g' + str(grade_id) + '.json'
 
 print csv_name, json_name
 
-
-skill_weight = {}
-with open(csv_weight_name,'r') as weightf:
-    weight_csv = csv.reader(weightf)
-    headers = next(weight_csv)
-    print headers
-
-    reDigitStart = re.compile("[0-9]+.[0-9]+ [a-zA-Z ]+")
-    for row in weight_csv:
-        print row[3], row[10]
-        mpre = reDigitStart.search(row[3])
-        if mpre:
-            #print mpre.group()
-            skill_arr = row[3].split()
-            #print skill_arr
-            skill_section = skill_arr[0]
-            if row[10].strip() == 'y' or row[10].strip() == 'n':
-                skill_weight[skill_section] = row[10].strip()
-    print skill_weight
+# for grades higher than 9, comment this out
+# skill_weight = {}
+# with open(csv_weight_name,'r') as weightf:
+#     weight_csv = csv.reader(weightf)
+#     headers = next(weight_csv)
+#     print headers
+#
+#     reDigitStart = re.compile("[0-9]+.[0-9]+ [a-zA-Z ]+")
+#     for row in weight_csv:
+#         print row[3], row[10]
+#         mpre = reDigitStart.search(row[3])
+#         if mpre:
+#             #print mpre.group()
+#             skill_arr = row[3].split()
+#             #print skill_arr
+#             skill_section = skill_arr[0]
+#             if row[10].strip() == 'y' or row[10].strip() == 'n':
+#                 skill_weight[skill_section] = row[10].strip()
+#     print skill_weight
 
 
 json_str = ""
@@ -150,7 +151,7 @@ print jstr
 
 with open (out_file, 'w+') as of:
     of.write(jstr)
-    #json.dumps(jstr, of)
+    #jrowdatason.dumps(jstr, of)
     #json.dump(jstr, of, indent=4)
 
 
