@@ -11,10 +11,10 @@ import demjson
 
 home = expanduser("~")
 
-grade_id = 9
+grade_id = 7
 #csv_name = home + '/Downloads/g' + str(grade_id) + '.csv'
-#csv_name = home + '/Downloads/Afficient Academy K-8 Outline - Grade ' + str(grade_id) + ' Official.csv'
-csv_name = home + '/Downloads/Copy of Afficient Academy 9-12 Outline - Algebra 1 Official.csv'
+csv_name = home + '/Downloads/Copy of Afficient Academy K-8 Outline - Grade ' + str(grade_id) + ' Official.csv'
+#csv_name = home + '/Downloads/Copy of Afficient Academy 9-12 Outline - Algebra 1 Official.csv'
 csv_weight_name = home + '/Downloads/g' + str(grade_id) + '_weights.csv'
 json_name = home + '/Documents/math_grade.json'
 out_file = home + '/Documents/g' + str(grade_id) + '.json'
@@ -105,13 +105,13 @@ with open (csv_name,'r') as cf:
             skill_new["weight"] = weight
             skill_new["democount"] = 0
             skill_new["assistedexercisecount"] = 0
-            if grade_id > 2 and grade_id <= 7 and section in skill_weight:
+            if grade_id > 2 and grade_id <= 6 and section in skill_weight:
                 if skill_weight[section] == 'y':
                     skill_new["testskill"] = True
                 else:
                     skill_new["testskill"] = False
             else:
-                if grade_id == 2 or grade_id >= 8:
+                if grade_id == 2 or grade_id >= 7:
                     if weight == "0":
                         skill_new["testskill"] = False
                     else:
