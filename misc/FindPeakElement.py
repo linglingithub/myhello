@@ -54,6 +54,11 @@ class SolutionTest(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
 
+    def test_case3(self):
+        result = self.sol.findPeakElement([5, 4])
+        #print result
+        self.assertEqual(result, 0)
+
     def test_case1(self):
         result = self.sol.findPeakElement([1, 2, 3, 1])
         #print result
@@ -63,6 +68,8 @@ class SolutionTest(unittest.TestCase):
         result = self.sol.findPeakElement([1, 2, 3, 4])
         #print result
         self.assertEqual(result, 3)
+
+
 
 
     # def testcase1(self):
@@ -76,14 +83,14 @@ if __name__ == '__main__':
     # arr = [1,2]
     arr = [3, 1]
     sol = Solution()
-    #print sol.findPeakElement(arr)
+    # print sol.findPeakElement(arr)
     # print "LLLLLLLLLLL ========="
     # unittest.main()
 
     suite = unittest.TestLoader().loadTestsFromTestCase(SolutionTest)
     unittest.TextTestRunner(verbosity=2).run(suite)
 
-
-    # widgetTestSuite = unittest.TestSuite()
-    # widgetTestSuite.addTest(WidgetTestCase('test_default_size'))
-    # widgetTestSuite.addTest(WidgetTestCase('test_resize'))
+    # solTestSuite = unittest.TestSuite()
+    # solTestSuite.addTest(SolutionTest('test_case1'))
+    # solTestSuite.addTest(SolutionTest('test_case2'))
+    # unittest.TextTestRunner(verbosity=2).run(solTestSuite)
