@@ -23,7 +23,7 @@ Next challenges: (M) Summary Ranges  (M) Kth Smallest Element in a BST  (E) Clos
 import unittest
 
 class Solution(object):
-    def findPeakElement(self, nums):
+    def findPeakElement1(self, nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -49,6 +49,21 @@ class Solution(object):
             #print "mid = ", mid, "left = ", left, "right = ", right
         return mid
 
+    def findPeakElement(self, nums):
+        if nums is None or len(nums) == 0:
+            return -1
+        left = 0
+        right = len(nums) - 1
+        while left <= right:
+            if left == right:
+                return left
+            mid = (left+right)/2
+            if nums[mid] < nums[mid+1]:
+                left = mid + 1
+            else:
+                right = mid
+
+
 
 class SolutionTest(unittest.TestCase):
     def setUp(self):
@@ -69,10 +84,19 @@ class SolutionTest(unittest.TestCase):
         #print result
         self.assertEqual(result, 3)
 
+    def test_case4(self):
+        result = self.sol.findPeakElement([1])
+        # print result
+        self.assertEqual(result, 0)
+
+    def test_case5(self):
+        result = self.sol.findPeakElement([])
+        # print result
+        self.assertEqual(result, -1)
 
 
 
-    # def testcase1(self):
+            # def testcase1(self):
     #     s = "hello world"
     #     self.assertEqual(s.split(), ['hello', 'world'])
 
