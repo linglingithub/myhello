@@ -10,7 +10,7 @@ import re
 
 home = expanduser("~")
 
-grade_id = 9
+grade_id = 5
 problem_count_csv = home + '/Downloads/g'+ str(grade_id) +'_problem_count.csv'
 problem_count_out = home + '/Documents/g'+ str(grade_id) +'_problem_count_out.json'
 out_file = home + '/Documents/g' + str(grade_id) + '_problem_count_output.json.json'

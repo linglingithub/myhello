@@ -347,7 +347,7 @@ class HintUtil(object):
     @staticmethod
     def process_updateProblem():
         hut = HintUtil()
-        hut.setSettings(7,"10.5",[3, 2, 3, 2, 2, 2, 3, 3, 2, 2])
+        hut.setSettings(5,"6.8",[2])
 
         hut.getProblemData()
         hut.updateProblemId()
