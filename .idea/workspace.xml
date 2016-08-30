@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/ThreeSumClosest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/ThreeSumSmaller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testhello.iws" />
@@ -18,6 +18,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSumClosest__1_.coverage" NAME="Unittests in ThreeSumClosest (1) Coverage Results" MODIFIED="1472586107798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSumTester.coverage" NAME="Unittests in ThreeSumTester Coverage Results" MODIFIED="1472594472353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$testcreatefile.coverage" NAME="testcreatefile Coverage Results" MODIFIED="1438713645588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSum__4_.coverage" NAME="Unittests in ThreeSum (4) Coverage Results" MODIFIED="1472580818079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_FindPeakElement.coverage" NAME="Unittests in FindPeakElement Coverage Results" MODIFIED="1470355726917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -64,6 +65,7 @@
     <SUITE FILE_PATH="coverage/testhello$GroupTypeAConverter.coverage" NAME="GroupTypeAConverter Coverage Results" MODIFIED="1435614569820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSum__2_.coverage" NAME="Unittests in ThreeSum (2) Coverage Results" MODIFIED="1472573994452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$NextPermutation.coverage" NAME="NextPermutation Coverage Results" MODIFIED="1440806026277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSumSmaller.coverage" NAME="Unittests in ThreeSumSmaller Coverage Results" MODIFIED="1472594619682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$ConvertSortedList2BST.coverage" NAME="ConvertSortedList2BST Coverage Results" MODIFIED="1464304414451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_TestStringMethods_test_isupper.coverage" NAME="Unittest TestStringMethods.test_isupper Coverage Results" MODIFIED="1470273411646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTest_test_case2.coverage" NAME="Unittest SolutionTest.test_case2 Coverage Results" MODIFIED="1470328164634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -138,18 +140,18 @@
       <file leaf-file-name="ThreeSum.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/ThreeSum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="136" selection-end-column="18" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreeSumClosest.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/misc/ThreeSumClosest.py">
+      <file leaf-file-name="ThreeSumSmaller.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/ThreeSumSmaller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="40" selection-end-column="22" />
+            <state relative-caret-position="186">
+              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -256,6 +258,7 @@
         <option value="$PROJECT_DIR$/misc/TwoSumII.py" />
         <option value="$PROJECT_DIR$/misc/ThreeSum.py" />
         <option value="$PROJECT_DIR$/misc/ThreeSumClosest.py" />
+        <option value="$PROJECT_DIR$/misc/ThreeSumSmaller.py" />
       </list>
     </option>
   </component>
@@ -404,53 +407,7 @@
       <recent name="$PROJECT_DIR$/misc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in ThreeSumClosest (5)">
-    <configuration default="false" name="Unittests in ThreeSumClosest (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/ThreeSumClosest.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in ThreeSumClosest (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/ThreeSumClosest.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in ThreeSumSmaller">
     <configuration default="false" name="Unittests in ThreeSumClosest (3)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -509,6 +466,52 @@
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/ThreeSumClosest.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in ThreeSumTester" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/ThreeSumSmaller.py" />
+      <option name="CLASS_NAME" value="ThreeSumTester" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in ThreeSumSmaller" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/ThreeSumSmaller.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -753,19 +756,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (2)" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (3)" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (4)" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (5)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (3)" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (4)" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (5)" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumTester" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumSmaller" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (5)" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (4)" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (3)" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (2)" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumSmaller" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumTester" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (5)" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (4)" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in ThreeSumClosest (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -786,12 +789,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ThreeSum_main - 2016.08.30 at 09h 43m 52s.xml">
-      <configuration name="ThreeSum main" configurationId="tests" />
-    </history-entry>
-    <history-entry file="ThreeSum_main - 2016.08.30 at 11h 10m 35s.xml">
-      <configuration name="ThreeSum main" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittest_SolutionTestor_test_case1 - 2016.08.30 at 12h 37m 05s.xml">
       <configuration name="Unittest SolutionTestor.test_case1" configurationId="tests" />
     </history-entry>
@@ -813,8 +810,14 @@
     <history-entry file="Unittests_in_ThreeSumClosest_(5) - 2016.08.30 at 13h 04m 24s.xml">
       <configuration name="Unittests in ThreeSumClosest (5)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_ThreeSum_(4) - 2016.08.30 at 11h 13m 38s.xml">
-      <configuration name="Unittests in ThreeSum (4)" configurationId="tests" />
+    <history-entry file="Unittests_in_ThreeSumSmaller - 2016.08.30 at 15h 01m 50s.xml">
+      <configuration name="Unittests in ThreeSumSmaller" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_ThreeSumSmaller - 2016.08.30 at 15h 03m 42s.xml">
+      <configuration name="Unittests in ThreeSumSmaller" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_ThreeSumTester - 2016.08.30 at 15h 01m 21s.xml">
+      <configuration name="Unittests in ThreeSumTester" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -841,7 +844,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25451806" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25227964" sideWeight="0.49907234" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25150603" sideWeight="0.49907234" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1028,13 +1031,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hello.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/csv2json.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1399,18 +1395,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/ThreeSum.py">
+    <entry file="file://$PROJECT_DIR$/misc/ThreeSumClosest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="136" selection-end-column="18" />
+        <state relative-caret-position="135">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/ThreeSumClosest.py">
+    <entry file="file://$PROJECT_DIR$/misc/ThreeSum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="40" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/ThreeSumSmaller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
           <folding />
         </state>
       </provider>
