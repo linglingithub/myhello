@@ -21,7 +21,7 @@ import unittest
 
 
 class Solution(object):
-    def threeSumSmaller_self(self, nums, target):
+    def threeSumSmaller(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
@@ -29,22 +29,22 @@ class Solution(object):
         """
         count = 0
         nums.sort()
-        result = []
         for i in range(len(nums) - 2):
+            if 3 * nums[i] >= target:
+                return count
             j = i + 1
             k = len(nums) - 1
+            right_bound = k
             while j < k:
                 sum = nums[i] + nums[j] + nums[k]
-                if sum >= target:
-                    break
-                while sum < target and j < k:
-                    count += 1
+                if sum < target:
+                    count += k - j
+                    j += 1
+                else:
                     k -= 1
-                    sum = nums[i] + nums[j] + nums[k]
-                j += 1
         return count
 
-    def threeSumSmaller(self, nums, target):
+    def threeSumSmaller_fast(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
