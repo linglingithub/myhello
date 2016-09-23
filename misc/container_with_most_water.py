@@ -21,11 +21,24 @@ import unittest
 class Solution(object):
 
     def maxArea(self, height):
+        """
+        http://bangbingsyb.blogspot.com/2014/11/leetcode-container-with-most-water.html
+        :param height:
+        :return:
+        """
         result = 0
-        for i in range(0, len(height)-1):
-            for j in range(i+1, len(height)):
-                area = (j-i) * min(height[i], height[j])
-                result = max(result, area)
+        left = 0
+        right = len(height) - 1
+        while left < right:
+            area = min(height[left], height[right]) * (right - left)
+            result = max(result, area)
+            if height[left] < height[right]:
+                left += 1
+            elif height[left] > height[right]:
+                right -= 1
+            else:
+                left += 1
+                right -= 1
         return result
 
 
