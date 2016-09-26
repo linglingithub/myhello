@@ -22,12 +22,43 @@ import unittest
 from list_node import ListNode
 
 class Solution(object):
-    def removeNthFromEnd(self, head, n):
+
+    # http://www.cnblogs.com/zuoyuan/p/3701971.html
+    def removeNthFromEnd(self, head, n): # slower 72ms
+        dummy=ListNode(0); dummy.next=head
+        p1=p2=dummy
+        for i in range(n): p1=p1.next
+        while p1.next:
+            p1=p1.next; p2=p2.next
+        p2.next=p2.next.next
+        return dummy.next
+
+    def removeNthFromEnd1(self, head, n): # 65ms
         """
         :type head: ListNode
         :type n: int
         :rtype: ListNode
         """
+        if n==0:
+            return head
+
+        slow = head
+        fast = head
+        for i in range(n):
+            fast = fast.next
+        if fast is None:
+            slow = slow.next
+            head = slow
+            return head
+        while fast.next:
+            fast = fast.next
+            slow = slow.next
+        if slow.next:
+            new_tail = slow.next.next
+            slow.next = new_tail
+        return head
+
+
 
 
 
@@ -40,6 +71,33 @@ class SolutionTestor(unittest.TestCase):
         n = 0
         answer = None
         result = self.sol.removeNthFromEnd(head, n)
+        self.assertEqual(answer, result)
+
+    def test_case2(self):
+        head = ListNode(0)
+        head.next = None
+        n = 1
+        answer = None
+        result = self.sol.removeNthFromEnd(head, n)
+        self.assertEqual(answer, result)
+
+    def test_case3(self):
+        head = ListNode(0)
+        n1 = ListNode(1)
+        head.next = n1
+        n = 2
+        answer = n1
+        result = self.sol.removeNthFromEnd(head, n)
+        self.assertEqual(answer, result)
+
+    def test_case4(self):
+        head = ListNode(0)
+        n1 = ListNode(1)
+        head.next = n1
+        n = 1
+        answer = head
+        result = self.sol.removeNthFromEnd(head, n)
+        self.assertEqual(None, result.next)
 
 
 def main():
