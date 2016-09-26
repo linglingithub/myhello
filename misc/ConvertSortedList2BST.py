@@ -1,5 +1,5 @@
 from TreeNode import TreeNode
-from ListNode import ListNode
+from list_node import ListNode
 
 
 class Solution(object):
