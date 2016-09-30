@@ -13,6 +13,7 @@ class ListNode(object):
         for num in nums:
             node = ListNode(num)
             tail.next = node
+            tail.next_node = tail.next
             tail = tail.next
         return dummy.next
 

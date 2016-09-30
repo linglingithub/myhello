@@ -21,7 +21,11 @@ from list_node import ListNode
 #         self.next = None
 
 class Solution(object):
-    def sortList(self, head): #http://fisherlei.blogspot.com/2013/12/leetcode-sort-list-solution.html
+    # http://fisherlei.blogspot.com/2013/12/leetcode-sort-list-solution.html
+    # O(nlgn) sorting algos: quick, heap, merge
+    # http: // www.cnblogs.com / zuoyuan / p / 3699508.
+
+    def sortList(self, head):
         """
         :type head: ListNode
         :rtype: ListNode
@@ -29,20 +33,28 @@ class Solution(object):
         if head is None or head.next is None:
             return head
         h1, h2 = self.split_list(head)
-        while h1:
+        #while h1: can't write this here, otherwise dead loop, recursive will be handled by recursively call sortList, not by loop here!!!
+        if h1:
             h1 = self.sortList(h1)
-        while h2:
+        #while h2:
+        if h2:
             h2 = self.sortList(h2)
         head = self.merge_list(h1, h2)
         return head
 
     def split_list(self, head):
-        fast = head
+        if head is None:
+            return None, None
+        fast = head.next
         slow = head
         while fast and fast.next:
             fast = fast.next.next
             slow = slow.next
-        return fast, slow
+        head2 = slow.next
+        slow.next = None
+        return head, head2
+        #return fast, slow  #wrong way to write this
+
 
     def merge_list(self, h1, h2):
         if h1 is None:
@@ -80,6 +92,26 @@ class SolutionTestor(unittest.TestCase):
         result = self.sol.sortList(head)
         self.assertEqual(answer, ListNode.parseList2Array(result))
 
+    def test_case2(self):
+        nums = [1, 0, -1, -2]
+        head = ListNode.parseArray2List(nums)
+        answer = [-2, -1, 0, 1]
+        result = self.sol.sortList(head)
+        self.assertEqual(answer, ListNode.parseList2Array(result))
+
+    def test_case3(self):
+        nums = [1]
+        head = ListNode.parseArray2List(nums)
+        answer = [1]
+        result = self.sol.sortList(head)
+        self.assertEqual(answer, ListNode.parseList2Array(result))
+
+    def test_case4(self):
+        nums = [1,0]
+        head = ListNode.parseArray2List(nums)
+        answer = [0,1]
+        result = self.sol.sortList(head)
+        self.assertEqual(answer, ListNode.parseList2Array(result))
 
 def main():
     suite = unittest.TestLoader().loadTestsFromTestCase(SolutionTestor)
