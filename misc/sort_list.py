@@ -86,9 +86,9 @@ class SolutionTestor(unittest.TestCase):
         self.sol = Solution()
 
     def test_case1(self):
-        nums = [1,0, -1]
+        nums = [1, 0, -1]
         head = ListNode.parseArray2List(nums)
-        answer = [-1,0,1]
+        answer = [-1, 0, 1]
         result = self.sol.sortList(head)
         self.assertEqual(answer, ListNode.parseList2Array(result))
 
