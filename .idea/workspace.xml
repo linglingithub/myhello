@@ -4,7 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/misc/merge_two_sorted_lists.py" line="46" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="" />
+    <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/implement_strStr.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/sort_colors.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/insertion_sort_list.py" afterPath="$PROJECT_DIR$/misc/insertion_sort_list.py" />
+    </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -102,8 +107,10 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_length_of_last_word__4_.coverage" NAME="Unittests in length_of_last_word (4) Coverage Results" MODIFIED="1474505100317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$HouseRobber.coverage" NAME="HouseRobber Coverage Results" MODIFIED="1429839969406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_TestStringMethods_test_upper.coverage" NAME="Unittest TestStringMethods.test_upper Coverage Results" MODIFIED="1470273393859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_implement_strStr.coverage" NAME="Unittests in implement_strStr Coverage Results" MODIFIED="1475621645732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$FindPeakElement.coverage" NAME="FindPeakElement Coverage Results" MODIFIED="1470327746368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$hintEditor.coverage" NAME="hintEditor Coverage Results" MODIFIED="1429141584824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_implement_strStr__1_.coverage" NAME="Unittests in implement_strStr (1) Coverage Results" MODIFIED="1475621696667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_roman_to_integer.coverage" NAME="Unittests in roman_to_integer Coverage Results" MODIFIED="1474925043250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSumClosest__1_.coverage" NAME="Unittests in ThreeSumClosest (1) Coverage Results" MODIFIED="1472586107798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSumTester.coverage" NAME="Unittests in ThreeSumTester Coverage Results" MODIFIED="1472594472353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -128,6 +135,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_SolutionTest__4_.coverage" NAME="Unittests in SolutionTest (4) Coverage Results" MODIFIED="1470290659984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_length_of_last_word__2_.coverage" NAME="Unittests in length_of_last_word (2) Coverage Results" MODIFIED="1474504084286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_merge_sorted_array.coverage" NAME="Unittests in merge_sorted_array Coverage Results" MODIFIED="1475000837382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_implement_strStr__2_.coverage" NAME="Unittests in implement_strStr (2) Coverage Results" MODIFIED="1475621815796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_sort_list__4_.coverage" NAME="Unittests in sort_list (4) Coverage Results" MODIFIED="1475197332691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_TestStringMethods_test_split.coverage" NAME="Unittest TestStringMethods.test_split Coverage Results" MODIFIED="1470273372774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case4.coverage" NAME="Unittest SolutionTester.test_case4 Coverage Results" MODIFIED="1473895878796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -148,6 +156,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ZigZagConversion__2_.coverage" NAME="Unittests in ZigZagConversion (2) Coverage Results" MODIFIED="1473917428901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTestor_test_case12.coverage" NAME="Unittest SolutionTestor.test_case12 Coverage Results" MODIFIED="1474409975514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTestor_test_case3.coverage" NAME="Unittest SolutionTestor.test_case3 Coverage Results" MODIFIED="1475197456896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_implement_strStr__3_.coverage" NAME="Unittests in implement_strStr (3) Coverage Results" MODIFIED="1475621832750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_SolutionTest__3_.coverage" NAME="Unittests in SolutionTest (3) Coverage Results" MODIFIED="1470328558496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTestor_test_case6.coverage" NAME="Unittest SolutionTestor.test_case6 Coverage Results" MODIFIED="1474999741543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_TwoSum.coverage" NAME="Unittests in TwoSum Coverage Results" MODIFIED="1472059688714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -231,8 +240,8 @@
       <file leaf-file-name="sort_list.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/sort_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="113" selection-end-column="66" />
+            <state relative-caret-position="120">
+              <caret line="8" column="64" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="64" />
               <folding>
                 <element signature="e#315#330#0" expanded="true" />
               </folding>
@@ -240,11 +249,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="insertion_sort_list.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sort_colors.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/sort_colors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="implement_strStr.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/implement_strStr.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="insertion_sort_list.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/insertion_sort_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="46" selection-end-column="25" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="15" />
               <folding>
                 <element signature="e#190#205#0" expanded="true" />
                 <element signature="e#58177#91563#0" expanded="false" />
@@ -289,8 +318,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/GroupTypeBConverter.py" />
-        <option value="$PROJECT_DIR$/misc/DividedTwoInteger.py" />
         <option value="$PROJECT_DIR$/misc/NextPermutation.py" />
         <option value="$PROJECT_DIR$/misc/CountAndSay.py" />
         <option value="$PROJECT_DIR$/util/listNode.py" />
@@ -340,6 +367,8 @@
         <option value="$PROJECT_DIR$/misc/merge_two_sorted_lists.py" />
         <option value="$PROJECT_DIR$/misc/sort_list.py" />
         <option value="$PROJECT_DIR$/misc/insertion_sort_list.py" />
+        <option value="$PROJECT_DIR$/misc/implement_strStr.py" />
+        <option value="$PROJECT_DIR$/misc/sort_colors.py" />
       </list>
     </option>
   </component>
@@ -350,10 +379,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1657" />
-    <option name="y" value="50" />
-    <option name="width" value="1604" />
-    <option name="height" value="824" />
+    <option name="x" value="-1617" />
+    <option name="y" value="13" />
+    <option name="width" value="1440" />
+    <option name="height" value="880" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -503,99 +532,7 @@
       <recent name="$PROJECT_DIR$/misc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in insertion_sort_list">
-    <configuration default="false" name="Unittests in insertion_sort_list (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/insertion_sort_list.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in insertion_sort_list (5)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/insertion_sort_list.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in insertion_sort_list (4)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/insertion_sort_list.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in insertion_sort_list (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/insertion_sort_list.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in implement_strStr (3)">
     <configuration default="false" name="Unittests in insertion_sort_list" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -608,6 +545,98 @@
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/insertion_sort_list.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in implement_strStr" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/implement_strStr.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in implement_strStr (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/implement_strStr.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in implement_strStr (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/implement_strStr.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in implement_strStr (3)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/implement_strStr.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -852,19 +881,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in insertion_sort_list (2)" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in insertion_sort_list (5)" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in insertion_sort_list (4)" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in insertion_sort_list (1)" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in insertion_sort_list" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in insertion_sort_list" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in implement_strStr" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in implement_strStr (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in implement_strStr (2)" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in implement_strStr (3)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in insertion_sort_list" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in insertion_sort_list (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in insertion_sort_list (4)" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in insertion_sort_list (5)" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in insertion_sort_list (2)" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in implement_strStr (3)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in implement_strStr (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in implement_strStr (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in implement_strStr" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in insertion_sort_list" />
       </list>
     </recent_temporary>
   </component>
@@ -885,14 +914,20 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_insertion_sort_list - 2016.10.03 at 16h 01m 07s.xml">
-      <configuration name="Unittests in insertion_sort_list" configurationId="tests" />
+    <history-entry file="Unittests_in_implement_strStr - 2016.10.04 at 15h 54m 05s.xml">
+      <configuration name="Unittests in implement_strStr" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_implement_strStr_(1) - 2016.10.04 at 15h 54m 56s.xml">
+      <configuration name="Unittests in implement_strStr (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_implement_strStr_(2) - 2016.10.04 at 15h 56m 55s.xml">
+      <configuration name="Unittests in implement_strStr (2)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_implement_strStr_(3) - 2016.10.04 at 15h 57m 12s.xml">
+      <configuration name="Unittests in implement_strStr (3)" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_insertion_sort_list - 2016.10.03 at 16h 16m 01s.xml">
       <configuration name="Unittests in insertion_sort_list" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_insertion_sort_list_(1) - 2016.10.03 at 16h 00m 33s.xml">
-      <configuration name="Unittests in insertion_sort_list (1)" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_insertion_sort_list_(1) - 2016.10.03 at 16h 15m 37s.xml">
       <configuration name="Unittests in insertion_sort_list (1)" configurationId="tests" />
@@ -900,14 +935,8 @@
     <history-entry file="Unittests_in_insertion_sort_list_(2) - 2016.10.03 at 16h 07m 06s.xml">
       <configuration name="Unittests in insertion_sort_list (2)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_insertion_sort_list_(3) - 2016.10.03 at 15h 45m 14s.xml">
-      <configuration name="Unittests in insertion_sort_list (3)" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_insertion_sort_list_(3) - 2016.10.03 at 16h 03m 29s.xml">
       <configuration name="Unittests in insertion_sort_list (3)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_insertion_sort_list_(4) - 2016.10.03 at 16h 00m 10s.xml">
-      <configuration name="Unittests in insertion_sort_list (4)" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_insertion_sort_list_(4) - 2016.10.03 at 16h 07m 36s.xml">
       <configuration name="Unittests in insertion_sort_list (4)" configurationId="tests" />
@@ -926,18 +955,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1657" y="50" width="1604" height="824" extended-state="0" />
+    <frame x="-1617" y="13" width="1440" height="880" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17733675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1981402" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25354108" sideWeight="0.5107011" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4688385" sideWeight="0.49284694" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32714286" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3186969" sideWeight="0.4914163" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3175853" sideWeight="0.4914163" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31586403" sideWeight="0.48929888" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31586403" sideWeight="0.48929888" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33286119" sideWeight="0.49907234" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1322,21 +1351,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="381" column="0" selection-start-line="381" selection-start-column="0" selection-end-line="381" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/GroupShiftedStrings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/OneEditDistance.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1703,10 +1717,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/misc/implement_strStr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/misc/sort_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="113" selection-end-column="66" />
+        <state relative-caret-position="120">
+          <caret line="8" column="64" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="64" />
           <folding>
             <element signature="e#315#330#0" expanded="true" />
           </folding>
@@ -1715,13 +1737,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/misc/insertion_sort_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="46" selection-end-column="25" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="15" />
           <folding>
             <element signature="e#190#205#0" expanded="true" />
             <element signature="e#58177#91563#0" expanded="false" />
             <element signature="e#91627#125629#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/sort_colors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

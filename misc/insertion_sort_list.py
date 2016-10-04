@@ -753,7 +753,6 @@ class SolutionTester(unittest.TestCase):
         self.assertEqual(answer, ListNode.parseList2Array(result))
 
 
-
 def main():
     suite = unittest.TestLoader().loadTestsFromTestCase(SolutionTester)
     unittest.TextTestRunner(verbosity=2).run(suite)
