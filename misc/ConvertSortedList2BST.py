@@ -1,4 +1,4 @@
-from TreeNode import TreeNode
+from tree_node import TreeNode
 from list_node import ListNode
 
 
