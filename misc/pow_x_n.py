@@ -21,10 +21,17 @@ class Solution(object):
         # if n is a very big number.
         # To tackle in a reasonable way, think like this. Since n is int, it can only be even or odd.
         # So it is better to do recursively in a top-down way -- divide the n by 2 each recursion.
-        # And for the last step, there is one multiply left, which can be done easily.
+        # <---- the above made some sense, for the recursive version.
+        But does not show the key point for the iterative version.
+        x^7 = x^4 * x^2 * x^1
+        x^8 = x^8
+        x^15 = x^8 * x^4 * x^2 * x^1
+        ...
+        so think about the power n as binary code, 7 = 111, 8 = 1000, 15 = 1111
     """
-    def myPow(self, x, n):
+    def myPow_recursive(self, x, n):
         """
+        -- recursive version
         :type x: float
         :type n: int
         :rtype: float
@@ -40,37 +47,91 @@ class Solution(object):
         else:
             return self.myPow(x*x, n/2)
 
-
-    def myPow_tle(self, x, n):
+    def myPow(self, x, n):
         """
+        -- iterative way
         :type x: float
         :type n: int
         :rtype: float
         """
-        if x == 0 and n == -1:
-            return sys.float_info.max
-        if n == 0:
-            return 1.0  # should be float, so can't not return 1
+        if x == 1 or x == 0 or n == 1:
+            return x
+        elif n == 0:
+            return 1.0
+        elif n == -1:
+            return 1.0/x # make sure result is float
+        power = n
         reverse = False
+
         if n < 0:
+            power = 0-n
             reverse = True
-            n = 0 - n
-        if n == 1:
-            result = x
-        else:
-            power = 1
-            result = x
-            while power * 2 <= n:
-                result *= result
-                power *= 2
-            while power < n:
-                result *= x
-                power += 1
+
+        result = 1
+        multiplier = x
+        while power > 0:
+            if power % 2: # or power & 1
+                result *= multiplier
+            power /= 2 # or power = (power >> 1)
+            multiplier *= multiplier
+        #result *= multiplier
         if reverse:
-            result = float(1) / float(result)
+            result = 1.0 / result
         return result
 
-    def myPow_ref(self, x, n):
+
+    def myPow_ref_iterative(self, x, n):
+        if x == 0:
+            if n == 0:
+                return 1.0
+            else:
+                return 0
+        if n == 0:
+            return 1.0
+        pos = True
+        if n < 0:
+            pos = False
+            n = abs(n)
+        np = x
+        res = 1
+        while n > 0:
+            if n % 2:
+                res *= np
+            np *= np
+            n /= 2
+        return res if pos else 1.0 / res
+
+
+    def myPow_tle(self, x, n):
+            """
+            :type x: float
+            :type n: int
+            :rtype: float
+            """
+            if x == 0 and n == -1:
+                return sys.float_info.max
+            if n == 0:
+                return 1.0  # should be float, so can't not return 1
+            reverse = False
+            if n < 0:
+                reverse = True
+                n = 0 - n
+            if n == 1:
+                result = x
+            else:
+                power = 1
+                result = x
+                while power * 2 <= n:
+                    result *= result
+                    power *= 2
+                while power < n:
+                    result *= x
+                    power += 1
+            if reverse:
+                result = float(1) / float(result)
+            return result
+
+    def myPow_ref_recursive(self, x, n):
         if n == 0:
             return 1.0
         elif n < 0:
@@ -101,7 +162,7 @@ class SolutionTester(unittest.TestCase):
         self.assertEqual(answer, result)
 
     def test_case3(self):
-        a = 2
+        a = 2.0
         b = 3
         answer = 8.0
         result = self.sol.myPow(a, b)
@@ -115,6 +176,19 @@ class SolutionTester(unittest.TestCase):
         self.assertEqual(answer, result)
 
 
+    def test_case5(self):  ######=====> wrong anser for iterative version
+        a = 3.89707
+        b = 2
+        answer = 15.187154584899998
+        result = self.sol.myPow(a, b)
+        self.assertEqual(answer, result)
+
+    def test_case6(self):  ######=====> wrong anser for iterative version
+        a = 4.70975
+        b = -6
+        answer = 0.00009162476446700508
+        result = self.sol.myPow(a, b)
+        self.assertEqual(answer, result)
 
 
 
