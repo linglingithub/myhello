@@ -108,7 +108,7 @@ class Solution(object):
             :type n: int
             :rtype: float
             """
-            if x == 0 and n == -1:
+            if x == 0 and n == -1: # ?? should be n<0
                 return sys.float_info.max
             if n == 0:
                 return 1.0  # should be float, so can't not return 1
