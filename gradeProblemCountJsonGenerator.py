@@ -10,10 +10,10 @@ import re
 
 home = expanduser("~")
 
-grade_id = 5
-problem_count_csv = home + '/Downloads/g'+ str(grade_id) +'_problem_count.csv'
+grade_id = 9
+problem_count_csv = home + '/Downloads/g'+ str(grade_id) +'_problem_count (1).csv'
 problem_count_out = home + '/Documents/g'+ str(grade_id) +'_problem_count_out.json'
-out_file = home + '/Documents/g' + str(grade_id) + '_problem_count_output.json.json'
+out_file = home + '/Documents/g' + str(grade_id) + '_problem_count_output.json'
 
 schema_test_session  = ['problem_id','skill','exercise']
 schema_problem_count = ['skill','democount','assistedexercisecount','numberofProblemstobeafficient']
@@ -55,16 +55,17 @@ def csv_reader(file_obj):
             #data=row.split(',')
             rowdata = row
             if len(rowdata)>0:
-                print rowdata[1],"  ",rowdata[2]," ",rowdata[3]," ",rowdata[4]
+                print rowdata[0],"  ",rowdata[3]," ",rowdata[4]," ",rowdata[7]
                 # obj={"problem_id": data[0],"skill":data[1],"exercise":data[2]}
-                if section_regx.match(rowdata[1]):
+                if section_regx.match(rowdata[0]):
+                    row_vals = [rowdata[0],rowdata[3], rowdata[4], rowdata[7]]
                     skill = OrderedDict()
 
                     for idx, item in enumerate(schema_problem_count):
                         if idx == 0:
-                            dvalue = rowdata[idx+1]
+                            dvalue = row_vals[idx]
                         else:
-                            dvalue = int(rowdata[idx+1])
+                            dvalue = int(row_vals[idx])
                         skill[item] = dvalue
                     problems.append(skill)
 
