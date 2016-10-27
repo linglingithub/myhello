@@ -39,7 +39,8 @@ class Solution(object):
         if candidates is None or len(candidates) == 0:
             return []
         result = []
-        candidates = list(set(candidates)) #important
+        candidates = list(set(candidates)) #important, if the problem does not assume that the candiates are unique,
+        # this is to guarantee there is no duplicate combi.
         candidates.sort() # important
 
         for i in range(len(candidates)):
