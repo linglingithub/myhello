@@ -36,7 +36,23 @@ Subscribe to see which companies asked this question
 Hide Tags Dynamic Programming
 Hide Similar Problems (M) Combination Sum
 
+*************************
 
+http://blog.csdn.net/qq508618087/article/details/52064134
+
+思路: 一开始想到用DFS来做, 但是有个问题就是这种方式得到的答案各个数字排列是无序的, 也就是1, 3和3, 1这种只是一个答案,
+
+然后又想把数字保存起来, 在得到一个答案的时候对这些数字再求一次总共排列的个数, 这种方式还有问题就是在求总排列个数的时候
+
+比如2, 1, 1三个加一起等于4, 总的排列个数即为(3!/2!), 但是当数字个数很多的时候阶乘太大, 根本无法计算.
+
+然后就想到可以用动态规划来做, 也是一个背包问题, 求出[1, target]之间每个位置有多少种排列方式, 这样将问题分化为子问题.
+
+状态转移方程可以得到为:
+
+dp[i] = sum(dp[i - nums[j]]),  (i-nums[j] > 0);
+
+如果允许有负数的话就必须要限制每个数能用的次数了, 不然的话就会得到无限大的排列方式, 比如1, -1, target = 1;
 
 """
 
@@ -61,6 +77,16 @@ class Solution(object):
             for num in nums:
                 if i-num >= 0:
                     dp[i] += dp[i-num]
+        return dp[target]
+
+
+    def combinationSum4_ref(self, nums, target): #65ms, 72%
+        # a different way to think about the dp. not as fast though
+        dp = [1] + [0] * target
+        for i in xrange(target + 1):
+            for x in nums:
+                if i + x <= target:
+                    dp[i + x] += dp[i]
         return dp[target]
 
 
