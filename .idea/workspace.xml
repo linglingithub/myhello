@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/add_binary.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/multiply_strings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/plus_one.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/next_permutation.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testhello.iws" />
@@ -46,6 +44,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_divide_two_integers__3_.coverage" NAME="Unittests in divide_two_integers (3) Coverage Results" MODIFIED="1476990296140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combinations.coverage" NAME="Unittests in combinations Coverage Results" MODIFIED="1477718581797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ZigZagConversion__3_.coverage" NAME="Unittests in ZigZagConversion (3) Coverage Results" MODIFIED="1473917746516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_next_permutation__5_.coverage" NAME="Unittests in next_permutation (5) Coverage Results" MODIFIED="1478212805074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$ThreeSum_main.coverage" NAME="ThreeSum main Coverage Results" MODIFIED="1472580635220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sumII__3_.coverage" NAME="Unittests in combination_sumII (3) Coverage Results" MODIFIED="1477602647875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_TwoSumTester_test_case1.coverage" NAME="Unittest TwoSumTester.test_case1 Coverage Results" MODIFIED="1472060203310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -64,6 +63,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_TwoSumTester.coverage" NAME="Unittests in TwoSumTester Coverage Results" MODIFIED="1472060341221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_permutationsII__1_.coverage" NAME="Unittests in permutationsII (1) Coverage Results" MODIFIED="1478067941307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_divide_two_integers__2_.coverage" NAME="Unittests in divide_two_integers (2) Coverage Results" MODIFIED="1476926600703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_next_permutation__4_.coverage" NAME="Unittests in next_permutation (4) Coverage Results" MODIFIED="1478214088445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$csv2json.coverage" NAME="csv2json Coverage Results" MODIFIED="1427991074690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testhello$gradeJsonGenerator.coverage" NAME="gradeJsonGenerator Coverage Results" MODIFIED="1477956394116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_letter_combinations_of_a_phone_number__2_.coverage" NAME="Unittests in letter_combinations_of_a_phone_number (2) Coverage Results" MODIFIED="1474657430565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -116,6 +116,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_merge_sorted_array.coverage" NAME="Unittests in merge_sorted_array Coverage Results" MODIFIED="1475000837382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_pow_x_n.coverage" NAME="Unittests in pow_x_n Coverage Results" MODIFIED="1477028240826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_TestStringMethods_test_split.coverage" NAME="Unittest TestStringMethods.test_split Coverage Results" MODIFIED="1470273372774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_next_permutation.coverage" NAME="Unittests in next_permutation Coverage Results" MODIFIED="1478215123868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_valid_sudoku.coverage" NAME="Unittests in valid_sudoku Coverage Results" MODIFIED="1477420109620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_permutationsII__2_.coverage" NAME="Unittests in permutationsII (2) Coverage Results" MODIFIED="1478068133013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_container_with_most_water__1_.coverage" NAME="Unittests in container_with_most_water (1) Coverage Results" MODIFIED="1474610405771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -203,7 +204,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_TwoSumIITester.coverage" NAME="Unittests in TwoSumIITester Coverage Results" MODIFIED="1472061603842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case6.coverage" NAME="Unittest SolutionTester.test_case6 Coverage Results" MODIFIED="1477028277929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$gradeProblemCountJsonGenerator.coverage" NAME="gradeProblemCountJsonGenerator Coverage Results" MODIFIED="1477354462801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case3.coverage" NAME="Unittest SolutionTester.test_case3 Coverage Results" MODIFIED="1477419547265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case3.coverage" NAME="Unittest SolutionTester.test_case3 Coverage Results" MODIFIED="1478193966841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_FourSum__4_.coverage" NAME="Unittests in FourSum (4) Coverage Results" MODIFIED="1473439325366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sumIII__4_.coverage" NAME="Unittests in combination_sumIII (4) Coverage Results" MODIFIED="1477614137853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_insertion_sort_list.coverage" NAME="Unittests in insertion_sort_list Coverage Results" MODIFIED="1475536561276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -214,6 +215,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sumIV__3_.coverage" NAME="Unittests in combination_sumIV (3) Coverage Results" MODIFIED="1477636953330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_FourSum__1_.coverage" NAME="Unittests in FourSum (1) Coverage Results" MODIFIED="1473440596802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_permutationsII.coverage" NAME="Unittests in permutationsII Coverage Results" MODIFIED="1478068528935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_next_permutation__1_.coverage" NAME="Unittests in next_permutation (1) Coverage Results" MODIFIED="1478212984428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$GroupTypeAConverter.coverage" NAME="GroupTypeAConverter Coverage Results" MODIFIED="1435614569820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSum__2_.coverage" NAME="Unittests in ThreeSum (2) Coverage Results" MODIFIED="1472573994452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_sort_list__3_.coverage" NAME="Unittests in sort_list (3) Coverage Results" MODIFIED="1475196771915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -243,6 +245,7 @@
     <SUITE FILE_PATH="coverage/testhello$testcreatefile.coverage" NAME="testcreatefile Coverage Results" MODIFIED="1438713645588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_count_and_say__1_.coverage" NAME="Unittests in count_and_say (1) Coverage Results" MODIFIED="1477439508630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sumIII__2_.coverage" NAME="Unittests in combination_sumIII (2) Coverage Results" MODIFIED="1477614052618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_next_permutation__2_.coverage" NAME="Unittests in next_permutation (2) Coverage Results" MODIFIED="1478213339886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_LongestPalindromicSubstring__5_.coverage" NAME="Unittests in LongestPalindromicSubstring (5) Coverage Results" MODIFIED="1473897526638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$test.coverage" NAME="test Coverage Results" MODIFIED="1462754604324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_merge_sorted_array__1_.coverage" NAME="Unittests in merge_sorted_array (1) Coverage Results" MODIFIED="1475000855324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -259,8 +262,8 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_implement_strStr__2_.coverage" NAME="Unittests in implement_strStr (2) Coverage Results" MODIFIED="1475621815796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_unique_binary_search_trees__1_.coverage" NAME="Unittests in unique_binary_search_trees (1) Coverage Results" MODIFIED="1476749163991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_sort_list__4_.coverage" NAME="Unittests in sort_list (4) Coverage Results" MODIFIED="1475197332691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
-    <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case4.coverage" NAME="Unittest SolutionTester.test_case4 Coverage Results" MODIFIED="1477022611677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_pow_x_n__4_.coverage" NAME="Unittests in pow_x_n (4) Coverage Results" MODIFIED="1477033148115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case4.coverage" NAME="Unittest SolutionTester.test_case4 Coverage Results" MODIFIED="1478214230148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSumClosest__2_.coverage" NAME="Unittests in ThreeSumClosest (2) Coverage Results" MODIFIED="1472586175681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$DividedTwoInteger.coverage" NAME="DividedTwoInteger Coverage Results" MODIFIED="1440703871345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sum__5_.coverage" NAME="Unittests in combination_sum (5) Coverage Results" MODIFIED="1477527252205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -277,7 +280,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_TwoSum.coverage" NAME="Unittests in TwoSum Coverage Results" MODIFIED="1472059688714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_LongestPalindromicSubstring.coverage" NAME="Unittests in LongestPalindromicSubstring Coverage Results" MODIFIED="1473897927674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_sort_colors__1_.coverage" NAME="Unittests in sort_colors (1) Coverage Results" MODIFIED="1476482198810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
-    <SUITE FILE_PATH="coverage/testhello$Unittests_in_SolutionTester.coverage" NAME="Unittests in SolutionTester Coverage Results" MODIFIED="1476926474105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_SolutionTester.coverage" NAME="Unittests in SolutionTester Coverage Results" MODIFIED="1478193955610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$TwoSumII.coverage" NAME="TwoSumII Coverage Results" MODIFIED="1472146084294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_unique_binary_search_trees__2_.coverage" NAME="Unittests in unique_binary_search_trees (2) Coverage Results" MODIFIED="1476749193737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_insertion_sort_list__5_.coverage" NAME="Unittests in insertion_sort_list (5) Coverage Results" MODIFIED="1475536045833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -293,6 +296,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_path_sumII__2_.coverage" NAME="Unittests in path_sumII (2) Coverage Results" MODIFIED="1476861575013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_longest_common_prefix__1_.coverage" NAME="Unittests in longest_common_prefix (1) Coverage Results" MODIFIED="1474475533606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_LongestPalindromicSubstring__4_.coverage" NAME="Unittests in LongestPalindromicSubstring (4) Coverage Results" MODIFIED="1473897706840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_next_permutation__3_.coverage" NAME="Unittests in next_permutation (3) Coverage Results" MODIFIED="1478214339523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sumIII__3_.coverage" NAME="Unittests in combination_sumIII (3) Coverage Results" MODIFIED="1477614079613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSumSmaller__3_.coverage" NAME="Unittests in ThreeSumSmaller (3) Coverage Results" MODIFIED="1472601762770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case2__1_.coverage" NAME="Unittest SolutionTester.test_case2 (1) Coverage Results" MODIFIED="1477638661900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -319,16 +323,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="combination_sumIV.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/combination_sumIV.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="combinations.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/combinations.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -359,11 +353,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="multiply_strings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="multiply_strings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/multiply_strings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="next_permutation.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/next_permutation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -467,7 +471,6 @@
         <option value="$PROJECT_DIR$/misc/path_sum.py" />
         <option value="$PROJECT_DIR$/misc/pow_x_n.py" />
         <option value="$PROJECT_DIR$/misc/climbing_stairs.py" />
-        <option value="$PROJECT_DIR$/misc/next_permutation.py" />
         <option value="$PROJECT_DIR$/misc/search_for_a_range.py" />
         <option value="$PROJECT_DIR$/misc/aaa.py" />
         <option value="$PROJECT_DIR$/gradeProblemCountJsonGenerator.py" />
@@ -485,6 +488,7 @@
         <option value="$PROJECT_DIR$/misc/plus_one.py" />
         <option value="$PROJECT_DIR$/misc/add_binary.py" />
         <option value="$PROJECT_DIR$/misc/multiply_strings.py" />
+        <option value="$PROJECT_DIR$/misc/next_permutation.py" />
       </list>
     </option>
   </component>
@@ -496,9 +500,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1455" />
-    <option name="y" value="92" />
+    <option name="y" value="55" />
     <option name="width" value="1366" />
-    <option name="height" value="787" />
+    <option name="height" value="824" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -651,8 +655,8 @@
       <recent name="$PROJECT_DIR$/misc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in multiply_strings (5)">
-    <configuration default="false" name="Unittests in multiply_strings (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests in next_permutation">
+    <configuration default="false" name="Unittests in next_permutation (4)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -663,7 +667,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/multiply_strings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/next_permutation.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -675,7 +679,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in multiply_strings (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in next_permutation (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -686,7 +690,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/multiply_strings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/next_permutation.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -698,7 +702,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in multiply_strings (3)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittest SolutionTester.test_case4" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -709,7 +713,30 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/multiply_strings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/next_permutation.py" />
+      <option name="CLASS_NAME" value="SolutionTester" />
+      <option name="METHOD_NAME" value="test_case4" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in next_permutation (3)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/next_permutation.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -721,7 +748,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in multiply_strings (4)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in next_permutation" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -732,30 +759,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/multiply_strings.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in multiply_strings (5)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/multiply_strings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/next_permutation.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -1000,19 +1004,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in multiply_strings (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in multiply_strings (2)" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in multiply_strings (3)" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in multiply_strings (4)" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in multiply_strings (5)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in next_permutation (4)" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in next_permutation (2)" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case4" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in next_permutation (3)" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in next_permutation" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in multiply_strings (5)" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in multiply_strings (4)" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in multiply_strings (3)" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in multiply_strings (2)" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in multiply_strings (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in next_permutation" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in next_permutation (3)" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case4" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in next_permutation (4)" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in next_permutation (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -1033,35 +1037,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_add_binary - 2016.11.02 at 16h 46m 42s.xml">
-      <configuration name="Unittests in add_binary" configurationId="tests" />
+    <history-entry file="Unittest_SolutionTester_test_case4 - 2016.11.03 at 16h 05m 18s.xml">
+      <configuration name="Unittest SolutionTester.test_case4" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_add_binary_(1) - 2016.11.02 at 16h 43m 51s.xml">
-      <configuration name="Unittests in add_binary (1)" configurationId="tests" />
+    <history-entry file="Unittests_in_next_permutation - 2016.11.03 at 15h 40m 43s.xml">
+      <configuration name="Unittests in next_permutation" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_add_binary_(4) - 2016.11.02 at 16h 43m 39s.xml">
-      <configuration name="Unittests in add_binary (4)" configurationId="tests" />
+    <history-entry file="Unittests_in_next_permutation - 2016.11.03 at 16h 18m 43s.xml">
+      <configuration name="Unittests in next_permutation" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_add_binary_(5) - 2016.11.02 at 16h 46m 44s.xml">
-      <configuration name="Unittests in add_binary (5)" configurationId="tests" />
+    <history-entry file="Unittests_in_next_permutation_(1) - 2016.11.03 at 15h 43m 04s.xml">
+      <configuration name="Unittests in next_permutation (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_multiply_strings - 2016.11.02 at 18h 03m 21s.xml">
-      <configuration name="Unittests in multiply_strings" configurationId="tests" />
+    <history-entry file="Unittests_in_next_permutation_(2) - 2016.11.03 at 15h 48m 59s.xml">
+      <configuration name="Unittests in next_permutation (2)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_multiply_strings_(1) - 2016.11.02 at 18h 04m 00s.xml">
-      <configuration name="Unittests in multiply_strings (1)" configurationId="tests" />
+    <history-entry file="Unittests_in_next_permutation_(3) - 2016.11.03 at 16h 05m 39s.xml">
+      <configuration name="Unittests in next_permutation (3)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_multiply_strings_(2) - 2016.11.02 at 18h 04m 19s.xml">
-      <configuration name="Unittests in multiply_strings (2)" configurationId="tests" />
+    <history-entry file="Unittests_in_next_permutation_(4) - 2016.11.03 at 15h 37m 58s.xml">
+      <configuration name="Unittests in next_permutation (4)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_multiply_strings_(3) - 2016.11.02 at 18h 05m 18s.xml">
-      <configuration name="Unittests in multiply_strings (3)" configurationId="tests" />
+    <history-entry file="Unittests_in_next_permutation_(4) - 2016.11.03 at 15h 57m 09s.xml">
+      <configuration name="Unittests in next_permutation (4)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_multiply_strings_(4) - 2016.11.02 at 18h 09m 17s.xml">
-      <configuration name="Unittests in multiply_strings (4)" configurationId="tests" />
+    <history-entry file="Unittests_in_next_permutation_(4) - 2016.11.03 at 16h 01m 28s.xml">
+      <configuration name="Unittests in next_permutation (4)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_multiply_strings_(5) - 2016.11.02 at 18h 12m 00s.xml">
-      <configuration name="Unittests in multiply_strings (5)" configurationId="tests" />
+    <history-entry file="Unittests_in_next_permutation_(5) - 2016.11.03 at 15h 40m 05s.xml">
+      <configuration name="Unittests in next_permutation (5)" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1074,8 +1078,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1455" y="92" width="1366" height="787" extended-state="0" />
-    <editor active="false" />
+    <frame x="-1455" y="55" width="1366" height="824" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24018127" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1083,11 +1087,11 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26307923" sideWeight="0.5033003" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32714286" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34828103" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.296034" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19431987" sideWeight="0.5067976" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.194051" sideWeight="0.5067976" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38863975" sideWeight="0.49642345" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.388102" sideWeight="0.49642345" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1625,6 +1629,11 @@
           <line>30</line>
           <option name="timeStamp" value="170" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/next_permutation.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1633,18 +1642,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="171" />
+      <option name="time" value="172" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/roman_to_integer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="61" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/integer_to_roman.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -2021,14 +2023,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/aaa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/add_binary.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -2041,6 +2035,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/aaa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/next_permutation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
           <folding />
         </state>
       </provider>
