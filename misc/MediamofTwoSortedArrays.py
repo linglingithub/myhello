@@ -41,7 +41,7 @@ class Solution:
                     k = 1
                     ind1 += 1
         if k == 1:
-            if (ind1)
+            if ind1:
             return nums1[ind1]
         else:
             return nums2[ind2]
