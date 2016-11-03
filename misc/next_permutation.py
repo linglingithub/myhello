@@ -25,6 +25,7 @@ import unittest
 class Solution(object):
     def nextPermutation(self, nums): # 66ms, 82.19% --- 72ms, 57.19%
         """
+        Trying to find the lexicographical order
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
