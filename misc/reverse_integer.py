@@ -1,5 +1,5 @@
 """
-reverse_integer
+Reverse Integer
 
 Difficulty: Easy
 Reverse digits of an integer.
