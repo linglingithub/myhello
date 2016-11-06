@@ -17,7 +17,7 @@ class TreeNode(object):
 
 
     @staticmethod
-    def generate_binary_tree(bfs_str):
+    def generate_bt_from_string(bfs_str):
         """
               5
              / \
@@ -28,7 +28,7 @@ class TreeNode(object):
         7    2  5   1
 
         :param bfs_str: string like this '5,#,4,8,#,11,null,13,4,#,7,2,null,null,5,1,#',
-                        null for no child place, # for tree level seperator
+                        null for no child place, # for tree level separator
         :return: root of the tree like above
         """
         vals = bfs_str.split(",")
@@ -63,11 +63,74 @@ class TreeNode(object):
                 del parent_ref[0]
         return root
 
+    @staticmethod
+    def generate_bt_from_list(vals):
+        """
+                5
+               / \
+              4   8
+             /   / \
+            11  13  4
+           /  \    /
+          7    2  5
+
+        :param list: list like this [5,4,8,11,None,13,4,7,2,None,None,None,None,5]
+                    Assume all levels are fully listed, None for no child place, unless the last level, can end without
+                    completing with trailing None
+        :return: root of the tree like above
+        """
+
+        if vals is None or len(vals) == 0:
+            return None
+
+        root = TreeNode(vals[0])
+        parents = [root]
+        start = 1
+        level = 1
+        while start<len(vals):
+            # create new level nodes as the children
+            end = start + pow(2, level)
+            children = []
+            for i in range(start, end):
+                if i < len(vals):
+                    if vals[i]:
+                        children.append(TreeNode(vals[i]))
+                    else:
+                        children.append(None)
+            # match the parents and children
+            idx = 0
+            for p in parents:
+                if p is not None:
+                    if idx < len(children):
+                        p.left = children[idx]
+                    else:
+                        break
+                    if idx+1 < len(children):
+                        p.right = children[idx+1]
+                idx += 2
+            # update for next loop
+            parents = children
+            level += 1
+            start = end
+        return root
+
+
+def test_case1():
+    bfs_str = '5,#,4,8,#,11,null,13,4,#,7,2,null,null,5,1,#'
+    root = TreeNode.generate_bt_from_string(bfs_str)
+    print root
+
+
+def test_case2():
+    vals = [5,4,8,11,None,13,4,7,2,None,None,None,None,5]
+    root = TreeNode.generate_bt_from_list(vals)
+    print root
+
 
 if __name__ == '__main__':
-    bfs_str = '5,#,4,8,#,11,null,13,4,#,7,2,null,null,5,1,#'
-    root = TreeNode.generate_binary_tree(bfs_str)
-    print root
+    #test_case1()
+    test_case2()
+
 
 
 
