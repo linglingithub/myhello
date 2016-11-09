@@ -38,9 +38,15 @@ class Solution(object):
         """
         if (nums1 is None or len(nums1)==0) and (nums2 is None or len(nums2)==0):
             return None
-        idx = 0
-        mid = (len(nums1)+len(nums2)) / 2
-        while
+        l1 = 0
+        r1 = len(nums1) - 1
+        mid1 = (l1+r1) / 2
+        l2 = 0
+        r2 = len(nums2) - 1
+        mid2 = (l2+r2)/2
+        while l1
+
+
 
 
 class SolutionTester(unittest.TestCase):
