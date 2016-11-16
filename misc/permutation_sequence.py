@@ -27,16 +27,30 @@ Medium
 
 """
 
+import math
 import unittest
 
 
+
 class Solution(object):
-    def getPermutation(self, n, k):
+    def getPermutation(self, n, k): #39ms, 89%
         """
         :type n: int
         :type k: int
         :rtype: str
         """
+        result = ""
+        nums = [i for i in range(1, n+1)]
+        if n == 0 or k > math.factorial(n):
+            return ""
+        for i in range(n, 1, -1):
+            fac = math.factorial(i-1) # should be i-1 not n-1 here, otherwise wrong
+            digit = (k-1) / fac  # should be k-1 here
+            result += str(nums[digit])
+            del nums[digit]
+            k %= fac
+        result += str(nums[0])
+        return result
 
 
 
@@ -46,8 +60,29 @@ class SolutionTester(unittest.TestCase):
 
     def test_case1(self):
         n = 3
-        k = 4
+        k = 4 # 123, 132, 213, 231,
         answer = '231'
+        result = self.sol.getPermutation(n, k)
+        self.assertEqual(answer, result)
+
+    def test_case2(self):
+        n = 3
+        k = 1  # 123
+        answer = '123'
+        result = self.sol.getPermutation(n, k)
+        self.assertEqual(answer, result)
+
+    def test_case3(self):
+        n = 3
+        k = 5  # 123, 132, 213, 231, 312
+        answer = '312'
+        result = self.sol.getPermutation(n, k)
+        self.assertEqual(answer, result)
+
+    def test_case4(self): #=======>
+        n = 4
+        k = 2  # 1234, 1243
+        answer = '1243'
         result = self.sol.getPermutation(n, k)
         self.assertEqual(answer, result)
 
