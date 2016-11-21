@@ -15,9 +15,9 @@ class SolutionTester(unittest.TestCase):
         self.sol = Solution()
 
     def test_case1(self):
-        input = 1
+        nums = 1
         answer = 1
-        result = self.sol.searchInsert(input)
+        result = self.sol.searchInsert(nums)
         self.assertEqual(answer, result)
 
 
