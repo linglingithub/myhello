@@ -1,5 +1,5 @@
 """
-65. Unique Paths
+62. Unique Paths
 
 A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
 
@@ -17,6 +17,7 @@ Subscribe to see which companies asked this question
 Hide Tags Array Dynamic Programming
 Hide Similar Problems (M) Unique Paths II (M) Minimum Path Sum (H) Dungeon Game
 
+Medium
 
 """
 
