@@ -177,6 +177,13 @@ class Solution(object):
             self.dfsw(res,nums,current,idx+1)
         self.dfsw(res, nums, current + [nums[idx]], idx + 1)
 
+    def subsetsWithDup_ref2(self, S): #76ms, 45%
+        # write your code here
+        S.sort()
+        p = [[S[x] for x in range(len(S)) if i >> x & 1] for i in range(2 ** len(S))]
+        func = lambda x, y: x if y in x else x + [y]
+        p = reduce(func, [[], ] + p)
+        return list(reversed(p))
 
 
 class SolutionTester(unittest.TestCase):
