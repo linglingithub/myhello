@@ -51,11 +51,31 @@ class Solution(object):
                 dp[i][j] = min(increase, remove, replace_or_not)
         return dp[m][n] #dp[m-1][n-1]
 
+    def minDistance_ref_better(self, word1, word2):
+        """
+        :type word1: str
+        :type word2: str
+        :rtype: int
+        """
+        len1 = len(word1)
+        len2 = len(word2)
+        f = [[0] * (len2 + 1) for i in range(len1 + 1)]
+        for i in range(len1 + 1):
+            f[i][0] = i
+        for j in range(len2 + 1):
+            f[0][j] = j
+
+        for i in range(1, len1 + 1):
+            for j in range(1, len2 + 1):
+                if word2[j - 1] == word1[i - 1]:  # good here, seperate the last letter equal case
+                    f[i][j] = f[i - 1][j - 1]
+                else:
+                    f[i][j] = min(f[i - 1][j - 1], f[i - 1][j], f[i][j - 1]) + 1
+
+        return f[len1][len2]
 
 
-
-
-    def minDistance_ref(self, word1, word2):
+    def minDistance_ref1(self, word1, word2):
         """
         解题思路：这道题是很有名的编辑距离问题。用动态规划来解决。状态转移方程是这样的：dp[i][j]表示word1[0...i-1]到word2[0...j-1]
         的编辑距离。而dp[i][0]显然等于i，因为只需要做i次删除操作就可以了。同理dp[0][i]也是如此，等于i，因为只需做i次插入操作就可以了。
@@ -68,7 +88,7 @@ class Solution(object):
         :param word2:
         :return:
         """
-        m = len(word1) + 1;
+        m = len(word1) + 1
         n = len(word2) + 1
         dp = [[0 for i in range(n)] for j in range(m)]
         for i in range(n):
