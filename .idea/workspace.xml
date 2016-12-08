@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/binary_tree_inorder_traversal.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/validate_binary_search_tree.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/same_tree.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/tree_node.py" afterPath="$PROJECT_DIR$/misc/tree_node.py" />
     </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -245,7 +243,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_count_and_say__2_.coverage" NAME="Unittests in count_and_say (2) Coverage Results" MODIFIED="1477455278415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_length_of_last_word__4_.coverage" NAME="Unittests in length_of_last_word (4) Coverage Results" MODIFIED="1474505100317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_reverse_linked_listII.coverage" NAME="Unittests in reverse_linked_listII Coverage Results" MODIFIED="1481160285884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
-    <SUITE FILE_PATH="coverage/testhello$Unittests_in_SolutionTester.coverage" NAME="Unittests in SolutionTester Coverage Results" MODIFIED="1481218450104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_SolutionTester.coverage" NAME="Unittests in SolutionTester Coverage Results" MODIFIED="1481224198405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_implement_strStr__1_.coverage" NAME="Unittests in implement_strStr (1) Coverage Results" MODIFIED="1475621696667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_rotate_image.coverage" NAME="Unittests in rotate_image Coverage Results" MODIFIED="1478629571697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_insertion_sort_list__1_.coverage" NAME="Unittests in insertion_sort_list (1) Coverage Results" MODIFIED="1475536526065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -511,13 +509,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validate_binary_search_tree.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="validate_binary_search_tree.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/validate_binary_search_tree.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
               <folding>
                 <element signature="e#677#692#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="same_tree.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/same_tree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+              <folding>
+                <element signature="e#307#322#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -580,7 +590,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/group_anagrams.py" />
         <option value="$PROJECT_DIR$/misc/rotate_image.py" />
         <option value="$PROJECT_DIR$/misc/spiral_matrix.py" />
         <option value="$PROJECT_DIR$/misc/spiral_matrixII.py" />
@@ -631,6 +640,7 @@
         <option value="$PROJECT_DIR$/misc/tree_node.py" />
         <option value="$PROJECT_DIR$/misc/binary_tree_inorder_traversal.py" />
         <option value="$PROJECT_DIR$/misc/validate_binary_search_tree.py" />
+        <option value="$PROJECT_DIR$/misc/same_tree.py" />
       </list>
     </option>
   </component>
@@ -806,30 +816,7 @@
       <recent name="$PROJECT_DIR$/misc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in validate_binary_search_tree (3)">
-    <configuration default="false" name="Unittests in validate_binary_search_tree" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/validate_binary_search_tree.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in SolutionTester">
     <configuration default="false" name="Unittests in validate_binary_search_tree (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -915,6 +902,29 @@
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in SolutionTester" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/same_tree.py" />
+      <option name="CLASS_NAME" value="SolutionTester" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
@@ -1161,19 +1171,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in validate_binary_search_tree" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in validate_binary_search_tree (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in validate_binary_search_tree (2)" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case4" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in validate_binary_search_tree (3)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in validate_binary_search_tree (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in validate_binary_search_tree (2)" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case4" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in validate_binary_search_tree (3)" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in SolutionTester" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in validate_binary_search_tree (3)" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case4" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in validate_binary_search_tree (2)" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in validate_binary_search_tree (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in validate_binary_search_tree" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in SolutionTester" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in validate_binary_search_tree (3)" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case4" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in validate_binary_search_tree (2)" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in validate_binary_search_tree (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1200,8 +1210,8 @@
     <history-entry file="Unittests_in_SolutionTester - 2016.12.08 at 09h 34m 10s.xml">
       <configuration name="Unittests in SolutionTester" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_binary_tree_inorder_traversal - 2016.12.07 at 23h 11m 47s.xml">
-      <configuration name="Unittests in binary_tree_inorder_traversal" configurationId="tests" />
+    <history-entry file="Unittests_in_SolutionTester - 2016.12.08 at 11h 09m 58s.xml">
+      <configuration name="Unittests in SolutionTester" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_binary_tree_inorder_traversal - 2016.12.07 at 23h 13m 08s.xml">
       <configuration name="Unittests in binary_tree_inorder_traversal" configurationId="tests" />
@@ -1236,7 +1246,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1009" y="-923" width="1334" height="881" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23839009" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32748538" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1244,9 +1254,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3214815" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31019202" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3027523" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3027523" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3709239" sideWeight="0.49353796" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14547837" sideWeight="0.49353796" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53866315" sideWeight="0.49355876" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1977,14 +1987,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/sqrt_x.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/simplify_path.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -2346,14 +2348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/aaa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/binary_tree_inorder_traversal.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -2378,6 +2372,24 @@
           <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
           <folding>
             <element signature="e#677#692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/aaa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/same_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+          <folding>
+            <element signature="e#307#322#0" expanded="true" />
           </folding>
         </state>
       </provider>
