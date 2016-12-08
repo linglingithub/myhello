@@ -107,6 +107,9 @@ class TreeNode(object):
                         break
                     if idx+1 < len(children):
                         p.right = children[idx+1]
+                else:
+                    if idx==0:
+                        continue
                 idx += 2
             # update for next loop
             parents = children
