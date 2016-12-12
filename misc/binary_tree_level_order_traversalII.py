@@ -1,27 +1,28 @@
 """
 
-102. Binary Tree Level Order Traversal
+107. Binary Tree Level Order Traversal II
 
-Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by
+level from leaf to root).
 
 For example:
-Given binary tree [3,9,20,None,None,15,7],
+Given binary tree [3,9,20,null,null,15,7],
     3
    / \
   9  20
     /  \
    15   7
-return its level order traversal as:
+return its bottom-up level order traversal as:
 [
-  [3],
+  [15,7],
   [9,20],
-  [15,7]
+  [3]
 ]
 Subscribe to see which companies asked this question
 
 Hide Tags Tree Breadth-first Search
-Hide Similar Problems (M) Binary Tree Zigzag Level Order Traversal (E) Binary Tree Level Order Traversal II
-(E) Minimum Depth of Binary Tree (M) Binary Tree Vertical Order Traversal
+Hide Similar Problems (E) Binary Tree Level Order Traversal
+
 
 Easy
 
@@ -39,8 +40,7 @@ from tree_node import TreeNode
 #         self.right = None
 
 class Solution(object):
-
-    def levelOrder(self, root): #recursive way
+    def levelOrderBottom(self, root): #recursive way
         """
         :type root: TreeNode
         :rtype: List[List[int]]
@@ -49,18 +49,40 @@ class Solution(object):
             return []
         result = []
         self.traverse(result, 1, root)
+        result.reverse()
         return result
 
     def traverse(self, result, level, root):
         if root:
             if len(result) < level:
                 result.append([])
-            result[level-1].append(root.val)
-            self.traverse(result, level+1, root.left)
+            result[level - 1].append(root.val)
+            self.traverse(result, level + 1, root.left)
             self.traverse(result, level + 1, root.right)
 
 
-    def levelOrder1(self, root): #iterative way, 68ms, 30%
+    def levelOrderBottom_ref(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
+        self.results = []
+        if not root:
+            return self.results
+        q = [root]
+        while q:
+            new_q = []
+            self.results.append([n.val for n in q])
+            for node in q:
+                if node.left:
+                    new_q.append(node.left)
+                if node.right:
+                    new_q.append(node.right)
+            q = new_q
+        return list(reversed(self.results))
+
+
+    def levelOrderBottom1(self, root): #iterative, same as I, just reverse result at the end, 49ms, 71%
         """
         :type root: TreeNode
         :rtype: List[List[int]]
@@ -81,22 +103,7 @@ class Solution(object):
                     children.append(curr.right)
             result.append(tmp)
             level = children
-        return result
-
-
-
-
-    def levelOrder_ref(self, root): #58ms, 53%, recursive way
-        res=[]
-        self.preorder(root, 0, res)
-        return res
-
-    def preorder(self, root, level, res):
-        if root:
-            if len(res) < level+1: res.append([])
-            res[level].append(root.val)
-            self.preorder(root.left, level+1, res)
-            self.preorder(root.right, level+1, res)
+        return result[::-1]
 
 
 class SolutionTester(unittest.TestCase):
@@ -106,11 +113,11 @@ class SolutionTester(unittest.TestCase):
     def test_case1(self):
         nums = [3,9,20,None,None,15,7]
         answer = [
-          [3],
+          [15,7],
           [9,20],
-          [15,7]
+          [3]
         ]
-        result = self.sol.levelOrder(TreeNode.generate_bt_from_list(nums))
+        result = self.sol.levelOrderBottom(TreeNode.generate_bt_from_list(nums))
         self.assertEqual(answer, result)
 
 

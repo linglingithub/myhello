@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/binary_tree_level_order_traversal.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/binary_tree_level_order_traversalII.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/binary_tree_level_order_traversal.py" afterPath="$PROJECT_DIR$/misc/binary_tree_level_order_traversal.py" />
     </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,6 +76,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_next_permutation__5_.coverage" NAME="Unittests in next_permutation (5) Coverage Results" MODIFIED="1478212805074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_remove_duplicates_from_sorted_array__2_.coverage" NAME="Unittests in remove_duplicates_from_sorted_array (2) Coverage Results" MODIFIED="1480449318409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_restore_ip_addresses__4_.coverage" NAME="Unittests in restore_ip_addresses (4) Coverage Results" MODIFIED="1481164642189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_binary_tree_level_order_traversalII__2_.coverage" NAME="Unittests in binary_tree_level_order_traversalII (2) Coverage Results" MODIFIED="1481581526354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_subsetsII__3_.coverage" NAME="Unittests in subsetsII (3) Coverage Results" MODIFIED="1480233530876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSumSmaller__5_.coverage" NAME="Unittests in ThreeSumSmaller (5) Coverage Results" MODIFIED="1472600302110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_palindrome_number__1_.coverage" NAME="Unittests in palindrome_number (1) Coverage Results" MODIFIED="1474422157730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -102,6 +104,7 @@
     <SUITE FILE_PATH="coverage/testhello$GroupTypeBConverter.coverage" NAME="GroupTypeBConverter Coverage Results" MODIFIED="1440195413469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case3.coverage" NAME="Unittest SolutionTester.test_case3 Coverage Results" MODIFIED="1481514929184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_count_and_say__1_.coverage" NAME="Unittests in count_and_say (1) Coverage Results" MODIFIED="1477439508630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_binary_tree_level_order_traversalII.coverage" NAME="Unittests in binary_tree_level_order_traversalII Coverage Results" MODIFIED="1481580865700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_sort_list__2_.coverage" NAME="Unittests in sort_list (2) Coverage Results" MODIFIED="1475196675555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_unique_binary_search_treesII__1_.coverage" NAME="Unittests in unique_binary_search_treesII (1) Coverage Results" MODIFIED="1476827101907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_path_sumII.coverage" NAME="Unittests in path_sumII Coverage Results" MODIFIED="1476860819128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -309,6 +312,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sumIII__5_.coverage" NAME="Unittests in combination_sumIII (5) Coverage Results" MODIFIED="1477614245520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTestor_test_case5.coverage" NAME="Unittest SolutionTestor.test_case5 Coverage Results" MODIFIED="1474995448712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_permutationsII__3_.coverage" NAME="Unittests in permutationsII (3) Coverage Results" MODIFIED="1478068152532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_binary_tree_level_order_traversalII__1_.coverage" NAME="Unittests in binary_tree_level_order_traversalII (1) Coverage Results" MODIFIED="1481581511395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_remove_duplicates_from_sorted_array__3_.coverage" NAME="Unittests in remove_duplicates_from_sorted_array (3) Coverage Results" MODIFIED="1480449364715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_next_permutation__4_.coverage" NAME="Unittests in next_permutation (4) Coverage Results" MODIFIED="1478214088445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSumTester.coverage" NAME="Unittests in ThreeSumTester Coverage Results" MODIFIED="1472594472353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -431,6 +435,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_reverse_linked_listII__5_.coverage" NAME="Unittests in reverse_linked_listII (5) Coverage Results" MODIFIED="1481160034981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_construct_binary_tree_from_preorder_and_inorder_traversal__1_.coverage" NAME="Unittests in construct_binary_tree_from_preorder_and_inorder_traversal (1) Coverage Results" MODIFIED="1476498618392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$TwoSumII.coverage" NAME="TwoSumII Coverage Results" MODIFIED="1472146084294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_binary_tree_level_order_traversalII__3_.coverage" NAME="Unittests in binary_tree_level_order_traversalII (3) Coverage Results" MODIFIED="1481581557171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_TestStringMethods_test_split.coverage" NAME="Unittest TestStringMethods.test_split Coverage Results" MODIFIED="1470273372774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_remove_duplicates_from_sorted_array__1_.coverage" NAME="Unittests in remove_duplicates_from_sorted_array (1) Coverage Results" MODIFIED="1480448423487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$list_element_multiply.coverage" NAME="list_element_multiply Coverage Results" MODIFIED="1480985243233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
@@ -454,6 +459,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_validate_binary_search_tree__2_.coverage" NAME="Unittests in validate_binary_search_tree (2) Coverage Results" MODIFIED="1481223089468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_string_to_integer__3_.coverage" NAME="Unittests in string_to_integer (3) Coverage Results" MODIFIED="1474409888895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_decode_ways__2_.coverage" NAME="Unittests in decode_ways (2) Coverage Results" MODIFIED="1481064944236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_binary_tree_level_order_traversalII__4_.coverage" NAME="Unittests in binary_tree_level_order_traversalII (4) Coverage Results" MODIFIED="1481582297967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_FourSum__4_.coverage" NAME="Unittests in FourSum (4) Coverage Results" MODIFIED="1473439325366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_restore_ip_addresses__2_.coverage" NAME="Unittests in restore_ip_addresses (2) Coverage Results" MODIFIED="1481164229384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_unique_pathsII__2_.coverage" NAME="Unittests in unique_pathsII (2) Coverage Results" MODIFIED="1479775914956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -484,10 +490,12 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DatabaseView">
-    <option name="FLATTEN" value="false" />
-    <option name="GROUP_BY_TYPE" value="true" />
-    <option name="SORT_CHILDREN" value="false" />
-    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -515,13 +523,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="binary_tree_level_order_traversal.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="binary_tree_level_order_traversal.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/binary_tree_level_order_traversal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
+            <state relative-caret-position="30">
               <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="59" selection-end-column="56" />
               <folding>
-                <element signature="e#607#622#0" expanded="true" />
+                <element signature="e#611#626#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="binary_tree_level_order_traversalII.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/binary_tree_level_order_traversalII.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="24" />
+              <folding>
+                <element signature="e#531#546#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -560,7 +580,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/spiral_matrixII.py" />
         <option value="$PROJECT_DIR$/misc/swap_nodes_in_pairs.py" />
         <option value="$PROJECT_DIR$/misc/jump_game.py" />
         <option value="$PROJECT_DIR$/misc/jump_gameII.py" />
@@ -611,6 +630,7 @@
         <option value="$PROJECT_DIR$/misc/same_tree.py" />
         <option value="$PROJECT_DIR$/misc/symmetric_tree.py" />
         <option value="$PROJECT_DIR$/misc/binary_tree_level_order_traversal.py" />
+        <option value="$PROJECT_DIR$/misc/binary_tree_level_order_traversalII.py" />
       </list>
     </option>
   </component>
@@ -621,10 +641,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="89" />
-    <option name="y" value="31" />
+    <option name="x" value="154" />
+    <option name="y" value="108" />
     <option name="width" value="1286" />
-    <option name="height" value="810" />
+    <option name="height" value="787" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -777,17 +797,17 @@
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/misc" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/old" />
       <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/misc" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/misc" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in binary_tree_level_order_traversal (2)">
-    <configuration default="false" name="Unittests in symmetric_tree (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests in binary_tree_level_order_traversalII (4)">
+    <configuration default="false" name="Unittests in binary_tree_level_order_traversalII" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -798,7 +818,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/symmetric_tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/binary_tree_level_order_traversalII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -810,7 +830,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in SolutionTester" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in binary_tree_level_order_traversalII (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -821,30 +841,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/binary_tree_level_order_traversal.py" />
-      <option name="CLASS_NAME" value="SolutionTester" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in binary_tree_level_order_traversal" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/binary_tree_level_order_traversal.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/binary_tree_level_order_traversalII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -856,7 +853,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in binary_tree_level_order_traversal (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in binary_tree_level_order_traversalII (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -867,7 +864,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/binary_tree_level_order_traversal.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/binary_tree_level_order_traversalII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -879,7 +876,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in binary_tree_level_order_traversal (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in binary_tree_level_order_traversalII (3)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -890,7 +887,30 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/binary_tree_level_order_traversal.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/binary_tree_level_order_traversalII.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in binary_tree_level_order_traversalII (4)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/binary_tree_level_order_traversalII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -1141,19 +1161,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in symmetric_tree (2)" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in SolutionTester" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversal" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversal (1)" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversal (2)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversalII" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversalII (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversalII (2)" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversalII (3)" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversalII (4)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversal (2)" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversal (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversal" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in SolutionTester" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in symmetric_tree (2)" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversalII (4)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversalII (3)" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversalII (2)" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversalII (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_level_order_traversalII" />
       </list>
     </recent_temporary>
   </component>
@@ -1180,26 +1200,26 @@
     <history-entry file="Unittests_in_binary_tree_level_order_traversal - 2016.12.12 at 11h 55m 17s.xml">
       <configuration name="Unittests in binary_tree_level_order_traversal" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_binary_tree_level_order_traversalII - 2016.12.12 at 14h 14m 25s.xml">
+      <configuration name="Unittests in binary_tree_level_order_traversalII" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_binary_tree_level_order_traversalII_(1) - 2016.12.12 at 14h 25m 11s.xml">
+      <configuration name="Unittests in binary_tree_level_order_traversalII (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_binary_tree_level_order_traversalII_(2) - 2016.12.12 at 14h 25m 26s.xml">
+      <configuration name="Unittests in binary_tree_level_order_traversalII (2)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_binary_tree_level_order_traversalII_(3) - 2016.12.12 at 14h 25m 57s.xml">
+      <configuration name="Unittests in binary_tree_level_order_traversalII (3)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_binary_tree_level_order_traversalII_(4) - 2016.12.12 at 14h 38m 18s.xml">
+      <configuration name="Unittests in binary_tree_level_order_traversalII (4)" configurationId="tests" />
+    </history-entry>
     <history-entry file="Unittests_in_binary_tree_level_order_traversal_(1) - 2016.12.12 at 12h 01m 07s.xml">
       <configuration name="Unittests in binary_tree_level_order_traversal (1)" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_binary_tree_level_order_traversal_(2) - 2016.12.12 at 12h 01m 20s.xml">
       <configuration name="Unittests in binary_tree_level_order_traversal (2)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_symmetric_tree_(3) - 2016.12.09 at 16h 59m 38s.xml">
-      <configuration name="Unittests in symmetric_tree (3)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_symmetric_tree_(4) - 2016.12.12 at 10h 08m 32s.xml">
-      <configuration name="Unittests in symmetric_tree (4)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_validate_binary_search_tree - 2016.12.08 at 10h 05m 52s.xml">
-      <configuration name="Unittests in validate_binary_search_tree" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_validate_binary_search_tree_(1) - 2016.12.08 at 10h 06m 32s.xml">
-      <configuration name="Unittests in validate_binary_search_tree (1)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_validate_binary_search_tree_(2) - 2016.12.08 at 10h 51m 29s.xml">
-      <configuration name="Unittests in validate_binary_search_tree (2)" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_validate_binary_search_tree_(3) - 2016.12.08 at 10h 55m 19s.xml">
       <configuration name="Unittests in validate_binary_search_tree (3)" configurationId="tests" />
@@ -1215,16 +1235,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="89" y="31" width="1286" height="810" extended-state="0" />
+    <frame x="154" y="108" width="1286" height="787" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24598071" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32748538" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41448382" sideWeight="0.50644124" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3214815" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31019202" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28757226" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28699553" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3150289" sideWeight="0.49353796" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1957,13 +1977,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/set_matrix_zeroes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/one_edit_distance_locked.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-510">
@@ -2352,10 +2365,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/misc/binary_tree_level_order_traversal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
+        <state relative-caret-position="30">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="59" selection-end-column="56" />
           <folding>
-            <element signature="e#607#622#0" expanded="true" />
+            <element signature="e#611#626#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/binary_tree_level_order_traversalII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="24" />
+          <folding>
+            <element signature="e#531#546#0" expanded="true" />
           </folding>
         </state>
       </provider>
