@@ -12,7 +12,9 @@ Have you met this question in a real interview? Yes
 """
 
 import unittest
-from list_node import ListNode
+
+from util.list_node import ListNode
+
 
 # Definition for singly-linked list.
 # class ListNode(object):

@@ -23,8 +23,9 @@ Hide Similar Problems (M) Unique Binary Search Trees (M) Different Ways to Add P
 
 """
 
-from tree_node import TreeNode
 import unittest
+
+from util.tree_node import TreeNode
 
 
 # Definition for a binary tree node.

@@ -12,7 +12,9 @@ Hide Similar Problems (H) Merge k Sorted Lists (E) Merge Sorted Array (M) Sort L
 """
 
 import unittest
-from list_node import ListNode
+
+from util.list_node import ListNode
+
 
 class Solution(object):
     def mergeTwoLists(self, l1, l2):

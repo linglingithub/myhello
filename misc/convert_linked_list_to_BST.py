@@ -1,12 +1,14 @@
 """
-108. Convert Sorted Array to Binary Search Tree
 
-Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
+109. Convert Sorted List to Binary Search Tree
+
+Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
 
 Subscribe to see which companies asked this question
 
-Hide Tags Tree Depth-first Search
-Hide Similar Problems (M) Convert Sorted List to Binary Search Tree
+Hide Tags Depth-first Search Linked List
+Hide Similar Problems (M) Convert Sorted Array to Binary Search Tree
+
 
 Medium
 
@@ -14,8 +16,15 @@ Medium
 
 import unittest
 
+from util.list_node import ListNode
 from util.tree_node import TreeNode
 
+
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
 
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -25,24 +34,12 @@ from util.tree_node import TreeNode
 #         self.right = None
 
 class Solution(object):
-    def sortedArrayToBST(self, nums): #92ms, 77%
+    def sortedListToBST(self, head):
         """
-        :type nums: List[int]
+        :type head: ListNode
         :rtype: TreeNode
         """
-        self.nums = nums
-        return self.helper(0, len(nums)-1)
 
-    def helper(self, left, right):
-        if left>right:
-            return None
-        if left==right:
-            return TreeNode(self.nums[left])
-        mid = (left+right) / 2
-        root = TreeNode(self.nums[mid])
-        root.left = self.helper(left, mid-1)
-        root.right = self.helper(mid+1, right)
-        return root
 
 
 
@@ -51,9 +48,9 @@ class SolutionTester(unittest.TestCase):
         self.sol = Solution()
 
     def test_case1(self):
-        nums = [1,2,3,4,5,6,7]
+        nums = ListNode.parseArray2List([1,2,3,4,5,6,7])
         answer = TreeNode.generate_bt_from_list([4,2,6,1,3,5,7])
-        result = self.sol.sortedArrayToBST(nums)
+        result = self.sol.sortedListToBST(nums)
         self.assertTrue(TreeNode.compare_tree(answer, result))
 
 

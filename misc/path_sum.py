@@ -24,7 +24,9 @@ Hide Similar Problems (M) Path Sum II (H) Binary Tree Maximum Path Sum (M) Sum R
 """
 
 import unittest
-from tree_node import TreeNode
+
+from util.tree_node import TreeNode
+
 
 # Definition for a binary tree node.
 # class TreeNode(object):

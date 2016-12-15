@@ -1,5 +1,5 @@
-from misc.tree_node import TreeNode
-from misc.list_node import ListNode
+from util.list_node import ListNode
+from util.tree_node import TreeNode
 
 
 class Solution(object):

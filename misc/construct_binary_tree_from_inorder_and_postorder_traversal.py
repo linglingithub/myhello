@@ -15,9 +15,10 @@ Medium
 
 """
 
-import unittest
-from tree_node import TreeNode
 import sys
+import unittest
+
+from util.tree_node import TreeNode
 
 sys.setrecursionlimit(10000)
 

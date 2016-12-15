@@ -14,9 +14,10 @@ Hide Similar Problems (M) Construct Binary Tree from Inorder and Postorder Trave
 
 """
 
-from tree_node import TreeNode
-import unittest
 import sys
+import unittest
+
+from util.tree_node import TreeNode
 
 sys.setrecursionlimit(10000)
 

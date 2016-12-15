@@ -19,7 +19,9 @@ Subscribe to see which companies asked this question
 """
 
 import unittest
-from list_node import ListNode
+
+from util.list_node import ListNode
+
 
 class Solution(object):
 

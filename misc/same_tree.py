@@ -15,7 +15,8 @@ Easy
 """
 
 import unittest
-from tree_node import TreeNode
+
+from util.tree_node import TreeNode
 
 
 # Definition for a binary tree node.

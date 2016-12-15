@@ -17,9 +17,10 @@ Hide Similar Problems (E) Rotate Array
 
 """
 
-
 import unittest
-from list_node import ListNode
+
+from util.list_node import ListNode
+
 
 # Definition for singly-linked list.
 # class ListNode(object):
