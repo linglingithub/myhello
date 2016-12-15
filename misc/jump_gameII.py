@@ -38,6 +38,15 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        jumps = [0 for x in range(len(nums)+1)]
+        jumps[1] = nums[0]
+        for i in range(2, len(nums)+1):
+            tmp = i
+            for j in range(1,nums[i-1]+1):
+                tmp = max(tmp, )
+
+
+
 
 
 

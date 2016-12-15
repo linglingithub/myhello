@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="" />
+    <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/construct_binary_tree_from_inorder_and_postorder_traversal.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/jump_gameII.py" afterPath="$PROJECT_DIR$/misc/jump_gameII.py" />
+    </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -125,6 +129,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_spiral_matrix__2_.coverage" NAME="Unittests in spiral_matrix (2) Coverage Results" MODIFIED="1478648805645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ZigZagConversion__4_.coverage" NAME="Unittests in ZigZagConversion (4) Coverage Results" MODIFIED="1473919647702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sum__2_.coverage" NAME="Unittests in combination_sum (2) Coverage Results" MODIFIED="1477529796256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_construct_binary_tree_from_inorder_and_postorder_traversal__4_.coverage" NAME="Unittests in construct_binary_tree_from_inorder_and_postorder_traversal (4) Coverage Results" MODIFIED="1481827868172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_add_binary__1_.coverage" NAME="Unittests in add_binary (1) Coverage Results" MODIFIED="1478130231326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_multiply_strings__2_.coverage" NAME="Unittests in multiply_strings (2) Coverage Results" MODIFIED="1478135059241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_valid_parentheses__1_.coverage" NAME="Unittests in valid_parentheses (1) Coverage Results" MODIFIED="1474756988315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -187,7 +192,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_permutationsII__4_.coverage" NAME="Unittests in permutationsII (4) Coverage Results" MODIFIED="1478068198504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combinations__3_.coverage" NAME="Unittests in combinations (3) Coverage Results" MODIFIED="1477718218512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_integer_to_roman__1_.coverage" NAME="Unittests in integer_to_roman (1) Coverage Results" MODIFIED="1474929379349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
-    <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case2.coverage" NAME="Unittest SolutionTester.test_case2 Coverage Results" MODIFIED="1481331394207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case2.coverage" NAME="Unittest SolutionTester.test_case2 Coverage Results" MODIFIED="1481828300434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_swap_nodes_in_pairs__2_.coverage" NAME="Unittests in swap_nodes_in_pairs (2) Coverage Results" MODIFIED="1478738174422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_container_with_most_water.coverage" NAME="Unittests in container_with_most_water Coverage Results" MODIFIED="1474506524127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_rotate_list__1_.coverage" NAME="Unittests in rotate_list (1) Coverage Results" MODIFIED="1479355555915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -196,6 +201,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_remove_duplicates_from_sorted_listII__2_.coverage" NAME="Unittests in remove_duplicates_from_sorted_listII (2) Coverage Results" MODIFIED="1480961602388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_partition_list__2_.coverage" NAME="Unittests in partition_list (2) Coverage Results" MODIFIED="1480968782363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_add_binary__4_.coverage" NAME="Unittests in add_binary (4) Coverage Results" MODIFIED="1478130185713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_construct_binary_tree_from_inorder_and_postorder_traversal__2_.coverage" NAME="Unittests in construct_binary_tree_from_inorder_and_postorder_traversal (2) Coverage Results" MODIFIED="1481826520489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_valid_sudoku__3_.coverage" NAME="Unittests in valid_sudoku (3) Coverage Results" MODIFIED="1477423289212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_partition_list.coverage" NAME="Unittests in partition_list Coverage Results" MODIFIED="1480968005685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case5.coverage" NAME="Unittest SolutionTester.test_case5 Coverage Results" MODIFIED="1480397919992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -207,6 +213,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_palindrome_number__3_.coverage" NAME="Unittests in palindrome_number (3) Coverage Results" MODIFIED="1474422141676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_add_binary__3_.coverage" NAME="Unittests in add_binary (3) Coverage Results" MODIFIED="1478130161741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_gray_code__1_.coverage" NAME="Unittests in gray_code (1) Coverage Results" MODIFIED="1481055993100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_construct_binary_tree_from_inorder_and_postorder_traversal.coverage" NAME="Unittests in construct_binary_tree_from_inorder_and_postorder_traversal Coverage Results" MODIFIED="1481828388364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$UniqueBinarySearchTreesII.coverage" NAME="UniqueBinarySearchTreesII Coverage Results" MODIFIED="1461118960489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSumClosest__1_.coverage" NAME="Unittests in ThreeSumClosest (1) Coverage Results" MODIFIED="1472586107798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_permutationsII__5_.coverage" NAME="Unittests in permutationsII (5) Coverage Results" MODIFIED="1478068225200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -233,6 +240,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_binary_tree_zigzag_level_order_traversal__3_.coverage" NAME="Unittests in binary_tree_zigzag_level_order_traversal (3) Coverage Results" MODIFIED="1481591181883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$tree_node.coverage" NAME="tree_node Coverage Results" MODIFIED="1481181132187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_valid_sudoku__4_.coverage" NAME="Unittests in valid_sudoku (4) Coverage Results" MODIFIED="1477432186233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_construct_binary_tree_from_inorder_and_postorder_traversal__1_.coverage" NAME="Unittests in construct_binary_tree_from_inorder_and_postorder_traversal (1) Coverage Results" MODIFIED="1481828535662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_SolutionTest__2_.coverage" NAME="Unittests in SolutionTest (2) Coverage Results" MODIFIED="1470290691081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sum__1_.coverage" NAME="Unittests in combination_sum (1) Coverage Results" MODIFIED="1477529735495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_edit_distance__3_.coverage" NAME="Unittests in edit_distance (3) Coverage Results" MODIFIED="1480637421059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -244,8 +252,8 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_LongestPalindromicSubstring__4_.coverage" NAME="Unittests in LongestPalindromicSubstring (4) Coverage Results" MODIFIED="1473897706840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_symmetric_tree__4_.coverage" NAME="Unittests in symmetric_tree (4) Coverage Results" MODIFIED="1481566111870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_spiral_matrix__3_.coverage" NAME="Unittests in spiral_matrix (3) Coverage Results" MODIFIED="1478647879707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
-    <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case1.coverage" NAME="Unittest SolutionTester.test_case1 Coverage Results" MODIFIED="1481165040123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_binary_tree_inorder_traversal__2_.coverage" NAME="Unittests in binary_tree_inorder_traversal (2) Coverage Results" MODIFIED="1481217087159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case1.coverage" NAME="Unittest SolutionTester.test_case1 Coverage Results" MODIFIED="1481826536213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_binary_tree_maximum_path_sum__3_.coverage" NAME="Unittests in binary_tree_maximum_path_sum (3) Coverage Results" MODIFIED="1478411131410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_FourSum__3_.coverage" NAME="Unittests in FourSum (3) Coverage Results" MODIFIED="1473296215644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_remove_duplicates_from_sorted_arrayII.coverage" NAME="Unittests in remove_duplicates_from_sorted_arrayII Coverage Results" MODIFIED="1480450639312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -305,7 +313,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case10.coverage" NAME="Unittest SolutionTester.test_case10 Coverage Results" MODIFIED="1474785816180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_remove_duplicates_from_sorted_arrayII__5_.coverage" NAME="Unittests in remove_duplicates_from_sorted_arrayII (5) Coverage Results" MODIFIED="1480451348517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_implement_strStr.coverage" NAME="Unittests in implement_strStr Coverage Results" MODIFIED="1475621645732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
-    <SUITE FILE_PATH="coverage/testhello$Unittests_in_construct_binary_tree_from_preorder_and_inorder_traversal.coverage" NAME="Unittests in construct_binary_tree_from_preorder_and_inorder_traversal Coverage Results" MODIFIED="1476498514016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_construct_binary_tree_from_preorder_and_inorder_traversal.coverage" NAME="Unittests in construct_binary_tree_from_preorder_and_inorder_traversal Coverage Results" MODIFIED="1481828307171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_unique_paths__4_.coverage" NAME="Unittests in unique_paths (4) Coverage Results" MODIFIED="1479757989100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_palindrome_number__2_.coverage" NAME="Unittests in palindrome_number (2) Coverage Results" MODIFIED="1474421508406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_generate_parentheses__1_.coverage" NAME="Unittests in generate_parentheses (1) Coverage Results" MODIFIED="1474669787678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -324,6 +332,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_FindPeakElement.coverage" NAME="Unittests in FindPeakElement Coverage Results" MODIFIED="1470355726917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combinations__2_.coverage" NAME="Unittests in combinations (2) Coverage Results" MODIFIED="1477718077179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTestor_test_case3__1_.coverage" NAME="Unittest SolutionTestor.test_case3 (1) Coverage Results" MODIFIED="1474669392596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_construct_binary_tree_from_inorder_and_postorder_traversal__3_.coverage" NAME="Unittests in construct_binary_tree_from_inorder_and_postorder_traversal (3) Coverage Results" MODIFIED="1481827429146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_search_in_rotated_sorted_arrayII__4_.coverage" NAME="Unittests in search_in_rotated_sorted_arrayII (4) Coverage Results" MODIFIED="1480730438542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sum__3_.coverage" NAME="Unittests in combination_sum (3) Coverage Results" MODIFIED="1477530177769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_pow_x_n__4_.coverage" NAME="Unittests in pow_x_n (4) Coverage Results" MODIFIED="1477033148115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -348,7 +357,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_longest_common_prefix__1_.coverage" NAME="Unittests in longest_common_prefix (1) Coverage Results" MODIFIED="1474475533606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sumII__2_.coverage" NAME="Unittests in combination_sumII (2) Coverage Results" MODIFIED="1477602380750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_pow_x_n__1_.coverage" NAME="Unittests in pow_x_n (1) Coverage Results" MODIFIED="1477028150704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
-    <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case2__1_.coverage" NAME="Unittest SolutionTester.test_case2 (1) Coverage Results" MODIFIED="1480448091776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case2__1_.coverage" NAME="Unittest SolutionTester.test_case2 (1) Coverage Results" MODIFIED="1481828489843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_permutations__2_.coverage" NAME="Unittests in permutations (2) Coverage Results" MODIFIED="1478026968692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_unique_binary_search_treesII.coverage" NAME="Unittests in unique_binary_search_treesII Coverage Results" MODIFIED="1476827139166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_remove_duplicates_from_sorted_list.coverage" NAME="Unittests in remove_duplicates_from_sorted_list Coverage Results" MODIFIED="1480959120317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -513,7 +522,7 @@
       <file leaf-file-name="aaa.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/aaa.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-73">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="13" />
               <folding />
             </state>
@@ -523,9 +532,58 @@
       <file leaf-file-name="median_of_two_sorted_arrays.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/median_of_two_sorted_arrays.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="81" column="13" lean-forward="false" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
+            <state relative-caret-position="162">
+              <caret line="57" column="19" lean-forward="false" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jump_gameII.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/jump_gameII.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="construct_binary_tree_from_inorder_and_postorder_traversal.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/construct_binary_tree_from_inorder_and_postorder_traversal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="71" column="67" lean-forward="true" selection-start-line="71" selection-start-column="67" selection-end-line="71" selection-end-column="67" />
+              <folding>
+                <element signature="e#402#417#0" expanded="true" />
+                <element signature="e#2649#16445#0" expanded="false" />
+                <element signature="e#16466#30262#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="construct_binary_tree_from_preorder_and_inorder_traversal.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/construct_binary_tree_from_preorder_and_inorder_traversal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-121">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="28" />
+              <folding>
+                <element signature="e#2934#16730#0" expanded="false" />
+                <element signature="e#16749#30545#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jump_game.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/jump_game.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1558">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#2195#173503#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -533,28 +591,28 @@
       <file leaf-file-name="class_instance.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/class_instance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="210">
               <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delegation.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="delegation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/delegation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="14" column="66" lean-forward="false" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+            <state relative-caret-position="345">
+              <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_zip_dict.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/list_zip_dict.py">
+      <file leaf-file-name="gradeJsonGenerator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradeJsonGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="91" lean-forward="false" selection-start-line="26" selection-start-column="91" selection-end-line="26" selection-end-column="91" />
+            <state relative-caret-position="300">
+              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -563,7 +621,7 @@
       <file leaf-file-name="tree_node.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/tree_node.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
+            <state relative-caret-position="1755">
               <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
               <folding />
             </state>
@@ -593,8 +651,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/aaa.py" />
-        <option value="$PROJECT_DIR$/misc/maximum_subarray.py" />
         <option value="$PROJECT_DIR$/misc/unique_paths.py" />
         <option value="$PROJECT_DIR$/misc/unique_pathsII.py" />
         <option value="$PROJECT_DIR$/misc/sqrt_x.py" />
@@ -644,6 +700,8 @@
         <option value="$PROJECT_DIR$/misc/maximum_depth_of_binary_tree.py" />
         <option value="$PROJECT_DIR$/test/class_instance.py" />
         <option value="$PROJECT_DIR$/test/delegation.py" />
+        <option value="$PROJECT_DIR$/misc/jump_gameII.py" />
+        <option value="$PROJECT_DIR$/misc/construct_binary_tree_from_inorder_and_postorder_traversal.py" />
       </list>
     </option>
   </component>
@@ -654,10 +712,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="56" />
-    <option name="y" value="62" />
-    <option name="width" value="1359" />
-    <option name="height" value="758" />
+    <option name="x" value="127" />
+    <option name="y" value="177" />
+    <option name="width" value="1209" />
+    <option name="height" value="712" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -711,7 +769,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -748,9 +806,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testhello" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testhello" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="misc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -791,26 +863,8 @@
       <recent name="$PROJECT_DIR$/misc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.class_instance">
-    <configuration default="false" name="list_zip_dict" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/list_zip_dict.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in maximum_depth_of_binary_tree" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests in construct_binary_tree_from_inorder_and_postorder_traversal (1)">
+    <configuration default="false" name="Unittests in construct_binary_tree_from_inorder_and_postorder_traversal" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -821,7 +875,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/maximum_depth_of_binary_tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/construct_binary_tree_from_inorder_and_postorder_traversal.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -833,7 +887,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in maximum_depth_of_binary_tree (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittest SolutionTester.test_case2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -844,7 +898,30 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/maximum_depth_of_binary_tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/construct_binary_tree_from_preorder_and_inorder_traversal.py" />
+      <option name="CLASS_NAME" value="SolutionTester" />
+      <option name="METHOD_NAME" value="test_case2" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in construct_binary_tree_from_preorder_and_inorder_traversal" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/construct_binary_tree_from_preorder_and_inorder_traversal.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -856,7 +933,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in maximum_depth_of_binary_tree (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittest SolutionTester.test_case2 (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -867,7 +944,30 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/maximum_depth_of_binary_tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/construct_binary_tree_from_inorder_and_postorder_traversal.py" />
+      <option name="CLASS_NAME" value="SolutionTester" />
+      <option name="METHOD_NAME" value="test_case2" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in construct_binary_tree_from_inorder_and_postorder_traversal (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/construct_binary_tree_from_inorder_and_postorder_traversal.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -877,24 +977,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="class_instance" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/class_instance.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -1136,19 +1218,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.list_zip_dict" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in maximum_depth_of_binary_tree" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in maximum_depth_of_binary_tree (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in maximum_depth_of_binary_tree (2)" />
-      <item index="5" class="java.lang.String" itemvalue="Python.class_instance" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in construct_binary_tree_from_inorder_and_postorder_traversal" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case2" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in construct_binary_tree_from_preorder_and_inorder_traversal" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case2 (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in construct_binary_tree_from_inorder_and_postorder_traversal (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.class_instance" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in maximum_depth_of_binary_tree (2)" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in maximum_depth_of_binary_tree (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in maximum_depth_of_binary_tree" />
-        <item index="4" class="java.lang.String" itemvalue="Python.list_zip_dict" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in construct_binary_tree_from_inorder_and_postorder_traversal (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case2 (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in construct_binary_tree_from_inorder_and_postorder_traversal" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in construct_binary_tree_from_preorder_and_inorder_traversal" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case2" />
       </list>
     </recent_temporary>
   </component>
@@ -1169,35 +1251,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_binary_tree_zigzag_level_order_traversal_(1) - 2016.12.12 at 17h 02m 40s.xml">
-      <configuration name="Unittests in binary_tree_zigzag_level_order_traversal (1)" configurationId="tests" />
+    <history-entry file="Unittest_SolutionTester_test_case1 - 2016.12.15 at 10h 29m 07s.xml">
+      <configuration name="Unittest SolutionTester.test_case1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_binary_tree_zigzag_level_order_traversal_(1) - 2016.12.12 at 17h 45m 11s.xml">
-      <configuration name="Unittests in binary_tree_zigzag_level_order_traversal (1)" configurationId="tests" />
+    <history-entry file="Unittest_SolutionTester_test_case2 - 2016.12.15 at 10h 58m 20s.xml">
+      <configuration name="Unittest SolutionTester.test_case2" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_binary_tree_zigzag_level_order_traversal_(2) - 2016.12.12 at 17h 04m 24s.xml">
-      <configuration name="Unittests in binary_tree_zigzag_level_order_traversal (2)" configurationId="tests" />
+    <history-entry file="Unittest_SolutionTester_test_case2_(1) - 2016.12.15 at 11h 01m 30s.xml">
+      <configuration name="Unittest SolutionTester.test_case2 (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_binary_tree_zigzag_level_order_traversal_(3) - 2016.12.12 at 17h 06m 22s.xml">
-      <configuration name="Unittests in binary_tree_zigzag_level_order_traversal (3)" configurationId="tests" />
+    <history-entry file="Unittests_in_construct_binary_tree_from_inorder_and_postorder_traversal - 2016.12.15 at 10h 29m 26s.xml">
+      <configuration name="Unittests in construct_binary_tree_from_inorder_and_postorder_traversal" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_binary_tree_zigzag_level_order_traversal_(4) - 2016.12.12 at 17h 10m 19s.xml">
-      <configuration name="Unittests in binary_tree_zigzag_level_order_traversal (4)" configurationId="tests" />
+    <history-entry file="Unittests_in_construct_binary_tree_from_inorder_and_postorder_traversal - 2016.12.15 at 10h 59m 32s.xml">
+      <configuration name="Unittests in construct_binary_tree_from_inorder_and_postorder_traversal" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_binary_tree_zigzag_level_order_traversal_(5) - 2016.12.12 at 17h 16m 14s.xml">
-      <configuration name="Unittests in binary_tree_zigzag_level_order_traversal (5)" configurationId="tests" />
+    <history-entry file="Unittests_in_construct_binary_tree_from_inorder_and_postorder_traversal - 2016.12.15 at 10h 59m 48s.xml">
+      <configuration name="Unittests in construct_binary_tree_from_inorder_and_postorder_traversal" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_maximum_depth_of_binary_tree - 2016.12.12 at 19h 10m 35s.xml">
-      <configuration name="Unittests in maximum_depth_of_binary_tree" configurationId="tests" />
+    <history-entry file="Unittests_in_construct_binary_tree_from_inorder_and_postorder_traversal_(1) - 2016.12.15 at 11h 02m 15s.xml">
+      <configuration name="Unittests in construct_binary_tree_from_inorder_and_postorder_traversal (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_maximum_depth_of_binary_tree_(1) - 2016.12.12 at 19h 50m 14s.xml">
-      <configuration name="Unittests in maximum_depth_of_binary_tree (1)" configurationId="tests" />
+    <history-entry file="Unittests_in_construct_binary_tree_from_inorder_and_postorder_traversal_(3) - 2016.12.15 at 10h 43m 49s.xml">
+      <configuration name="Unittests in construct_binary_tree_from_inorder_and_postorder_traversal (3)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_maximum_depth_of_binary_tree_(2) - 2016.12.12 at 19h 50m 25s.xml">
-      <configuration name="Unittests in maximum_depth_of_binary_tree (2)" configurationId="tests" />
+    <history-entry file="Unittests_in_construct_binary_tree_from_inorder_and_postorder_traversal_(4) - 2016.12.15 at 10h 51m 08s.xml">
+      <configuration name="Unittests in construct_binary_tree_from_inorder_and_postorder_traversal (4)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_validate_binary_search_tree_(3) - 2016.12.08 at 10h 55m 19s.xml">
-      <configuration name="Unittests in validate_binary_search_tree (3)" configurationId="tests" />
+    <history-entry file="Unittests_in_construct_binary_tree_from_preorder_and_inorder_traversal - 2016.12.15 at 10h 58m 27s.xml">
+      <configuration name="Unittests in construct_binary_tree_from_preorder_and_inorder_traversal" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1210,21 +1292,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="62" width="1359" height="758" extended-state="0" />
+    <frame x="127" y="177" width="1209" height="712" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24145786" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27934876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41448382" sideWeight="0.50644124" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66068757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3214815" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4828125" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2765625" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38558558" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46464646" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3109375" sideWeight="0.49353796" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3099099" sideWeight="0.49353796" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34393063" sideWeight="0.49355876" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31711712" sideWeight="0.49355876" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1234,6 +1315,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66068757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1939,6 +2021,11 @@
           <line>76</line>
           <option name="timeStamp" value="231" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/construct_binary_tree_from_inorder_and_postorder_traversal.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1947,45 +2034,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="232" />
+      <option name="time" value="233" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/sort_colors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-753">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/word_search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#1835#2605#0" expanded="false" />
-            <element signature="e#2645#2669#0" expanded="false" />
-            <element signature="e#2772#4283#0" expanded="false" />
-            <element signature="e#4387#5579#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/suite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/maximum_subarray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1545">
-          <caret line="103" column="45" lean-forward="false" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/remove_duplicates_from_sorted_arrayII.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
@@ -2013,14 +2066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradeJsonGenerator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2293,17 +2338,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-41">
           <caret line="40" column="51" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-          <folding>
-            <element signature="e#562#577#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/aaa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2311,9 +2345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="e#382#397#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2327,23 +2358,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/misc/tree_node.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
+        <state relative-caret-position="1755">
           <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/median_of_two_sorted_arrays.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="81" column="13" lean-forward="false" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/class_instance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="210">
           <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding />
         </state>
@@ -2351,9 +2374,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/delegation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="14" column="66" lean-forward="false" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+        <state relative-caret-position="345">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradeJsonGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/jump_game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1558">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2195#173503#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/median_of_two_sorted_arrays.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="57" column="19" lean-forward="false" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/jump_gameII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/aaa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-73">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/construct_binary_tree_from_preorder_and_inorder_traversal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="e#2934#16730#0" expanded="false" />
+            <element signature="e#16749#30545#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/construct_binary_tree_from_inorder_and_postorder_traversal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="71" column="67" lean-forward="true" selection-start-line="71" selection-start-column="67" selection-end-line="71" selection-end-column="67" />
+          <folding>
+            <element signature="e#402#417#0" expanded="true" />
+            <element signature="e#2649#16445#0" expanded="false" />
+            <element signature="e#16466#30262#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
