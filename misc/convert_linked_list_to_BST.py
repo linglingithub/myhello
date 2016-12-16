@@ -195,6 +195,20 @@ def convert(self, start, end):
     return root
 
 
+######
+
+Using a list allows the function call that creates the left subtree to update node[0] with the next list node that needs
+ to be converted into a tree node. Passing a list node directly without the list wrapper would mean the root would be
+ the first (i.e smallest value) of the list, which is not what we want. We want to use all the smaller values in the
+ left subtree first before using the mid value for the root.
+
+I guess node could equally well be a set containing a single item of head. Any mutable structure will do.
+The other version below called "sortedListToBST" achieves the same effect by declaring a class attribute self.node that
+can also be updated by other function calls.
+Both of which are similar to using a global variable.
+
+I'm not sure what is most pythonic. Using a list purely to contain a variable seems to be slightly cheating. But then
+class attributes should ideally be declared in an init method?
 
 """
 
