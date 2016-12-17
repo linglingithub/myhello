@@ -33,7 +33,7 @@ class Solution(object):
         carry = 0
         if len(a) < len(b):
             a, b = b, a
-        result = [""]*len(a)
+        result = ["" for i in range(len(a))]
         #for i in range(len(b)-1, -1, -1):
         set_off = len(a) - len(b)
         for i in range(len(b) - 1, -1, -1):
