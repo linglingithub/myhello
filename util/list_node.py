@@ -3,7 +3,7 @@ class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
-        self.next_node = self.next
+        #self.next_node = self.next
 
 
     @staticmethod
@@ -13,7 +13,7 @@ class ListNode(object):
         for num in nums:
             node = ListNode(num)
             tail.next = node
-            tail.next_node = tail.next
+            #tail.next_node = tail.next
             tail = tail.next
         return dummy.next
 
