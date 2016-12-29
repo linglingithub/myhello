@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/gas_station.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/candy.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testhello.iws" />
@@ -165,9 +165,11 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_letter_combinations_of_a_phone_number__1_.coverage" NAME="Unittests in letter_combinations_of_a_phone_number (1) Coverage Results" MODIFIED="1474657363197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$ThreeSum_main.coverage" NAME="ThreeSum main Coverage Results" MODIFIED="1479355303837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_swap_nodes_in_pairs__4_.coverage" NAME="Unittests in swap_nodes_in_pairs (4) Coverage Results" MODIFIED="1478737985347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_candy__4_.coverage" NAME="Unittests in candy (4) Coverage Results" MODIFIED="1482975735783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$DividedTwoInteger.coverage" NAME="DividedTwoInteger Coverage Results" MODIFIED="1440703871345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combinations__5_.coverage" NAME="Unittests in combinations (5) Coverage Results" MODIFIED="1477718598626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_game_of_life__3_.coverage" NAME="Unittests in game_of_life (3) Coverage Results" MODIFIED="1481059304005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_candy__3_.coverage" NAME="Unittests in candy (3) Coverage Results" MODIFIED="1482975728369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$dictionary_subclass_overiding.coverage" NAME="dictionary_subclass_overiding Coverage Results" MODIFIED="1480985977976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case0.coverage" NAME="Unittest SolutionTester.test_case0 Coverage Results" MODIFIED="1479776410564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_remove_duplicates_from_sorted_listII__4_.coverage" NAME="Unittests in remove_duplicates_from_sorted_listII (4) Coverage Results" MODIFIED="1480963458493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -202,6 +204,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_container_with_most_water.coverage" NAME="Unittests in container_with_most_water Coverage Results" MODIFIED="1474506524127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_rotate_list__1_.coverage" NAME="Unittests in rotate_list (1) Coverage Results" MODIFIED="1479355555915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sumIV.coverage" NAME="Unittests in combination_sumIV Coverage Results" MODIFIED="1477629553337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_candy__1_.coverage" NAME="Unittests in candy (1) Coverage Results" MODIFIED="1482976194242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_reverse_nodes_in_k_group__4_.coverage" NAME="Unittests in reverse_nodes_in_k_group (4) Coverage Results" MODIFIED="1482211515458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$array_generator_and_lambda.coverage" NAME="array_generator_and_lambda Coverage Results" MODIFIED="1480984136829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_remove_duplicates_from_sorted_listII__2_.coverage" NAME="Unittests in remove_duplicates_from_sorted_listII (2) Coverage Results" MODIFIED="1480961602388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -235,6 +238,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combinations__4_.coverage" NAME="Unittests in combinations (4) Coverage Results" MODIFIED="1477718246288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_maximum_subarray.coverage" NAME="Unittests in maximum_subarray Coverage Results" MODIFIED="1479539761293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combinations.coverage" NAME="Unittests in combinations Coverage Results" MODIFIED="1477718581797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_candy__2_.coverage" NAME="Unittests in candy (2) Coverage Results" MODIFIED="1482975674172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_unique_paths__1_.coverage" NAME="Unittests in unique_paths (1) Coverage Results" MODIFIED="1479756573977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_palindrome_number__4_.coverage" NAME="Unittests in palindrome_number (4) Coverage Results" MODIFIED="1474422667980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_generate_parentheses__4_.coverage" NAME="Unittests in generate_parentheses (4) Coverage Results" MODIFIED="1474684589191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -438,6 +442,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTestor_test_case1.coverage" NAME="Unittest SolutionTestor.test_case1 Coverage Results" MODIFIED="1474934747640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_valid_sudoku.coverage" NAME="Unittests in valid_sudoku Coverage Results" MODIFIED="1477420109620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_decode_ways__1_.coverage" NAME="Unittests in decode_ways (1) Coverage Results" MODIFIED="1481064840601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_candy.coverage" NAME="Unittests in candy Coverage Results" MODIFIED="1482975767192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_unique_pathsII__3_.coverage" NAME="Unittests in unique_pathsII (3) Coverage Results" MODIFIED="1479776326019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sumII__4_.coverage" NAME="Unittests in combination_sumII (4) Coverage Results" MODIFIED="1477602877869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case7.coverage" NAME="Unittest SolutionTester.test_case7 Coverage Results" MODIFIED="1474764504494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -478,7 +483,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_insertion_sort_list.coverage" NAME="Unittests in insertion_sort_list Coverage Results" MODIFIED="1481836881386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_decode_ways.coverage" NAME="Unittests in decode_ways Coverage Results" MODIFIED="1481064803030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTestor_test_case4.coverage" NAME="Unittest SolutionTestor.test_case4 Coverage Results" MODIFIED="1474952120531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
-    <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case4.coverage" NAME="Unittest SolutionTester.test_case4 Coverage Results" MODIFIED="1481223164636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case4.coverage" NAME="Unittest SolutionTester.test_case4 Coverage Results" MODIFIED="1482975550079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_spiral_matrixII__2_.coverage" NAME="Unittests in spiral_matrixII (2) Coverage Results" MODIFIED="1478718726855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_convert_linked_list_to_BST__4_.coverage" NAME="Unittests in convert_linked_list_to_BST (4) Coverage Results" MODIFIED="1481918688655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$list_comprehension.coverage" NAME="list_comprehension Coverage Results" MODIFIED="1480985658010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
@@ -546,36 +551,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="merge_k_sorted_lists.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/merge_k_sorted_lists.py">
+      <file leaf-file-name="candy.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/candy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-              <folding>
-                <element signature="e#326#341#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gas_station.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/misc/gas_station.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="200" column="0" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reverse_nodes_in_k_group.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/reverse_nodes_in_k_group.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="100" column="50" lean-forward="false" selection-start-line="100" selection-start-column="50" selection-end-line="100" selection-end-column="50" />
-              <folding>
-                <element signature="e#623#638#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -593,8 +574,8 @@
       <file leaf-file-name="aaa.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/aaa.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="13" />
+            <state relative-caret-position="90">
+              <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -624,7 +605,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/search_in_rotated_sorted_arrayII.py" />
         <option value="$PROJECT_DIR$/misc/remove_duplicates_from_sorted_list.py" />
         <option value="$PROJECT_DIR$/misc/remove_duplicates_from_sorted_listII.py" />
         <option value="$PROJECT_DIR$/misc/partition_list.py" />
@@ -675,6 +655,7 @@
         <option value="$PROJECT_DIR$/misc/copy_list_with_random_pointer.py" />
         <option value="$PROJECT_DIR$/misc/merge_k_sorted_lists.py" />
         <option value="$PROJECT_DIR$/misc/gas_station.py" />
+        <option value="$PROJECT_DIR$/misc/candy.py" />
       </list>
     </option>
   </component>
@@ -685,9 +666,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="95" />
-    <option name="y" value="64" />
-    <option name="width" value="1318" />
+    <option name="x" value="76" />
+    <option name="y" value="92" />
+    <option name="width" value="1286" />
     <option name="height" value="808" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -825,6 +806,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/linglin/PycharmProjects/testhello/util/aaa.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -837,8 +819,8 @@
       <recent name="$PROJECT_DIR$/misc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in gas_station">
-    <configuration default="false" name="Unittest SolutionTester.test_case6" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests in candy (1)">
+    <configuration default="false" name="Unittests in candy (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -849,30 +831,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/reverse_nodes_in_k_group.py" />
-      <option name="CLASS_NAME" value="SolutionTester" />
-      <option name="METHOD_NAME" value="test_case6" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in reverse_nodes_in_k_group (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/reverse_nodes_in_k_group.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/candy.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -884,7 +843,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in reverse_nodes_in_k_group (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in candy (3)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -895,7 +854,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/reverse_nodes_in_k_group.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/candy.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -907,7 +866,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittest SolutionTester.test_case1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in candy (4)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -918,11 +877,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/merge_k_sorted_lists.py" />
-      <option name="CLASS_NAME" value="SolutionTester" />
-      <option name="METHOD_NAME" value="test_case1" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/candy.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
@@ -930,7 +889,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in gas_station" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in candy" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -941,7 +900,30 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/gas_station.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/candy.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in candy (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/candy.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -1192,19 +1174,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case6" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in reverse_nodes_in_k_group (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in reverse_nodes_in_k_group (2)" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in gas_station" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in candy (2)" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in candy (3)" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in candy (4)" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in candy" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in candy (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in gas_station" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in reverse_nodes_in_k_group (2)" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in reverse_nodes_in_k_group (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case6" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in candy (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in candy" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in candy (4)" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in candy (3)" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in candy (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -1225,35 +1207,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittest_SolutionTester_test_case5 - 2016.12.19 at 21h 33m 06s.xml">
-      <configuration name="Unittest SolutionTester.test_case5" configurationId="tests" />
+    <history-entry file="Unittest_SolutionTester_test_case4 - 2016.12.28 at 16h 15m 22s.xml">
+      <configuration name="Unittest SolutionTester.test_case4" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_SolutionTester_test_case5 - 2016.12.19 at 21h 36m 12s.xml">
-      <configuration name="Unittest SolutionTester.test_case5" configurationId="tests" />
+    <history-entry file="Unittest_SolutionTester_test_case4 - 2016.12.28 at 17h 39m 10s.xml">
+      <configuration name="Unittest SolutionTester.test_case4" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_SolutionTester_test_case6 - 2016.12.19 at 21h 37m 36s.xml">
-      <configuration name="Unittest SolutionTester.test_case6" configurationId="tests" />
+    <history-entry file="Unittests_in_candy - 2016.12.28 at 12h 05m 05s.xml">
+      <configuration name="Unittests in candy" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittest_SolutionTester_test_case6 - 2016.12.19 at 21h 39m 01s.xml">
-      <configuration name="Unittest SolutionTester.test_case6" configurationId="tests" />
+    <history-entry file="Unittests_in_candy - 2016.12.28 at 16h 15m 26s.xml">
+      <configuration name="Unittests in candy" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_gas_station - 2016.12.28 at 10h 31m 42s.xml">
-      <configuration name="Unittests in gas_station" configurationId="tests" />
+    <history-entry file="Unittests_in_candy - 2016.12.28 at 17h 42m 47s.xml">
+      <configuration name="Unittests in candy" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_reverse_nodes_in_k_group - 2016.12.19 at 21h 37m 56s.xml">
-      <configuration name="Unittests in reverse_nodes_in_k_group" configurationId="tests" />
+    <history-entry file="Unittests_in_candy_(1) - 2016.12.28 at 17h 37m 44s.xml">
+      <configuration name="Unittests in candy (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_reverse_nodes_in_k_group_(1) - 2016.12.19 at 21h 39m 37s.xml">
-      <configuration name="Unittests in reverse_nodes_in_k_group (1)" configurationId="tests" />
+    <history-entry file="Unittests_in_candy_(1) - 2016.12.28 at 17h 49m 54s.xml">
+      <configuration name="Unittests in candy (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_reverse_nodes_in_k_group_(2) - 2016.12.19 at 21h 33m 53s.xml">
-      <configuration name="Unittests in reverse_nodes_in_k_group (2)" configurationId="tests" />
+    <history-entry file="Unittests_in_candy_(2) - 2016.12.28 at 17h 41m 43s.xml">
+      <configuration name="Unittests in candy (2)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_reverse_nodes_in_k_group_(2) - 2016.12.19 at 21h 40m 39s.xml">
-      <configuration name="Unittests in reverse_nodes_in_k_group (2)" configurationId="tests" />
+    <history-entry file="Unittests_in_candy_(3) - 2016.12.28 at 17h 42m 08s.xml">
+      <configuration name="Unittests in candy (3)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_reverse_nodes_in_k_group_(3) - 2016.12.19 at 21h 36m 23s.xml">
-      <configuration name="Unittests in reverse_nodes_in_k_group (3)" configurationId="tests" />
+    <history-entry file="Unittests_in_candy_(4) - 2016.12.28 at 17h 42m 40s.xml">
+      <configuration name="Unittests in candy (4)" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1266,20 +1248,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="95" y="64" width="1318" height="808" extended-state="0" />
+    <frame x="76" y="92" width="1286" height="808" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2711599" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27813506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41365463" sideWeight="0.5098543" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3214815" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3842035" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34202898" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34202898" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753623" sideWeight="0.49014568" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46358544" sideWeight="0.49355876" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46231884" sideWeight="0.49355876" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -2054,6 +2036,11 @@
           <line>74</line>
           <option name="timeStamp" value="238" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/candy.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -2062,18 +2049,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="239" />
+      <option name="time" value="240" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/list_comprehension.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/reverse_linked_listII.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -2406,7 +2386,7 @@
         <state relative-caret-position="1500">
           <caret line="100" column="50" lean-forward="false" selection-start-line="100" selection-start-column="50" selection-end-line="100" selection-end-column="50" />
           <folding>
-            <element signature="e#623#638#0" expanded="true" />
+            <element signature="e#623#638#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2423,23 +2403,31 @@
         <state relative-caret-position="164">
           <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding>
-            <element signature="e#326#341#0" expanded="true" />
+            <element signature="e#326#341#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/aaa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/misc/gas_station.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
+        <state relative-caret-position="3000">
           <caret line="200" column="0" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/aaa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/candy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
           <folding />
         </state>
       </provider>
