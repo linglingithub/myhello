@@ -66,7 +66,7 @@ class Solution(object):
 
 
 
-    def sortedListToBST1(self, head): #272ms, 54%
+    def sortedListToBST(self, head): #272ms, 54%
         """
         Recursive way , find mid node as root, O(nlogn) time, O(1) space
         If convert list to array, use O(n) time, O(n) space

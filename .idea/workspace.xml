@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/util/tree_node2.py" afterPath="$PROJECT_DIR$/util/tree_link_node.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py" afterPath="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py" afterPath="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/convert_linked_list_to_BST.py" afterPath="$PROJECT_DIR$/misc/convert_linked_list_to_BST.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testhello.iws" />
@@ -575,18 +573,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="balanced_binary_tree.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/balanced_binary_tree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1815">
-              <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-              <folding>
-                <element signature="e#403#418#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="binary_tree_preorder_traversal.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/binary_tree_preorder_traversal.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -609,14 +595,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="populating_next_right_pointers_in_each_nodeII.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="populating_next_right_pointers_in_each_nodeII.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09717868" vertical-offset="1739" max-vertical-offset="2415">
-              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="127" selection-end-column="42" />
+            <state vertical-scroll-proportion="-10.464286" vertical-offset="1739" max-vertical-offset="2415">
+              <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
               <folding>
                 <element signature="e#692#707#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="convert_sorted_array_to_BST.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/convert_sorted_array_to_BST.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
+              <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="convert_linked_list_to_BST.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/convert_linked_list_to_BST.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.78125" vertical-offset="690" max-vertical-offset="3780">
+              <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -636,16 +642,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="1327" max-vertical-offset="2280">
               <caret line="92" column="25" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -685,7 +681,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/optional_parameter.py" />
         <option value="$PROJECT_DIR$/misc/gray_code.py" />
         <option value="$PROJECT_DIR$/misc/game_of_life.py" />
         <option value="$PROJECT_DIR$/misc/decode_ways.py" />
@@ -710,7 +705,6 @@
         <option value="$PROJECT_DIR$/misc/convert_sorted_array_to_BST.py" />
         <option value="$PROJECT_DIR$/misc/todo_next_permutation.py" />
         <option value="$PROJECT_DIR$/misc/next_permutation.py" />
-        <option value="$PROJECT_DIR$/misc/convert_linked_list_to_BST.py" />
         <option value="$PROJECT_DIR$/misc/basic_calculatorII.py" />
         <option value="$PROJECT_DIR$/misc/add_binary.py" />
         <option value="$PROJECT_DIR$/misc/basic_calculator.py" />
@@ -736,6 +730,8 @@
         <option value="$PROJECT_DIR$/util/tree_link_node.py" />
         <option value="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py" />
         <option value="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py" />
+        <option value="$PROJECT_DIR$/misc/convert_sorted_list_to_binary_search_tree.py" />
+        <option value="$PROJECT_DIR$/misc/convert_linked_list_to_BST.py" />
       </list>
     </option>
   </component>
@@ -746,8 +742,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1017" />
-    <option name="y" value="-940" />
+    <option name="x" value="933" />
+    <option name="y" value="-889" />
     <option name="width" value="1306" />
     <option name="height" value="889" />
   </component>
@@ -873,21 +869,21 @@
     <property name="last_opened_file_path" value="$USER_HOME$/mathjoy" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="132" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="130" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="132" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="130" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="136" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="134" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="860" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="861" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="138" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="137" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="138" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="143" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="142" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="841" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="838" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -910,7 +906,7 @@
       <recent name="$PROJECT_DIR$/misc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII (2)">
+  <component name="RunManager" selected="Python tests.Unittests in convert_linked_list_to_BST">
     <configuration default="false" name="Unittests in populating_next_right_pointers_in_each_nodeII (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -932,26 +928,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="tree_link_node" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/tree_link_node.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
@@ -1029,6 +1005,31 @@
       <option name="USE_PARAM" value="false" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in convert_linked_list_to_BST" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/convert_linked_list_to_BST.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -1185,18 +1186,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.tree_link_node" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII (2)" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII (2)" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in convert_linked_list_to_BST" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII (2)" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
-        <item index="4" class="java.lang.String" itemvalue="Python.tree_link_node" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in convert_linked_list_to_BST" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
       </list>
     </recent_temporary>
   </component>
@@ -1255,7 +1256,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1017" y="-940" width="1306" height="889" extended-state="0" />
+    <frame x="933" y="-889" width="1306" height="889" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1264,12 +1265,12 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21011673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.460441" sideWeight="0.49355876" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.460441" sideWeight="0.49355876" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.383917" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34111544" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34111544" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41365463" sideWeight="0.5098543" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3214815" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32036316" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2116,14 +2117,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/symmetric_tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="63" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/binary_tree_level_order_traversalII.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -2217,13 +2210,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/convert_sorted_array_to_BST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/insertion_sort_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -2245,16 +2231,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="79" column="51" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/convert_linked_list_to_BST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="210" column="0" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
-          <folding>
-            <element signature="e#358#373#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2512,11 +2488,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09717868" vertical-offset="1739" max-vertical-offset="2415">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="127" selection-end-column="42" />
+        <state vertical-scroll-proportion="-10.464286" vertical-offset="1739" max-vertical-offset="2415">
+          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
           <folding>
             <element signature="e#692#707#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/convert_sorted_array_to_BST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/convert_linked_list_to_BST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78125" vertical-offset="690" max-vertical-offset="3780">
+          <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
