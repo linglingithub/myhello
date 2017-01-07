@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/tree_node2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/tree_node.py" afterPath="$PROJECT_DIR$/util/tree_node.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/util/tree_node2.py" afterPath="$PROJECT_DIR$/util/tree_link_node.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py" afterPath="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py" afterPath="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testhello.iws" />
@@ -610,33 +609,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="populating_next_right_pointers_in_each_node.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py">
+      <file leaf-file-name="populating_next_right_pointers_in_each_nodeII.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7301808" vertical-offset="795" max-vertical-offset="1815">
-              <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.09717868" vertical-offset="1739" max-vertical-offset="2415">
+              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="127" selection-end-column="42" />
               <folding>
-                <element signature="e#1007#1022#0" expanded="true" />
+                <element signature="e#692#707#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="populating_next_right_pointers_in_each_nodeII.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py">
+      <file leaf-file-name="tree_link_node.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/tree_link_node.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1665">
-              <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tree_node2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/tree_node2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1282" max-vertical-offset="2850">
-              <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+            <state vertical-scroll-proportion="-4.285714" vertical-offset="2370" max-vertical-offset="2850">
+              <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -696,7 +685,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/dictionary_subclass_overiding.py" />
         <option value="$PROJECT_DIR$/test/optional_parameter.py" />
         <option value="$PROJECT_DIR$/misc/gray_code.py" />
         <option value="$PROJECT_DIR$/misc/game_of_life.py" />
@@ -745,8 +733,9 @@
         <option value="$PROJECT_DIR$/misc/binary_tree_postorder_traversal.py" />
         <option value="$PROJECT_DIR$/util/tree_node2.py" />
         <option value="$PROJECT_DIR$/util/tree_node.py" />
-        <option value="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py" />
+        <option value="$PROJECT_DIR$/util/tree_link_node.py" />
         <option value="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py" />
+        <option value="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py" />
       </list>
     </option>
   </component>
@@ -757,10 +746,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1007" />
-    <option name="y" value="-886" />
-    <option name="width" value="1344" />
-    <option name="height" value="863" />
+    <option name="x" value="1017" />
+    <option name="y" value="-940" />
+    <option name="width" value="1306" />
+    <option name="height" value="889" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -851,6 +840,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testhello" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testhello" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="misc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -907,8 +910,8 @@
       <recent name="$PROJECT_DIR$/misc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in populating_next_right_pointers_in_each_node">
-    <configuration default="false" name="Unittests in populating_next_right_pointers_in_each_node" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII (2)">
+    <configuration default="false" name="Unittests in populating_next_right_pointers_in_each_nodeII (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -919,7 +922,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -929,13 +932,31 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittest SolutionTester.test_case1 (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="tree_link_node" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/tree_link_node.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest SolutionTester.test_case1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -960,7 +981,7 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in populating_next_right_pointers_in_each_node (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in populating_next_right_pointers_in_each_nodeII" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -971,57 +992,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in SolutionTester" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py" />
-      <option name="CLASS_NAME" value="SolutionTester" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in populating_next_right_pointers_in_each_node (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -1033,6 +1004,31 @@
       <option name="USE_PARAM" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in populating_next_right_pointers_in_each_nodeII (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -1188,19 +1184,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_node" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1 (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_node (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in SolutionTester" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_node (2)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.tree_link_node" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII (2)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_node" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_node (2)" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in SolutionTester" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_node (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1 (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII (2)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in populating_next_right_pointers_in_each_nodeII (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
+        <item index="4" class="java.lang.String" itemvalue="Python.tree_link_node" />
       </list>
     </recent_temporary>
   </component>
@@ -1259,16 +1255,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1007" y="-886" width="1344" height="863" extended-state="0" />
+    <frame x="1017" y="-940" width="1306" height="889" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32668713" sideWeight="0.49014568" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32555124" sideWeight="0.49014568" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2010582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38405797" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21011673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.460441" sideWeight="0.49355876" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.383917" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34111544" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41365463" sideWeight="0.5098543" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3214815" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1277,11 +1275,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.66068757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46165645" sideWeight="0.49355876" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298791" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34174022" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -2094,8 +2090,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py</url>
-          <line>98</line>
+          <line>81</line>
           <option name="timeStamp" value="250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py</url>
+          <line>122</line>
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py</url>
+          <line>120</line>
+          <option name="timeStamp" value="252" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -2105,7 +2111,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="251" />
+      <option name="time" value="253" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2375,6 +2381,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="15" column="27" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2477,6 +2484,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/util/tree_link_node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.285714" vertical-offset="2370" max-vertical-offset="2850">
+          <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7523585" vertical-offset="1301" max-vertical-offset="1815">
+          <caret line="108" column="26" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+          <folding>
+            <element signature="e#1007#1022#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/misc/binary_tree_postorder_traversal.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2269" max-vertical-offset="6870">
@@ -2485,28 +2510,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/tree_node2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1282" max-vertical-offset="2850">
-          <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1665">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7301808" vertical-offset="795" max-vertical-offset="1815">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.09717868" vertical-offset="1739" max-vertical-offset="2415">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="127" selection-end-column="42" />
           <folding>
-            <element signature="e#1007#1022#0" expanded="true" />
+            <element signature="e#692#707#0" expanded="true" />
           </folding>
         </state>
       </provider>

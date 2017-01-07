@@ -1,5 +1,5 @@
 # Definition for a binary tree node.
-class TreeNode(object):
+class TreeLinkNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
@@ -12,7 +12,7 @@ class TreeNode(object):
         if r1 is None and r2 is None:
             return True
         if r1 is not None and r2 is not None and r1.val == r2.val:
-            return TreeNode.compare_tree(r1.left, r2.left) and TreeNode.compare_tree(r1.right, r2.right)
+            return TreeLinkNode.compare_tree(r1.left, r2.left) and TreeLinkNode.compare_tree(r1.right, r2.right)
         else:
             return False
 
@@ -33,7 +33,7 @@ class TreeNode(object):
         :return: root of the tree like above
         """
         vals = bfs_str.split(",")
-        root = TreeNode(int(vals[0]))
+        root = TreeLinkNode(int(vals[0]))
         if len(vals) <= 2:
             return root
         parent_ref = [root]
@@ -49,7 +49,7 @@ class TreeNode(object):
             if tmp == 'null' or tmp == 'None':
                 node = None
             else:
-                node = TreeNode(int(tmp))
+                node = TreeLinkNode(int(tmp))
             level_ref.append(node)
 
             # start to assign the current node as child to parent node
@@ -84,7 +84,7 @@ class TreeNode(object):
         if vals is None or len(vals) == 0:
             return None
 
-        root = TreeNode(vals[0])
+        root = TreeLinkNode(vals[0])
         parents = [root]
         start = 1
         level = 1
@@ -95,7 +95,7 @@ class TreeNode(object):
             for i in range(start, end):
                 if i < len(vals):
                     if vals[i] is not None:
-                        children.append(TreeNode(vals[i]))
+                        children.append(TreeLinkNode(vals[i]))
                     else:
                         children.append(None)
             # match the parents and children
@@ -141,18 +141,18 @@ class TreeNode(object):
 
 def test_case1():
     bfs_str = '5,#,4,8,#,11,null,13,4,#,7,2,null,null,5,1,#'
-    root = TreeNode.generate_bt_from_string(bfs_str)
+    root = TreeLinkNode.generate_bt_from_string(bfs_str)
     print root
 
 
 def test_case2():
     vals = [5,4,8,11,None,13,4,7,2,None,None,None,None,5]
-    root = TreeNode.generate_bt_from_list(vals)
+    root = TreeLinkNode.generate_bt_from_list(vals)
     print root
 
 def test_case3():
     vals = [1,2,3,4,5,6,7]
-    root = TreeNode.generate_bt_from_list(vals)
+    root = TreeLinkNode.generate_bt_from_list(vals)
     root.left.next=root.right
     node4 = root.left.left
     node5 = root.left.right
@@ -163,7 +163,7 @@ def test_case3():
     node6.next = node7
     answer = [1, None, 2,3, None, 4,5,6,7, None]
     print "answer: ", answer
-    result = TreeNode.bfs_node_by_next(root)
+    result = TreeLinkNode.bfs_node_by_next(root)
     print "result:", result
 
 

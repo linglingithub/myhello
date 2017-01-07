@@ -40,7 +40,7 @@ Medium
 
 
 import unittest
-from util.tree_node2 import TreeNode
+from util.tree_link_node import TreeLinkNode
 
 # Definition for binary tree with next pointer.
 # class TreeLinkNode:
@@ -94,10 +94,10 @@ class SolutionTester(unittest.TestCase):
     def test_case1(self):
         #nums = [-1,None, 0,1,None, 2,3,4,5,None, 6,7,8,9,10,11,12,13]
         nums = [-1, 0,1, 2,3,4,5, 6,7,8,9,10,11,12,13]
-        root = TreeNode.generate_bt_from_list(nums)
+        root = TreeLinkNode.generate_bt_from_list(nums)
         self.sol.connect(root)
         answer = [-1,None,0,1,None,2,3,4,5,None,6,7,8,9,10,11,12,13,None]
-        result = TreeNode.bfs_node_by_next(root)
+        result = TreeLinkNode.bfs_node_by_next(root)
         self.assertEqual(answer, result)
 
 
