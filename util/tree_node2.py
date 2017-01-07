@@ -4,6 +4,7 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
+        self.next = None
 
 
     @staticmethod
@@ -118,6 +119,26 @@ class TreeNode(object):
         return root
 
 
+    @staticmethod
+    def bfs_node_by_next(root):
+        if not root:
+            return []
+        queue = [root]
+        result = []
+        while queue:
+            tmp = queue.pop(0)
+            if not tmp:
+                break
+            queue.append(tmp.left)
+            while True:
+                if tmp is None:
+                    result.append(None)
+                    break
+                else:
+                    result.append(tmp.val)
+                    tmp = tmp.next
+        return result
+
 def test_case1():
     bfs_str = '5,#,4,8,#,11,null,13,4,#,7,2,null,null,5,1,#'
     root = TreeNode.generate_bt_from_string(bfs_str)
@@ -129,10 +150,27 @@ def test_case2():
     root = TreeNode.generate_bt_from_list(vals)
     print root
 
+def test_case3():
+    vals = [1,2,3,4,5,6,7]
+    root = TreeNode.generate_bt_from_list(vals)
+    root.left.next=root.right
+    node4 = root.left.left
+    node5 = root.left.right
+    node6 = root.right.left
+    node7 = root.right.right
+    node4.next = node5
+    node5.next = node6
+    node6.next = node7
+    answer = [1, None, 2,3, None, 4,5,6,7, None]
+    print "answer: ", answer
+    result = TreeNode.bfs_node_by_next(root)
+    print "result:", result
+
 
 if __name__ == '__main__':
     #test_case1()
-    test_case2()
+    #test_case2()
+    test_case3()
 
 
 
