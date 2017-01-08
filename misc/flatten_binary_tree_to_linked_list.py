@@ -116,6 +116,14 @@ if __name__ == "__main__":
     main()
 
 """
+
+another post with good explanations of different ways.
+
+http://bangbingsyb.blogspot.com/2014/11/leetcode-flatten-binary-tree-to-linked.html
+
+==============================
+
+
 题目大意：
 给定一棵二叉树，将其就地展开成为一个链表。
 
