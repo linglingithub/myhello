@@ -117,6 +117,16 @@ class TreeNode(object):
             start = end
         return root
 
+    @staticmethod
+    def get_tree_right_list(root):
+        if not root:
+            return []
+        result = []
+        while root:
+            result.append(root.val)
+            root = root.right
+        return result
+
 
 def test_case1():
     bfs_str = '5,#,4,8,#,11,null,13,4,#,7,2,null,null,5,1,#'
