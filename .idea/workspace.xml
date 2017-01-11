@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/todo_best_time_to_buy_and_sell_stock.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/todo_find_minimum_in_rotated_sorted_array.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/todo_find_minimum_in_rotated_sorted_arrayII.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/todo_k_sum.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/todo_largest_rectangle_in_histogram.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/todo_maximal_rectangle.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/todo_maximum_product_subarray.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/todo_missing_number.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/todo_number_of_one_bits.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/todo_pascals_triangle.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/todo_pascals_triangleII.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/todo_perfect_squares.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/todo_power_of_two.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/todo_search_a_2D_matrixII.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/todo_triangle.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradeJsonGenerator.py" afterPath="$PROJECT_DIR$/gradeJsonGenerator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/recover_binary_search_tree.py" afterPath="$PROJECT_DIR$/misc/recover_binary_search_tree.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/random_list_node.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/todo_copy_list_with_random_pointer.py" afterPath="$PROJECT_DIR$/misc/todo_copy_list_with_random_pointer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testhello.iws" />
@@ -579,18 +564,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="recover_binary_search_tree.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/misc/recover_binary_search_tree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14646465" vertical-offset="1488" max-vertical-offset="5055">
-              <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-              <folding>
-                <element signature="e#398#413#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="todo_power_of_two.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/todo_power_of_two.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -635,7 +608,29 @@
         <entry file="file://$PROJECT_DIR$/misc/todo_triangle.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todo_copy_list_with_random_pointer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/todo_copy_list_with_random_pointer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.08072488" vertical-offset="491" max-vertical-offset="1260">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="53" selection-end-column="25" />
+              <folding>
+                <element signature="e#345#360#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random_list_node.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/random_list_node.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -685,14 +680,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/convert_sorted_array_to_BST.py" />
         <option value="$PROJECT_DIR$/misc/todo_next_permutation.py" />
         <option value="$PROJECT_DIR$/misc/next_permutation.py" />
         <option value="$PROJECT_DIR$/misc/basic_calculatorII.py" />
         <option value="$PROJECT_DIR$/misc/add_binary.py" />
         <option value="$PROJECT_DIR$/misc/basic_calculator.py" />
         <option value="$PROJECT_DIR$/misc/todo_basic_calculator.py" />
-        <option value="$PROJECT_DIR$/misc/todo_copy_list_with_random_pointer.py" />
         <option value="$PROJECT_DIR$/misc/reorder_list.py" />
         <option value="$PROJECT_DIR$/misc/linked_list_cycle.py" />
         <option value="$PROJECT_DIR$/misc/linked_list_cycleII.py" />
@@ -736,6 +729,8 @@
         <option value="$PROJECT_DIR$/misc/todo_perfect_squares.py" />
         <option value="$PROJECT_DIR$/gradeJsonGenerator.py" />
         <option value="$PROJECT_DIR$/misc/recover_binary_search_tree.py" />
+        <option value="$PROJECT_DIR$/util/random_list_node.py" />
+        <option value="$PROJECT_DIR$/misc/todo_copy_list_with_random_pointer.py" />
       </list>
     </option>
   </component>
@@ -900,8 +895,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/misc" />
       <recent name="$PROJECT_DIR$/util" />
+      <recent name="$PROJECT_DIR$/misc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/util" />
@@ -1266,7 +1261,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.63304096" sideWeight="0.49014568" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6314961" sideWeight="0.49014568" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -2133,20 +2128,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/add_two_numbers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/partition_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/reorder_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -2483,14 +2464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/todo_power_of_two.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/todo_number_of_one_bits.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
@@ -2515,14 +2488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/todo_triangle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradeJsonGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.375" vertical-offset="0" max-vertical-offset="2250">
@@ -2541,10 +2506,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/misc/recover_binary_search_tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14646465" vertical-offset="1488" max-vertical-offset="5055">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.030303031" vertical-offset="1833" max-vertical-offset="5130">
+          <caret line="121" column="50" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
           <folding>
             <element signature="e#398#413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/todo_power_of_two.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/todo_triangle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/random_list_node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/todo_copy_list_with_random_pointer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08072488" vertical-offset="491" max-vertical-offset="1260">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="53" selection-end-column="25" />
+          <folding>
+            <element signature="e#345#360#0" expanded="true" />
           </folding>
         </state>
       </provider>

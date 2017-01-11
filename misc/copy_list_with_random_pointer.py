@@ -16,8 +16,11 @@ Hard
 
 """
 
+
+
 import unittest
-from util.list_node import ListNode
+from util.random_list_node import RandomListNode
+
 
 # Definition for singly-linked list with a random pointer.
 # class RandomListNode(object):
@@ -27,7 +30,32 @@ from util.list_node import ListNode
 #         self.random = None
 
 class Solution(object):
-    def copyRandomList(self, head): #165ms, 31%
+    def copyRandomList(self, head): #139ms, 66%
+        """
+        :type head: RandomListNode
+        :rtype: RandomListNode
+        """
+        if not head:
+            return None
+        copy_dict = {}
+        curr = head
+        dummy = RandomListNode(-1)
+        pre = dummy
+        while curr:
+            tmp = RandomListNode(curr.label)
+            copy_dict[curr] = tmp
+            pre.next = tmp
+            pre = tmp
+            curr = curr.next
+        curr = head
+        while curr:
+            if curr.random:
+                copy_dict[curr].random = copy_dict[curr.random]
+            curr = curr.next
+        return dummy.next
+
+
+    def copyRandomList_old(self, head): #165ms, 31%
         """
         This way can be applied to graph cloning, but actually, this problem can be simpler.
         Because it is still a list, the list structure is maintained by .next. The .random is different from .next.
