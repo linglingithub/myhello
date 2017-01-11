@@ -7,11 +7,11 @@ import json
 
 HOME = expanduser("~")
 
-grade_id = 9
+grade_id = 10
 # csv_name = HOME + '/Downloads/g' + str(grade_id) + '.csv'
 #csv_name = HOME + '/Downloads/Copy of Afficient Academy K-8 Outline - Grade ' + str(grade_id) + ' Official.csv'
 # csv_name = HOME + '/Downloads/Copy of Afficient Academy 9-12 Outline - Geometry Official.csv'
-csv_name = HOME + '/Downloads/Dupe for contest Afficient Academy 9-12 Outline - Algebra 1 Official (3).csv'
+csv_name = HOME + '/Downloads/Dupe for contest Afficient Academy 9-12 Outline - Geometry Official.csv'
 csv_weight_name = HOME + '/Downloads/g' + str(grade_id) + '_weights.csv'
 json_name = HOME + '/Documents/math_grade.json'
 out_file = HOME + '/Documents/g' + str(grade_id) + '.json'
