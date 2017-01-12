@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/todo_number_of_one_bits.py" afterPath="$PROJECT_DIR$/misc/todo_number_of_one_bits.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/pascals_triangle.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/pascals_triangleII.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/misc/todo_pascals_triangle.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/misc/todo_pascals_triangleII.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testhello.iws" />
@@ -566,18 +569,8 @@
       <file leaf-file-name="todo_power_of_two.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/todo_power_of_two.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="todo_number_of_one_bits.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/misc/todo_number_of_one_bits.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32125205" vertical-offset="630" max-vertical-offset="1500">
-              <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -593,21 +586,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="find_minimum_in_rotated_sorted_arrayII.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/find_minimum_in_rotated_sorted_arrayII.py">
+      <file leaf-file-name="pascals_triangleII.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/pascals_triangleII.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1650">
-              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="find_minimum_in_rotated_sorted_array.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/find_minimum_in_rotated_sorted_array.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1995">
-              <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+            <state vertical-scroll-proportion="-0.766129" vertical-offset="1440" max-vertical-offset="2085">
+              <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -689,8 +672,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/add_binary.py" />
-        <option value="$PROJECT_DIR$/misc/basic_calculator.py" />
         <option value="$PROJECT_DIR$/misc/todo_basic_calculator.py" />
         <option value="$PROJECT_DIR$/misc/reorder_list.py" />
         <option value="$PROJECT_DIR$/misc/linked_list_cycle.py" />
@@ -718,7 +699,6 @@
         <option value="$PROJECT_DIR$/misc/binary_tree_paths.py" />
         <option value="$PROJECT_DIR$/misc/sum_root_to_leaf_numbers.py" />
         <option value="$PROJECT_DIR$/misc/pascals_triangle.py" />
-        <option value="$PROJECT_DIR$/misc/pascals_triangleII.py" />
         <option value="$PROJECT_DIR$/misc/k_sum.py" />
         <option value="$PROJECT_DIR$/misc/find_minimum_in_rotated_sorted_array.py" />
         <option value="$PROJECT_DIR$/misc/largest_rectangle_in_histogram.py" />
@@ -740,6 +720,9 @@
         <option value="$PROJECT_DIR$/misc/todo_find_minimum_in_rotated_sorted_arrayII.py" />
         <option value="$PROJECT_DIR$/misc/find_minimum_in_rotated_sorted_arrayII.py" />
         <option value="$PROJECT_DIR$/misc/todo_number_of_one_bits.py" />
+        <option value="$PROJECT_DIR$/misc/todo_pascals_triangle.py" />
+        <option value="$PROJECT_DIR$/misc/todo_pascals_triangleII.py" />
+        <option value="$PROJECT_DIR$/misc/pascals_triangleII.py" />
       </list>
     </option>
   </component>
@@ -751,9 +734,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="69" />
-    <option name="y" value="142" />
+    <option name="y" value="105" />
     <option name="width" value="1336" />
-    <option name="height" value="753" />
+    <option name="height" value="790" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -914,8 +897,8 @@
       <recent name="$PROJECT_DIR$/misc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in todo_number_of_one_bits (1)">
-    <configuration default="false" name="Unittests in find_minimum_in_rotated_sorted_array" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests in pascals_triangleII (3)">
+    <configuration default="false" name="Unittests in pascals_triangleII" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -926,7 +909,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/find_minimum_in_rotated_sorted_array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/pascals_triangleII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -940,7 +923,7 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in find_minimum_in_rotated_sorted_arrayII" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in pascals_triangleII" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -951,7 +934,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/find_minimum_in_rotated_sorted_arrayII.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/pascals_triangleII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -965,7 +948,7 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in SolutionTester" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in pascals_triangleII (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -976,21 +959,21 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/todo_number_of_one_bits.py" />
-      <option name="CLASS_NAME" value="SolutionTester" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/pascals_triangleII.py" />
+      <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in todo_number_of_one_bits" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in pascals_triangleII (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -1001,7 +984,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/todo_number_of_one_bits.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/pascals_triangleII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -1015,7 +998,7 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in todo_number_of_one_bits (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in pascals_triangleII (3)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -1026,7 +1009,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/todo_number_of_one_bits.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/pascals_triangleII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -1193,19 +1176,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in find_minimum_in_rotated_sorted_array" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in find_minimum_in_rotated_sorted_arrayII" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in SolutionTester" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in todo_number_of_one_bits" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in todo_number_of_one_bits (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in pascals_triangleII" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in pascals_triangleII" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in pascals_triangleII (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in pascals_triangleII (2)" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in pascals_triangleII (3)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in todo_number_of_one_bits (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in todo_number_of_one_bits" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in SolutionTester" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in find_minimum_in_rotated_sorted_arrayII" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in find_minimum_in_rotated_sorted_array" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in pascals_triangleII (3)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in pascals_triangleII (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in pascals_triangleII (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in pascals_triangleII" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in pascals_triangleII" />
       </list>
     </recent_temporary>
   </component>
@@ -1264,18 +1247,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="142" width="1336" height="753" extended-state="0" />
+    <frame x="69" y="105" width="1336" height="790" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35905513" sideWeight="0.49014568" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35863096" sideWeight="0.49014568" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23193917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5244095" sideWeight="0.49355876" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38257018" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40787402" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52380955" sideWeight="0.49355876" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38110235" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38541666" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41365463" sideWeight="0.5098543" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31968504" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -2122,6 +2105,11 @@
           <line>93</line>
           <option name="timeStamp" value="257" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/pascals_triangleII.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="258" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -2130,7 +2118,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="258" />
+      <option name="time" value="259" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2379,24 +2367,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/todo_pascals_triangleII.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/todo_k_sum.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
           <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/todo_pascals_triangle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06859756" vertical-offset="0" max-vertical-offset="656">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -2457,14 +2431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/todo_power_of_two.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/random_list_node.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27093595" vertical-offset="0" max-vertical-offset="609">
@@ -2499,22 +2465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/todo_triangle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/find_minimum_in_rotated_sorted_arrayII.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1650">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/find_minimum_in_rotated_sorted_array.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1995">
@@ -2531,6 +2481,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/misc/number_of_one_bits.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.123558484" vertical-offset="0" max-vertical-offset="1515">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/todo_power_of_two.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/find_minimum_in_rotated_sorted_arrayII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9637562" vertical-offset="420" max-vertical-offset="1650">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/util/aaa.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
@@ -2539,10 +2513,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/todo_number_of_one_bits.py">
+    <entry file="file://$PROJECT_DIR$/misc/pascals_triangle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32125205" vertical-offset="630" max-vertical-offset="1500">
-          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.66561013" vertical-offset="0" max-vertical-offset="1575">
+          <caret line="28" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/todo_triangle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/pascals_triangleII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.766129" vertical-offset="1440" max-vertical-offset="2085">
+          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
           <folding />
         </state>
       </provider>
