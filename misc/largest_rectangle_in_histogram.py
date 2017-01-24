@@ -34,7 +34,7 @@ import unittest
 
 class Solution(object):
 
-    def largestRectangleArea(self, heights):
+    def largestRectangleArea(self, heights): # ref, 86ms, 59%
         """
         :type heights: List[int]
         :rtype: int
@@ -45,19 +45,28 @@ class Solution(object):
         stack = []
         i = 0
         while i < len(heights):
-            if not stack or heights[stack[-1]]<heights[i]:
+            # If this bar is higher than the bar on top stack, push it to stack
+            if stack==[] or heights[stack[-1]]<heights[i]:
                 stack.append(i)
+
+
+            # If this bar is lower than top of stack, then calculate area of rectangle
+            # with stack top as the smallest (or minimum height) bar.
+            # 'i' is 'right index' for the top, and element before top in stack is 'left index'
             else:
                 start = stack.pop()
-                width = i if not stack else i - stack[-1] -1
+                width = i if stack==[] else i - stack[-1] -1
                 result = max(result, heights[start]*width)
                 i -= 1
-
-            while not stack:
-                start = stack.pop()
-                width = len(heights) if not stack else len(heights)-stack[-1]-1
-                result = max(result, heights[start]*width)
             i += 1
+
+        # Now pop the remaining bars from stack and calculate area with every
+        # popped bar as the smallest bar
+        while stack:
+            start = stack.pop()
+            width = i if not stack else len(heights)-stack[-1]-1
+            result = max(result, heights[start]*width)
+
         return result
 
 
@@ -87,13 +96,22 @@ class SolutionTester(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
 
+
+    def test_case2(self):
+        nums = [5,5,1,1,2,3,1,1,1,1,1,5,5]
+        answer = 13
+        result = self.sol.largestRectangleArea(nums)
+        self.assertEqual(answer, result)
+
+
     def test_case1(self):
         nums = [2,1,5,6,2,3]
         answer = 10
         result = self.sol.largestRectangleArea(nums)
         self.assertEqual(answer, result)
 
-    def test_case2(self): #===> TLE
+
+    def test_case3(self): #===> TLE
         nums = \
             [
             0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40
