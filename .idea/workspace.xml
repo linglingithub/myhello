@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/misc/todo_best_time_to_buy_and_sell_stock.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockII.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIII.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock.py" afterPath="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testhello.iws" />
@@ -584,11 +585,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="best_time_to_buy_and_sell_stock.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="best_time_to_buy_and_sell_stock.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12678936" vertical-offset="583" max-vertical-offset="1530">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="56" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1545">
+              <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="best_time_to_buy_and_sell_stockII.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockII.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1425">
+              <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="best_time_to_buy_and_sell_stockIII.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIII.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.12578617" vertical-offset="345" max-vertical-offset="1425">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -628,8 +649,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/balanced_binary_tree.py" />
-        <option value="$PROJECT_DIR$/misc/binary_tree_preorder_traversal.py" />
         <option value="$PROJECT_DIR$/misc/binary_tree_postorder_traversal.py" />
         <option value="$PROJECT_DIR$/util/tree_node2.py" />
         <option value="$PROJECT_DIR$/util/tree_link_node.py" />
@@ -679,6 +698,8 @@
         <option value="$PROJECT_DIR$/misc/largest_rectangle_in_histogram.py" />
         <option value="$PROJECT_DIR$/misc/todo_best_time_to_buy_and_sell_stock.py" />
         <option value="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock.py" />
+        <option value="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockII.py" />
+        <option value="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIII.py" />
       </list>
     </option>
   </component>
@@ -689,10 +710,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="981" />
-    <option name="y" value="-917" />
-    <option name="width" value="1390" />
-    <option name="height" value="896" />
+    <option name="x" value="1076" />
+    <option name="y" value="-908" />
+    <option name="width" value="1305" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -857,8 +878,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/util" />
       <recent name="$PROJECT_DIR$/misc" />
+      <recent name="$PROJECT_DIR$/util" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/misc/2sum_group" />
@@ -868,32 +889,7 @@
       <recent name="$PROJECT_DIR$/misc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in best_time_to_buy_and_sell_stock (1)">
-    <configuration default="false" name="Unittests in largest_rectangle_in_histogram (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/largest_rectangle_in_histogram.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in best_time_to_buy_and_sell_stock (2)">
     <configuration default="false" name="Unittests in largest_rectangle_in_histogram (4)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -970,6 +966,31 @@
       <method />
     </configuration>
     <configuration default="false" name="Unittests in best_time_to_buy_and_sell_stock (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in best_time_to_buy_and_sell_stock (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -1147,19 +1168,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in largest_rectangle_in_histogram (2)" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in largest_rectangle_in_histogram (4)" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case2" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in largest_rectangle_in_histogram (4)" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case2" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock (2)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case2" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in largest_rectangle_in_histogram (4)" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in largest_rectangle_in_histogram (2)" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock (2)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case2" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in largest_rectangle_in_histogram (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -1218,7 +1239,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="981" y="-917" width="1390" height="896" extended-state="0" />
+    <frame x="1076" y="-908" width="1305" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1226,10 +1247,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20160702" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26168224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33547556" sideWeight="0.49119866" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37983426" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31876606" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31752306" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33701658" sideWeight="0.50880134" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31968504" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -2124,21 +2145,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/gas_station.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/candy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/word_break.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -2495,14 +2501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/distinct_subsequences.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/aaa.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
@@ -2511,10 +2509,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/misc/distinct_subsequences.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12678936" vertical-offset="583" max-vertical-offset="1530">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="56" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1068" max-vertical-offset="1545">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1425">
+          <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.12578617" vertical-offset="345" max-vertical-offset="1425">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>

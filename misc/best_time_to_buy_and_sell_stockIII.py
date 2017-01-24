@@ -3,31 +3,24 @@ __author__ = 'linglin'
 
 """
 
-121. Best Time to Buy and Sell Stock
+123. Best Time to Buy and Sell Stock III
 
 
 Say you have an array for which the ith element is the price of a given stock on day i.
 
-If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an
-algorithm to find the maximum profit.
+Design an algorithm to find the maximum profit. You may complete at most two transactions.
 
-Example 1:
-Input: [7, 1, 5, 3, 6, 4]
-Output: 5
+Note:
+You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
 
-max. difference = 6-1 = 5 (not 7-1 = 6, as selling price needs to be larger than buying price)
-Example 2:
-Input: [7, 6, 4, 3, 1]
-Output: 0
-
-In this case, no transaction is done, i.e. max profit = 0.
 Subscribe to see which companies asked this question
 
 Hide Tags Array Dynamic Programming
-Hide Similar Problems (M) Maximum Subarray (M) Best Time to Buy and Sell Stock II (H) Best Time to Buy and Sell Stock III
-(H) Best Time to Buy and Sell Stock IV (M) Best Time to Buy and Sell Stock with Cooldown
+Hide Similar Problems (E) Best Time to Buy and Sell Stock (M) Best Time to Buy and Sell Stock II (H) Best Time to Buy
+and Sell Stock IV
 
-Easy
+
+Hard
 
 """
 
@@ -36,25 +29,11 @@ import unittest
 
 
 class Solution(object):
-    def maxProfit(self, prices): #49ms, 69%
+    def maxProfit(self, prices):
         """
         :type prices: List[int]
         :rtype: int
         """
-        if not prices:
-            return 0
-        low = prices[0]
-        high = prices[0]
-        profit = 0
-        for i in range(1,len(prices)):
-            curr = prices[i]
-            if curr > high:
-                high = curr
-                continue
-            elif curr < low:
-                profit = max(profit, high - low)
-                low = high = curr
-        return max(profit, high - low)
 
 
 
