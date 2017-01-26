@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockII.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIII.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock.py" afterPath="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIV.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock_with_cooldown.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIII.py" afterPath="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIII.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testhello.iws" />
@@ -578,7 +578,7 @@
       <file leaf-file-name="distinct_subsequences.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/distinct_subsequences.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
+            <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1005">
               <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
@@ -588,7 +588,7 @@
       <file leaf-file-name="best_time_to_buy_and_sell_stock.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1545">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1455" max-vertical-offset="1545">
               <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding />
             </state>
@@ -598,7 +598,7 @@
       <file leaf-file-name="best_time_to_buy_and_sell_stockII.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockII.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1425">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1335" max-vertical-offset="1425">
               <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
               <folding />
             </state>
@@ -608,8 +608,28 @@
       <file leaf-file-name="best_time_to_buy_and_sell_stockIII.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIII.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.12578617" vertical-offset="345" max-vertical-offset="1425">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.03731343" vertical-offset="525" max-vertical-offset="1650">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="55" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="best_time_to_buy_and_sell_stock_with_cooldown.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock_with_cooldown.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1350">
+              <caret line="84" column="13" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="best_time_to_buy_and_sell_stockIV.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIV.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1260">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -618,7 +638,7 @@
       <file leaf-file-name="aaa.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/aaa.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="600">
               <caret line="18" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="13" />
               <folding />
             </state>
@@ -649,8 +669,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/binary_tree_postorder_traversal.py" />
-        <option value="$PROJECT_DIR$/util/tree_node2.py" />
         <option value="$PROJECT_DIR$/util/tree_link_node.py" />
         <option value="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_node.py" />
         <option value="$PROJECT_DIR$/misc/populating_next_right_pointers_in_each_nodeII.py" />
@@ -699,6 +717,8 @@
         <option value="$PROJECT_DIR$/misc/todo_best_time_to_buy_and_sell_stock.py" />
         <option value="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock.py" />
         <option value="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockII.py" />
+        <option value="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock_with_cooldown.py" />
+        <option value="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIV.py" />
         <option value="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIII.py" />
       </list>
     </option>
@@ -710,10 +730,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1076" />
-    <option name="y" value="-908" />
-    <option name="width" value="1305" />
-    <option name="height" value="877" />
+    <option name="x" value="1068" />
+    <option name="y" value="-796" />
+    <option name="width" value="1260" />
+    <option name="height" value="766" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -889,32 +909,7 @@
       <recent name="$PROJECT_DIR$/misc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in best_time_to_buy_and_sell_stock (2)">
-    <configuration default="false" name="Unittests in largest_rectangle_in_histogram (4)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/largest_rectangle_in_histogram.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in best_time_to_buy_and_sell_stockIII">
     <configuration default="false" name="Unittest SolutionTester.test_case2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1002,6 +997,31 @@
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in best_time_to_buy_and_sell_stockIII" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -1168,19 +1188,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in largest_rectangle_in_histogram (4)" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case2" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock (1)" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock (2)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case2" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock (2)" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stockIII" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock (2)" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case2" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in largest_rectangle_in_histogram (4)" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stockIII" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in best_time_to_buy_and_sell_stock" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case2" />
       </list>
     </recent_temporary>
   </component>
@@ -1239,31 +1259,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1076" y="-908" width="1305" height="877" extended-state="0" />
+    <frame x="1068" y="-796" width="1260" height="766" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35732648" sideWeight="0.49014568" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35704875" sideWeight="0.49014568" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26168224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29551452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33547556" sideWeight="0.49119866" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37983426" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31752306" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31635803" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33701658" sideWeight="0.50880134" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31968504" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.66068757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298791" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1285,9 +1305,9 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25083894" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38257018" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819074" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819074" sideWeight="0.5143505" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2145,21 +2165,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/word_break.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/balanced_binary_tree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -2441,7 +2446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4113667" vertical-offset="1181" max-vertical-offset="2205">
           <caret line="99" column="59" selection-start-line="99" selection-start-column="59" selection-end-line="99" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2457,7 +2461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2465,7 +2468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.059840426" vertical-offset="0" max-vertical-offset="1035">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2533,10 +2535,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1260">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock_with_cooldown.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
+          <caret line="84" column="13" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIII.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.12578617" vertical-offset="345" max-vertical-offset="1425">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.03731343" vertical-offset="525" max-vertical-offset="1650">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="55" selection-end-column="21" />
           <folding />
         </state>
       </provider>
