@@ -42,9 +42,10 @@ class SolutionTester(unittest.TestCase):
         self.sol = Solution()
 
     def test_case1(self):
-        nums = 1
-        answer = 1
-        result = self.sol.numDistinct(nums)
+        S = "rabbbit"
+        T = "rabbit"
+        answer = 3
+        result = self.sol.numDistinct(S,T)
         self.assertEqual(answer, result)
 
 
