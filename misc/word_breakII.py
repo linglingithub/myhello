@@ -27,7 +27,43 @@ import unittest
 
 
 class Solution(object):
-    def wordBreak(self, s, wordDict):
+    def wordBreak(self, s, wordDict): #write according to ref2, 352ms, 8.6%
+        """
+        :type s: str
+        :type wordDict: Set[str]
+        :rtype: List[str]
+        """
+        self.string_dict = {}
+        self.parse_string(s, wordDict)
+        return self.string_dict[s]
+
+    def parse_string(self, s, wordDict):
+        result = []
+        if s in wordDict:
+            result.append(s)
+
+        for idx in range(0, len(s)-1):
+            sub1, sub2 = s[:idx+1], s[idx+1:]
+            if sub1 not in wordDict:
+                continue
+            # if sub2 in wordDict: # can this be simplified? -- yes
+            #     rest.append([sub2])
+            if sub2 in self.string_dict:
+                rest = self.string_dict[sub2]
+            else:
+                rest = self.parse_string(sub2, wordDict)
+            for one_break in rest:
+                result.append(sub1 + " " + one_break)
+
+        self.string_dict[s] = result
+        return result
+
+
+
+
+
+
+    def wordBreak_wrong(self, s, wordDict):
         """
         :type s: str
         :type wordDict: Set[str]
@@ -39,13 +75,13 @@ class Solution(object):
         n = len(s)
         #wordDict = sorted(wordDict,) # .sort() will not change # ask if we can assume the dictionary is sorted
         dp = [ [] for i in range(n)]
-        self.wordBreakHelper(result, dp, 0, "", s, wordDict)
+        self.wordBreakHelper1(result, dp, 0, "", s, wordDict)
         if dp[n-1]:
             result = [ x.strip() for x in dp[n-1] ]
             return result
         return []
 
-    def wordBreakHelper(self, result, dp, idx, current, s, wordDict):
+    def wordBreakHelper1(self, result, dp, idx, current, s, wordDict):
         if idx>=len(s):
             return
         for word in wordDict:
@@ -56,7 +92,7 @@ class Solution(object):
             if s[idx: k+1] == word:
                 tmp = current + " " + word
                 dp[k].append(tmp)
-                self.wordBreakHelper(result, dp, k+1, tmp, s, wordDict)
+                self.wordBreakHelper1(result, dp, k+1, tmp, s, wordDict)
         
         
     def wordBreakHelper_TLE(self, result, dp, idx, current, s, wordDict):  # actually only DFS, did not use DP
@@ -74,7 +110,7 @@ class Solution(object):
                 self.wordBreakHelper_TLE(result, dp, k+1, tmp, s, wordDict)
 
 
-    def wordBreak_ref2(self, s, wordDict): #92ms, 12%
+    def wordBreak_ref2(self, s, wordDict): #_ref2 92ms, 12%
         tokenDict = dict()
     
         def dfs(s):
@@ -127,14 +163,22 @@ class SolutionTester(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
 
-    def test_case2(self): #=====> TLE, even did not run through for local test
-        s = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-        wdict = ["a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa"]
-        answer = ["cats and dog", "cat sand dog"]
+    def test_case1(self): #====>
+        s = "ab"
+        wdict = ["a", "b"]
+        answer = ["a b"]
         result = self.sol.wordBreak(s, wdict)
         self.assertEqual(sorted(answer), sorted(result))
 
-    def test_case1(self):
+
+    def test_case2(self): #=====> TLE, even did not run through for local test
+        s = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        wdict = ["a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa"]
+        answer = []
+        result = self.sol.wordBreak(s, wdict)
+        self.assertEqual(sorted(answer), sorted(result))
+
+    def test_case3(self):
         s = "catsanddog"
         wdict = ["cat", "cats", "and", "sand", "dog"]
         answer = ["cats and dog", "cat sand dog"]
@@ -155,6 +199,41 @@ if __name__ == "__main__":
 解题思路：这道题不只像word break那样判断是否可以分割，而且要找到所有的分割方式，那么我们就要考虑dfs了。不过直接用dfs解题是不行的，为什么？
 因为决策树太大，如果全部遍历一遍，时间复杂度太高，无法通过oj。那么我们需要剪枝，如何来剪枝呢？使用word break题中的动态规划的结果，在dfs之
 前，先判定字符串是否可以被分割，如果不能被分割，直接跳过这一枝。实际上这道题是dp+dfs。
+
+================================================================================================================================================
+
+a java version of a solution
+
+public class Solution {
+    public List<String> wordBreak(String s, List<String> wordDict) {
+        List<String> res = new ArrayList<String>();
+
+        // 用来记录s.substring(i)这个字符串能否分解
+        boolean[] possible = new boolean[s.length() + 1];
+        Arrays.fill(possible, true);
+        dfs(res, "", s, wordDict,  0, possible);
+        return res;
+    }
+
+    public static void dfs(List<String> res, String cur, String s, List<String> wordDict, int start, boolean[] possible) {
+        if (start == s.length()) {
+            res.add(cur);
+            return;
+        }
+        for (int i = start + 1; i <= s.length(); i++) {
+            String str = s.substring(start, i);
+            if (wordDict.contains(str) && possible[i]) {
+                int prevSize = res.size();
+                dfs(res, cur + (cur.equals("") ? "" : " ") + str, s, wordDict, i, possible);
+
+                // DFS后面部分结果没有变化，说明后面是没有解的
+                if (res.size() == prevSize)
+                    possible[i] = false;
+            }
+        }
+    }
+}
+
 
 """
 
