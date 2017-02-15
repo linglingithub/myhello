@@ -1,5 +1,4 @@
 #coding=utf-8
-__author__ = 'linglin'
 """
 
 127. Word Ladder
