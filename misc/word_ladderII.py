@@ -1,12 +1,12 @@
 #coding=utf-8
 """
 
-127. Word Ladder
+126. Word Ladder II
 
-Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation
-sequence from beginWord to endWord, such that:
+Given two words (beginWord and endWord), and a dictionary's word list, find all shortest transformation sequence(s) from
+beginWord to endWord, such that:
 
-Only one letter can be changed at a time.
+Only one letter can be changed at a time
 Each transformed word must exist in the word list. Note that beginWord is not a transformed word.
 For example,
 
@@ -14,11 +14,13 @@ Given:
 beginWord = "hit"
 endWord = "cog"
 wordList = ["hot","dot","dog","lot","log","cog"]
-As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",
-return its length 5.
-
+Return
+  [
+    ["hit","hot","dot","dog","cog"],
+    ["hit","hot","lot","log","cog"]
+  ]
 Note:
-Return 0 if there is no such transformation sequence.
+Return an empty list if there is no such transformation sequence.
 All words have the same length.
 All words contain only lowercase alphabetic characters.
 You may assume no duplicates in the word list.
@@ -27,9 +29,11 @@ UPDATE (2017/1/20):
 The wordList parameter had been changed to a list of strings (instead of a set of strings). Please reload the code
 definition to get the latest changes.
 
-Subscribe to see which companies asked this question
+Subscribe to see which companies asked this question.
 
-Medium
+Hide Tags Array Backtracking Breadth-first Search String
+
+Hard
 
 """
 
@@ -37,16 +41,18 @@ import unittest
 
 
 class Solution(object):
-    def ladderLength(self, beginWord, endWord, wordList): #ref, leetcode has problem with this problem
+    def findLadders(self, beginWord, endWord, wordList): #ref, leetcode has problem with this problem
         """
         :type beginWord: str
         :type endWord: str
         :type wordList: List[str]
         :rtype: int
         """
+        results = []
+
         from collections import defaultdict, deque
-        queue = deque( [ [beginWord, 1] ] )
-        visited = set( [ beginWord ] )
+        queue = deque([[beginWord, 1]])
+        visited = set([beginWord])
         neighbors = defaultdict(list)
         for word in wordList:
             for x in range(len(word)):
@@ -62,7 +68,7 @@ class Solution(object):
                     if ladder not in visited:
                         visited.add(ladder)
                         queue += [ladder, length + 1],
-        return 0
+        return results
 
     def wordDist(self, wordA, wordB):
         return sum([wordA[x] != wordB[x] for x in range(len(wordA))])
@@ -76,9 +82,12 @@ class SolutionTester(unittest.TestCase):
         a = 'hit'
         b = 'cog'
         wordList = ["hot","dot","dog","lot","log","cog"]
-        answer = 5
-        result = self.sol.ladderLength(a, b, wordList)
-        self.assertEqual(answer, result)
+        answer =  [
+            ["hit","hot","dot","dog","cog"],
+            ["hit","hot","lot","log","cog"]
+        ]
+        result = self.sol.findLadders(a, b, wordList)
+        self.assertEqual(sorted(answer), sorted(result))
 
 
 def main():
