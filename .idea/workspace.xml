@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/majority_element.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/majority_elementII.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testhello.iws" />
@@ -593,11 +593,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="majority_element.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="majority_element.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/majority_element.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53808755" vertical-offset="403" max-vertical-offset="1890">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="57" selection-end-column="26" />
+            <state vertical-scroll-proportion="-27.777779" vertical-offset="0" max-vertical-offset="1890">
+              <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="majority_elementII.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/majority_elementII.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.31451613" vertical-offset="813" max-vertical-offset="2655">
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="77" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -647,7 +657,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/MaximumProductSubarray.py" />
         <option value="$PROJECT_DIR$/misc/todo_maximum_product_subarray.py" />
         <option value="$PROJECT_DIR$/misc/todo_largest_rectangle_in_histogram.py" />
         <option value="$PROJECT_DIR$/misc/todo_perfect_squares.py" />
@@ -698,6 +707,7 @@
         <option value="$PROJECT_DIR$/misc/compare_version_numbers.py" />
         <option value="$PROJECT_DIR$/misc/fraction_to_recurring_decimal.py" />
         <option value="$PROJECT_DIR$/misc/majority_element.py" />
+        <option value="$PROJECT_DIR$/misc/majority_elementII.py" />
       </list>
     </option>
   </component>
@@ -708,10 +718,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="974" />
-    <option name="y" value="-992" />
-    <option name="width" value="1573" />
-    <option name="height" value="954" />
+    <option name="x" value="55" />
+    <option name="y" value="109" />
+    <option name="width" value="1359" />
+    <option name="height" value="791" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -887,7 +897,32 @@
       <recent name="$PROJECT_DIR$/misc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in majority_element (1)">
+  <component name="RunManager" selected="Python tests.Unittests in majority_elementII (1)">
+    <configuration default="false" name="Unittests in majority_elementII (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/majority_elementII.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="false" name="Unittest SolutionTester.test_case3" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -899,7 +934,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/fraction_to_recurring_decimal.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/majority_elementII.py" />
       <option name="CLASS_NAME" value="SolutionTester" />
       <option name="METHOD_NAME" value="test_case3" />
       <option name="FOLDER_NAME" value="" />
@@ -910,12 +945,10 @@
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
       <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in fraction_to_recurring_decimal (3)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in majority_elementII (3)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -926,7 +959,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/fraction_to_recurring_decimal.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/majority_elementII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -940,7 +973,7 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in fraction_to_recurring_decimal" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittest SolutionTester.test_case1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -951,21 +984,21 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/fraction_to_recurring_decimal.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/majority_elementII.py" />
+      <option name="CLASS_NAME" value="SolutionTester" />
+      <option name="METHOD_NAME" value="test_case1" />
       <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in majority_element" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in majority_elementII (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -976,32 +1009,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/majority_element.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in majority_element (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/majority_element.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/majority_elementII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -1168,19 +1176,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case3" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in fraction_to_recurring_decimal (3)" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in fraction_to_recurring_decimal" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in majority_element" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in majority_element (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in majority_elementII (2)" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case3" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in majority_elementII (3)" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in majority_elementII (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in majority_element (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in majority_element" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in fraction_to_recurring_decimal" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in majority_elementII (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in majority_elementII (3)" />
         <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case3" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in fraction_to_recurring_decimal (3)" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in majority_elementII (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -1239,7 +1247,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="974" y="-992" width="1573" height="954" extended-state="0" />
+    <frame x="55" y="109" width="1359" height="791" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1247,10 +1255,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20618556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40669855" sideWeight="0.49119866" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29236278" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21291865" sideWeight="0.50201774" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23916294" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40564635" sideWeight="0.49119866" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29123327" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38632986" sideWeight="0.50201774" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31635803" sideWeight="0.49798223" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31968504" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -2212,6 +2220,11 @@
           <line>60</line>
           <option name="timeStamp" value="297" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/majority_elementII.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -2220,19 +2233,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="298" />
+      <option name="time" value="299" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/convert_linked_list_to_BST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13729978" vertical-offset="0" max-vertical-offset="3780">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/convert_sorted_list_to_binary_search_tree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.5387931" vertical-offset="915" max-vertical-offset="1905">
@@ -2609,8 +2614,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/misc/majority_element.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53808755" vertical-offset="403" max-vertical-offset="1890">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="57" selection-end-column="26" />
+        <state vertical-scroll-proportion="-27.777779" vertical-offset="0" max-vertical-offset="1890">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/majority_elementII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31451613" vertical-offset="813" max-vertical-offset="2655">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="77" selection-end-column="65" />
           <folding />
         </state>
       </provider>
