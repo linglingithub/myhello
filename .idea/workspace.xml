@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/isomorphic_strings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/contains_duplicate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/contains_duplicateII.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/contains_duplicateIII.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testhello.iws" />
@@ -566,7 +568,7 @@
       <file leaf-file-name="aaa.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/aaa.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="720">
+            <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="720">
               <caret line="9" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
@@ -593,11 +595,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="isomorphic_strings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="isomorphic_strings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/isomorphic_strings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14921466" vertical-offset="513" max-vertical-offset="1905">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="49" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1905">
+              <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contains_duplicate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/contains_duplicate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="447" max-vertical-offset="1125">
+              <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contains_duplicateII.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/contains_duplicateII.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1365">
+              <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contains_duplicateIII.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/contains_duplicateIII.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4054878" vertical-offset="94" max-vertical-offset="4395">
+              <caret line="24" column="80" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -637,9 +669,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/perfect_squares.py" />
-        <option value="$PROJECT_DIR$/misc/substring_with_concatenation_of_all_words.py" />
-        <option value="$PROJECT_DIR$/misc/minimum_depth_of_binary_tree.py" />
         <option value="$PROJECT_DIR$/misc/convert_sorted_list_to_binary_search_tree.py" />
         <option value="$PROJECT_DIR$/misc/todo_k_sum.py" />
         <option value="$PROJECT_DIR$/misc/2sum_group/k_sum.py" />
@@ -688,6 +717,9 @@
         <option value="$PROJECT_DIR$/misc/factorial_trailing_zeroes.py" />
         <option value="$PROJECT_DIR$/misc/largest_number.py" />
         <option value="$PROJECT_DIR$/misc/isomorphic_strings.py" />
+        <option value="$PROJECT_DIR$/misc/contains_duplicate.py" />
+        <option value="$PROJECT_DIR$/misc/contains_duplicateII.py" />
+        <option value="$PROJECT_DIR$/misc/contains_duplicateIII.py" />
       </list>
     </option>
   </component>
@@ -698,10 +730,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="106" />
-    <option name="y" value="32" />
+    <option name="x" value="155" />
+    <option name="y" value="27" />
     <option name="width" value="1267" />
-    <option name="height" value="821" />
+    <option name="height" value="815" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -760,7 +792,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -827,6 +858,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -877,7 +909,7 @@
       <recent name="$PROJECT_DIR$/misc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in isomorphic_strings (3)">
+  <component name="RunManager" selected="Python tests.Unittests in contains_duplicateIII (1)">
     <configuration default="false" name="Unittest SolutionTester.test_case5" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -889,7 +921,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/isomorphic_strings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/contains_duplicateIII.py" />
       <option name="CLASS_NAME" value="SolutionTester" />
       <option name="METHOD_NAME" value="test_case5" />
       <option name="FOLDER_NAME" value="" />
@@ -900,10 +932,12 @@
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
       <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in isomorphic_strings" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in contains_duplicateIII (3)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -914,7 +948,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/isomorphic_strings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/contains_duplicateIII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -928,7 +962,7 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in isomorphic_strings (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in contains_duplicateIII" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -939,7 +973,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/isomorphic_strings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/contains_duplicateIII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -953,7 +987,7 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittest SolutionTester.test_case2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittest SolutionTester.test_case6" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -964,9 +998,9 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/isomorphic_strings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/contains_duplicateIII.py" />
       <option name="CLASS_NAME" value="SolutionTester" />
-      <option name="METHOD_NAME" value="test_case2" />
+      <option name="METHOD_NAME" value="test_case6" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -975,10 +1009,12 @@
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
       <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in isomorphic_strings (3)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in contains_duplicateIII (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -989,7 +1025,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/isomorphic_strings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/contains_duplicateIII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -1157,18 +1193,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case5" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in isomorphic_strings" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in isomorphic_strings (2)" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case2" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in isomorphic_strings (3)" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in contains_duplicateIII (3)" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in contains_duplicateIII" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case6" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in contains_duplicateIII (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in isomorphic_strings (3)" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case2" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in isomorphic_strings (2)" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in isomorphic_strings" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case5" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in contains_duplicateIII (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case6" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in contains_duplicateIII" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case5" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in contains_duplicateIII (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -1227,18 +1263,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="106" y="32" width="1267" height="821" extended-state="0" />
+    <frame x="155" y="27" width="1267" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3765244" sideWeight="0.48991123" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37446198" sideWeight="0.48991123" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2295345" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37553343" sideWeight="0.49119866" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37446198" sideWeight="0.49119866" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21189025" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39829302" sideWeight="0.50201774" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39741752" sideWeight="0.50201774" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31635803" sideWeight="0.49798223" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31968504" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -2215,6 +2251,16 @@
           <line>39</line>
           <option name="timeStamp" value="300" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/contains_duplicateIII.py</url>
+          <line>118</line>
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/contains_duplicateIII.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="302" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -2223,34 +2269,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="301" />
+      <option name="time" value="303" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/2sum_group/two_sum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.059840426" vertical-offset="0" max-vertical-offset="1035">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/2sum_group/two_sumII.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27925533" vertical-offset="0" max-vertical-offset="1770">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/2sum_group/three_sum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1768616" vertical-offset="1320" max-vertical-offset="2175">
-          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIII.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40691927" vertical-offset="773" max-vertical-offset="1650">
@@ -2555,7 +2578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.7738853" vertical-offset="435" max-vertical-offset="2925">
           <caret line="187" column="3" selection-start-line="187" selection-start-column="3" selection-end-line="187" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2571,9 +2593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7165605" vertical-offset="0" max-vertical-offset="1650">
           <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-          <folding>
-            <element signature="e#1239#1845#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2581,14 +2600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="747" max-vertical-offset="1950">
           <caret line="69" column="54" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/aaa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <caret line="9" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2603,8 +2614,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/misc/isomorphic_strings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14921466" vertical-offset="513" max-vertical-offset="1905">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="49" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1905">
+          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/aaa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <caret line="9" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/contains_duplicate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="447" max-vertical-offset="1125">
+          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/contains_duplicateII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/contains_duplicateIII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4054878" vertical-offset="94" max-vertical-offset="4395">
+          <caret line="24" column="80" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
           <folding />
         </state>
       </provider>
