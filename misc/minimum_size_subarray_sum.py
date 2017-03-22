@@ -39,7 +39,7 @@ Hide Similar Problems (H) Minimum Window Substring (M) Maximum Size Subarray Sum
 
 
 class Solution(object):
-    def minSubArrayLen_ref(self, s, nums): #78%
+    def minSubArrayLen_ref(self, s, nums): #78%, O(N)
         # write your code here
         n = len(nums)
         if n==0: return 0
@@ -58,7 +58,7 @@ class Solution(object):
         else: return ans
 
 
-    def minSubArrayLen(self, s, nums): #68
+    def minSubArrayLen(self, s, nums): #68%, O(N)
         """
         :type s: int
         :type nums: List[int]
