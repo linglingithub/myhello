@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mjbeto/connecting_graphII.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mjbeto/connecting_graphIII.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testhello.iws" />
@@ -583,11 +583,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connecting_graphII.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mjbeto/connecting_graphII.py">
+      <file leaf-file-name="connecting_graphIII.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mjbeto/connecting_graphIII.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5113636" vertical-offset="510" max-vertical-offset="2370">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="76" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.8181818" vertical-offset="360" max-vertical-offset="1755">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="74" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -647,7 +647,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockII.py" />
         <option value="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIII.py" />
         <option value="$PROJECT_DIR$/misc/valid_palindrome.py" />
         <option value="$PROJECT_DIR$/util/undirected_graph_node.py" />
@@ -698,6 +697,7 @@
         <option value="$PROJECT_DIR$/misc/kth_smallest_element_in_a_sorted_matrix.py" />
         <option value="$PROJECT_DIR$/mjbeto/connecting_graph.py" />
         <option value="$PROJECT_DIR$/mjbeto/connecting_graphII.py" />
+        <option value="$PROJECT_DIR$/mjbeto/connecting_graphIII.py" />
       </list>
     </option>
   </component>
@@ -874,32 +874,7 @@
       <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in connecting_graphII (1)">
-    <configuration default="false" name="Unittests in connecting_graph (3)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mjbeto" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mjbeto/connecting_graph.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in connecting_graphIII">
     <configuration default="false" name="Unittest SolutionTester.test_case1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -989,6 +964,31 @@
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mjbeto/connecting_graphII.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in connecting_graphIII" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mjbeto" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mjbeto/connecting_graphIII.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -1155,19 +1155,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graph (3)" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in SolutionTester" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in SolutionTester" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphIII" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in SolutionTester" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graph (3)" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphIII" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in SolutionTester" />
       </list>
     </recent_temporary>
   </component>
@@ -1230,7 +1230,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.372191" sideWeight="0.48991123" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.371831" sideWeight="0.48991123" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -2292,13 +2292,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/util/undirected_graph_node.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18018018" vertical-offset="0" max-vertical-offset="333">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIV.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4350">
@@ -2656,6 +2649,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mjbeto/connecting_graphII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5382775" vertical-offset="510" max-vertical-offset="2370">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="76" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mjbeto/connecting_graph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2250">
@@ -2664,10 +2665,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mjbeto/connecting_graphII.py">
+    <entry file="file://$PROJECT_DIR$/mjbeto/connecting_graphIII.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5113636" vertical-offset="510" max-vertical-offset="2370">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="76" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.8181818" vertical-offset="360" max-vertical-offset="1755">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="74" selection-end-column="30" />
           <folding />
         </state>
       </provider>
