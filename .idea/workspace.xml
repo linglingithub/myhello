@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mjbeto/connecting_graphIII.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mjbeto/implement_trie.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testhello.iws" />
@@ -573,51 +573,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connecting_graph.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mjbeto/connecting_graph.py">
+      <file leaf-file-name="implement_trie.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mjbeto/implement_trie.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2250">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="24" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="connecting_graphIII.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mjbeto/connecting_graphIII.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8181818" vertical-offset="360" max-vertical-offset="1755">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="74" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kth_smallest_element_in_a_sorted_matrix.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/kth_smallest_element_in_a_sorted_matrix.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2280" max-vertical-offset="3015">
-              <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="case.py" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5568" max-vertical-offset="16035">
-              <caret line="392" column="0" selection-start-line="392" selection-start-column="0" selection-end-line="392" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="suite.py" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/suite.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1443" max-vertical-offset="4590">
-              <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.957478" vertical-offset="1148" max-vertical-offset="2085">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -647,7 +607,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIII.py" />
         <option value="$PROJECT_DIR$/misc/valid_palindrome.py" />
         <option value="$PROJECT_DIR$/util/undirected_graph_node.py" />
         <option value="$PROJECT_DIR$/misc/clone_graph.py" />
@@ -698,6 +657,7 @@
         <option value="$PROJECT_DIR$/mjbeto/connecting_graph.py" />
         <option value="$PROJECT_DIR$/mjbeto/connecting_graphII.py" />
         <option value="$PROJECT_DIR$/mjbeto/connecting_graphIII.py" />
+        <option value="$PROJECT_DIR$/mjbeto/implement_trie.py" />
       </list>
     </option>
   </component>
@@ -874,7 +834,7 @@
       <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in connecting_graphIII">
+  <component name="RunManager" selected="Python tests.Unittest SolutionTester.test_case1 (1)">
     <configuration default="false" name="Unittest SolutionTester.test_case1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -899,31 +859,6 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in SolutionTester" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mjbeto" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mjbeto/connecting_graphII.py" />
-      <option name="CLASS_NAME" value="SolutionTester" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -993,6 +928,31 @@
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest SolutionTester.test_case1 (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mjbeto" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mjbeto/implement_trie.py" />
+      <option name="CLASS_NAME" value="SolutionTester" />
+      <option name="METHOD_NAME" value="test_case1" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
@@ -1156,18 +1116,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in SolutionTester" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII (1)" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphIII" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphIII" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1 (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphIII" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in SolutionTester" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1 (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphIII" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in connecting_graphII" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest SolutionTester.test_case1" />
       </list>
     </recent_temporary>
   </component>
@@ -1237,7 +1197,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2295345" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36478874" sideWeight="0.49117175" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21173105" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34084508" sideWeight="0.50160515" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34084508" sideWeight="0.50160515" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39014083" sideWeight="0.5088282" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31830987" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -2292,13 +2252,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stockIV.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4350">
-          <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/evaluate_reverse_polish_notation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1665">
@@ -2607,6 +2560,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1351" max-vertical-offset="2940">
           <caret line="109" column="44" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2621,14 +2575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3015">
           <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/aaa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <caret line="9" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2657,18 +2603,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mjbeto/connecting_graphIII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28708133" vertical-offset="360" max-vertical-offset="1755">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mjbeto/connecting_graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2250">
+        <state vertical-scroll-proportion="0.6818182" vertical-offset="0" max-vertical-offset="2250">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="24" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mjbeto/connecting_graphIII.py">
+    <entry file="file://$PROJECT_DIR$/util/aaa.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8181818" vertical-offset="360" max-vertical-offset="1755">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="74" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <caret line="9" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mjbeto/implement_trie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.957478" vertical-offset="1148" max-vertical-offset="2085">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding />
         </state>
       </provider>
