@@ -3,22 +3,35 @@
 import unittest
 
 """
-42. Trapping Rain Water
+407. Trapping Rain Water II
 
-Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it
-is able to trap after raining.
+Given an m x n matrix of positive integers representing the height of each unit cell in a 2D elevation map, compute the
+volume of water it is able to trap after raining.
 
-For example,
-Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
+Note:
+Both m and n are less than 110. The height of each unit cell is greater than 0 and is less than 20,000.
+
+Example:
+
+Given the following 3x6 height map:
+[
+  [1,4,3,1,3,2],
+  [3,2,1,3,2,4],
+  [2,3,3,2,3,1]
+]
+
+Return 4.
+
+The above image represents the elevation map [[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3,2,3,1]] before the rain.
 
 
-The above elevation map is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue
-section) are being trapped. Thanks Marcos for contributing this image!
+After the rain, water are trapped between the blocks. The total volume of water trapped is 4.
 
 Subscribe to see which companies asked this question.
 
-Hide Tags Array Stack Two Pointers
-Hide Similar Problems (M) Container With Most Water (M) Product of Array Except Self (H) Trapping Rain Water II
+Hide Tags Breadth-first Search Heap
+Hide Similar Problems (H) Trapping Rain Water
+
 
 Hard
 
@@ -27,12 +40,105 @@ Hard
 
 
 class Solution(object):
-    def trap(self, height):
+    def trapRainWater(self, heights): #252ms, 60%
         """
-        :type height: List[int]
+        Use the min-heap and init with outer layer, the lowest one will always be found first, process and then expand
+        to the 'connected' new neighbors, similar to find the new outer layer for the remaining (inside nodes).
+        1) lowest bar in heap will always be popped first, guarantee that water level is decided by lowest bar
+           ( won't be higher, because water can't be kept higher than the outer lowest bar; won't be lower, because
+            the bar is got from min-heap, guarantee that lowest ba will be reached first)
+        2) one by one, all the bars will finally be pushed to queue, which means whole area was covered.
+
+        :type heightMap: List[List[int]]
         :rtype: int
         """
+        import heapq
+        if not heights or not heights[0]:
+            return 0  # don't return 0, should return 0
+        walls = []
+        m, n = len(heights), len(heights[0])
+        visited = [ [False for j in range(n)] for i in range(m)]
+        water = 0
+        for i in range(m):
+            heapq.heappush(walls, (heights[i][0], i, 0))
+            visited[i][0] = True
+            heapq.heappush(walls, (heights[i][n-1], i, n-1))
+            visited[i][n-1] = True
+        for j in range(n):
+            heapq.heappush(walls, (heights[0][j], 0, j))
+            visited[0][j] = True
+            heapq.heappush(walls, (heights[m-1][j], m-1, j))
+            visited[m-1][j] = True
 
+        dx = [0, 0, 1, -1]
+        dy = [1, -1, 0, 0]
+        while walls:
+            cur = heapq.heappop(walls)
+            height, x, y = cur[0], cur[1], cur[2]
+            for next in range(4):
+                nx = x + dx[next]
+                ny = y + dy[next]
+                if 0 <= nx < m and 0 <= ny < n and not visited[nx][ny]:
+                    nheight = heights[nx][ny]
+                    if nheight < height:
+                        water += height - nheight
+                    heapq.heappush(walls, (max(nheight, height),nx, ny))
+                    visited[nx][ny] = True # DO NOT forget this one
+        return water
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    def trapRainWater_ref(self, heights): #219ms, 88%
+        """
+        :type heightMap: List[List[int]]
+        :rtype: int
+        """
+        from heapq import heappush, heappop
+        if heights == []:
+            return 0
+
+        m, n = len(heights), len(heights[0])
+        visited = [ [ 0 for _ in range(n) ] for _ in range(m) ]
+        offsets = [ (-1, 0), (0, -1), (1, 0), (0, 1) ]
+
+        # Get the boundary.
+        min_heap = [] # A priority queue
+        for i in range(m):
+            heappush(min_heap, (heights[i][0], i, 0))
+            visited[i][0] = 1
+            heappush(min_heap, (heights[i][n-1], i, n-1))
+            visited[i][n-1] = 1
+        for i in range(n):
+            heappush(min_heap, (heights[0][i], 0, i))
+            visited[0][i] = 1
+            heappush(min_heap, (heights[m-1][i], m-1, i))
+            visited[m-1][i] = 1
+
+        # Start from the current shortest among the ones in the queue.
+        # This ensures that a point would be explored from the LOWEST point around it!
+        total_water = 0
+        while min_heap:
+            h, x, y = heappop(min_heap)
+            for dx, dy in offsets:
+                new_x, new_y = x + dx, y + dy
+                if 0 <= new_x < m and 0 <= new_y < n and not visited[new_x][new_y]:
+                    visited[new_x][new_y] = 1
+                    new_h = max(h, heights[new_x][new_y])
+                    heappush(min_heap, (new_h, new_x, new_y))
+                    if h > heights[new_x][new_y]:
+                        total_water += h - heights[new_x][new_y]
+        return total_water
 
 
 class SolutionTester(unittest.TestCase):
@@ -40,9 +146,26 @@ class SolutionTester(unittest.TestCase):
         self.sol = Solution()
 
     def test_case1(self):
-        nums = 1
-        answer = 1
-        result = self.sol.trap(nums)
+        nums = [
+          [1,4,3,1,3,2],
+          [3,2,1,3,2,4],
+          [2,3,3,2,3,1]
+        ]
+        answer = 4
+        result = self.sol.trapRainWater(nums)
+        self.assertEqual(answer, result)
+
+    def test_case2(self):
+        nums = [
+            [12,13,0,12],
+            [13,4,13,12],
+            [13,8,10,12],
+            [12,13,12,12],
+            [13,13,13,13]
+
+        ]
+        answer = 14
+        result = self.sol.trapRainWater(nums)
         self.assertEqual(answer, result)
 
 
@@ -54,6 +177,18 @@ def main():
 if __name__ == "__main__":
     main()
 
+"""
 
+九章管理员
+由于水是往低处流的， 所以对于这一类trapping water 问题，我们只用从最外层开始往内接雨水就可以。
+
+首先对矩阵外层需要找到最小的柱子，那么就想到用堆，每次堆帮助我们在外层的所有柱子里面找到最小的那根表示可以接的雨水的高度至少是多少，然后进行
+BSF遍历，如果值相等，继续往下走，如果遇到比当前值小的，或者边境，说明该水流会流出去（遇到这种情况对遍历的数据置为-1）说明往后连通该区域的水
+都会流出去，如果BFS一遍发现没有到边界和遇到比起小的点，则将遍历过的点的值设为遇到的最小的点，并更新水的流量，继续进行遍历。直至所有点都为-1
+为止，输出结果。
+
+参考代码：http://www.jiuzhang.com/solutions/trapping-rain-water-ii/
+
+"""
 
 #-*- coding:utf-8 -*-
