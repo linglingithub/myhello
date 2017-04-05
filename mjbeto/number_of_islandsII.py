@@ -4,93 +4,56 @@ import unittest
 
 """
 
-200. Number of Islands
+305. Number of Islands II
 
-Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and
-is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all
-surrounded by water.
+locked
 
-Example 1:
-
-11110
-11010
-11000
-00000
-Answer: 1
-
-Example 2:
-
-11000
-11000
-00100
-00011
-Answer: 3
-
-Credits:
-Special thanks to @mithmatt for adding this problem and creating all test cases.
-
-Subscribe to see which companies asked this question.
-
-Hide Tags Depth-first Search Breadth-first Search Union Find
-Hide Similar Problems (M) Surrounded Regions (M) Walls and Gates (H) Number of Islands II (M) Number of Connected
-Components in an Undirected Graph
-
-Medium
+Hard
 
 ========================================================================================================================
 
-Given a boolean 2D matrix, 0 is represented as the sea, 1 is represented as the island. If two 1 is adjacent, we
-consider them in the same island. We only consider up/down/left/right adjacent.
+Given a n,m which means the row and column of the 2D matrix and an array of pair A( size k). Originally, the 2D matrix
+is all 0 which means there is only sea in the matrix. The list pair has k operator and each operator has two integer
+A[i].x, A[i].y means that you can change the grid matrix[A[i].x][A[i].y] from sea to island. Return how many island are
+there in the matrix after each operator.
 
-Find the number of islands.
+ Notice
+
+0 is represented as the sea, 1 is represented as the island. If two 1 is adjacent, we consider them in the same island.
+ We only consider up/down/left/right adjacent.
 
 Have you met this question in a real interview? Yes
 Example
-Given graph:
+Given n = 3, m = 3, array of pair A = [(0,0),(0,1),(2,2),(2,1)].
 
-[
-  [1, 1, 0, 0, 0],
-  [0, 1, 0, 0, 1],
-  [0, 0, 0, 1, 1],
-  [0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 1]
-]
-return 3.
+return [1,1,2,2].
 
 Tags
-Facebook Zenefits Google
+Google Union Find
 Related Problems
+Medium Connecting Graph 40 %
 Medium Surrounded Regions 21 %
-Hard Number of Islands II
+Easy Number of Islands 24 %
+Medium Find the Weak Connected Component in the Directed Graph
 
 
 """
 
 
-class Solution(object):
-    def numIslands(self, grid):
-        """
-        :type grid: List[List[str]]
-        :rtype: int
-        """
-        if not grid or not grid[0]:
-            return 0
-        m = len(grid)
-        n = len(grid[0])
-        self.islands = [[(row,col) for col in range(n)] for row in range(m)]
-        self.row = len(grid)
-        self.col = len(grid[0])
-        self.island_cnt = self.row * self.col
+# Definition for a point.
+# class Point:
+#     def __init__(self, a=0, b=0):
+#         self.x = a
+#         self.y = b
 
-    def connect(self, ax, ay, bx, by):
-        ap = self.find(ax, ay)
-        bp = self.find(bx, by)
-        if ap != bp:
-            self.numIslands[][]
+class Solution:
+    # @param {int} n an integer
+    # @param {int} m an integer
+    # @param {Pint[]} operators an array of point
+    # @return {int[]} an integer array
+    def numIslands2(self, n, m, operators):
+        # Write your code here
 
-
-    def find(self, x, y):
-        if self.islands[x][y] !=
 
 
 
@@ -101,9 +64,10 @@ class SolutionTester(unittest.TestCase):
         self.sol = Solution()
 
     def test_case1(self):
-        nums = 1
-        answer = 1
-        result = self.sol.numIslands(nums)
+        n, m = 3,3
+        operators = [(0,0),(0,1),(2,2),(2,1)]
+        answer = [1,1,2,2]
+        result = self.sol.numIslands2(n, m, operators)
         self.assertEqual(answer, result)
 
 

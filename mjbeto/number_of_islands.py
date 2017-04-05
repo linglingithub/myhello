@@ -126,7 +126,7 @@ class SolutionTester(unittest.TestCase):
         result = self.sol.numIslands(nums)
         self.assertEqual(answer, result)
 
-    def test_case2(self): #====>
+    def test_case2(self): #====> from leetcode, use str format
         nums = ["11110","11010","11000","00000"]
         answer = 1
         result = self.sol.numIslands(nums)
