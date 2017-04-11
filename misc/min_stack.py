@@ -32,7 +32,65 @@ Easy
 import unittest
 
 
-class MinStack(object):
+class MinStack(object): #99ms, 47%
+
+    def __init__(self):
+        """
+        initialize your data structure here.
+        """
+        self.store = []
+        self.min_store = []
+
+
+    def push(self, x):
+        """
+        :type x: int
+        :rtype: void
+        """
+        self.store.append(x)
+        if not self.min_store or x <= self.min_store[-1]:
+            self.min_store.append(x)
+
+
+    def pop(self):
+        """
+        :rtype: void
+        """
+        if not self.store:
+            raise ValueError
+        if self.min_store[-1] == self.store[-1]:
+            del self.min_store[-1]
+        del self.store[-1]
+
+
+    def top(self):
+        """
+        :rtype: int
+        """
+        if not self.store:
+            raise ValueError
+        return self.store[-1]
+
+
+    def getMin(self):
+        """
+        :rtype: int
+        """
+        if not self.store:
+            raise ValueError
+        return self.min_store[-1]
+
+
+
+# Your MinStack object will be instantiated and called as such:
+# obj = MinStack()
+# obj.push(x)
+# obj.pop()
+# param_3 = obj.top()
+# param_4 = obj.getMin()
+
+
+class MinStack_old(object):
 
     def __init__(self):
         """
@@ -97,12 +155,19 @@ class MinStack(object):
 
 class SolutionTester(unittest.TestCase):
     def setUp(self):
-        self.sol = Solution()
+        self.minStack = MinStack()
+        self.minStack.push(-2)
+        self.minStack.push(0)
+        self.minStack.push(-3)
 
     def test_case1(self):
-        nums = 1
-        answer = 1
-        result = self.sol.searchInsert(nums)
+        result = []
+        result.append(self.minStack.getMin()) #-3
+        self.minStack.pop()
+        result.append(self.minStack.top()) #;      --> Returns 0.
+        result.append(self.minStack.getMin()) #;   --> Returns -2.
+        answer = [-3, 0, -2]
+
         self.assertEqual(answer, result)
 
 
