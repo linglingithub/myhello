@@ -1,3 +1,4 @@
+#coding=utf-8
 __author__ = 'linglin'
 
 
@@ -60,7 +61,7 @@ class MinStack(object): #99ms, 47%
             raise ValueError
         if self.min_store[-1] == self.store[-1]:
             del self.min_store[-1]
-        del self.store[-1]
+        del self.store[-1]  #for lintcode, this requires int return, then return self.store.pop()
 
 
     def top(self):
@@ -180,6 +181,16 @@ if __name__ == "__main__":
     main()
 
 """
+
+利用两个栈结构，其中一个是主要的正常stack，满足pop(), push()的O(1)时间要求，另外一个作为辅助的minStack，仅存入min的integer。
+min = Integer.parseInt(minStack.peek().toString());+
+
+push()时，如果number >= min，则push到minStack上 pop()时，如果number == min，也从minStack上pop
+题中的例子，最终stack为[2, 3, 1], minStack为 [2, 1]
+
+
+========================================================================================================================
+
 class MinStack(object):
 
     def __init__(self):
@@ -206,4 +217,3 @@ class MinStack(object):
 """
 
 #-*- coding:utf-8 -*-
-#coding=utf-8
