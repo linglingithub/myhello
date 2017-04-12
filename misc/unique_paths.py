@@ -25,7 +25,21 @@ import unittest
 
 
 class Solution(object):
-    def uniquePaths(self, m, n): #36ms, 82%, reduce to 1d dp
+    def uniquePaths(self, m, n): #48ms, 42%, reduce to 1d dp
+        """
+        :type m: int
+        :type n: int
+        :rtype: int
+        """
+        if m <= 0 or n <= 0:
+            return 0
+        dp = [1 for _ in range(n)]
+        for row in range(1,m):
+            for col in range(1,n):
+                dp[col] = dp[col] + dp[col-1]
+        return dp[n-1]
+
+    def uniquePaths1(self, m, n): #36ms, 82%, reduce to 1d dp
         """
         :type m: int
         :type n: int

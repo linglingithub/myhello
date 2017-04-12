@@ -1,3 +1,4 @@
+#coding=utf-8
 """
 
 Find Peak Element
@@ -19,13 +20,71 @@ Your solution should be in logarithmic complexity.
 
 =======
 
+
 Next challenges: (M) Summary Ranges  (M) Kth Smallest Element in a BST  (E) Closest Binary Search Tree Value
+
+Medium
+
+================================================================================================================
+
+There is an integer array which has the following features:
+
+The numbers in adjacent positions are different.
+A[0] < A[1] && A[A.length - 2] > A[A.length - 1].
+We define a position P is a peek if:
+
+A[P] > A[P-1] && A[P] > A[P+1]
+Find a peak element in this array. Return the index of the peak.
 
 """
 
 import unittest
 
 class Solution(object):
+    """
+    This is an important assumption: You may imagine that num[-1] = num[n] = -infinite.
+    Which means that two ends are half - qualified as the candidates
+    """
+
+    def findPeakElement(self, nums): #55ms, 23%
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if not nums:
+            return -1
+        l = 0
+        r = len(nums)-1
+        while l < r:
+            mid = (l+r)/2
+            if mid==l:
+                return mid if nums[mid]>nums[r] else r
+            if nums[mid-1]<nums[mid] and nums[mid]>nums[mid+1]:
+                return mid
+            elif nums[mid-1]<nums[mid]:
+                l = mid+1
+            else:
+                r = mid - 1
+        return l
+
+
+
+
+
+    def findPeakElement2(self, nums):
+        if nums is None or len(nums) == 0:
+            return -1
+        left = 0
+        right = len(nums) - 1
+        while left <= right:
+            if left == right:
+                return left
+            mid = (left+right)/2
+            if nums[mid] < nums[mid+1]:
+                left = mid + 1
+            else:
+                right = mid
+
     def findPeakElement1(self, nums):
         """
         :type nums: List[int]
@@ -52,19 +111,7 @@ class Solution(object):
             #print "mid = ", mid, "left = ", left, "right = ", right
         return mid
 
-    def findPeakElement(self, nums):
-        if nums is None or len(nums) == 0:
-            return -1
-        left = 0
-        right = len(nums) - 1
-        while left <= right:
-            if left == right:
-                return left
-            mid = (left+right)/2
-            if nums[mid] < nums[mid+1]:
-                left = mid + 1
-            else:
-                right = mid
+
 
 
 
@@ -121,3 +168,16 @@ if __name__ == '__main__':
     # solTestSuite.addTest(SolutionTest('test_case1'))
     # solTestSuite.addTest(SolutionTest('test_case2'))
     # unittest.TextTestRunner(verbosity=2).run(solTestSuite)
+
+"""
+
+
+最简单地解法就是遍历数组复杂度为O(N)，只要找到第一个元素，大于两边就可以了，但这题还可以用更优化的二分搜索来做。
+
+首先我们的目标是找到中间节点mid， 1.如果大于两边的数字那么就是找到了答案，直接返回找到的答案。  2. 如果左边的节点比mid大，那么我们可以继续
+在左半区间查找，因为左边可以证明一定存在一个peak element， 为什么呢？因为题目告诉了我们区间[0, mid - 1] 中num[0] < num[1]，我们刚才又
+知道num[mid - 1]>num[mid]了，所以[0, mid - 1] 之间肯定有一个peak element。  3. 如果num[mid - 2] > num[mid - 1]，那么我们就继续
+在[0, mid - 2]区间查找，那么同理可以在右边的区间找到一个peak element。所以继续这个二分搜索的方式最后我们就能找到一个peak element。
+
+
+"""

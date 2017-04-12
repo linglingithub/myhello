@@ -33,7 +33,30 @@ import unittest
 
 
 class Solution(object):
-    def uniquePathsWithObstacles(self, obstacleGrid): #49ms, 59%
+    def uniquePathsWithObstacles(self, obstacleGrid): #49ms, 49%
+        # write your code here
+        m = len(obstacleGrid)
+        n = len(obstacleGrid[0])
+        dp = [[1 for _ in range(n)] for _ in range(m)]
+        blocked = False
+        for i in range(m):
+            if blocked or obstacleGrid[i][0]:
+                blocked = True
+                dp[i][0] = 0
+        blocked = False
+        for j in range(n):
+            if blocked or obstacleGrid[0][j]:
+                blocked = True
+                dp[0][j] = 0
+        for i in range(1,m):
+            for j in range(1,n):
+                if obstacleGrid[i][j]:
+                    dp[i][j] = 0
+                else:
+                    dp[i][j] = dp[i-1][j] + dp[i][j-1]
+        return dp[m-1][n-1]
+
+    def uniquePathsWithObstacles1(self, obstacleGrid): #49ms, 59%
         """
         :type obstacleGrid: List[List[int]]
         :rtype: int
