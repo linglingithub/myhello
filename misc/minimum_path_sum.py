@@ -20,7 +20,23 @@ import unittest
 
 
 class Solution(object):
-    def minPathSum(self, grid): #58ms, 85%
+    def minPathSum(self, grid): #55ms, 95%
+        # write your code here
+        if not grid or not grid[0]:
+            return 0
+        m, n = len(grid), len(grid[0])
+        dp = [x for x in grid[0]]
+        for j in range(1,n):
+            dp[j] = dp[j] + dp[j-1]
+        for i in range(1,m):
+            dp[0] += grid[i][0]
+            for j in range(1,n):
+                dp[j] = min(dp[j], dp[j-1]) + grid[i][j]
+        return dp[n-1]
+
+
+
+    def minPathSum_ok(self, grid): #58ms, 85%
         """
         :type grid: List[List[int]]
         :rtype: int
@@ -66,6 +82,18 @@ class SolutionTester(unittest.TestCase):
 
     def test_case1(self):
         grid = [[1,2,3],[3,2,1],[1,1,1]]
+        answer = 7
+        result = self.sol.minPathSum(grid)
+        self.assertEqual(answer, result)
+
+    def test_case2(self):
+        grid = [[1,2],[1,1]]
+        answer = 3
+        result = self.sol.minPathSum(grid)
+        self.assertEqual(answer, result)
+
+    def test_case3(self):
+        grid = [[1,3,1],[1,5,1],[4,2,1]]
         answer = 7
         result = self.sol.minPathSum(grid)
         self.assertEqual(answer, result)
