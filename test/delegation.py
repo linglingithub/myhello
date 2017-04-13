@@ -6,7 +6,7 @@ class UpperOut:
     def write(self, s): # redefine write method
         self._outfile.write(s.upper())
 
-    def __getattr__(self, name): # delegation !!!
+    def __getattr__(self, name): # delegation !!! if without this, print instance will return <__main__.UpperOut instance at 0x1007cc248>
         return getattr(self._outfile, name)
 
 
@@ -29,3 +29,7 @@ class X:
 Most __setattr__() implementations must modify self.__dict__ to store local state for self without causing an infinite
 recursion.
 """
+
+instance = UpperOut("somedir/somefile.txt")
+#instance.write("test")
+print instance
