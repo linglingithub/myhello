@@ -26,11 +26,70 @@ Hide Similar Problems (M) Wiggle Sort II (M) Top K Frequent Elements (E) Third M
 
 Medium
 
+===================================================================================================================
+
+
+Find K-th largest element in an array.
+
+ Notice
+
+You can swap elements in the array
+
+Have you met this question in a real interview? Yes
+Example
+In array [9,3,2,4,8], the 3rd largest element is 4.
+
+In array [1,2,3,4,5], the 1st largest element is 5, 2nd largest element is 4, 3rd largest element is 3 and etc.
+
+Challenge
+O(n) time, O(1) extra memory.
+
+Tags
+Quick Sort Sort
+
+Related Problems
+Medium Wiggle Sort II 25 %
+Medium Kth Smallest Numbers in Unsorted Array 33 %
+Medium Kth Smallest Number in Sorted Matrix 23 %
+Easy Median
+
 """
 
 
 
 class Solution(object):
+    def findKthLargest(self, nums, k): #quick select
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        if not nums or k > len(nums):
+            return None
+        left, right = 0, len(nums)-1
+        while left < right: # ---
+            pivot = nums[right]
+            i = left-1
+            j = left
+            while j < right:
+                if nums[j] > pivot:
+                    i += 1
+                    nums[i], nums[j] = nums[j], nums[i]
+                j += 1 # don't forget this
+            i += 1
+            nums[i], nums[right] = nums[right], nums[i]
+            if i == k - 1:
+                return nums[i]
+            elif i > k - 1:
+                right = i - 1
+            else:
+                left = i + 1
+        return nums[left]
+
+
+
+
+
     def findKthLargest2(self, nums, k): #use sorted first, #52ms, 80%
         return sorted(nums, reverse=True)[k-1]
 
@@ -56,7 +115,7 @@ class Solution(object):
             heapq.heappop(heap)
         return heapq.heappop(heap)
 
-    def findKthLargest(self, nums, k):   # quick selection, 3475ms, 5.77%
+    def findKthLargest4(self, nums, k):   # quick selection, 3475ms, 5.77%
     # convert the kth largest to smallest
         return self.findKthSmallest(nums, len(nums)+1-k)
 
@@ -91,6 +150,20 @@ class SolutionTester(unittest.TestCase):
         nums = [3,2,1,5,6,4]
         k = 2
         answer = 5
+        result = self.sol.findKthLargest(nums, k)
+        self.assertEqual(answer, result)
+
+    def test_case2(self):
+        nums = [9,3,2,4,8]
+        k = 3
+        answer = 4
+        result = self.sol.findKthLargest(nums, k)
+        self.assertEqual(answer, result)
+
+    def test_case3(self):
+        nums = [1,2,3,4,5]
+        k = 5
+        answer = 1
         result = self.sol.findKthLargest(nums, k)
         self.assertEqual(answer, result)
 
