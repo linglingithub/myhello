@@ -30,7 +30,7 @@ Medium
 
 
 class Solution(object):
-    def compareVersion1(self, version1, version2): #62ms, 10%
+    def compareVersion(self, version1, version2): #62ms, 10%
         """
         Before answering the question, ask what's the format of all possible inputs.
         Without any dot? With multiple dots? NONE or '' inputs? etc.
