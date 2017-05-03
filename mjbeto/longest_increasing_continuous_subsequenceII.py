@@ -4,53 +4,71 @@ import unittest
 
 """
 
-Longest Increasing Continuous Subsequence
+Longest Increasing Continuous Subsequence II
 
-Give an integer array，find the longest increasing continuous subsequence in this array.
-
-An increasing continuous subsequence:
-
-Can be from right to left or from left to right.
-Indices of the integers in the subsequence should be continuous.
- Notice
-
-O(n) time and O(1) extra space.
+Give you an integer matrix (with row size n, column size m)，find the longest increasing continuous subsequence in this
+matrix. (The definition of the longest increasing continuous subsequence here can start at any row or column and go
+up/down/right/left any direction).
 
 Example
-For [5, 4, 2, 1, 3], the LICS is [5, 4, 2, 1], return 4.
+Given a matrix:
 
-For [5, 1, 2, 3, 4], the LICS is [1, 2, 3, 4], return 4.
+[
+  [1 ,2 ,3 ,4 ,5],
+  [16,17,24,23,6],
+  [15,18,25,22,7],
+  [14,19,20,21,8],
+  [13,12,11,10,9]
+]
+return 25
 
+Challenge
+O(nm) time and memory.
 
 Tags
-Enumeration Dynamic Programming Array
+Dynamic Programming
 Related Problems
-Hard Longest Increasing Continuous subsequence II
+Easy Longest Increasing Continuous Subsequence
 
-Easy
+Hard
 
 """
 
 
-class Solution(object):
-    # @param {int[]} A an array of Integer
+class Solution:
+    # @param {int[][]} A an integer matrix
     # @return {int}  an integer
-    def longestIncreasingContinuousSubsequence(self, A):
+    def longestIncreasingContinuousSubsequenceII(self, A):
         # Write your code here
-        if not A:
+        if not A or not A[0]:
             return 0
-        ascending = True
-        result = 1
-        current = 1
-        for i in range(1, len(A)):
-            if ascending == (A[i] > A[i-1]): # need to add bracket, otherwise wrong
-                current += 1
-            else:
-                result = max(result, current)
-                current = 2
-                ascending = not ascending
-        result = max(result, current) # don't forget this, otherwise wrong for case 2
+        row, col = len(A), len(A[0])
+        dp = [[0 for _ in range(col)] for _ in range(row)]
+        result = 0
+        for i in range(row):
+            for j in range(col):
+                one_ans = self.find_LICS(A, i, j, dp)
+                result = max(result, one_ans)
         return result
+
+    def find_LICS(self, A, x, y, dp):
+        if dp[x][y] != 0:
+            return dp[x][y]
+        dx = [0, 0, 1, -1]
+        dy = [1, -1, 0, 0]
+        length = 1 # can't be 0 here, otherwise wrong, where d[x][y] is the largest value, then the length is 1 actually
+        for i in range(4):
+            nx = x + dx[i]
+            ny = y + dy[i]
+            if 0<=nx<len(A) and 0<=ny<len(A[0]) and A[nx][ny] > A[x][y]:
+                length = max(length, 1+self.find_LICS(A, nx, ny, dp))
+        dp[x][y] = length
+        return dp[x][y]
+
+
+
+
+
 
 
 
@@ -60,16 +78,18 @@ class SolutionTester(unittest.TestCase):
         self.sol = Solution()
 
     def test_case1(self):
-        nums = [5, 4, 2, 1, 3]
-        answer = 4
-        result = self.sol.longestIncreasingContinuousSubsequence(nums)
+        nums = [
+          [1 ,2 ,3 ,4 ,5],
+          [16,17,24,23,6],
+          [15,18,25,22,7],
+          [14,19,20,21,8],
+          [13,12,11,10,9]
+        ]
+        answer = 25
+        result = self.sol.longestIncreasingContinuousSubsequenceII(nums)
         self.assertEqual(answer, result)
 
-    def test_case2(self):
-        nums = [5, 1, 2, 3, 4]
-        answer = 4
-        result = self.sol.longestIncreasingContinuousSubsequence(nums)
-        self.assertEqual(answer, result)
+
 
 
 
