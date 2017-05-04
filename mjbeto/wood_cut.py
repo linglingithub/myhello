@@ -194,3 +194,24 @@ if __name__ == "__main__":
 
 
 #-*- coding:utf-8 -*-
+
+"""
+    def woodCut(self, L, k):
+        if sum(L) < k:
+            return 0
+            
+        maxLen = max(L)
+        start, end = 1, maxLen
+        while start + 1 < end:
+            mid = (start + end) / 2
+            pieces = sum([l / mid for l in L])
+            if pieces >= k:
+                start = mid
+            else:
+                end = mid
+                
+        if sum([l / end for l in L]) >= k:
+            return end
+        return start
+
+"""
