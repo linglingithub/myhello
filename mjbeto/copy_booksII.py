@@ -4,31 +4,30 @@ import unittest
 
 """
 
-Copy Books
+Copy Books II
 
-Given n books and the ith book has A[i] pages. You are given k people to copy the n books.
-
-n books list in a row and each person can claim a continous range of the n books. For example one copier can copy the
-books from ith to jth continously, but he can not copy the 1st book, 2nd book and 4th book (without 3rd book).
-
-They start copying books at the same time and they all cost 1 minute to copy 1 page of a book. What's the best strategy
-to assign books so that the slowest copier can finish at earliest time?
+Given n books( the page number of each book is the same) and an array of integer with size k means k people to copy the
+book and the i th integer is the time i th person to copy one book). You must distribute the continuous id books to one
+people to copy. (You can give book A[1],A[2] to one people, but you cannot give book A[1], A[3] to one people, because
+book A[1] and A[3] is not continuous.) Return the number of smallest minutes need to copy all the books.
 
 Example
-Given array A = [3,2,4], k = 2.
+Given n = 4, array A = [3,2,4], .
 
-Return 5( First person spends 5 minutes to copy book 1 and book 2 and second person spends 4 minutes to copy book 3. )
+
+Return 4( First person spends 3 minutes to copy book 1, Second person spends 4 minutes to copy book 2 and 3, Third
+person spends 4 minutes to copy book 4. )
+
 
 Hard
 
 """
 
-
 class Solution:
-    # @param pages: a list of integers
-    # @param k: an integer
+    # @param n: an integer
+    # @param times: a list of integers
     # @return: an integer
-    def copyBooks(self, pages, k):
+    def copyBooksII(self, n, times):
         # write your code here
 
 
@@ -38,10 +37,10 @@ class SolutionTester(unittest.TestCase):
         self.sol = Solution()
 
     def test_case1(self):
-        nums = [2,3,4]
-        k = 2
-        answer = 5
-        result = self.sol.copyBooks(nums, k)
+        n =4
+        nums = [3,2,4]
+        answer = 4
+        result = self.sol.copyBooksII(n, nums)
         self.assertEqual(answer, result)
 
 
