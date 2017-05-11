@@ -146,6 +146,13 @@ class SolutionTester(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
 
+    def test_case6(self):
+        a = "abc"
+        b = "11abc"
+        answer = 2
+        result = self.sol.minDistance(a,b)
+        self.assertEqual(answer, result)
+
     def test_case5(self):
         a = "mart"
         b = "karma"
