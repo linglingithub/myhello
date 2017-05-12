@@ -42,7 +42,10 @@ class Solution:
     # @param m: An integer m denotes the size of a backpack
     # @param A: Given n items with size A[i]
     # @return: The maximum size
-    def backPack(self, m, nums): #ref
+    def backPack(self, m, nums):
+
+
+    def backPack1(self, m, nums): #ref
         dp = [0 for _ in range(m+1)]
         dp[0] = 1
         ans = 0
