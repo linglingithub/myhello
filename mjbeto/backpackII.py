@@ -5,7 +5,8 @@ import unittest
 """
 Backpack II
 
-Given n items with size Ai and value Vi, and a backpack with size m. What's the maximum value can you put into the backpack?
+Given n items with size Ai and value Vi, and a backpack with size m. What's the maximum value can you put into the 
+backpack?
 
  Notice
 
@@ -37,10 +38,14 @@ class Solution:
     # @return: The maximum value
     def backPackII(self, m, nums, vals):
         dp = [0 for _ in range(m+1)]
-        for stone in range(len(nums)):
-            for size in range(m, 0, -1):
-                if size >= nums[stone]:
-                    dp[size] = max(dp[size], dp[size-nums[stone]] + nums[stone])
+        for i in range(len(nums)):
+            for j in range(m, 0, -1):
+                weight = nums[i]
+                val = vals[i]
+                size = j
+                if size >= weight:
+                    dp[size] = max(dp[size], dp[size-weight] + val)
+        #return max(dp)  # result can directly be dp[m]
         return dp[m]
 
 
@@ -69,9 +74,17 @@ if __name__ == "__main__":
     main()
 
 """
-
-
-
+class Solution:
+    # @param m: An integer m denotes the size of a backpack
+    # @param A & V: Given n items with size A[i] and value V[i]
+    def backPackII(self, m, A, V):
+        # write your code here
+        f = [0 for i in xrange(m+1)]
+        n = len(A)
+        for i in range(n):
+            for j in xrange(m, A[i]-1, -1):
+                f[j] = max(f[j] , f[j-A[i]] + V[i])
+        return f[m]
 """
 
 #-*- coding:utf-8 -*-
