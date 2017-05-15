@@ -1,6 +1,7 @@
 #coding=utf-8
 
 import unittest
+from util.ini_file_util import IniFileUtil
 
 """
 Backpack
@@ -42,7 +43,159 @@ class Solution:
     # @param m: An integer m denotes the size of a backpack
     # @param A: Given n items with size A[i]
     # @return: The maximum size
-    def backPack(self, m, nums):
+
+    def backPack(self, m, nums): # MLE at case 5, pass case 6
+        """
+        use dp[i][j] to record whether previous i stones can make a size j (total weight is j), 1 yes, 0 not.
+        :param m: 
+        :param nums: 
+        :return: 
+        """
+        n = len(nums)
+        dp = [0 for _ in range(m+1)]
+        for i in range(n):
+            for j in range(m, 0, -1):
+                size = j
+                stone = nums[i]
+                if size == stone or size>stone and dp[size-stone] == 1 or dp[j] == 1:
+                    # need to add dp[i-1][j] here, otherwise wrong, means if previous stones can mke the way, one more stone also can
+                    dp[j] = 1
+                else:
+                    dp[j] = 0
+        for size in range(m, 0, -1):
+            if dp[size] == 1:
+                return size
+        return 0
+
+
+    def backPack_MLEcase5(self, m, nums): # MLE at case 5, pass case 6
+        """
+        use dp[i][j] to record whether previous i stones can make a size j (total weight is j), 1 yes, 0 not.
+        :param m: 
+        :param nums: 
+        :return: 
+        """
+        n = len(nums)
+        dp = [ [0 for _ in range(m+1)] for _ in range(n)]
+        for i in range(n):
+            for j in range(1, m+1):
+                size = j
+                stone = nums[i]
+                if size == stone or size>stone and dp[i-1][size-stone] == 1 or dp[i-1][j] == 1:
+                    # need to add dp[i-1][j] here, otherwise wrong, means if previous stones can mke the way, one more stone also can
+                    dp[i][j] = 1
+                else:
+                    dp[i][j] = 0
+        for size in range(m, 0, -1):
+            if dp[n-1][size] == 1:
+                return size
+        return 0
+
+
+    def backPack_TLE1(self, m, nums):  # TLE on case 5
+        dp = [0 for _ in range(m+1)]
+        for i in range(len(nums)):
+            for j in range(m, 0, -1):
+                # need to go from m to 1, because supress dp, larger size need to use the previous loop's smaller size value
+                size = j
+                stone = nums[i]
+                if stone <= size:
+                    dp[j] = max(dp[j], dp[size-stone] + stone)
+        return dp[m]
+
+
+    def backPack_TLE(self, m, nums): # TLE on case 5, pass MLE case6
+        n = len(nums)
+        dp = [[0 for _ in range(m+1)] for _ in range(2)]
+        for i in range(1, n+1):
+            stone = nums[i-1]
+            for j in range(1, m+1):
+                size = j
+                if stone > size:
+                    dp[i%2][j] = dp[(i-1)%2][j]
+                else:
+                    a = stone+dp[(i-1)%2][size-stone]
+                    b = dp[(i-1)%2][size]
+                    dp[i%2][j] = max(a, b)
+        return dp[n%2][m]
+
+
+    def backPack_MLE2(self, m, nums):  # use stone as row, and size as column, similar to _MLE
+        n = len(nums)
+        dp = [ [0 for _ in range(m+1)] for _ in range(n+1)]
+        for i in range(1, n+1):
+            stone = nums[i-1]
+            for j in range(1, m+1):
+                size = j
+                if stone > size:
+                    dp[i][size] = dp[i-1][size]
+                else:
+                    a = stone+dp[i-1][size-stone]
+                    b = dp[i-1][size]
+                    dp[i][j] = max(a, b)
+        return dp[n][m]
+
+    def backPack_WRONG(self, m, nums):
+        n = len(nums)
+        dp = [0 for _ in range(m + 1)]
+        for i in range(1, m + 1):
+            size = i
+            for j in range(n, 0, -1):
+                stone = nums[j - 1]
+                if stone > size:
+                    continue
+                else:
+                    dp[i] = max(stone + dp[size - stone], dp[size])
+        return dp[m]
+
+
+    def backPack_MLE(self, m, nums):  # correct, and MLE on case6
+        """
+        0-1背包问题是个典型举办子结构的问题，但是只能采用动态规划来解决，而不能采用贪心算法。因为在0-1背包问题中，在选择是否要把一个物品
+        加到背包中，必须把该物品加进去的子问题的解与不取该物品的子问题的解进行比较。这种方式形成的问题导致了许多重叠子问题，满足动态规划的
+        特征。动态规划解决0-1背包问题步骤如下：
+
+        0-1背包问题子结构：选择一个给定物品i，则需要比较选择i的形成的子问题的最优解与不选择i的子问题的最优解。分成两个子问题，进行选择比
+        较，选择最优的。
+        
+        0-1背包问题递归过程：设有n个物品，背包的重量为w，C[i][w]为最优解。即：
+        
+        C[i][w] = 
+        
+        (1) 0   if i=0 or w = 0
+        (2) C[i-1][w]    if w_i > w
+        (3) max(C[i-1][w - w_i] + w_i, C[i-1][w])
+        
+        :param m: 
+        :param nums: 
+        :return: 
+        """
+        n = len(nums)
+        dp = [ [0 for _ in range(n+1)] for _ in range(m+1)]
+
+        for i in range(1, m+1):
+            size = i
+            for j in range(1, n+1):
+                stone = nums[j-1]
+                if stone > size:
+                    dp[i][j] = dp[i][j-1]
+                else:
+                    dp[i][j] = max(stone+dp[size-stone][j-1], dp[size][j-1])
+        return dp[m][n]
+
+
+    def backPack_wrong(self, m, nums):
+        dp = [ [0 for _ in range(m+1)] for _ in range(len(nums)+1)]
+        for i in range(1, len(nums)):
+            for j in range(1,m+1):
+                stone = nums[i-1]
+                for smaller in range(0, i):
+                    if stone <= j - dp[smaller][j]:
+                        dp[i][j] = max(stone + dp[smaller][j], dp[i][j])
+                    else:
+                        dp[i][j] = max(dp[smaller][j], dp[i][j])
+        return dp[len(nums)][m]
+
 
 
     def backPack1(self, m, nums): #ref
@@ -166,6 +319,14 @@ class SolutionTester(unittest.TestCase):
         result = self.sol.backPack(m, nums)
         self.assertEqual(answer, result)
 
+    def test_case6(self):  #=======> MLE
+        params = IniFileUtil.read_into_dict("backpack_case6.ini")
+        nums = IniFileUtil.string_to_int_list(params.get("nums"))
+        m = int(params.get("m"))
+        answer = 5678
+        result = self.sol.backPack(m, nums)
+        self.assertEqual(answer, result)
+
 
 def main():
     suite = unittest.TestLoader().loadTestsFromTestCase(SolutionTester)
@@ -183,6 +344,7 @@ if __name__ == "__main__":
 
 注意dp[]的空间要给m+1，因为我们要求的是第m+1个值dp[m]，否则会抛出OutOfBoundException。
 
+
 public class Solution {
     public int backPack(int m, int[] A) {
         int[] dp = new int[m+1];
@@ -197,6 +359,27 @@ public class Solution {
     }
 }
 
+
+========================================================================================================================
+
+jiuzhang ref
+
+class Solution:
+    # @param m: An integer m denotes the size of a backpack
+    # @param A: Given n items with size A[i]
+    # @return: The maximum size
+    def backPack(self, m, A):
+        # write your code here
+        n = len(A)
+        dp = [0 for x in range(m+1)]
+        dp[0] = 1
+        ans = 0
+        for item in A:
+            for i in range(m,-1,-1):
+                if i-item >=0 and dp[i-item] > 0:
+                    ans = max(ans,i)
+                    dp[i] = 1
+        return ans 
 
 """
 
