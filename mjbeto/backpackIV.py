@@ -147,6 +147,17 @@ if __name__ == "__main__":
 
 """
 
+https://zhengyang2015.gitbooks.io/lintcode/backpack_iv_562.html
+
+这道题思路和III几乎一样，dp[j]表示背包容量为j时，对前i中物品来说能填满背包的方法数。当前元素为i时，背包容量大于等于nums[i]的才有可能被更
+新。此时，对于j容量的背包，其新的方法数为前i－1件物品能装满j容量背包的方法数（即不装第i件物品的方法数）＋前i-1件物品能装满j-nums[i]容量的
+背包的方法数（即装第i件物品的方法数）。这里状态方程只是把III中的max改成了+。所有求总共有多少种方法的题都可以从最大值问题变换max为+得到。
+因此，状态函数为：
+dp[j] = dp[j] + dp[j - nums[i]] (右边的dp[j]表示上一行中（即i－1件物品）能装满j容量的方法数)
+
+==============================================================================================================================
+
+
 class Solution:
     # @param {int[]} nums an integer array and all positive numbers, no duplicates
     # @param {int} target an integer
