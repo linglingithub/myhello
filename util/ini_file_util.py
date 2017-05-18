@@ -3,6 +3,15 @@ import os
 from collections import OrderedDict
 
 class IniFileUtil(object):
+    """
+    Sample usage:
+    
+    
+        params = IniFileUtil.read_into_dict("backpack_case6.ini")
+        nums = IniFileUtil.string_to_int_list(params.get("nums"))
+        m = int(params.get("m"))
+    
+    """
     DATA_FOLDER = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), "data")
 
     @classmethod
