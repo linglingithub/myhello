@@ -27,6 +27,57 @@ Hard
 
 
 class Solution(object):
+    def trapRainWater(self, heights): # two pointers, O(N) time and O(1) space
+        """
+        Key point for doing it O(1) space is to understand:
+        lmax and rmax does not need full scan of the array. if lmax < rmax, since only lmax matters for index l, though 
+        rmax is not fully scanned for index l, it does not matter.
+        :param heights: 
+        :return: 
+        """
+        # write your code here
+        if not heights:
+            return 0
+        n = len(heights)
+        lmax, rmax = heights[0], heights[n-1]
+        l, r = 1, n-2
+        result = 0
+        while l <= r:
+            if lmax < rmax:
+                result += lmax - heights[l] if heights[l] < lmax else 0
+                lmax = max(lmax, heights[l])
+                l += 1
+            else:
+                result += rmax - heights[r] if heights[r] < rmax else 0
+                rmax = max(rmax, heights[r])
+                r -= 1
+        return result
+
+
+
+
+    def trapRainWater1(self, heights): # linear scan, O(N) in time and space
+        # write your code here
+        if not heights:
+            return 0
+        n = len(heights)
+        lefts = [0 for _ in range(n)]
+        rights = [0 for _ in range(n)]
+        max_left = 0
+        for i in range(1,n):
+            max_left = max(max_left, heights[i-1])
+            lefts[i] = max_left
+        max_right = 0
+        result = 0
+        for i in range(n-2, -1, -1):
+            max_right = max(max_right, heights[i+1])
+            rights[i] = max_right
+            top = min(rights[i], lefts[i])
+            if top > heights[i]:
+                result += top-heights[i]
+        return result
+
+
     def trap(self, height):  # stack, O(N)， #69ms, 24%
         """
         :type height: List[int]
@@ -211,7 +262,7 @@ public:
 };
 
 
-====================
+========================================================================================================================
 
 [解题思路]
 对于任何一个坐标，检查其左右的最大坐标，然后相减就是容积。所以，
@@ -221,6 +272,46 @@ public:
 #2和#3可以合并成一个循环，
 
 http://fisherlei.blogspot.com/2013/01/leetcode-trapping-rain-water.html
+
+
+========================================================================================================================
+
+
+It turns out that the O(N) space is not necessary as long as we maintain two pointers and scan the bars from both head 
+and tail towards each other, see the following code first which can pass this LeetCode Trapping Rain Water problem:
+
+public class Solution {
+    public int trap(int[] A) {
+
+        int i = 0, j = A.length - 1;
+        int lMax = 0;
+        int rMax = 0;
+
+        int ret = 0;
+
+        while (i <= j) {
+            lMax = Math.max(lMax, A[i]); // max within [0..i]
+            rMax = Math.max(rMax, A[j]); // max within [j..n-1]
+
+            if (lMax < rMax) {
+                ret += lMax - A[i++];
+            }
+            else {
+                ret += rMax - A[j--];
+            }
+        }
+        return ret;
+    }
+}
+You see the key fact is that we only need constant memory to keep the maximum height among [0..i] and [j..n-1], and if 
+lMax < rMax, it means for the bar i, the left bound must be lMax, and the right bound does not affect how much rain bar 
+i can hold! So we directly calculate the amount of water and add it to the results, the similar reasoning applies to 
+the right side j.
+
+Summary
+
+LeetCode Trapping Rain Water: O(N) Time and O(1) Space with Two Pointers by keeping the left and right bound for each 
+bar so we get the rain each bar can hold
 
 
 """
