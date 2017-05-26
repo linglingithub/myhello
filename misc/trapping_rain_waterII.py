@@ -40,7 +40,118 @@ Hard
 
 
 class Solution(object):
-    def trapRainWater(self, heights): #252ms, 60%
+    def trapRainWater(self, heights):
+        if not heights or not heights[0]:
+            return 0
+        result = 0
+        import heapq
+        bars = []
+        m, n = len(heights), len(heights[0])
+        visited = [[False for _ in range(n)] for _ in range(m)]
+        for i in range(m):
+            heapq.heappush(bars, (heights[i][0], i,0))
+            heapq.heappush(bars, (heights[i][n-1], i,n-1))
+            visited[i][0], visited[i][n-1] = True, True
+        for j in range(1,n-1):  # careful , don't repeatedly adding [0][0] and alike points
+            heapq.heappush(bars, (heights[0][j], 0,j))
+            heapq.heappush(bars, (heights[m-1][j], m-1,j))
+            visited[0][j], visited[m-1][j] = True, True
+        dx = [0,0,1,-1]
+        dy = [1,-1,0,0]
+        while bars:
+            tmp = heapq.heappop(bars)
+            height, x, y = tmp[0], tmp[1], tmp[2]
+            for i in range(4):
+                nx, ny = x+dx[i], y+dy[i]
+                if 0<=nx<m and 0<=ny<n and not visited[nx][ny]:
+                    if heights[nx][ny] < height:
+                        result += height - heights[nx][ny]
+                        heapq.heappush(bars, (height, nx, ny))
+                    else:
+                        heapq.heappush(bars, (heights[nx][ny], nx, ny))
+                    visited[nx][ny] = True
+        return result
+
+    def trapRainWater_wrong(self, heights):
+        """
+        Can't use the logic "to add result only when current bar is lower than 4 neighbors". As long as the bar is not the
+        outer boarder bar, it will accumulate water when it is lower than outer bars, and if the neighboring bars are lower,
+        they will also reserve water. Think of a big basin shape matrix.
+        :param heights: 
+        :return: 
+        """
+        if not heights or not heights[0]:
+            return 0
+        result = 0
+        import heapq
+        bars = []
+        m, n = len(heights), len(heights[0])
+        visited = [[False for _ in range(n)] for _ in range(m)]
+        for i in range(m):
+            heapq.heappush(bars, (heights[i][0], i,0))
+            heapq.heappush(bars, (heights[i][n-1], i,n-1))
+            visited[i][0], visited[i][n-1] = True, True
+        for j in range(1,n-1):  # careful , don't repeatedly adding [0][0] and alike points
+            heapq.heappush(bars, (heights[0][j], 0,j))
+            heapq.heappush(bars, (heights[m-1][j], m-1,j))
+            visited[0][j], visited[m-1][j] = True, True
+        dx = [0,0,1,-1]
+        dy = [1,-1,0,0]
+        while bars:
+            tmp = heapq.heappop(bars)
+            height, x, y = tmp[0], tmp[1], tmp[2]
+            neighbors = []
+            for i in range(4):
+                nx, ny = x+dx[i], y+dy[i]
+                if 0<=nx<m and 0<=ny<n:
+                    neighbors.append(heights[nx][ny])
+                    if not visited[nx][ny]:
+                        heapq.heappush(bars, (heights[nx][ny], nx, ny))
+                        visited[nx][ny] = True
+            if len(neighbors) == 4:
+                top = min(neighbors)
+                if top > height:
+                    result += top - height
+                    heights[x][y] = top
+        return result
+
+    def trapRainWater_wrong(self, heights):
+        if not heights or not heights[0]:
+            return 0
+        result = 0
+        import heapq
+        bars = []
+        m, n = len(heights), len(heights[0])
+        visited = [[False for _ in range(n)] for _ in range(m)]
+        for i in range(m):
+            heapq.heappush(bars, (i,0,heights[i][0]))  # wrong here, heights should be the first one for the  heap to work
+            heapq.heappush(bars, (i,n-1,heights[i][n-1]))
+            visited[i][0], visited[i][n-1] = True, True
+        for j in range(1,n-1):  # careful , don't repeatedly adding [0][0] and alike points
+            heapq.heappush(bars, (0,j,heights[0][j]))
+            heapq.heappush(bars, (m-1,j,heights[m-1][j]))
+            visited[0][j], visited[m-1][j] = True, True
+        dx = [0,0,1,-1]
+        dy = [1,-1,0,0]
+        while bars:
+            tmp = heapq.heappop(bars)
+            x, y, height = tmp[0], tmp[1], tmp[2]
+            neighbors = []
+            for i in range(4):
+                nx, ny = x+dx[i], y+dy[i]
+                if 0<=nx<m and 0<=ny<n:
+                    neighbors.append(heights[nx][ny])
+                    if not visited[nx][ny]:
+                        heapq.heappush(bars, (nx, ny,heights[nx][ny]))
+                        visited[nx][ny] = True
+            if len(neighbors) == 4:
+                top = min(neighbors)
+                if top > height:
+                    result += top - height
+                    heights[x][y] = top
+        return result
+
+    def trapRainWater1(self, heights): #252ms, 60%
         """
         Use the min-heap and init with outer layer, the lowest one will always be found first, process and then expand
         to the 'connected' new neighbors, similar to find the new outer layer for the remaining (inside nodes).
@@ -64,7 +175,7 @@ class Solution(object):
             visited[i][0] = True
             heapq.heappush(walls, (heights[i][n-1], i, n-1))
             visited[i][n-1] = True
-        for j in range(n):
+        for j in range(1,n-1):
             heapq.heappush(walls, (heights[0][j], 0, j))
             visited[0][j] = True
             heapq.heappush(walls, (heights[m-1][j], m-1, j))
