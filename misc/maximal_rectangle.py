@@ -26,7 +26,75 @@ import unittest
 
 
 class Solution(object):
-    def maximalRectangle(self, matrix): #ref, 185ms, 33%
+    # @param {boolean[][]} matrix, a list of lists of boolean
+    # @return {int} an integer
+    def maximalRectangle(self, matrix):
+        # Write your code here
+        if not matrix or not matrix[0]:
+            return 0
+        m, n = len(matrix), len(matrix[0])
+        heights = [[1 if matrix[i][j] else 0 for j in range(n)] for i in range(m)]
+        result = 0
+        for i in range(1, m):
+            for j in range(n):
+                heights[i][j] = heights[i - 1][j] + 1 if matrix[i][j] else 0
+        for i in range(m):
+            area = self.largestRectangleArea(heights[i])
+            result = max(result, area)
+        return result
+
+    def largestRectangleArea(self, heights):
+        # write your code here
+        if not heights:
+            return 0
+        result = 0
+        stack = []
+        n = len(heights)
+        i = 0
+        while i < n:
+            if not stack or heights[i] > heights[
+                stack[-1]]:  # should be >=, not <= here, careful!!, can not be =, case6
+                stack.append(i)
+                i += 1
+            else:
+                while True:  # need to have one pop at least, otherwise dead loop for case7
+                    pos = stack.pop()
+                    if stack:
+                        area = heights[pos] * (i - 1 - stack[-1])
+                    else:
+                        # area = heights[pos] * (pos+1)  # need to check if stack or not, otherwise wrong for case 5
+                        area = heights[
+                                   pos] * i  # not pos, should be related to i, case 6, so far (0 to i) the lowest bar
+                    result = max(result, area)
+                    if not (stack and heights[stack[-1]] > heights[i]):
+                        break
+
+                        # while stack and heights[stack[-1]] > heights[i]:
+                        #     pos = stack.pop()
+                        #     if stack:
+                        #         area = heights[pos] * (i-pos)
+                        #     else:
+                        #         #area = heights[pos] * (pos+1)  # need to check if stack or not, otherwise wrong for case 5
+                        #         area = heights[pos] * i # not pos, should be related to i, case 6, so far (0 to i) the lowest bar
+                        #     result = max(result, area)
+        while stack:
+            pos = stack.pop()
+            if stack:
+                area = heights[pos] * (n - 1 - stack[-1])
+            else:
+                area = n * heights[pos]
+            result = max(area, result)
+        return result
+
+
+
+
+
+
+
+
+
+    def maximalRectangle_ref(self, matrix): #ref, 185ms, 33%
         """
         :type matrix: List[List[str]]
         :rtype: int
@@ -46,10 +114,10 @@ class Solution(object):
 
         maxArea = 0
         for i in range(m):
-            maxArea = max(maxArea, self.largestRectangleArea(height[i]))
+            maxArea = max(maxArea, self.largestRectangleArea1(height[i]))
         return maxArea
 
-    def largestRectangleArea(self, heights): # ref, 86ms, 59%
+    def largestRectangleArea1(self, heights): # ref, 86ms, 59%
         """
         :type heights: List[int]
         :rtype: int
