@@ -17,6 +17,50 @@ class TreeNode(object):
 
 
     @staticmethod
+    def generate_bt_from_string_standard(bfs_str):
+        """
+        "20,6,#,#,4"  --> 
+        
+            20
+           /  \
+          6   #
+         / \
+        #  4
+        :param bfs_str: 
+        :return: 
+        """
+        if not bfs_str:
+            return None
+        vals = bfs_str.split(",")
+        root = TreeNode(int(vals[0].strip()))
+        queue = [root]
+        idx, n = 1, len(vals)
+        level = []
+        left = True
+        while queue and idx < n:
+            char = vals[idx].strip()
+            if char == "#":
+                if not left:
+                    del queue[0]
+            else:       #if vals[idx] != "#":
+                tmp = TreeNode(int(char))
+                level.append(tmp)
+                if left:
+                    queue[0].left = tmp
+                else:
+                    queue[0].right = tmp
+                    del queue[0]
+            left = not left
+            idx += 1
+            if not queue:
+                queue = level
+                level = []
+        return root
+
+
+
+
+    @staticmethod
     def generate_bt_from_string(bfs_str):
         """
               5
@@ -139,10 +183,18 @@ def test_case2():
     root = TreeNode.generate_bt_from_list(vals)
     print root
 
+def test1_case3():
+    #bfs_str = "20,6,#,#,4"
+    #bfs_str = "20,6,1,#,4, 3"
+    bfs_str = "20,6,1,#,4, 2,3,41,42,#,#, #, 32"
+    root = TreeNode.generate_bt_from_string_standard(bfs_str)
+    print root
+
 
 if __name__ == '__main__':
     #test_case1()
-    test_case2()
+    #test_case2()
+    test1_case3()
 
 
 
