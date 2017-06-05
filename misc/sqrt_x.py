@@ -22,7 +22,52 @@ import unittest
 
 
 class Solution(object):
-    def mySqrt(self, x): #52ms, 70%
+
+    def mySqrt(self, x): # TLE, 33% cases passed, sqrt_TLE_lint
+        # write your code here
+        if x < 0 or type(x) is not int:
+            raise ValueError("Inputs should be non-negatives integers.")
+        if 0 <= x <= 1:
+            return x
+        left, right = 1, x / 2
+        mid = (left + right) / 2
+        while left <= right:   #should be <= here, not <, otherwise wrong for case 6
+            tmp = mid * mid
+            if tmp == x:
+                return mid
+            elif tmp < x:
+                left = mid + 1
+            else:
+                right = mid - 1
+            mid = (left + right) / 2
+        return mid
+
+
+    def mySqrt1(self, x): # TLE, 33% cases passed, sqrt_TLE_lint
+        # write your code here
+        if x < 0 or type(x) is not int:
+            raise ValueError("Inputs should be non-negatives integers.")
+        if 0 <= x <= 1:
+            return x
+        left, right = 1, x / 2
+        mid = (left + right) / 2
+        while left < right:
+
+            if mid * mid == x:
+                return mid
+            elif mid * mid < x:
+                if left == mid:
+                    return left if right * right != x else right
+                left += 1   #should not be this small, should be upon mid point
+            else:
+                if left == mid:
+                    return left if right * right != x else right
+                right -= 1
+            mid = (left + right) / 2
+        return mid
+
+
+    def mySqrt1(self, x): #good, 52ms, 70%
         """
         :type x: int
         :rtype: int
@@ -115,6 +160,19 @@ class SolutionTester(unittest.TestCase):
     def test_case2(self): # this case means it will use floor int when the real sqrt is not an integer
         nums = 15
         answer = 3
+        result = self.sol.mySqrt(nums)
+        self.assertEqual(answer, result)
+
+
+    def test_case5(self): # lint TLE, local runs around 23s
+        nums = 999999999
+        answer = 31622
+        result = self.sol.mySqrt(nums)
+        self.assertEqual(answer, result)
+
+    def test_case6(self): # ====>
+        nums = 2147483647
+        answer = 46340  # wrong output 46341
         result = self.sol.mySqrt(nums)
         self.assertEqual(answer, result)
 
