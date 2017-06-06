@@ -30,6 +30,27 @@ import unittest
 
 class Solution(object):
 
+    def maxSubArray(self, nums): # dp means subarry that ends at index i, O(1) space, O(n) time
+        # write your code here
+        if not nums:
+            return 0
+        dp = nums[0]
+        result = dp
+        for i in range(1, len(nums)):
+            dp = max(dp,0) + nums[i]
+            result = max(dp, result)
+        return result
+
+
+    def maxSubArray(self, nums): # dp means subarry that ends at index i, O(n) space, O(n) time
+        # write your code here
+        if not nums:
+            return 0
+        dp = [ x for x in nums]
+        for i in range(1, len(nums)):
+            dp[i] = max(dp[i-1],0) + nums[i]
+        return max(dp)
+
 
     def maxSubArray(self, nums): #59ms, 69.8%, simplified dp with O(1) space
         """
