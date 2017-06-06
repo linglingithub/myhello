@@ -46,6 +46,23 @@ class Solution(object):
     Which means that two ends are half - qualified as the candidates
     """
 
+
+    def findPeak(self, A):
+        # write your code here
+        if not A:
+            return -1
+        left, right = 1, len(A)-2
+        while left <= right:
+            mid = (left+right)/2
+            if A[mid-1]<A[mid] and A[mid]>A[mid+1]:
+                return mid
+            elif A[mid-1] > A[mid]:
+                right = mid-1
+            else:
+                left = mid + 1
+        return left if A[left] > A[right] else right
+        # return left  -- this is better
+
     def findPeakElement(self, nums): #55ms, 23%
         """
         :type nums: List[int]
