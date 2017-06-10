@@ -33,8 +33,58 @@ class Solution(object):
         :type words: List[str]
         :rtype: List[int]
         """
-        for i in range(0, len(s)):
-            for j
+        if not s or not words:
+            return []
+        word_dict = {}
+        for word in words:
+            word_dict[word] = 1
+        self.word_len = len(words[0])
+        self.word_cnt = len(words)
+        result = []
+        i, j = 0, 0
+        dp = [{} for _ in range(self.word_len)]
+        end = len(s) - self.word_len * len(words)
+        while i < end:
+            self.search(s, word_dict, dp, result, i)
+        return result
+
+    def search(self, s, word_dict, dp, result, i):
+        state = dp[i%self.word_len]
+
+        j = i
+        pos = j
+        bag = {}
+        potential = True
+        if state != {}:
+            j = state.get("j") + 1
+            bag = state.get("bag")
+            if i - self.word_len > 0 :
+                bag[s[i-self.word_len: i]] -= 1
+                if bag[s[i-self.word_len: i]] == 0:
+                    del bag[s[i-self.word_len: i]]
+        end = i + self.word_len * self.word_cnt -1
+        while j <= end:
+            tmp = s[j: j+self.word_len] # should not be j+self.word_len-1
+            if tmp in word_dict:
+                if tmp not in bag:
+                    bag[tmp] = 1
+                    pos = j + self.word_len - 1  # remember no only j here
+                    j += self.word_len
+                else:
+                    potential = True # but can not update the bag or pos, cause there would be repeated words, and should break
+                    break
+            else:
+                potential = False
+                break
+        if len(bag) == self.word_cnt:
+            result.append(i)
+        if potential:
+            if pos != i:
+                state["j"] = pos
+                state["bag"] = bag
+                dp[i%self.word_len] = state
+        else:
+            dp[i % self.word_len] = {}
 
 
 class SolutionTester(unittest.TestCase):
