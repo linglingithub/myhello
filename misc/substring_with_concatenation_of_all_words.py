@@ -27,7 +27,7 @@ import unittest
 
 
 class Solution(object):
-    def findSubstring(self, s, words):
+    def findSubstring(self, s, words): # 55.2%
         """
         :type s: str
         :type words: List[str]
@@ -37,15 +37,16 @@ class Solution(object):
             return []
         word_dict = {}
         for word in words:
-            word_dict[word] = 1
+            word_dict[word] = 1 if word not in word_dict else word_dict[word] + 1
         self.word_len = len(words[0])
         self.word_cnt = len(words)
         result = []
         i, j = 0, 0
         dp = [{} for _ in range(self.word_len)]
         end = len(s) - self.word_len * len(words)
-        while i < end:
+        while i <= end:  # should be <= not <
             self.search(s, word_dict, dp, result, i)
+            i += 1  # don't forget this
         return result
 
     def search(self, s, word_dict, dp, result, i):
@@ -58,7 +59,7 @@ class Solution(object):
         if state != {}:
             j = state.get("j") + 1
             bag = state.get("bag")
-            if i - self.word_len > 0 :
+            if i - self.word_len >= 0 : #should be >=, not > here
                 bag[s[i-self.word_len: i]] -= 1
                 if bag[s[i-self.word_len: i]] == 0:
                     del bag[s[i-self.word_len: i]]
@@ -66,8 +67,8 @@ class Solution(object):
         while j <= end:
             tmp = s[j: j+self.word_len] # should not be j+self.word_len-1
             if tmp in word_dict:
-                if tmp not in bag:
-                    bag[tmp] = 1
+                if tmp not in bag or bag[tmp] < word_dict[tmp]:
+                    bag[tmp] = 1 if tmp not in bag else bag[tmp] + 1
                     pos = j + self.word_len - 1  # remember no only j here
                     j += self.word_len
                 else:
@@ -76,9 +77,17 @@ class Solution(object):
             else:
                 potential = False
                 break
-        if len(bag) == self.word_cnt:
-            result.append(i)
+        # if len(bag) == self.word_cnt:
+        #     result.append(i)
         if potential:
+            if len(bag) == len(word_dict):
+                match = True
+                for entry in word_dict:
+                    if word_dict[entry] != bag.get(entry):
+                        match = False
+                        break
+                if match:
+                    result.append(i)
             if pos != i:
                 state["j"] = pos
                 state["bag"] = bag
@@ -97,6 +106,16 @@ class SolutionTester(unittest.TestCase):
         answer = [0, 9]
         result = self.sol.findSubstring(s, words)
         self.assertEqual(sorted(answer), sorted(result))
+
+    def test_case2(self): # ========> Note words may be duplicated
+        s = "wordgoodgoodgoodbestword"
+        words = ["word", "good", "best", "good"]
+        answer = [8]  #wrong output as []
+        result = self.sol.findSubstring(s, words)
+        self.assertEqual(sorted(answer), sorted(result))
+
+
+
 
 
 def main():
