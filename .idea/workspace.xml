@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/HouseRobber.py" afterPath="$PROJECT_DIR$/misc/HouseRobber.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mjbeto/coins_in_a_line.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -409,6 +410,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_insertion_sort_list__5_.coverage" NAME="Unittests in insertion_sort_list (5) Coverage Results" MODIFIED="1475536045833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_SolutionTester_test_case01.coverage" NAME="Unittests for SolutionTester.test_case01 Coverage Results" MODIFIED="1496700650205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_gray_code__4_.coverage" NAME="Unittests in gray_code (4) Coverage Results" MODIFIED="1481055815499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_coins_in_a_line_py.coverage" NAME="Unittests in coins_in_a_line.py Coverage Results" MODIFIED="1497397562148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSumSmaller__2_.coverage" NAME="Unittests in ThreeSumSmaller (2) Coverage Results" MODIFIED="1472601312016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_balanced_binary_tree__2_.coverage" NAME="Unittests in balanced_binary_tree (2) Coverage Results" MODIFIED="1483652434899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ZigZagConversion__3_.coverage" NAME="Unittests in ZigZagConversion (3) Coverage Results" MODIFIED="1473917746516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -477,6 +479,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_path_sumII__3_.coverage" NAME="Unittests in path_sumII (3) Coverage Results" MODIFIED="1476861626626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_binary_tree_zigzag_level_order_traversal__2_.coverage" NAME="Unittests in binary_tree_zigzag_level_order_traversal (2) Coverage Results" MODIFIED="1481591064104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sumIII.coverage" NAME="Unittests in combination_sumIII Coverage Results" MODIFIED="1477613690591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$coins_in_a_line_py.coverage" NAME="coins_in_a_line.py Coverage Results" MODIFIED="1497396735226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/testhello$gradeJsonGenerator.coverage" NAME="gradeJsonGenerator Coverage Results" MODIFIED="1480375402775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_binary_tree_level_order_traversal__2_.coverage" NAME="Unittests in binary_tree_level_order_traversal (2) Coverage Results" MODIFIED="1481572880297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_binary_tree_maximum_path_sum.coverage" NAME="Unittests in binary_tree_maximum_path_sum Coverage Results" MODIFIED="1478410686856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -701,16 +704,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="maximum_subarray.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/maximum_subarray.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="62" column="82" lean-forward="false" selection-start-line="62" selection-start-column="82" selection-end-line="62" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="maximal_square.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjbeto/maximal_square.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -761,11 +754,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HouseRobber.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HouseRobber.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/HouseRobber.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="42" column="48" lean-forward="true" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+            <state relative-caret-position="239">
+              <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="coins_in_a_line.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mjbeto/coins_in_a_line.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="47" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -833,7 +836,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mjbeto/maximum_average_subarray.py" />
         <option value="$PROJECT_DIR$/mjbeto/edit_distanceII.py" />
         <option value="$PROJECT_DIR$/misc/bitwise_and_of_numbers_range.py" />
         <option value="$PROJECT_DIR$/misc/edit_distance.py" />
@@ -884,6 +886,7 @@
         <option value="$PROJECT_DIR$/misc/substring_with_concatenation_of_all_words.py" />
         <option value="$PROJECT_DIR$/misc/longest_palindromic_substring.py" />
         <option value="$PROJECT_DIR$/misc/HouseRobber.py" />
+        <option value="$PROJECT_DIR$/mjbeto/coins_in_a_line.py" />
       </list>
     </option>
   </component>
@@ -974,7 +977,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="misc" />
+              <option name="myItemId" value="mjbeto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1011,7 +1014,6 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/linglin/PycharmProjects/testhello/util/aaa.py" />
-    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1040,7 +1042,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in HouseRobber.py">
+  <component name="RunManager" selected="Python tests.Unittests in coins_in_a_line.py">
     <configuration default="false" name="Unittests in median_of_two_sorted_arrays.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1055,22 +1057,6 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/median_of_two_sorted_arrays.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests for SolutionTester.test_case03" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;SolutionTester.test_case03&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
     <configuration default="false" name="Unittests in substring_with_concatenation_of_all_words.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -1118,6 +1104,23 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/HouseRobber.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in coins_in_a_line.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/mjbeto/coins_in_a_line.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
@@ -1359,22 +1362,42 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <list size="7">
+    <configuration default="false" name="coins_in_a_line.py" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mjbeto/coins_in_a_line.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
       <item index="1" class="java.lang.String" itemvalue="Python.max_tree" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in median_of_two_sorted_arrays.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case03" />
+      <item index="2" class="java.lang.String" itemvalue="Python.coins_in_a_line.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in median_of_two_sorted_arrays.py" />
       <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in substring_with_concatenation_of_all_words.py" />
       <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in longest_palindromic_substring.py" />
       <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in HouseRobber.py" />
+      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests in coins_in_a_line.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in HouseRobber.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in longest_palindromic_substring.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in substring_with_concatenation_of_all_words.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in median_of_two_sorted_arrays.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case03" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in coins_in_a_line.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in HouseRobber.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in longest_palindromic_substring.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in substring_with_concatenation_of_all_words.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in median_of_two_sorted_arrays.py" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -1421,6 +1444,15 @@
     <history-entry file="Unittests_in_HouseRobber_py - 2017.06.13 at 12h 25m 10s.xml">
       <configuration name="Unittests in HouseRobber.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_coins_in_a_line_py - 2017.06.13 at 15h 13m 08s.xml">
+      <configuration name="Unittests in coins_in_a_line.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_coins_in_a_line_py - 2017.06.13 at 16h 24m 02s.xml">
+      <configuration name="Unittests in coins_in_a_line.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_coins_in_a_line_py - 2017.06.13 at 16h 46m 02s.xml">
+      <configuration name="Unittests in coins_in_a_line.py" configurationId="tests" />
+    </history-entry>
     <history-entry file="Unittests_in_longest_palindromic_substring_py - 2017.06.12 at 21h 53m 27s.xml">
       <configuration name="Unittests in longest_palindromic_substring.py" configurationId="tests" />
     </history-entry>
@@ -1429,15 +1461,6 @@
     </history-entry>
     <history-entry file="Unittests_in_longest_palindromic_substring_py - 2017.06.13 at 12h 23m 19s.xml">
       <configuration name="Unittests in longest_palindromic_substring.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_substring_with_concatenation_of_all_words_py - 2017.06.12 at 20h 25m 41s.xml">
-      <configuration name="Unittests in substring_with_concatenation_of_all_words.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_substring_with_concatenation_of_all_words_py - 2017.06.12 at 20h 29m 16s.xml">
-      <configuration name="Unittests in substring_with_concatenation_of_all_words.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_substring_with_concatenation_of_all_words_py - 2017.06.12 at 20h 30m 39s.xml">
-      <configuration name="Unittests in substring_with_concatenation_of_all_words.py" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_substring_with_concatenation_of_all_words_py - 2017.06.12 at 20h 33m 07s.xml">
       <configuration name="Unittests in substring_with_concatenation_of_all_words.py" configurationId="tests" />
@@ -1463,7 +1486,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31022727" sideWeight="0.51043916" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39119804" sideWeight="0.48956084" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.297066" sideWeight="0.48956084" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.317757" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26309523" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24910007" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1528,7 +1551,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/misc/HouseRobber.py</url>
-          <line>121</line>
+          <line>134</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -2588,7 +2611,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/misc/HouseRobber.py</url>
-          <line>69</line>
+          <line>82</line>
           <option name="timeStamp" value="348" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -2959,13 +2982,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/remove_nth_node_from_end_of_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3304,14 +3320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/aaa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="25" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/invert_binary_tree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -3354,8 +3362,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/misc/HouseRobber.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="42" column="48" lean-forward="true" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+        <state relative-caret-position="239">
+          <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/aaa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="25" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mjbeto/coins_in_a_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="47" selection-end-column="22" />
           <folding />
         </state>
       </provider>
