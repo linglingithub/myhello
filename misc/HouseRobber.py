@@ -30,8 +30,34 @@ Easy
 """
 
 
+class Solution:
+    # @param A: a list of non-negative integers.
+    # return: an integer
+    def houseRobber(self, A):  # O(n) time, O(1) space
+        # write your code here
+        if not A:
+            return 0
+        if len(A) <= 1:
+            return A[0]
+        dp = [0, A[0], max(A[0], A[1])]
+        for i in range(3, len(A)+1):
+            dp[i%3] = max(dp[(i-1)%3], dp[(i-2)%3]+A[i-1])
+        return max(dp)
 
-class Solution(object):
+
+
+    #def houseRobber(self, A):
+    def rob1(self, A): # O(n) time and space
+        # write your code here
+        if not A:
+            return 0
+        dp = [x for x in [0]+A]
+        for i in range(2, len(A)+1):
+            dp[i] = max(dp[i-1], dp[i-2]+A[i-1])
+        return max(dp)
+
+
+class Solution1(object):
     def rob(self, nums): #49ms, 34%
         """
         :type nums: List[int]
