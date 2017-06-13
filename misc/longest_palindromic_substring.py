@@ -18,7 +18,37 @@ http://www.cnblogs.com/zuoyuan/p/3777721.html
 import unittest
 
 
-class Solution(object):
+class Solution:
+    # @param {string} s input string
+    # @return {string} the longest palindromic substring
+    def longestPalindrome(self, s):
+        # Write your code here
+        if not s:
+            return ""
+        n = len(s)
+        result = ""
+        for i in range(n):
+            sub_odd = self.search_str(s, i, i)
+            result = sub_odd if len(sub_odd) > len(result) else result
+            sub_even = self.search_str(s, i, i + 1)
+            result = sub_even if len(sub_even) > len(result) else result
+        return result
+
+    def search_str(self, s, i, j):
+        res = ""
+        l, r = i, j
+        while l >= 0 and r < len(s):
+            if s[l] == s[r]:
+                l -= 1
+                r += 1
+            else:
+                break
+        res = s[l + 1: r]
+        return res
+
+
+
+class Solution1(object):
     def longestPalindrome(self, s):
         result = ""
         for i in range(len(s)):
