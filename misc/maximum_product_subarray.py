@@ -25,7 +25,24 @@ Medium
 import unittest
 
 
-class Solution(object):
+class Solution:
+    # @param nums: an integer[]
+    # @return: an integer
+    def maxProduct(self, nums):
+        # write your code here
+        if not nums:
+            return 0
+        max_pro = [x for x in nums]
+        min_pro = [x for x in nums]
+        for i in range(1,len(nums)):
+            a, b = nums[i]*max_pro[i-1], nums[i]*min_pro[i-1]
+            max_pro[i] = max(nums[i], a, b)
+            min_pro[i] = min(nums[i], a, b)
+        result = max(max_pro)
+        return result
+
+
+class Solution1(object):
 
     def maxProduct(self, nums): #59ms, 46%
         """
