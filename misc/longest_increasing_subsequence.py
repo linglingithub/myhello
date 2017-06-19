@@ -57,9 +57,26 @@ Related Problems
 
 """
 
-
-
 class Solution:
+    """
+    @param nums: The integer array
+    @return: The length of LIS (longest increasing subsequence)
+    """
+    def longestIncreasingSubsequence(self, nums):
+        # write your code here
+        if not nums:
+            return 0
+        n = len(nums)
+        dp = [1 for _ in range(n)]
+        for i in range(1, n):
+            for j in range(0, i):
+                if nums[j] < nums[i]:
+                    dp[i] = max(dp[i], dp[j]+1)
+        return max(dp)
+
+
+
+class Solution1:
     def lengthOfLIS(self, nums): #ref, 42ms, 93%
         if not nums:
             return 0
@@ -295,6 +312,7 @@ for each num in nums
 方法一：
 dp[i] 为 以 A[i]结尾的LIS，那么对于dp[i]有dp[i] =max( dp[j] + 1) [ 0<= j < i, nums[j] < nums[i]  ]
 效率为O(n^2)
+
 方法二：
 dp[i] 为 以 A[i]结尾的LIS ， g(i) = min ( A[j]) ( dp[j] = i) 即g(i)表示上升子序列为i，结尾最小的值。
 比如，1，2，4，3中A[3] = 3
