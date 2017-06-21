@@ -23,7 +23,7 @@ import unittest
 
 class Solution(object):
 
-    def mySqrt(self, x): # TLE, 33% cases passed, sqrt_TLE_lint
+    def mySqrt(self, x): # TLE, 33% cases passed, sqrt_TLE_lint --> submit again then accepted ???
         # write your code here
         if x < 0 or type(x) is not int:
             raise ValueError("Inputs should be non-negatives integers.")
@@ -187,6 +187,29 @@ if __name__ == "__main__":
 
 
 """
+
+jiuzhang answer
+
+class Solution:
+    def sqrt(self, x):
+        # write your code here
+        start, end = 1, x
+        while start + 1 < end:
+            mid = (start + end) / 2
+            if mid * mid == x:
+                return mid
+            elif mid * mid < x:
+                start = mid
+            else:
+                end = mid
+        if end * end <= x:
+            return end
+        return start    
+
+
+================
+
+
 A:
 
 这里给出两种实现方法：一是二分搜索，二是牛顿迭代法。
