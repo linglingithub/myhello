@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/coins_in_a_lineIII_case4.ini" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mjbeto/coins_in_a_lineIII.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mjbeto/scramble_string.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testhello.iws" />
@@ -359,6 +358,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_spiral_matrixII__4_.coverage" NAME="Unittests in spiral_matrixII (4) Coverage Results" MODIFIED="1478719238776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_string_to_integer__1_.coverage" NAME="Unittests in string_to_integer (1) Coverage Results" MODIFIED="1474409121077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_remove_duplicates_from_sorted_arrayII__3_.coverage" NAME="Unittests in remove_duplicates_from_sorted_arrayII (3) Coverage Results" MODIFIED="1480451265518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_scramble_string_py.coverage" NAME="Unittests in scramble_string.py Coverage Results" MODIFIED="1498024731211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$csv2json.coverage" NAME="csv2json Coverage Results" MODIFIED="1427991074690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_construct_binary_tree_from_preorder_and_inorder_traversal__2_.coverage" NAME="Unittests in construct_binary_tree_from_preorder_and_inorder_traversal (2) Coverage Results" MODIFIED="1476501812175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_validate_binary_search_tree.coverage" NAME="Unittests in validate_binary_search_tree Coverage Results" MODIFIED="1481220352713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -698,21 +698,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit_distance.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/edit_distance.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="longest_common_subsequence.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjbeto/longest_common_subsequence.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="91" column="15" lean-forward="true" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
+            <state relative-caret-position="1365">
+              <caret line="91" column="15" lean-forward="false" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -721,18 +711,38 @@
       <file leaf-file-name="coins_in_a_line.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjbeto/coins_in_a_line.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
+            <state relative-caret-position="2535">
               <caret line="169" column="25" lean-forward="false" selection-start-line="169" selection-start-column="25" selection-end-line="169" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="coins_in_a_lineIII.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="coins_in_a_lineIII.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjbeto/coins_in_a_lineIII.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+            <state relative-caret-position="224">
+              <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scramble_string.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mjbeto/scramble_string.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="55" column="34" lean-forward="false" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="case.py" pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="328" column="0" lean-forward="false" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -772,21 +782,8 @@
         <entry file="file://$PROJECT_DIR$/data/backpack_case6.ini">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="6" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="6" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="longest_increasing_subsequence.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/longest_increasing_subsequence.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="74" column="22" lean-forward="false" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
-              <folding>
-                <element signature="e#6855#20860#0" expanded="false" />
-                <element signature="e#20906#26020#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -843,7 +840,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mjbeto/build_post_officeII.py" />
         <option value="$PROJECT_DIR$/data/backpack_case6.ini" />
         <option value="$PROJECT_DIR$/util/aaa.py" />
         <option value="$PROJECT_DIR$/mjbeto/backpackIV.py" />
@@ -894,6 +890,7 @@
         <option value="$PROJECT_DIR$/mjbeto/longest_common_subsequence.py" />
         <option value="$PROJECT_DIR$/data/coins_in_a_lineIII_case4.ini" />
         <option value="$PROJECT_DIR$/mjbeto/coins_in_a_lineIII.py" />
+        <option value="$PROJECT_DIR$/mjbeto/scramble_string.py" />
       </list>
     </option>
   </component>
@@ -904,8 +901,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1048" />
-    <option name="y" value="-895" />
+    <option name="x" value="67" />
+    <option name="y" value="23" />
     <option name="width" value="1316" />
     <option name="height" value="876" />
   </component>
@@ -985,21 +982,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testhello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testhello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
+              <option name="myItemId" value="mjbeto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1063,24 +1046,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in coins_in_a_lineIII.py">
-    <configuration default="false" name="Unittests in coins_in_a_line.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_pattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/mjbeto/coins_in_a_line.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in scramble_string.py">
     <configuration default="false" name="Unittests in coins_in_a_lineII.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1142,6 +1108,22 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/mjbeto/coins_in_a_lineIII.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in scramble_string.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/mjbeto/scramble_string.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
@@ -1406,19 +1388,19 @@
       <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
       <item index="1" class="java.lang.String" itemvalue="Python.max_tree" />
       <item index="2" class="java.lang.String" itemvalue="Python.coins_in_a_line.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in coins_in_a_line.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in coins_in_a_lineII.py" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in maximum_product_subarray.py" />
-      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in edit_distance.py" />
-      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests in coins_in_a_lineIII.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in coins_in_a_lineII.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in maximum_product_subarray.py" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in edit_distance.py" />
+      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in coins_in_a_lineIII.py" />
+      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests in scramble_string.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in coins_in_a_lineIII.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in edit_distance.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in maximum_product_subarray.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in coins_in_a_lineII.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in coins_in_a_line.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in scramble_string.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in coins_in_a_lineIII.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in edit_distance.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in maximum_product_subarray.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in coins_in_a_lineII.py" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -1459,35 +1441,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_coins_in_a_lineIII_py - 2017.06.20 at 12h 03m 17s.xml">
-      <configuration name="Unittests in coins_in_a_lineIII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_scramble_string_py - 2017.06.20 at 22h 35m 59s.xml">
+      <configuration name="Unittests in scramble_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_coins_in_a_lineIII_py - 2017.06.20 at 12h 07m 51s.xml">
-      <configuration name="Unittests in coins_in_a_lineIII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_scramble_string_py - 2017.06.20 at 22h 37m 47s.xml">
+      <configuration name="Unittests in scramble_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_coins_in_a_lineIII_py - 2017.06.20 at 12h 24m 32s.xml">
-      <configuration name="Unittests in coins_in_a_lineIII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_scramble_string_py - 2017.06.20 at 22h 38m 36s.xml">
+      <configuration name="Unittests in scramble_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_coins_in_a_lineIII_py - 2017.06.20 at 12h 51m 51s.xml">
-      <configuration name="Unittests in coins_in_a_lineIII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_scramble_string_py - 2017.06.20 at 22h 42m 19s.xml">
+      <configuration name="Unittests in scramble_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_coins_in_a_lineIII_py - 2017.06.20 at 13h 17m 02s.xml">
-      <configuration name="Unittests in coins_in_a_lineIII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_scramble_string_py - 2017.06.20 at 22h 42m 49s.xml">
+      <configuration name="Unittests in scramble_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_coins_in_a_lineIII_py - 2017.06.20 at 13h 17m 46s.xml">
-      <configuration name="Unittests in coins_in_a_lineIII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_scramble_string_py - 2017.06.20 at 22h 44m 13s.xml">
+      <configuration name="Unittests in scramble_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_coins_in_a_lineIII_py - 2017.06.20 at 13h 19m 26s.xml">
-      <configuration name="Unittests in coins_in_a_lineIII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_scramble_string_py - 2017.06.20 at 22h 46m 11s.xml">
+      <configuration name="Unittests in scramble_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_coins_in_a_lineIII_py - 2017.06.20 at 13h 19m 44s.xml">
-      <configuration name="Unittests in coins_in_a_lineIII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_scramble_string_py - 2017.06.20 at 22h 50m 45s.xml">
+      <configuration name="Unittests in scramble_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_edit_distance_py - 2017.06.19 at 14h 33m 20s.xml">
-      <configuration name="Unittests in edit_distance.py" configurationId="tests" />
+    <history-entry file="Unittests_in_scramble_string_py - 2017.06.20 at 22h 58m 20s.xml">
+      <configuration name="Unittests in scramble_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_edit_distance_py - 2017.06.19 at 14h 33m 44s.xml">
-      <configuration name="Unittests in edit_distance.py" configurationId="tests" />
+    <history-entry file="Unittests_in_scramble_string_py - 2017.06.20 at 22h 58m 51s.xml">
+      <configuration name="Unittests in scramble_string.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1500,19 +1482,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1048" y="-895" width="1316" height="876" extended-state="0" />
+    <frame x="67" y="23" width="1316" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26452118" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26844585" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31022727" sideWeight="0.51043916" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28364116" sideWeight="0.48956084" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.317757" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26309523" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26253298" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24910007" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33947772" sideWeight="0.48435375" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4057971" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33905014" sideWeight="0.48435375" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4050132" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20545869" sideWeight="0.5056" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2990,6 +2972,11 @@
           <line>47</line>
           <option name="timeStamp" value="466" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mjbeto/scramble_string.py</url>
+          <line>72</line>
+          <option name="timeStamp" value="469" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -2998,18 +2985,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="467" />
+      <option name="time" value="470" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mjbeto/build_post_office.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="242" column="1" lean-forward="false" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mjbeto/longest_substring_with_at_most_k_distinct_characters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3202,14 +3182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="328" column="0" lean-forward="false" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/sqrt_x.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -3328,14 +3300,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/aaa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mjbeto/edit_distanceII.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3346,23 +3310,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/misc/edit_distance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mjbeto/longest_common_subsequence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="91" column="15" lean-forward="true" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
+        <state relative-caret-position="1365">
+          <caret line="91" column="15" lean-forward="false" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mjbeto/coins_in_a_line.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
+        <state relative-caret-position="2535">
           <caret line="169" column="25" lean-forward="false" selection-start-line="169" selection-start-column="25" selection-end-line="169" selection-end-column="25" />
           <folding />
         </state>
@@ -3371,7 +3335,7 @@
     <entry file="file://$PROJECT_DIR$/data/backpack_case6.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="6" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -3402,8 +3366,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mjbeto/coins_in_a_lineIII.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+        <state relative-caret-position="224">
+          <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/aaa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="328" column="0" lean-forward="false" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mjbeto/scramble_string.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="55" column="34" lean-forward="false" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
           <folding />
         </state>
       </provider>
