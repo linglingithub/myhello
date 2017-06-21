@@ -168,6 +168,57 @@ if __name__ == "__main__":
 
 #-*- coding:utf-8 -*-
 
+"""
+递归方法容易理解。如何DP？
+
+动态规划解法：
+
+递归解法有很多重复子问题，比如s2 = rgeat, s1 = great 当我们选择分割点为0时，要解决子问题 isScramble(reat, geat)，再对该子问题选择分
+割点0时，要解决子问题 isScramble(eat,eat)；而当我们第一步选择1作为分割点时，也要解决子问题 isScramble(eat,eat)。
+相同的子问题isScramble(eat,eat)就要解决2次。
+
+动态规划用数组来保存子问题，设dp[k][i][j]表示s2从j开始长度为k的子串是否可以由s1从i开始长度为k的子串转换而成，那么动态规划方程如下
+
+   初始条件：dp[1][i][j] = (s1[i] == s2[j] ? true : false)
+   dp[k][i][j] = ( dp[divlen][i][j] && dp[k-divlen][i+divlen][j+divlen] )  ||  
+                 ( dp[divlen][i][j+k-divlen] && dp[k-divlen][i+divlen][j] ) 
+    
+   (divlen = 1,2,3...k-1, 它表示子串分割点到子串起始端的距离) ，只要一个子问题返回真，就可以停止计算
+   
+代码如下：
+
+复制代码
+ 1 class Solution {
+ 2 public:
+ 3     bool isScramble(string s1, string s2) {
+ 4         //动态规划解法
+ 5         if(s1.size() != s2.size())return false;
+ 6         const int len = s1.size();
+ 7         //dp[k][i][j]表示s2从j开始长度为k的子串是否可以由s1从i开始长度为k的子串转换而成
+ 8         bool dp[len+1][len][len];
+ 9         //初始化长度为1的子串的dp值
+10         for(int i = 0; i <= len-1; i++)
+11             for(int j = 0; j <= len-1; j++)
+12                 dp[1][i][j] = s1[i] == s2[j] ? true : false;
+13         for(int k = 2; k <= len; k++)//子串的长度
+14             for(int i = 0; i <= len-k; i++)//s1的起始位置
+15                 for(int j = 0; j <= len-k; j++)//s2的起始位置
+16                 {
+17                     dp[k][i][j] = false;
+18                     //divlen表示两个子串分割点到子串起始端的距离
+19                     for(int divlen = 1; divlen < k && !dp[k][i][j]; divlen++)
+20                         dp[k][i][j] = (dp[divlen][i][j] && dp[k-divlen][i+divlen][j+divlen])
+21                             || (dp[divlen][i][j+k-divlen] && dp[k-divlen][i+divlen][j]);
+22                 }
+23         return dp[len][0][0];
+24     }
+25 };
+
+
+"""
+
+
+
 
 '''
 

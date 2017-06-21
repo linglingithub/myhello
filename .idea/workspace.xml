@@ -728,8 +728,8 @@
       <file leaf-file-name="scramble_string.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mjbeto/scramble_string.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="72" column="40" lean-forward="false" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+            <state relative-caret-position="2217">
+              <caret line="369" column="1" lean-forward="false" selection-start-line="369" selection-start-column="1" selection-end-line="369" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -3386,8 +3386,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mjbeto/scramble_string.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="72" column="40" lean-forward="false" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+        <state relative-caret-position="2217">
+          <caret line="369" column="1" lean-forward="false" selection-start-line="369" selection-start-column="1" selection-end-line="369" selection-end-column="1" />
           <folding />
         </state>
       </provider>
