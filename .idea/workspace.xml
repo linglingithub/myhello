@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mjbeto/course_schedule.py" afterPath="$PROJECT_DIR$/mjbeto/course_schedule.py" />
     </list>
     <ignored path="testhello.iws" />
@@ -585,7 +584,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_merge_sorted_array__3_.coverage" NAME="Unittests in merge_sorted_array (3) Coverage Results" MODIFIED="1475000449016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_game_of_life.coverage" NAME="Unittests in game_of_life Coverage Results" MODIFIED="1481058934153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_tree_node_py.coverage" NAME="Unittests in tree_node.py Coverage Results" MODIFIED="1496336036599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/testhello$Unittests_in_course_schedule_py.coverage" NAME="Unittests in course_schedule.py Coverage Results" MODIFIED="1498361083226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_course_schedule_py.coverage" NAME="Unittests in course_schedule.py Coverage Results" MODIFIED="1498362820634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_word_breakII__4_.coverage" NAME="Unittests in word_breakII (4) Coverage Results" MODIFIED="1483428208051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_longest_common_prefix__1_.coverage" NAME="Unittests in longest_common_prefix (1) Coverage Results" MODIFIED="1474475533606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_jump_game.coverage" NAME="Unittests in jump_game Coverage Results" MODIFIED="1479092385922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -747,8 +746,8 @@
       <file leaf-file-name="course_schedule.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mjbeto/course_schedule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="273" column="19" lean-forward="false" selection-start-line="273" selection-start-column="19" selection-end-line="273" selection-end-column="19" />
+            <state relative-caret-position="97">
+              <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -1464,9 +1463,6 @@
     <history-entry file="Unittests_for_SolutionTester_test_case05 - 2017.06.24 at 20h 01m 04s.xml">
       <configuration name="Unittests for SolutionTester.test_case05" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_course_schedule_py - 2017.06.24 at 19h 44m 57s.xml">
-      <configuration name="Unittests in course_schedule.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_course_schedule_py - 2017.06.24 at 19h 45m 21s.xml">
       <configuration name="Unittests in course_schedule.py" configurationId="tests" />
     </history-entry>
@@ -1491,6 +1487,9 @@
     <history-entry file="Unittests_in_course_schedule_py - 2017.06.24 at 20h 24m 43s.xml">
       <configuration name="Unittests in course_schedule.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_course_schedule_py - 2017.06.24 at 20h 53m 40s.xml">
+      <configuration name="Unittests in course_schedule.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1509,11 +1508,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30397728" sideWeight="0.5185771" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44460228" sideWeight="0.48956084" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44460228" sideWeight="0.48956084" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3166227" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26253298" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24910007" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30397728" sideWeight="0.48101267" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30397728" sideWeight="0.48101267" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5582386" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20545869" sideWeight="0.5056" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -3019,22 +3018,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mjbeto/course_schedule.py</url>
-          <line>133</line>
+          <line>159</line>
           <option name="timeStamp" value="477" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mjbeto/course_schedule.py</url>
-          <line>159</line>
+          <line>185</line>
           <option name="timeStamp" value="478" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mjbeto/course_schedule.py</url>
-          <line>173</line>
+          <line>199</line>
           <option name="timeStamp" value="480" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mjbeto/course_schedule.py</url>
-          <line>160</line>
+          <line>186</line>
           <option name="timeStamp" value="481" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -3448,8 +3447,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mjbeto/course_schedule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="273" column="19" lean-forward="false" selection-start-line="273" selection-start-column="19" selection-end-line="273" selection-end-column="19" />
+        <state relative-caret-position="97">
+          <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
           <folding />
         </state>
       </provider>

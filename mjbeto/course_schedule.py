@@ -31,10 +31,65 @@ Medium Topological Sorting
 """
 
 
-class Solution(object):
+class Solution_DFS2_notgood_local_online:
+    def dfs(self, v, visit, gr):
+        if visit[v] == 1:
+            return True
+        visit[v] = -1;
+        for i in gr[v]:
+            if visit[i] == -1 or not self.dfs(i, visit, gr):
+                return False
+        visit[v] = 1
+        return True
+
+    # @param {integer} numCourses
+    # @param {integer[][]} prerequisites
+    # @return {boolean}
     def canFinish(self, numCourses, prerequisites):
+        gr = [[] for x in range(numCourses)]
+        visit = [0 for x in range(numCourses)]
+
+        for p in prerequisites:
+            if p[0] not in gr[p[1]]:
+                gr[p[1]].append(p[0])
+
+        for v in range(numCourses):
+            if visit[v] != 1:
+                if not self.dfs(v, visit, gr):
+                    return False
+        return True
+
+
+class Solution_DFS_TLEonline_maxstacklocal(object):
+    def canFinish(self, n, pres):
+        # Write your code here
+        graph = [[] for _ in range(n)]
+        visited = [False for _ in range(n)]
+        for edge in pres:
+            graph[edge[0]].append(edge[1])
+
+        for i in range(n):
+            if not self.dfs(i, graph, visited):
+                return False
+        return True
+
+    def dfs(self, node, graph, visited):
+        if visited[node]:
+            return False
+        visited[node] = True
+        for i in graph[node]:
+            if not self.dfs(i, graph, visited):
+                return False
+        visited[node] = False
+        return True
+
+
+
+class Solution(object):
+    def canFinish(self, numCourses, prerequisites): # BFS idea
         """
-        remember: key difference, graph should be (a,b) --> graph[a].append(b), not graph[b].append[a]
+        remember: key difference, 
+        graph should be (a,b) --> graph[a].append(b), not using n*n matrix
         :param numCourses: 
         :param prerequisites: 
         :return: 
@@ -245,6 +300,10 @@ if __name__ == "__main__":
 """
 some DFS code can be accepted by leetcode, by error on lintcode (probabaly maximum recursive times, n = 100001)
 one of the codes is like following
+
+下面我们来看DFS的解法，也需要建立有向图，还是用二维数组来建立，和BFS不同的是，我们像现在需要一个一维数组visit来记录访问状态，大体思路是，
+先建立好有向图，然后从第一个门课开始，找其可构成哪门课，暂时将当前课程标记为已访问，然后对新得到的课程调用DFS递归，直到出现新的课程已经访问
+过了，则返回false，没有冲突的话返回true，然后把标记为已访问的课程改为未访问。代码如下：
 
     def dfs(self, v, visit, gr):
         if visit[v] == 1:
