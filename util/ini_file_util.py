@@ -34,3 +34,23 @@ class IniFileUtil(object):
             if token != "":
                 result.append(int(token))
         return result
+
+    @classmethod
+    def string_to_int_list_list(cls, instr):
+        """
+        out put is like [[5,9], [1,3], ....]
+        :param instr: 
+        :return: 
+        """
+        import re
+        tokens = re.split(',| |\[|\]', instr)
+        result = []
+        # tokens = instr.split(",[]")
+        i = 0
+        while i < len(tokens):
+            if tokens[i] == '':
+                i += 1
+                continue
+            result.append([int(tokens[i]),int(tokens[i+1])])
+            i += 2
+        return result
