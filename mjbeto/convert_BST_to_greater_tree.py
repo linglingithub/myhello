@@ -39,7 +39,9 @@ class TreeNode:
 class Solution:
     # @param {TreeNode} root the root of binary tree
     # @return {TreeNode} the new root
-    def convertBST(self, root):  #accepted online
+    def convertBST(self, root):
+        # accepted online, some answer shows that can actually modify the tree in place
+        # originally thinks that it requires to construct and return a 'new' tree
         # Write your code here
         if not root:
             return None
@@ -81,3 +83,27 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+"""
+
+class Solution:
+    # @param {TreeNode} root the root of binary tree
+    # @return {TreeNode} the new root
+    def convertBST(self, root):
+        # Write your code here
+        self.sum = 0
+        self.helper(root)
+        return root
+
+    def helper(self, root):
+        if root is None:
+            return
+        if root.right:
+            self.helper(root.right)
+        
+        self.sum += root.val
+        root.val = self.sum
+        if root.left:
+            self.helper(root.left)
+
+"""
