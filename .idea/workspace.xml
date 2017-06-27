@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/insert_delete_getRandom_O(1).py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/longest_palindromic_subsequence.py" afterPath="$PROJECT_DIR$/misc/longest_palindromic_subsequence.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mjbeto/convert_BST_to_greater_tree.py" afterPath="$PROJECT_DIR$/mjbeto/convert_BST_to_greater_tree.py" />
     </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,6 +33,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_validate_binary_search_tree__3_.coverage" NAME="Unittests in validate_binary_search_tree (3) Coverage Results" MODIFIED="1481223319430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_simplify_path.coverage" NAME="Unittests in simplify_path Coverage Results" MODIFIED="1479857684072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_merge_sorted_array.coverage" NAME="Unittests in merge_sorted_array Coverage Results" MODIFIED="1475000837382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_find_all_anagrams_in_a_string_py.coverage" NAME="Unittests in find_all_anagrams_in_a_string.py Coverage Results" MODIFIED="1498540581782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_reverse_linked_list__3_.coverage" NAME="Unittests in reverse_linked_list (3) Coverage Results" MODIFIED="1481088955919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_divide_two_integers__4_.coverage" NAME="Unittests in divide_two_integers (4) Coverage Results" MODIFIED="1476990338408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_gray_code__1_.coverage" NAME="Unittests in gray_code (1) Coverage Results" MODIFIED="1481055993100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -700,38 +700,28 @@
       <file leaf-file-name="aaa.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/aaa.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="two_sum.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/2sum_group/two_sum.py">
+      <file leaf-file-name="find_all_anagrams_in_a_string.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            <state relative-caret-position="32">
+              <caret line="216" column="0" lean-forward="false" selection-start-line="216" selection-start-column="0" selection-end-line="230" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="course_schedule.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mjbeto/course_schedule.py">
+      <file leaf-file-name="factorial_trailing_zeroes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/factorial_trailing_zeroes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="117" column="24" lean-forward="true" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="longest_palindromic_substring.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/longest_palindromic_substring.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+            <state relative-caret-position="225">
+              <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -740,48 +730,8 @@
       <file leaf-file-name="longest_palindromic_subsequence.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/longest_palindromic_subsequence.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="53" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product_of_array_except_self.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/product_of_array_except_self.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="3" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="convert_BST_to_greater_tree.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mjbeto/convert_BST_to_greater_tree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="988">
-              <caret line="106" column="34" lean-forward="false" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="insert_delete_getRandom_O(1).py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/misc/insert_delete_getRandom_O(1).py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="76" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course_schedule_case5.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/course_schedule_case5.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+            <state relative-caret-position="555">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -790,7 +740,7 @@
       <file leaf-file-name="ini_file_util.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/ini_file_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
+            <state relative-caret-position="750">
               <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
               <folding />
             </state>
@@ -849,7 +799,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/mjbeto/copy_books.py" />
         <option value="$PROJECT_DIR$/mjbeto/copy_booksII.py" />
         <option value="$PROJECT_DIR$/mjbeto/graph_valid_tree.py" />
@@ -896,10 +845,11 @@
         <option value="$PROJECT_DIR$/util/ini_file_util.py" />
         <option value="$PROJECT_DIR$/data/course_schedule_case5.ini" />
         <option value="$PROJECT_DIR$/mjbeto/course_schedule.py" />
-        <option value="$PROJECT_DIR$/misc/longest_palindromic_subsequence.py" />
         <option value="$PROJECT_DIR$/misc/product_of_array_except_self.py" />
         <option value="$PROJECT_DIR$/mjbeto/convert_BST_to_greater_tree.py" />
         <option value="$PROJECT_DIR$/misc/insert_delete_getRandom_O(1).py" />
+        <option value="$PROJECT_DIR$/misc/longest_palindromic_subsequence.py" />
+        <option value="$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py" />
       </list>
     </option>
   </component>
@@ -910,10 +860,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="62" />
-    <option name="y" value="111" />
-    <option name="width" value="1324" />
-    <option name="height" value="748" />
+    <option name="x" value="50" />
+    <option name="y" value="76" />
+    <option name="width" value="1380" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -967,7 +917,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -996,6 +945,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -1055,7 +1005,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in product_of_array_except_self.py">
+  <component name="RunManager" selected="Python tests.Unittests in find_all_anagrams_in_a_string.py">
     <configuration default="false" name="Unittests in course_schedule.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1070,22 +1020,6 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/mjbeto/course_schedule.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests for SolutionTester.test_case03 (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;SolutionTester.test_case03&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
     <configuration default="false" name="Unittests for SolutionTester.test_case4" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -1133,6 +1067,22 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/product_of_array_except_self.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in find_all_anagrams_in_a_string.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
@@ -1418,18 +1368,18 @@
       <item index="2" class="java.lang.String" itemvalue="Python.coins_in_a_line.py" />
       <item index="3" class="java.lang.String" itemvalue="Python.flattern_binary_tree" />
       <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in course_schedule.py" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case03 (1)" />
-      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case4" />
-      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case05" />
-      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests in product_of_array_except_self.py" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case4" />
+      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case05" />
+      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests in product_of_array_except_self.py" />
+      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests in find_all_anagrams_in_a_string.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in product_of_array_except_self.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in course_schedule.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case05" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case4" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case03 (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in find_all_anagrams_in_a_string.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in product_of_array_except_self.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in course_schedule.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case05" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case4" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -1470,35 +1420,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_SolutionTester_test_case05 - 2017.06.24 at 20h 01m 04s.xml">
-      <configuration name="Unittests for SolutionTester.test_case05" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.06.26 at 21h 52m 46s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_course_schedule_py - 2017.06.24 at 19h 57m 01s.xml">
-      <configuration name="Unittests in course_schedule.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.06.26 at 21h 52m 59s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_course_schedule_py - 2017.06.24 at 19h 57m 17s.xml">
-      <configuration name="Unittests in course_schedule.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.06.26 at 21h 54m 18s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_course_schedule_py - 2017.06.24 at 20h 01m 18s.xml">
-      <configuration name="Unittests in course_schedule.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.06.26 at 21h 54m 53s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_course_schedule_py - 2017.06.24 at 20h 12m 58s.xml">
-      <configuration name="Unittests in course_schedule.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.06.26 at 21h 55m 28s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_course_schedule_py - 2017.06.24 at 20h 24m 31s.xml">
-      <configuration name="Unittests in course_schedule.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.06.26 at 21h 57m 51s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_course_schedule_py - 2017.06.24 at 20h 24m 43s.xml">
-      <configuration name="Unittests in course_schedule.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.06.26 at 21h 58m 13s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_course_schedule_py - 2017.06.24 at 20h 53m 40s.xml">
-      <configuration name="Unittests in course_schedule.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.06.26 at 22h 13m 07s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_course_schedule_py - 2017.06.24 at 20h 57m 26s.xml">
-      <configuration name="Unittests in course_schedule.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.06.26 at 22h 15m 55s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_product_of_array_except_self_py - 2017.06.25 at 20h 02m 38s.xml">
-      <configuration name="Unittests in product_of_array_except_self.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.06.26 at 22h 16m 21s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1511,18 +1461,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="111" width="1324" height="748" extended-state="0" />
+    <frame x="50" y="76" width="1380" height="768" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2597504" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25261584" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30397728" sideWeight="0.5185771" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33968255" sideWeight="0.51872075" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44460228" sideWeight="0.48956084" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4430769" sideWeight="0.48956084" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3166227" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26136363" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24910007" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33968255" sideWeight="0.48101267" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5582386" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33968255" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47846153" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20545869" sideWeight="0.5056" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3050,6 +3001,31 @@
           <line>49</line>
           <option name="timeStamp" value="482" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py</url>
+          <line>145</line>
+          <option name="timeStamp" value="484" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py</url>
+          <line>152</line>
+          <option name="timeStamp" value="485" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py</url>
+          <line>128</line>
+          <option name="timeStamp" value="487" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py</url>
+          <line>130</line>
+          <option name="timeStamp" value="488" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="489" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -3058,27 +3034,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="483" />
+      <option name="time" value="490" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/trapping_rain_water.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="33" column="66" lean-forward="false" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/trapping_rain_waterII.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="57" column="55" lean-forward="false" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/largest_rectangle_in_histogram_case3.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3320,7 +3280,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
           <caret line="53" column="14" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="106" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3346,7 +3305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="52" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3354,15 +3312,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="685">
           <caret line="87" column="40" lean-forward="false" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/2sum_group/two_sum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3378,7 +3327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3386,15 +3334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/ini_file_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3402,7 +3341,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mjbeto/convert_BST_to_greater_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="106" column="34" lean-forward="false" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/insert_delete_getRandom_O1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/product_of_array_except_self.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="3" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/2sum_group/two_sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -3422,42 +3388,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/aaa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/longest_palindromic_subsequence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="53" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="10" />
+        <state relative-caret-position="555">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mjbeto/convert_BST_to_greater_tree.py">
+    <entry file="file://$PROJECT_DIR$/util/ini_file_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="106" column="34" lean-forward="false" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
+        <state relative-caret-position="750">
+          <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/product_of_array_except_self.py">
+    <entry file="file://$PROJECT_DIR$/misc/factorial_trailing_zeroes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/aaa.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="3" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="10" />
+          <caret line="18" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/insert_delete_getRandom_O(1).py">
+    <entry file="file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="76" selection-end-column="24" />
+        <state relative-caret-position="32">
+          <caret line="216" column="0" lean-forward="false" selection-start-line="216" selection-start-column="0" selection-end-line="230" selection-end-column="18" />
           <folding />
         </state>
       </provider>
