@@ -28,11 +28,51 @@ import unittest
 
 
 class Solution(object):
-    def longestPalindromeSubseq(self, s):
+    def longestPalindromeSubseq(self, s): # TLE
         """
         :type s: str
         :rtype: int
         """
+        if not s:
+            return 0
+        n = len(s)
+        dp = [[1 for _ in range(n)] for _ in range(n)]
+        #result = 1
+        for i in range(n-1):
+            dp[i][i+1] = 1 if s[i] != s[i+1] else 2
+            #result = max(result, dp[i][i + 1])
+        for span in range(3, n+1):
+            for i in range(0, n-span+1):
+                j = i + span - 1
+                if s[i] == s[j]:
+                    dp[i][j] = 2+dp[i+1][j-1]
+                else:
+                    dp[i][j] = max(dp[i+1][j], dp[i][j-1])
+                #result = max(result, dp[i][j])
+        #return result
+        return dp[0][n-1]
+
+
+    def longestPalindromeSubseq_wrong(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        if not s:
+            return 0
+        n = len(s)
+        dp = [[1 for _ in range(n)] for _ in range(n)]
+        result = 1
+        for i in range(n-1):   # shoud not do loop in this way
+            dp[i][i+1] = 1 if s[i] != s[i+1] else 2
+            result = max(result, dp[i][i+1])
+            for j in range(i+3, n):
+                if s[i] == s[j]:
+                    dp[i][j] = 2+dp[i+1][j-1]
+                else:
+                    dp[i][j] = max(dp[i+1][j], dp[i][j-1])
+                result = max(result, dp[i][j])
+        return result
 
 
 
@@ -43,6 +83,29 @@ class Solution(object):
 class SolutionTester(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
+
+    def test_case5(self): #=====>TLE, 70/83 passed, local 602ms
+        s = "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+        answer = 1000
+        result = self.sol.longestPalindromeSubseq(s)
+        self.assertEqual(answer, result)
+
+    def test_case4(self): #=====>TLE, local runs 624ms
+        s = "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        answer = 1000
+        result = self.sol.longestPalindromeSubseq(s)
+        self.assertEqual(answer, result)
+
+
+
+    def test_case3(self): #=====>TLE, local runs 299ms
+        s = "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        answer = 1000
+        result = self.sol.longestPalindromeSubseq(s)
+        self.assertEqual(answer, result)
+
+
+
 
     def test_case1(self):
         s = "bbbab"
@@ -68,19 +131,20 @@ if __name__ == '__main__':
     main()
 
 """
-Some one pass method
 
-
-public int longestPalindrome(String s) {
-        boolean[] map = new boolean[128];
-        int len = 0;
-        for (char c : s.toCharArray()) {
-            map[c] = !map[c];         // flip on each occurrence, false when seen n*2 times
-            if (!map[c]) len+=2;
-        }
-        if (len < s.length()) len++; // if more than len, atleast one single is present
-        return len;
-    }
+    def longestPalindromeSubseq(self, s):
+        n = len(s)
+        dp = [1] * n
+        for j in xrange(1, len(s)):
+            pre = dp[j]
+            for i in reversed(xrange(0, j)):
+                tmp = dp[i]
+                if s[i] == s[j]:
+                    dp[i] = 2 + pre if i + 1 <= j - 1 else 2
+                else:
+                    dp[i] = max(dp[i + 1], dp[i])
+                pre = tmp
+        return dp[0]
 
 
 """
