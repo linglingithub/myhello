@@ -7,6 +7,7 @@ class IniFileUtil(object):
     Sample usage:
     
     
+        from util.ini_file_util import IniFileUtil
         params = IniFileUtil.read_into_dict("backpack_case6.ini")
         nums = IniFileUtil.string_to_int_list(params.get("nums"))
         m = int(params.get("m"))

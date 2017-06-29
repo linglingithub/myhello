@@ -116,3 +116,41 @@ if __name__ == "__main__":
 
 
 #-*- coding:utf-8 -*-
+
+"""
+
+这道题跟LeetCode上的那道Maximum Subarray很类似，不同之处在于这道题让返回最大子数组的范围坐标，而之前那道题只需要返回最大和即可，所以这
+道题我们要及时更新start和end变量，分别为子数组的起始和结束位置。我们用curSum来记录当前位置的累计和，如果某一个位置之前的累计和为负数，那
+么我们直接从当前位置开始重新算即可，因为加上负数还不如不加，此时将start和end都更新为当前位置i；如果之前的累计和大于等于0，那么我们把累计和
+curSum再加上当前的数字，然后更新end位置为i。此时我们更新最大子数组之和mx，以及res即可，参见代码如下：
+
+class Solution {
+public:
+    /**
+     * @param A an integer array
+     * @return  A list of integers includes the index of 
+     *          the first number and the index of the last number
+     */
+    vector<int> continuousSubarraySum(vector<int>& A) {
+        vector<int> res(2, -1);
+        int curSum = 0, mx = INT_MIN, start = 0, end = 0;
+        for (int i = 0; i < A.size(); ++i) {
+            if (curSum < 0) {
+                curSum = A[i];
+                start = end = i;
+            } else {
+                curSum += A[i];
+                end = i;
+            }
+            if (mx < curSum) {
+                mx = curSum;
+                res[0] = start;
+                res[1] = end;
+            }
+        }
+        return res;
+    }
+};
+
+
+"""

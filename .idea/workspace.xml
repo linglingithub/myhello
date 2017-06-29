@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/continuous_subarray_sumII_case3.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mjbeto/continuous_subarray_sumII.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/longest_palindromic_subsequence.py" afterPath="$PROJECT_DIR$/misc/longest_palindromic_subsequence.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/remove_substring_recursively.py" afterPath="$PROJECT_DIR$/misc/remove_substring_recursively.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mjbeto/continuous_subarray_sum.py" afterPath="$PROJECT_DIR$/mjbeto/continuous_subarray_sum.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mjbeto/knight_shortest_path.py" afterPath="$PROJECT_DIR$/mjbeto/knight_shortest_path.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/ini_file_util.py" afterPath="$PROJECT_DIR$/util/ini_file_util.py" />
     </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -164,6 +169,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_next_permutation__5_.coverage" NAME="Unittests in next_permutation (5) Coverage Results" MODIFIED="1478212805074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_gray_code__3_.coverage" NAME="Unittests in gray_code (3) Coverage Results" MODIFIED="1481054160970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_sort_list__2_.coverage" NAME="Unittests in sort_list (2) Coverage Results" MODIFIED="1475196675555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_submatrix_sum_py.coverage" NAME="Unittests in submatrix_sum.py Coverage Results" MODIFIED="1498719440119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_word_break__3_.coverage" NAME="Unittests in word_break (3) Coverage Results" MODIFIED="1483058768940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_palindrome_number.coverage" NAME="Unittests in palindrome_number Coverage Results" MODIFIED="1474421593256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_wood_cut_SolutionTester_test_case6__5_.coverage" NAME="Unittests for wood_cut.SolutionTester.test_case6 (5) Coverage Results" MODIFIED="1493859560332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mjbeto" />
@@ -255,6 +261,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_swap_nodes_in_pairs__2_.coverage" NAME="Unittests in swap_nodes_in_pairs (2) Coverage Results" MODIFIED="1478738174422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_search_in_rotated_sorted_array__2_.coverage" NAME="Unittests in search_in_rotated_sorted_array (2) Coverage Results" MODIFIED="1480698375663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_unique_paths__2_.coverage" NAME="Unittests in unique_paths (2) Coverage Results" MODIFIED="1479757320648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_continuous_subarray_sumII_py.coverage" NAME="Unittests in continuous_subarray_sumII.py Coverage Results" MODIFIED="1498780000695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_partition_list.coverage" NAME="Unittests in partition_list Coverage Results" MODIFIED="1480968005685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_word_breakII__1_.coverage" NAME="Unittests in word_breakII (1) Coverage Results" MODIFIED="1483428722980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_longest_substring_with_at_most_k_distinct_characters_SolutionTester_test_case2__1_.coverage" NAME="Unittests for longest_substring_with_at_most_k_distinct_characters.SolutionTester.test_case2 (1) Coverage Results" MODIFIED="1494572993513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mjbeto" />
@@ -618,6 +625,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_rotate_list__1_.coverage" NAME="Unittests in rotate_list (1) Coverage Results" MODIFIED="1479355555915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_path_sumII__1_.coverage" NAME="Unittests in path_sumII (1) Coverage Results" MODIFIED="1476861116042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_multiply_strings.coverage" NAME="Unittests in multiply_strings Coverage Results" MODIFIED="1478135001697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_continuous_subarray_sum_py.coverage" NAME="Unittests in continuous_subarray_sum.py Coverage Results" MODIFIED="1498767876568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_subsets__4_.coverage" NAME="Unittests in subsets (4) Coverage Results" MODIFIED="1480234192260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sumIII__1_.coverage" NAME="Unittests in combination_sumIII (1) Coverage Results" MODIFIED="1477613991636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_construct_binary_tree_from_inorder_and_postorder_traversal__1_.coverage" NAME="Unittests in construct_binary_tree_from_inorder_and_postorder_traversal (1) Coverage Results" MODIFIED="1481828535662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -678,7 +686,7 @@
     <SUITE FILE_PATH="coverage/testhello$TriangleMaximumSum.coverage" NAME="TriangleMaximumSum Coverage Results" MODIFIED="1430520900646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_permutationsII__5_.coverage" NAME="Unittests in permutationsII (5) Coverage Results" MODIFIED="1478068225200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case1__1_.coverage" NAME="Unittest SolutionTester.test_case1 (1) Coverage Results" MODIFIED="1481180714210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
-    <SUITE FILE_PATH="coverage/testhello$Unittests_for_SolutionTester.coverage" NAME="Unittests for SolutionTester Coverage Results" MODIFIED="1496706566151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_for_SolutionTester.coverage" NAME="Unittests for SolutionTester Coverage Results" MODIFIED="1498767892538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_subsets__3_.coverage" NAME="Unittests in subsets (3) Coverage Results" MODIFIED="1480234054908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$GroupShiftedStrings.coverage" NAME="GroupShiftedStrings Coverage Results" MODIFIED="1469598847766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_backpackVI_py.coverage" NAME="Unittests in backpackVI.py Coverage Results" MODIFIED="1494978130307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mjbeto" />
@@ -710,71 +718,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="find_all_anagrams_in_a_string.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py">
+      <file leaf-file-name="knight_shortest_path.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mjbeto/knight_shortest_path.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="39" lean-forward="false" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+            <state relative-caret-position="296">
+              <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="factorial_trailing_zeroes.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/factorial_trailing_zeroes.py">
+      <file leaf-file-name="remove_substring_recursively.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/remove_substring_recursively.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+            <state relative-caret-position="-55">
+              <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="longest_palindromic_subsequence.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/misc/longest_palindromic_subsequence.py">
+      <file leaf-file-name="continuous_subarray_sum.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mjbeto/continuous_subarray_sum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="51" column="22" lean-forward="true" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="course_schedule.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mjbeto/course_schedule.py">
+      <file leaf-file-name="continuous_subarray_sumII.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mjbeto/continuous_subarray_sumII.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1455">
-              <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="122" selection-end-column="36" />
+            <state relative-caret-position="-797">
+              <caret line="212" column="0" lean-forward="true" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="course_scheduleII.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mjbeto/course_scheduleII.py">
+      <file leaf-file-name="subarray_sum.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mjbeto/subarray_sum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="77" column="51" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="first_unique_character_in_a_string.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/first_unique_character_in_a_string.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="longest_palindrome.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/longest_palindrome.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="-432">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -783,8 +771,8 @@
       <file leaf-file-name="ini_file_util.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/ini_file_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+            <state relative-caret-position="105">
+              <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -842,12 +830,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mjbeto/find_the_weak_connected_component_in_the_directed_graph.py" />
-        <option value="$PROJECT_DIR$/mjbeto/connected_component_in_undirected_graph.py" />
-        <option value="$PROJECT_DIR$/misc/word_search.py" />
-        <option value="$PROJECT_DIR$/misc/trapping_rain_water.py" />
-        <option value="$PROJECT_DIR$/misc/trapping_rain_waterII.py" />
-        <option value="$PROJECT_DIR$/data/largest_rectangle_in_histogram_case3.ini" />
         <option value="$PROJECT_DIR$/misc/largest_rectangle_in_histogram.py" />
         <option value="$PROJECT_DIR$/misc/maximal_rectangle.py" />
         <option value="$PROJECT_DIR$/data/max_tree_case1.ini" />
@@ -882,7 +864,6 @@
         <option value="$PROJECT_DIR$/misc/2sum_group/two_sum.py" />
         <option value="$PROJECT_DIR$/data/course_schedule_case4.ini.py" />
         <option value="$PROJECT_DIR$/data/course_schedule_case4.ini" />
-        <option value="$PROJECT_DIR$/util/ini_file_util.py" />
         <option value="$PROJECT_DIR$/data/course_schedule_case5.ini" />
         <option value="$PROJECT_DIR$/mjbeto/course_schedule.py" />
         <option value="$PROJECT_DIR$/misc/product_of_array_except_self.py" />
@@ -893,6 +874,13 @@
         <option value="$PROJECT_DIR$/mjbeto/course_scheduleII.py" />
         <option value="$PROJECT_DIR$/mjbeto/first_position_unique_character.py" />
         <option value="$PROJECT_DIR$/misc/longest_palindromic_subsequence.py" />
+        <option value="$PROJECT_DIR$/mjbeto/knight_shortest_path.py" />
+        <option value="$PROJECT_DIR$/misc/remove_substring_recursively.py" />
+        <option value="$PROJECT_DIR$/mjbeto/submatrix_sum.py" />
+        <option value="$PROJECT_DIR$/mjbeto/continuous_subarray_sum.py" />
+        <option value="$PROJECT_DIR$/data/continuous_subarray_sumII_case3.ini" />
+        <option value="$PROJECT_DIR$/util/ini_file_util.py" />
+        <option value="$PROJECT_DIR$/mjbeto/continuous_subarray_sumII.py" />
       </list>
     </option>
   </component>
@@ -903,10 +891,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="46" />
-    <option name="y" value="91" />
-    <option name="width" value="1380" />
-    <option name="height" value="768" />
+    <option name="x" value="1017" />
+    <option name="y" value="-963" />
+    <option name="width" value="1531" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -960,7 +948,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -998,12 +985,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="misc" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1036,18 +1024,18 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/linglin/PycharmProjects/testhello/util/aaa.py" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/mjbeto" />
-      <recent name="$PROJECT_DIR$/misc" />
-      <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/util" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/misc" />
       <recent name="$PROJECT_DIR$/misc/2sum_group" />
       <recent name="$PROJECT_DIR$/old" />
       <recent name="$PROJECT_DIR$/util" />
       <recent name="$PROJECT_DIR$/test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/mjbeto" />
+      <recent name="$PROJECT_DIR$/misc" />
+      <recent name="$PROJECT_DIR$/util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1062,71 +1050,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in longest_palindromic_subsequence.py">
-    <configuration default="false" name="Unittests in find_all_anagrams_in_a_string.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in longest_palindrome.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/longest_palindrome.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in course_scheduleII.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/mjbeto/course_scheduleII.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in first_unique_character_in_a_string.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/first_unique_character_in_a_string.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in continuous_subarray_sumII.py">
     <configuration default="false" name="Unittests in longest_palindromic_subsequence.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1140,6 +1064,70 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/longest_palindromic_subsequence.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in submatrix_sum.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/mjbeto/submatrix_sum.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in continuous_subarray_sum.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/mjbeto/continuous_subarray_sum.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests for SolutionTester" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;SolutionTester&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in continuous_subarray_sumII.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/mjbeto/continuous_subarray_sumII.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
@@ -1424,19 +1412,19 @@
       <item index="1" class="java.lang.String" itemvalue="Python.max_tree" />
       <item index="2" class="java.lang.String" itemvalue="Python.coins_in_a_line.py" />
       <item index="3" class="java.lang.String" itemvalue="Python.flattern_binary_tree" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in find_all_anagrams_in_a_string.py" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in longest_palindrome.py" />
-      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in course_scheduleII.py" />
-      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests in first_unique_character_in_a_string.py" />
-      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests in longest_palindromic_subsequence.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in longest_palindromic_subsequence.py" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in submatrix_sum.py" />
+      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in continuous_subarray_sum.py" />
+      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester" />
+      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests in continuous_subarray_sumII.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in longest_palindromic_subsequence.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in first_unique_character_in_a_string.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in course_scheduleII.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in longest_palindrome.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in find_all_anagrams_in_a_string.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in continuous_subarray_sumII.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in continuous_subarray_sum.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in submatrix_sum.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in longest_palindromic_subsequence.py" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -1477,35 +1465,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_longest_palindrome_py - 2017.06.26 at 22h 46m 24s.xml">
-      <configuration name="Unittests in longest_palindrome.py" configurationId="tests" />
+    <history-entry file="Unittests_in_continuous_subarray_sumII_py - 2017.06.29 at 15h 10m 33s.xml">
+      <configuration name="Unittests in continuous_subarray_sumII.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_longest_palindromic_subsequence_py - 2017.06.27 at 16h 06m 30s.xml">
-      <configuration name="Unittests in longest_palindromic_subsequence.py" configurationId="tests" />
+    <history-entry file="Unittests_in_continuous_subarray_sumII_py - 2017.06.29 at 15h 10m 46s.xml">
+      <configuration name="Unittests in continuous_subarray_sumII.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_longest_palindromic_subsequence_py - 2017.06.27 at 16h 07m 12s.xml">
-      <configuration name="Unittests in longest_palindromic_subsequence.py" configurationId="tests" />
+    <history-entry file="Unittests_in_continuous_subarray_sumII_py - 2017.06.29 at 15h 15m 49s.xml">
+      <configuration name="Unittests in continuous_subarray_sumII.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_longest_palindromic_subsequence_py - 2017.06.27 at 16h 07m 22s.xml">
-      <configuration name="Unittests in longest_palindromic_subsequence.py" configurationId="tests" />
+    <history-entry file="Unittests_in_continuous_subarray_sumII_py - 2017.06.29 at 16h 19m 23s.xml">
+      <configuration name="Unittests in continuous_subarray_sumII.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_longest_palindromic_subsequence_py - 2017.06.27 at 16h 13m 13s.xml">
-      <configuration name="Unittests in longest_palindromic_subsequence.py" configurationId="tests" />
+    <history-entry file="Unittests_in_continuous_subarray_sumII_py - 2017.06.29 at 16h 26m 52s.xml">
+      <configuration name="Unittests in continuous_subarray_sumII.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_longest_palindromic_subsequence_py - 2017.06.27 at 16h 13m 37s.xml">
-      <configuration name="Unittests in longest_palindromic_subsequence.py" configurationId="tests" />
+    <history-entry file="Unittests_in_continuous_subarray_sumII_py - 2017.06.29 at 16h 42m 14s.xml">
+      <configuration name="Unittests in continuous_subarray_sumII.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_longest_palindromic_subsequence_py - 2017.06.27 at 16h 15m 59s.xml">
-      <configuration name="Unittests in longest_palindromic_subsequence.py" configurationId="tests" />
+    <history-entry file="Unittests_in_continuous_subarray_sumII_py - 2017.06.29 at 16h 43m 44s.xml">
+      <configuration name="Unittests in continuous_subarray_sumII.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_longest_palindromic_subsequence_py - 2017.06.27 at 16h 17m 19s.xml">
-      <configuration name="Unittests in longest_palindromic_subsequence.py" configurationId="tests" />
+    <history-entry file="Unittests_in_continuous_subarray_sumII_py - 2017.06.29 at 16h 44m 07s.xml">
+      <configuration name="Unittests in continuous_subarray_sumII.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_longest_palindromic_subsequence_py - 2017.06.27 at 16h 21m 07s.xml">
-      <configuration name="Unittests in longest_palindromic_subsequence.py" configurationId="tests" />
+    <history-entry file="Unittests_in_continuous_subarray_sumII_py - 2017.06.29 at 16h 44m 11s.xml">
+      <configuration name="Unittests in continuous_subarray_sumII.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_longest_palindromic_subsequence_py - 2017.06.27 at 16h 22m 36s.xml">
-      <configuration name="Unittests in longest_palindromic_subsequence.py" configurationId="tests" />
+    <history-entry file="Unittests_in_continuous_subarray_sumII_py - 2017.06.29 at 16h 46m 40s.xml">
+      <configuration name="Unittests in continuous_subarray_sumII.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1518,19 +1506,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="91" width="1380" height="768" extended-state="0" />
+    <frame x="1017" y="-963" width="1531" height="947" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25635275" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2337139" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33968255" sideWeight="0.51872075" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4430769" sideWeight="0.48956084" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34620023" sideWeight="0.48956084" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3166227" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26136363" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24910007" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47846153" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2600243" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50060314" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20545869" sideWeight="0.5056" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3055,7 +3043,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/util/ini_file_util.py</url>
-          <line>49</line>
+          <line>50</line>
           <option name="timeStamp" value="482" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -3093,6 +3081,36 @@
           <line>66</line>
           <option name="timeStamp" value="491" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mjbeto/submatrix_sum.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="492" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mjbeto/submatrix_sum.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="496" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mjbeto/continuous_subarray_sumII.py</url>
+          <line>102</line>
+          <option name="timeStamp" value="498" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mjbeto/continuous_subarray_sumII.py</url>
+          <line>121</line>
+          <option name="timeStamp" value="499" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mjbeto/continuous_subarray_sumII.py</url>
+          <line>114</line>
+          <option name="timeStamp" value="500" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mjbeto/continuous_subarray_sumII.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="501" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -3101,57 +3119,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="492" />
+      <option name="time" value="502" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mjbeto/expression_expand.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/largest_rectangle_in_histogram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/max_tree_case1.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="2" column="788894" lean-forward="false" selection-start-line="2" selection-start-column="788894" selection-end-line="2" selection-end-column="788894" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mjbeto/max_tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mjbeto/sliding_window_maximum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="48" column="52" lean-forward="false" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/divide_two_integers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/find_peak_element.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -3282,13 +3254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/coins_in_a_lineIII_case4.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mjbeto/coins_in_a_lineIII.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
@@ -3339,14 +3304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mjbeto/subarray_sum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="81" lean-forward="false" selection-start-line="40" selection-start-column="81" selection-end-line="40" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mjbeto/flatten_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -3358,14 +3315,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="685">
           <caret line="87" column="40" lean-forward="false" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="328" column="0" lean-forward="false" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3426,14 +3375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/ini_file_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/factorial_trailing_zeroes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -3453,7 +3394,7 @@
     <entry file="file://$PROJECT_DIR$/misc/longest_palindrome.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -3474,6 +3415,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/misc/first_unique_character_in_a_string.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/longest_palindromic_subsequence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="115" column="25" lean-forward="false" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="354" column="0" lean-forward="false" selection-start-line="354" selection-start-column="0" selection-end-line="354" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mjbeto/submatrix_sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/util/aaa.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -3482,18 +3455,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/first_unique_character_in_a_string.py">
+    <entry file="file://$PROJECT_DIR$/mjbeto/knight_shortest_path.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="296">
+          <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/longest_palindromic_subsequence.py">
+    <entry file="file://$PROJECT_DIR$/data/continuous_subarray_sumII_case3.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/coins_in_a_lineIII_case4.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/ini_file_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mjbeto/subarray_sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/remove_substring_recursively.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mjbeto/continuous_subarray_sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="51" column="22" lean-forward="true" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mjbeto/continuous_subarray_sumII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-797">
+          <caret line="212" column="0" lean-forward="true" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
           <folding />
         </state>
       </provider>
