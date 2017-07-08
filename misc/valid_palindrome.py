@@ -27,8 +27,42 @@ Easy
 import unittest
 
 
+class Solution:
+    # @param {string} s A string
+    # @return {boolean} Whether the string is a valid palindrome
+    def isPalindrome(self, s):
+        # Write your code here
+        if not s:
+            return True
+        l, r = 0, len(s) - 1
+        while l <= r:
+            # while not self.is_letter(s[l]):
+            while l <= r and not self.is_letter_number(s[l]):
+                l += 1
+            # while not self.is_letter(s[r]):
+            while l <= r and not self.is_letter_number(s[r]):
+                r -= 1
+            if l >= r:
+                return True
+            if self.is_same_letter(s[l], s[r]):
+                l += 1
+                r -= 1
+            else:
+                return False
+        return True
 
-class Solution(object):
+    def is_letter_number(self, char):
+        return char.isalnum()
+
+    def is_same_letter(self, char1, char2):
+        return char1.lower() == char2.lower()
+
+
+        # " " --> True
+        # ".," --> True
+        # "1a2" --> require to be false, note problem says "alphanumeric"
+
+class Solution1(object):
     def isPalindrome(self, s): #79ms, 73%, use the built-in sialnum() method
         """
         :type s: str

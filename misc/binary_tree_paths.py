@@ -41,7 +41,34 @@ from util.tree_node import TreeNode
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
+    # @param {TreeNode} root the root of the binary tree
+    # @return {List[str]} all root-to-leaf paths
+    def binaryTreePaths(self, root):
+        # Write your code here
+        if not root:
+            return []
+        result = []
+        res = []
+        self.dfs(root, res, result)
+        return result
+
+    def dfs(self, root, res, result):
+        res.append(str(root.val))
+        if root.left is None and root.right is None:
+            result.append("->".join(res))
+            # !!! here also need to pop, otherwise wrong
+            res.pop()
+            return
+
+        if root.left:
+            self.dfs(root.left, res, result)
+        if root.right:
+            self.dfs(root.right, res, result)
+        res.pop()
+
+class Solution1:
     # @param {TreeNode} root
     # @return {string[]}
     def binaryTreePaths(self, root): #62ms, 16%

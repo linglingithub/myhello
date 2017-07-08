@@ -21,8 +21,33 @@ Hide Similar Problems (M) Encode and Decode Strings
 
 import unittest
 
+class Solution:
+    # @param {int} n the nth
+    # @return {string} the nth sequence
+    def countAndSay(self, n):
+        # Write your code here
+        if n <= 0:
+            return ""
+        seq = "1"
+        for i in range(1, n):
+            tmp = []
+            curchar = seq[0]
+            cnt = 1
+            for char in seq[1:]:
+                if char == curchar:
+                    cnt += 1
+                else:
+                    tmp.append(str(cnt))
+                    tmp.append(str(curchar))
+                    curchar = char
+                    cnt = 1
+            tmp.append(str(cnt))
+            tmp.append(str(curchar))
+            new_seq = "".join(tmp)
+            seq = new_seq
+        return seq
 
-class Solution(object):
+class Solution1(object):
     def countAndSay(self, n): # 39ms, 97.92%
         """
         :type n: int

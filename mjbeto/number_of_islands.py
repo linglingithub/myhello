@@ -67,7 +67,42 @@ Hard Number of Islands II
 """
 
 
-class Solution(object):
+class Solution:
+    # @param {boolean[][]} grid a boolean 2D matrix
+    # @return {int} an integer
+    def numIslands(self, grid):
+        # Write your code here
+        if not grid or not grid[0]:
+            return 0
+        result = 0
+        queue = []
+        m, n = len(grid), len(grid[0])
+        for i in range(m):
+            for j in range(n):
+                if grid[i][j] == 1:
+                    queue.append((i, j))
+                    grid[i][j] = 0
+                    result += 1
+                    self.dfs(grid, queue)
+
+        return result
+
+    def dfs(self, grid,queue):
+
+        dx = [0, 0, 1, -1]
+        dy = [1, -1, 0, 0]
+        while queue:
+            tmp = queue.pop(0)
+            x, y = tmp[0], tmp[1]
+            for i in range(4):
+                nx = x + dx[i]
+                ny = y + dy[i]
+                if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]) and grid[nx][ny] == 1:
+                    queue.append((nx, ny))
+                    grid[nx][ny] = 0
+
+
+class Solution1(object):
     def numIslands(self, grid): #159ms, 42%
         """
         :type grid: List[List[str]]
@@ -126,7 +161,7 @@ class SolutionTester(unittest.TestCase):
         result = self.sol.numIslands(nums)
         self.assertEqual(answer, result)
 
-    def test_case2(self): #====> from leetcode, use str format
+    def test_case02(self): #====> from leetcode, use str format
         nums = ["11110","11010","11000","00000"]
         answer = 1
         result = self.sol.numIslands(nums)
