@@ -23,7 +23,34 @@ Easy
 import unittest
 
 
-class Solution(object):
+class Solution:
+    """
+    @param A: a list of integers
+    @return an integer
+    """
+    def removeDuplicates(self, A):
+        # write your code here
+        if not A:
+            return 0
+        n = len(A)
+        if n <= 1:
+            return n
+        fast, idx = 1, 0
+        while fast < n:
+            while fast < n and A[fast] == A[idx]:
+                fast += 1
+            if fast >= n:
+                break
+            if fast == idx + 1:
+                fast += 1
+                idx += 1
+            else:
+                idx += 1
+                A[idx], A[fast] = A[fast], A[idx]
+                fast += 1
+        return idx + 1
+
+class Solution_good(object):
     def removeDuplicates(self, nums): #82ms, 83% ==> 79ms, 88%
         """
         Use a pointer to keep the end of 'good' array, another pointer to scan the rest part of the array.
