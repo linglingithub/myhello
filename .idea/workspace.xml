@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/binary_tree_paths.py" afterPath="$PROJECT_DIR$/misc/binary_tree_paths.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/remove_substring_recursively.py" afterPath="$PROJECT_DIR$/misc/remove_substring_recursively.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/valid_palindrome.py" afterPath="$PROJECT_DIR$/misc/valid_palindrome.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mjbeto/knight_shortest_path.py" afterPath="$PROJECT_DIR$/mjbeto/knight_shortest_path.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mjbeto/number_of_islands.py" afterPath="$PROJECT_DIR$/mjbeto/number_of_islands.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/implement_strStr.py" afterPath="$PROJECT_DIR$/misc/implement_strStr.py" />
     </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -749,11 +745,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="multiply_strings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="multiply_strings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/multiply_strings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="count_and_say.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/count_and_say.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="671">
+              <caret line="47" column="18" lean-forward="false" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="subsets.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/subsets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="145" column="16" lean-forward="true" selection-start-line="145" selection-start-column="16" selection-end-line="145" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="implement_strStr.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/implement_strStr.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="remove_duplicates_from_sorted_array.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/remove_duplicates_from_sorted_array.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="50" column="22" lean-forward="false" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -811,9 +847,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/util/tree_node.py" />
-        <option value="$PROJECT_DIR$/mjbeto/max_tree.py" />
-        <option value="$PROJECT_DIR$/mjbeto/sliding_window_maximum.py" />
         <option value="$PROJECT_DIR$/mjbeto/sliding_window_median.py" />
         <option value="$PROJECT_DIR$/misc/divide_two_integers.py" />
         <option value="$PROJECT_DIR$/misc/find_peak_element.py" />
@@ -862,6 +895,9 @@
         <option value="$PROJECT_DIR$/misc/valid_palindrome.py" />
         <option value="$PROJECT_DIR$/misc/binary_tree_paths.py" />
         <option value="$PROJECT_DIR$/mjbeto/number_of_islands.py" />
+        <option value="$PROJECT_DIR$/misc/count_and_say.py" />
+        <option value="$PROJECT_DIR$/misc/remove_duplicates_from_sorted_array.py" />
+        <option value="$PROJECT_DIR$/misc/implement_strStr.py" />
       </list>
     </option>
   </component>
@@ -1512,7 +1548,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3166227" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26136363" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24910007" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25823453" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16289593" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49924585" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20545869" sideWeight="0.5056" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2028,7 +2064,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/misc/count_and_say.py</url>
-          <line>35</line>
+          <line>60</line>
           <option name="timeStamp" value="160" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -2158,12 +2194,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/misc/remove_duplicates_from_sorted_array.py</url>
-          <line>55</line>
+          <line>82</line>
           <option name="timeStamp" value="200" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/misc/remove_duplicates_from_sorted_array.py</url>
-          <line>41</line>
+          <line>68</line>
           <option name="timeStamp" value="201" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -3129,40 +3165,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/maximum_product_subarray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/longest_increasing_subsequence.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="22" lean-forward="false" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
-          <folding>
-            <element signature="e#6855#20860#0" expanded="false" />
-            <element signature="e#20906#26020#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mjbeto/maximal_square.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="121" column="22" lean-forward="false" selection-start-line="121" selection-start-column="22" selection-end-line="121" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mjbeto/edit_distanceII.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/edit_distance.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -3519,6 +3521,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/count_and_say.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="47" column="18" lean-forward="false" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/subsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="145" column="16" lean-forward="true" selection-start-line="145" selection-start-column="16" selection-end-line="145" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/remove_duplicates_from_sorted_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="50" column="22" lean-forward="false" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/implement_strStr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
           <folding />
         </state>
       </provider>

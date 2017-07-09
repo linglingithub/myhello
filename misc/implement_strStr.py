@@ -15,7 +15,37 @@ Hide Similar Problems (H) Shortest Palindrome
 import unittest
 
 
-class Solution(object):
+class Solution:
+    """
+    @param: : source string to be scanned.
+    @param: : target string containing the sequence of characters to match
+    @return: a index to the first occurrence of target in source, or -1  if target is not part of source.
+    """
+
+    def strStr(self, source, target):
+        # write your code here
+        if target == "":
+            return 0
+        if not target:
+            return -1
+        if not source or not target:
+            return -1  # if target is "", what to return ?
+        m, n = len(source), len(target)
+        if n > m:
+            return -1
+        for i in range(m-n+1):
+            match = True
+            for j in range(n):
+                if source[i+j] == target[j]:
+                    continue
+                else:
+                    match = False
+                    break
+            if match:
+                return i
+        return -1
+
+class Solution1(object):
     # user naive way, check the KMP way later
     # you tube, Knuth-Morris-Pratt(KMP) Pattern Matching(Substring search)
     def strStr(self, haystack, needle):
