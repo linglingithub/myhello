@@ -31,8 +31,59 @@ Medium
 import unittest
 
 
-
 class Solution(object):
+    def subsets(self, S): # recursive way
+        # write your code here
+        if not S:
+            return [[]]  # or [[]]?? to discuss
+        S.sort()
+        result = []
+        self.subset_helper(S, 0, [], result)
+        return result
+
+    def subset_helper(self, S, idx, path, result):
+        if idx == len(S):
+            result.append(path)
+            return
+        self.subset_helper(S, idx + 1, path, result)
+        self.subset_helper(S, idx + 1, path + [S[idx]], result)  # should be + [S[idx]], not + S[idx]
+
+
+    def subsets2(self, S):  # mask way
+        # write your code here
+        if not S:
+            return [[]]  # or [[]]?? to discuss
+        S.sort()
+        result = [[]]
+        n = len(S)
+        mask_num = 2 ** n
+        pattern = "{0:0" + str(n) + "b}"
+        for i in range(1, mask_num):
+            mask = pattern.format(i)
+            tmp = []
+            for j in range(len(mask)):
+                char = mask[j]
+                if char == "1":
+                    tmp.append(S[j])
+            result.append(tmp)
+        return result
+
+    def subsets1(self, S):  # by inserting new elements into possible
+        # write your code here
+        if not S:
+            return [[]]  # or [[]]?? to discuss
+        S.sort()
+        result = [[]]
+        for i in range(len(S)):
+            n = len(result)
+            for j in range(n):
+                tmp = result[j]
+                print tmp + [S[i]]
+                result.append(tmp + [S[i]])
+        return result
+
+
+class Solution1(object):
     def subsets_self(self, nums): #52ms, 75%, using bit as mask
         """
         :type nums: List[int]

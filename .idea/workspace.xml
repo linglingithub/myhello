@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/implement_strStr.py" afterPath="$PROJECT_DIR$/misc/implement_strStr.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/subsets.py" afterPath="$PROJECT_DIR$/misc/subsets.py" />
     </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -167,6 +166,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_sort_list__2_.coverage" NAME="Unittests in sort_list (2) Coverage Results" MODIFIED="1475196675555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_submatrix_sum_py.coverage" NAME="Unittests in submatrix_sum.py Coverage Results" MODIFIED="1498719440119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_word_break__3_.coverage" NAME="Unittests in word_break (3) Coverage Results" MODIFIED="1483058768940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_subsets_py.coverage" NAME="Unittests in subsets.py Coverage Results" MODIFIED="1499650541536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_palindrome_number.coverage" NAME="Unittests in palindrome_number Coverage Results" MODIFIED="1474421593256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_wood_cut_SolutionTester_test_case6__5_.coverage" NAME="Unittests for wood_cut.SolutionTester.test_case6 (5) Coverage Results" MODIFIED="1493859560332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mjbeto" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_climbing_stairs.coverage" NAME="Unittests in climbing_stairs Coverage Results" MODIFIED="1477035976337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -755,41 +755,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="count_and_say.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/count_and_say.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="47" column="18" lean-forward="false" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subsets.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="subsets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/misc/subsets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="145" column="16" lean-forward="true" selection-start-line="145" selection-start-column="16" selection-end-line="145" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="implement_strStr.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/misc/implement_strStr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="remove_duplicates_from_sorted_array.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/remove_duplicates_from_sorted_array.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="50" column="22" lean-forward="false" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+            <state relative-caret-position="338">
+              <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -847,7 +817,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mjbeto/sliding_window_median.py" />
         <option value="$PROJECT_DIR$/misc/divide_two_integers.py" />
         <option value="$PROJECT_DIR$/misc/find_peak_element.py" />
         <option value="$PROJECT_DIR$/misc/maximum_subarray.py" />
@@ -898,6 +867,7 @@
         <option value="$PROJECT_DIR$/misc/count_and_say.py" />
         <option value="$PROJECT_DIR$/misc/remove_duplicates_from_sorted_array.py" />
         <option value="$PROJECT_DIR$/misc/implement_strStr.py" />
+        <option value="$PROJECT_DIR$/misc/subsets.py" />
       </list>
     </option>
   </component>
@@ -1006,20 +976,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testhello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testhello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -1081,23 +1037,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in number_of_islands.py">
-    <configuration default="false" name="Unittests for SolutionTester" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;SolutionTester&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in subsets.py">
     <configuration default="false" name="Unittests in continuous_subarray_sumII.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1160,6 +1100,22 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;SolutionTester.test_case1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in subsets.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/subsets.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -1443,19 +1399,19 @@
       <item index="1" class="java.lang.String" itemvalue="Python.max_tree" />
       <item index="2" class="java.lang.String" itemvalue="Python.coins_in_a_line.py" />
       <item index="3" class="java.lang.String" itemvalue="Python.flattern_binary_tree" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in continuous_subarray_sumII.py" />
-      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_paths.py" />
-      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests in number_of_islands.py" />
-      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case1" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in continuous_subarray_sumII.py" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_paths.py" />
+      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in number_of_islands.py" />
+      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case1" />
+      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests in subsets.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in number_of_islands.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case1" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_paths.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in continuous_subarray_sumII.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in subsets.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in number_of_islands.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case1" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in binary_tree_paths.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in continuous_subarray_sumII.py" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -1499,12 +1455,6 @@
     <history-entry file="Unittests_for_SolutionTester_test_case1 - 2017.07.08 at 15h 02m 03s.xml">
       <configuration name="Unittests for SolutionTester.test_case1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_binary_tree_paths_py - 2017.07.07 at 20h 41m 33s.xml">
-      <configuration name="Unittests in binary_tree_paths.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_number_of_islands_py - 2017.07.08 at 14h 54m 30s.xml">
-      <configuration name="Unittests in number_of_islands.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_number_of_islands_py - 2017.07.08 at 14h 56m 31s.xml">
       <configuration name="Unittests in number_of_islands.py" configurationId="tests" />
     </history-entry>
@@ -1526,6 +1476,12 @@
     <history-entry file="Unittests_in_number_of_islands_py - 2017.07.08 at 15h 04m 01s.xml">
       <configuration name="Unittests in number_of_islands.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_subsets_py - 2017.07.09 at 18h 06m 05s.xml">
+      <configuration name="Unittests in subsets.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_subsets_py - 2017.07.09 at 18h 35m 41s.xml">
+      <configuration name="Unittests in subsets.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1540,7 +1496,7 @@
     <frame x="94" y="32" width="1277" height="781" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26477733" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20404859" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33968255" sideWeight="0.51872075" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1548,7 +1504,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3166227" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26136363" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24910007" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16289593" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16289593" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49924585" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20545869" sideWeight="0.5056" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -3517,26 +3473,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/multiply_strings.py">
+    <entry file="file://$PROJECT_DIR$/misc/implement_strStr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/count_and_say.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="47" column="18" lean-forward="false" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/subsets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="145" column="16" lean-forward="true" selection-start-line="145" selection-start-column="16" selection-end-line="145" selection-end-column="16" />
+        <state relative-caret-position="320">
+          <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -3549,10 +3489,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/implement_strStr.py">
+    <entry file="file://$PROJECT_DIR$/misc/count_and_say.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        <state relative-caret-position="671">
+          <caret line="47" column="18" lean-forward="false" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/multiply_strings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/subsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
         </state>
       </provider>
