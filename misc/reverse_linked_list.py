@@ -29,7 +29,47 @@ from util.list_node import ListNode
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+class Solution:
+    """
+    @param head: The first node of the linked list.
+    @return: You should return the head of the reversed linked list. 
+                  Reverse it in-place.
+    """
+
+    def reverse(self, head):  # recursive way
+        # write your code here
+        if not head:
+            return None
+        if not head.next:
+            return head
+        return self.reverse_helper(head, None)
+
+    def reverse_helper(self, head, tail):
+        if not head:
+            return tail
+        fast = head.next
+        head.next = tail
+        return self.reverse_helper(fast, head)
+
+    def reverse1(self, head): # iterative way
+        # write your code here
+        if not head:
+            return None
+        if not head.next:
+            return head
+        slow = head
+        mid = slow.next
+        fast = mid.next
+        while mid:
+            fast = mid.next
+            mid.next = slow
+            slow = mid
+            mid = fast
+        #remember to deal with ending point, otherwise infinite loop??
+        head.next = None
+        return slow
+
+class Solution1(object):
     def reverseList_recursive_slower(self, head): # recursive way , 108ms, 1.36% -- 59ms, 40%, iter is still better
         """
         remember to do it in on pass!!!
