@@ -23,7 +23,37 @@ Medium
 import unittest
 
 
-class Solution(object):
+class Solution:
+    """
+    @param A: a list of integers
+    @return an integer
+    """
+
+    def removeDuplicates(self, A):
+        # write your code here
+        if not A:
+            return 0
+        n = len(A)
+        if n <= 2:
+            return n
+        slow = 0
+        fast = 1
+        cnt = 1
+        while fast < n:
+            if A[fast] == A[slow]:
+                if cnt == 1:
+                    slow += 1
+                    cnt += 1
+
+            else:
+                cnt = 1
+                slow += 1
+            A[slow] = A[fast]
+            fast += 1
+        return slow + 1
+
+
+class Solution1(object):
     def removeDuplicates2(self, nums): #62ms, 79%
         """
         Base on the first implementation, some improvements.
