@@ -21,7 +21,75 @@ Hide Similar Problems (M) Add Two Numbers (M) Multiply Strings (E) Plus One
 import unittest
 
 
-class Solution(object):
+class Solution:
+    # @param {string} a a number
+    # @param {string} b a number
+    # @return {string} the result
+    def addBinary(self, a, b):
+        # Write your code here
+        if not a:
+            return b
+        if not b:
+            return a
+        m, n = len(a), len(b)
+        result = []
+        if m < n:
+            a, b = b, a
+            m, n = n, m
+        carry = 0
+        i = 0
+        while i < n:
+            tmp = int(a[m-1-i]) + int(b[n-1-i])
+            digit = (tmp + carry) % 2
+            carry = (tmp + carry) / 2
+            result.append(str(digit))
+            i += 1
+        if n < m :
+            for j in range(i, m):
+                tmp = carry + int(a[m-1-j])
+                digit = tmp % 2
+                carry = tmp / 2
+                result.append(str(digit))
+        # remember the last carry on
+        if carry:
+            result.append(str(carry))
+        result.reverse()
+        return "".join(result)
+
+    def addBinary_wrong(self, a, b):
+        # Write your code here
+        if not a:
+            return b
+        if not b:
+            return a
+        m, n = len(a), len(b)
+        result = []
+        if m < n:
+            a, b = b, a
+            m, n = n, m
+        carry = 0
+        i = 0
+        while i < n:
+            tmp = int(a[i]) + int(b[i])
+            digit = (tmp + carry) % 2
+            carry = (tmp + carry) / 2
+            result.append(str(digit))
+            i += 1
+        if n < m :
+            for j in range(i, m):
+                tmp = carry + int(a[j])
+                digit = tmp % 2
+                carry = tmp / 2
+                result.append(str(digit))
+        # remember the last carry on
+        if carry:
+            result.append(str(carry))
+        result.reverse()
+        return "".join(result)
+
+
+
+class Solution1(object):
     def addBinary(self, a, b): #52ms, 88.89%
         """
         :type a: str
