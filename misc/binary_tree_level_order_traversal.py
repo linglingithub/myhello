@@ -39,7 +39,59 @@ from util.tree_node import TreeNode
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+
+class Solution:
+    """
+    @param root: The root of binary tree.
+    @return: Level order in a list of lists of integers
+    """
+    def levelOrder(self, root):
+        # write your code here
+        if not root:
+            return []
+        result = []
+        level = [root]
+        vals = []
+        children = []
+        while level:
+            for tmp in level:
+                vals.append(tmp.val)
+                if tmp.left:
+                    children.append(tmp.left)
+                if tmp.right:
+                    children.append(tmp.right)
+            # deal with when current level is done
+            level = children
+            children = []
+            result.append(vals)
+            vals = []
+        return result
+
+    def levelOrder_wrong_MLE(self, root):
+        # write your code here
+        if not root:
+            return []
+        result = []
+        level = [root, "#"]
+        vals = []
+        children = []
+        while level:
+            tmp = level.pop(0)
+            if tmp == "#":   # for leaf's children, always an empty list with "#", infinite loop !!!
+                children.append("#")
+                level = children
+                children = []
+                result.append(vals)
+                vals = []
+            else:
+                vals.append(tmp.val)
+                if tmp.left:
+                    children.append(tmp.left)
+                if tmp.right:
+                    children.append(tmp.right)
+        return result
+
+class Solution1(object):
 
     def levelOrder(self, root): #recursive way
         """
