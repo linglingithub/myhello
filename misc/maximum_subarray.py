@@ -30,7 +30,18 @@ import unittest
 
 class Solution(object):
 
-    def maxSubArray(self, nums): # dp means subarry that ends at index i, O(1) space, O(n) time
+    def maxSubArray(self, nums):
+        # write your code here
+        if not nums:
+            return 0
+        subsum = nums[0]
+        result = subsum
+        for num in nums[1:]:  # should be nums[1:] here, oterwise nums[0] added twice
+            subsum = max(subsum, 0) + num
+            result = max(result, subsum)
+        return result
+
+    def maxSubArray1(self, nums): # dp means subarry that ends at index i, O(1) space, O(n) time
         # write your code here
         if not nums:
             return 0
@@ -42,7 +53,7 @@ class Solution(object):
         return result
 
 
-    def maxSubArray(self, nums): # dp means subarry that ends at index i, O(n) space, O(n) time
+    def maxSubArray2(self, nums): # dp means subarry that ends at index i, O(n) space, O(n) time
         # write your code here
         if not nums:
             return 0
