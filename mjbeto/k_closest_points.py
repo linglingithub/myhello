@@ -33,6 +33,7 @@ class Solution:
     # @param {int} k an integer
     # @return {Pint[]} the k closest points
     def kClosest(self, points, origin, k):  # accepted by Lintcode
+    def kClosest(self, points, origin, k):  # accepted by Lintcode
         # Write your code here
         import heapq
         if not points or not k:
