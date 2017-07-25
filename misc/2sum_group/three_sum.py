@@ -27,6 +27,29 @@ import unittest
 
 class Solution(object):
     def threeSum(self, nums):
+        # write your code here
+        if not nums:
+            return []
+        n = len(nums)
+        nums.sort()
+        result = []
+        for i in range(n - 2):
+            v1 = nums[i]
+            vals_dict = {}
+
+            for j in range(i + 1, n):
+                v2 = nums[j]
+                if -v1 - v2 in vals_dict:
+                    tmp = sorted([v1, v2, -v1 - v2])
+                    tmp = (tmp[0], tmp[1], tmp[2])
+                    if tmp not in result:
+                        result.append(tmp)
+                else:
+                    # vals_dict[v1 + v2] = 1, wrong , should be v2
+                    vals_dict[v2] = 1
+        return result
+
+    def threeSum1(self, nums):
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -113,6 +136,12 @@ class Solution(object):
 class ThreeSumTester(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
+
+    # def test_case01(self):
+    #     s = [-1, 0, 1]
+    #     result = self.sol.threeSum(s)
+    #     answer = [[-1, 0, 1]]
+    #     self.assertEqual(result, answer)
 
     def test_case1(self):
         s = [-1, 0, 1, 2, -1, -4]

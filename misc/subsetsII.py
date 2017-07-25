@@ -29,7 +29,92 @@ Medium
 import unittest
 
 
-class Solution(object):
+class Solution:
+    """
+    @param S: A set of numbers.
+    @return: A list of lists. All valid subsets.
+    """
+    def subsetsWithDup(self, S):
+        if not S:
+            return []
+        result = []
+        S.sort()
+        self.dfs_subset(0, 0, [], result, S)
+        return result
+
+    def dfs_subset(self, depth, idx, path, result, nums):
+        result.append(path)
+        if depth == len(nums):
+            return
+        for i in range(idx, len(nums)):
+            if i>idx and nums[i] == nums[i-1]:
+                continue
+            self.dfs_subset(depth+1, i+1, path+[nums[i]], result, nums)
+
+
+
+
+    def subsetsWithDup_w(self, S):
+        if not S:
+            return []
+        result = []
+        self.dfs_subset_w(0, [], result, S)
+        return result
+
+    def dfs_subset_w(self, idx, path, result, nums):
+        result.append(path)
+        if idx == len(nums):
+            return
+        for i in range(idx, len(nums)):
+            if i>idx and nums[i] == nums[i-1]:
+                continue
+            self.dfs_subset_w(idx+1, path+[nums[i]], result, nums)
+
+
+    def subsetsWithDup_wrong1(self, S): # wrong output as [[1],[1,1]] for case 01
+        # write your code here
+        if S is None:
+            return []
+        if not S:
+            return [[]]
+        result = []
+        S.sort()
+        self.helper(S, 0, [], result)
+        return result
+
+    def helper_wrong1(self, S, idx, vals, result):
+        if idx >= len(S):
+            result.append(vals)
+            return
+        cur = S[idx]
+        if idx > 0 and S[idx] == S[idx - 1]:
+            self.helper(S, idx + 1, vals + [S[idx]], result)
+        else:
+            self.helper(S, idx + 1, vals, result)
+            self.helper(S, idx + 1, vals + [S[idx]], result)
+
+    def subsetsWithDup_wrong(self, S): # case01, wrong output as [[], [1]]
+        # write your code here
+        if S is None:
+            return []
+        if not S:
+            return [[]]
+        result = []
+        S.sort()
+        self.helper_wrong(S, 0, [], result)
+        return result
+
+    def helper_wrong(self, S, idx, vals, result):
+        if idx >= len(S):
+            result.append(vals)  # don't forget this one!!!
+            return
+        cur = S[idx]
+        self.helper(S, idx + 1, vals, result)
+        if vals + [cur] not in result:
+            self.helper(S, idx + 1, vals + [cur], result)
+
+
+class Solution1(object):
     def subsetsWithDup_wrongtest_trytoremovelength(self, nums):
         def dfs(start, subset):
             res.append(subset)
@@ -65,7 +150,7 @@ class Solution(object):
         """
         def dfs(depth, start, subset):
             res.append(subset)
-            print subset, depth, start
+            print "adding: ", subset, depth, start
             if depth == len(nums):
                 print "<<<<"
                 return
@@ -76,6 +161,7 @@ class Solution(object):
                 dfs(depth+1, i+1, subset+[nums[i]]) # should be i+1 here, not i
 
         nums.sort()
+        print "================ input: ", nums
         res = []
         dfs(0, 0, [])
         return res
@@ -189,6 +275,16 @@ class Solution(object):
 class SolutionTester(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
+
+    def test_case01(self):
+        nums = [1,1]
+        answer = [[],[1],[1,1]]
+        result = self.sol.subsetsWithDup(nums)
+        print "====== final result:", result
+        answer.sort()
+        result.sort()
+        self.assertEqual(answer, result)
+
 
     def test_case1(self):
         nums = [1,2,2]
