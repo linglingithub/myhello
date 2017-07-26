@@ -13,7 +13,39 @@ Hide Similar Problems (M) Sqrt(x) (M) Super Pow
 
 import unittest, sys
 
-class Solution(object):
+
+class Solution:
+    # @param {double} x the base number
+    # @param {int} n the power number
+    # @return {double} the result
+    def myPow(self, x, n):
+        # Write your code here
+        if n == 0 or x == 1:
+            return 1
+        if x == 0:
+            return 0
+        if x == -1:
+            return -1 if n % 2 else 1
+        if n == 1 :
+            return x
+
+        result = 1
+        revert = False
+        if n < 0:
+            n = -n
+            revert = True
+
+        while n > 0:
+            if n % 2:
+                result *= x
+            x *= x
+            n /= 2
+        #result *= x  # should not have this, NOTE 2^4, even number power will always come to n%2=1
+        if revert:
+            result = 1.0 / result
+        return result
+
+class Solution1(object):
     """
     The purpose is to use multiply, divide and mod, etc??  only to calculate the result.
         # to do this in a bottom-up way for the power number n is not a good idea, cause
@@ -23,9 +55,9 @@ class Solution(object):
         # So it is better to do recursively in a top-down way -- divide the n by 2 each recursion.
         # <---- the above made some sense, for the recursive version.
         But does not show the key point for the iterative version.
-        x^7 = x^4 * x^2 * x^1
-        x^8 = x^8
-        x^15 = x^8 * x^4 * x^2 * x^1
+        x^7 = x^1 * (x^2)^3 = x^1 * (x^2 * (x^2)^2)
+        x^8 = x^8 = (x^2)^4 = ((x^2)^2)^2 = (((x^2)^2)^2)^1
+        x^15 = x^1 * x^14 = x^1 * (x^2)^7 = x^1 * ((x^2)*(x^2)^3)
         ...
         so think about the power n as binary code, 7 = 111, 8 = 1000, 15 = 1111
     """
@@ -187,6 +219,13 @@ class SolutionTester(unittest.TestCase):
         a = 4.70975
         b = -6
         answer = 0.00009162476446700508
+        result = self.sol.myPow(a, b)
+        self.assertEqual(answer, result)
+
+    def test_case07(self):
+        a = 2
+        b = 4
+        answer = 16
         result = self.sol.myPow(a, b)
         self.assertEqual(answer, result)
 
