@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/search_in_rotated_sorted_arrayII.py" afterPath="$PROJECT_DIR$/misc/search_in_rotated_sorted_arrayII.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/implement_strStr.py" afterPath="$PROJECT_DIR$/misc/implement_strStr.py" />
     </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -750,11 +750,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_in_rotated_sorted_arrayII.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="search_in_rotated_sorted_arrayII.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/search_in_rotated_sorted_arrayII.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="39" column="101" lean-forward="false" selection-start-line="39" selection-start-column="101" selection-end-line="39" selection-end-column="101" />
+            <state relative-caret-position="-664">
+              <caret line="32" column="87" lean-forward="false" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="implement_strStr.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/implement_strStr.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -805,16 +815,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inheritance_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/inheritance_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1680">
-              <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="114" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -899,7 +899,6 @@
         <option value="$PROJECT_DIR$/mjbeto/number_of_islands.py" />
         <option value="$PROJECT_DIR$/misc/count_and_say.py" />
         <option value="$PROJECT_DIR$/misc/remove_duplicates_from_sorted_array.py" />
-        <option value="$PROJECT_DIR$/misc/implement_strStr.py" />
         <option value="$PROJECT_DIR$/misc/subsets.py" />
         <option value="$PROJECT_DIR$/misc/reverse_linked_list.py" />
         <option value="$PROJECT_DIR$/misc/multiply_strings.py" />
@@ -923,6 +922,7 @@
         <option value="$PROJECT_DIR$/misc/pow_x_n.py" />
         <option value="$PROJECT_DIR$/misc/search_in_rotated_sorted_array.py" />
         <option value="$PROJECT_DIR$/misc/search_in_rotated_sorted_arrayII.py" />
+        <option value="$PROJECT_DIR$/misc/implement_strStr.py" />
       </list>
     </option>
   </component>
@@ -1589,11 +1589,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33968255" sideWeight="0.51872075" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3409091" sideWeight="0.48956084" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3409091" sideWeight="0.48956084" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25749558" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21669342" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24910007" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3565341" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3565341" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42897728" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20545869" sideWeight="0.5056" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -3219,7 +3219,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/misc/search_in_rotated_sorted_arrayII.py</url>
-          <line>34</line>
+          <line>40</line>
           <option name="timeStamp" value="520" />
         </line-breakpoint>
       </breakpoints>
@@ -3431,13 +3431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/implement_strStr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -3618,8 +3611,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/misc/search_in_rotated_sorted_arrayII.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="39" column="101" lean-forward="false" selection-start-line="39" selection-start-column="101" selection-end-line="39" selection-end-column="101" />
+        <state relative-caret-position="-664">
+          <caret line="32" column="87" lean-forward="false" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/implement_strStr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding />
         </state>
       </provider>
