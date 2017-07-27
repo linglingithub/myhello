@@ -22,7 +22,40 @@ Medium
 import unittest
 
 
-class Solution(object):
+class Solution:
+    """
+    @param A : an integer ratated sorted array and duplicates are allowed
+    @param target : an integer to be searched
+    @return : a boolean
+    """
+    def search(self, A, target):
+        """
+        A different if-else / <>= / l,m,r adjustment way. compare with solution1 search
+        :param A: 
+        :param target: 
+        :return: 
+        """
+        # write your code here
+        if not A:
+            return False
+        left, right = 0, len(A) - 1
+        while left <= right:
+            mid = (left+right)/2
+            if A[mid] == target:
+                return True
+            if A[mid] <= A[right]: # left half, include 0, mid  # Note <= here, wrong if < for case 5
+                if A[mid] < target <= A[right]:
+                        left = mid + 1
+                else:
+                    right = right - 1
+            else: # -- right half, exclude mid
+                if A[left] <= target < A[mid]:
+                    right = mid - 1
+                else:
+                    left = left + 1
+        return False
+
+class Solution1(object):
     def search(self, nums, target): #75ms, 6.63%
         """
         :type nums: List[int]
@@ -96,7 +129,7 @@ class SolutionTester(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
 
-    def test_case5(self): #====>
+    def test_case05(self): #====>
         nums = [3,1,1]
         target = 3
         answer = True
