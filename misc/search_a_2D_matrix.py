@@ -29,7 +29,30 @@ Medium
 import unittest
 
 
-class Solution(object):
+class Solution:
+    """
+    @param matrix, a list of lists of integers
+    @param target, an integer
+    @return a boolean, indicate whether matrix contains target
+    """
+    def searchMatrix(self, matrix, target):
+
+        if not matrix or not matrix[0]:
+            return False
+        m, n = len(matrix), len(matrix[0])
+        l, r = 0, m*n-1
+        while l <= r:
+            mid = (l+r)/2
+            x, y = mid/n, mid%n
+            if matrix[x][y] == target:
+                return True
+            elif matrix[x][y] > target:
+                r = mid - 1
+            else:
+                l = mid + 1
+        return False
+
+class Solution1(object):
     def searchMatrix(self, matrix, target): #35ms, 94.5%
         """
         :type matrix: List[List[int]]

@@ -20,8 +20,63 @@ Hide Similar Problems (M) Generate Parentheses (M) Combination Sum (E) Binary Wa
 
 import unittest
 
+class Solution:
 
-class Solution(object):
+    def letterCombinations(self, digits):  # recursive way
+        # Write your code here
+        if not digits:
+            return []
+        self.map = {
+            "2": "abc",
+            "3": "def",
+            "4": "ghi",
+            "5": "jkl",
+            "6": "mno",
+            "7": "pqrs",
+            "8": "tuv",
+            "9": "wxyz"
+        }
+        result = []
+        self.dfs(digits, 0, "", result)
+        return result
+
+    def dfs(self, digits, idx, tmp, result):
+        if idx == len(digits):
+            result.append(tmp)
+            return
+        for char in self.map.get(digits[idx]):
+            self.dfs(digits, idx+1, tmp+char, result)
+
+
+    # @param {string} digits A digital string
+    # @return {string[]} all posible letter combinations
+    def letterCombinations1(self, digits):  # iterative way
+        # Write your code here
+        if not digits:
+            return []
+        map = {
+            "2": "abc",
+            "3": "def",
+            "4": "ghi",
+            "5": "jkl",
+            "6": "mno",
+            "7": "pqrs",
+            "8": "tuv",
+            "9": "wxyz"
+        }
+        from collections import deque
+        result = deque()
+        result.append("")
+        for digit in digits:
+            tmp = []
+            for char in map.get(digit):
+                for combi in result:
+                    tmp.append(combi+char)
+            result = tmp
+        return result
+
+
+class Solution1(object):
     def letterCombinations1(self, digits): # non-recursive
         """
         :type digits: str

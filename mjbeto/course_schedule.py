@@ -35,7 +35,7 @@ class Solution_DFS2_notgood_local_online:
     def dfs(self, v, visit, gr):
         if visit[v] == 1:
             return True
-        visit[v] = -1;
+        visit[v] = -1
         for i in gr[v]:
             if visit[i] == -1 or not self.dfs(i, visit, gr):
                 return False
