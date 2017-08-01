@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mjbeto/maximal_square.py" afterPath="$PROJECT_DIR$/mjbeto/maximal_square.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/reverse_nodes_in_k_group.py" afterPath="$PROJECT_DIR$/misc/reverse_nodes_in_k_group.py" />
     </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -212,7 +212,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sumIII__5_.coverage" NAME="Unittests in combination_sumIII (5) Coverage Results" MODIFIED="1477614245520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_symmetric_tree__1_.coverage" NAME="Unittests in symmetric_tree (1) Coverage Results" MODIFIED="1481565975160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_restore_ip_addresses__2_.coverage" NAME="Unittests in restore_ip_addresses (2) Coverage Results" MODIFIED="1481164229384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
-    <SUITE FILE_PATH="coverage/testhello$Unittests_in_regular_expression_matching_py.coverage" NAME="Unittests in regular_expression_matching.py Coverage Results" MODIFIED="1501574197444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_regular_expression_matching_py.coverage" NAME="Unittests in regular_expression_matching.py Coverage Results" MODIFIED="1501615111553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_one_edit_distance_locked__1_.coverage" NAME="Unittests in one_edit_distance_locked (1) Coverage Results" MODIFIED="1479865613802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_maximum_depth_of_binary_tree.coverage" NAME="Unittests in maximum_depth_of_binary_tree Coverage Results" MODIFIED="1481598635616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$GroupTypeBConverter.coverage" NAME="GroupTypeBConverter Coverage Results" MODIFIED="1440195413469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -276,6 +276,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_binary_tree_level_order_traversalII__1_.coverage" NAME="Unittests in binary_tree_level_order_traversalII (1) Coverage Results" MODIFIED="1481581511395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_unique_binary_search_trees__2_.coverage" NAME="Unittests in unique_binary_search_trees (2) Coverage Results" MODIFIED="1476749193737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$gradeProblemCountJsonGenerator.coverage" NAME="gradeProblemCountJsonGenerator Coverage Results" MODIFIED="1477354462801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_reverse_nodes_in_k_group_py.coverage" NAME="Unittests in reverse_nodes_in_k_group.py Coverage Results" MODIFIED="1501615452188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_valid_sudoku__3_.coverage" NAME="Unittests in valid_sudoku (3) Coverage Results" MODIFIED="1477423289212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_wood_cut_SolutionTester_test_case6__1_.coverage" NAME="Unittests for wood_cut.SolutionTester.test_case6 (1) Coverage Results" MODIFIED="1493859210198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mjbeto" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_expression_expand_SolutionTester_setUp.coverage" NAME="Unittests for expression_expand.SolutionTester.setUp Coverage Results" MODIFIED="1493614358541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mjbeto" />
@@ -725,16 +726,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="minimum_window_substring.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/minimum_window_substring.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="best_time_to_buy_and_sell_stock.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/best_time_to_buy_and_sell_stock.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -805,11 +796,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="maximal_square.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="maximal_square.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjbeto/maximal_square.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="56" selection-end-column="30" />
+            <state relative-caret-position="443">
+              <caret line="52" column="37" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reverse_nodes_in_k_group.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/reverse_nodes_in_k_group.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-545">
+              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -877,7 +878,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/course_schedule_case4.ini" />
         <option value="$PROJECT_DIR$/data/course_schedule_case5.ini" />
         <option value="$PROJECT_DIR$/misc/product_of_array_except_self.py" />
         <option value="$PROJECT_DIR$/mjbeto/convert_BST_to_greater_tree.py" />
@@ -928,6 +928,7 @@
         <option value="$PROJECT_DIR$/misc/letter_combinations_of_a_phone_number.py" />
         <option value="$PROJECT_DIR$/misc/regular_expression_matching.py" />
         <option value="$PROJECT_DIR$/mjbeto/maximal_square.py" />
+        <option value="$PROJECT_DIR$/misc/reverse_nodes_in_k_group.py" />
       </list>
     </option>
   </component>
@@ -1111,23 +1112,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in regular_expression_matching.py">
-    <configuration default="false" name="Unittests in search_a_2D_matrix.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/search_a_2D_matrix.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in reverse_nodes_in_k_group.py">
     <configuration default="false" name="Unittests in letter_combinations_of_a_phone_number.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1190,6 +1175,22 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;SolutionTester.test_case8&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in reverse_nodes_in_k_group.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/reverse_nodes_in_k_group.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -1493,19 +1494,19 @@
       <item index="2" class="java.lang.String" itemvalue="Python.coins_in_a_line.py" />
       <item index="3" class="java.lang.String" itemvalue="Python.flattern_binary_tree" />
       <item index="4" class="java.lang.String" itemvalue="Python.var_scope" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in search_a_2D_matrix.py" />
-      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in letter_combinations_of_a_phone_number.py" />
-      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests in regular_expression_matching.py" />
-      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case8" />
-      <item index="9" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case8 (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in letter_combinations_of_a_phone_number.py" />
+      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in regular_expression_matching.py" />
+      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case8" />
+      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case8 (1)" />
+      <item index="9" class="java.lang.String" itemvalue="Python tests.Unittests in reverse_nodes_in_k_group.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in regular_expression_matching.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case8 (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case8" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in letter_combinations_of_a_phone_number.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in search_a_2D_matrix.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in reverse_nodes_in_k_group.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in regular_expression_matching.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case8 (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case8" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in letter_combinations_of_a_phone_number.py" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -1546,21 +1547,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.07.31 at 18h 01m 36s.xml">
-      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.07.31 at 18h 01m 46s.xml">
-      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.07.31 at 18h 10m 19s.xml">
-      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.07.31 at 18h 12m 35s.xml">
-      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 00h 45m 55s.xml">
-      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 00h 46m 54s.xml">
       <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
     </history-entry>
@@ -1576,6 +1562,21 @@
     <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 00h 56m 37s.xml">
       <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 12h 18m 31s.xml">
+      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_reverse_nodes_in_k_group_py - 2017.08.01 at 12h 18m 40s.xml">
+      <configuration name="Unittests in reverse_nodes_in_k_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_reverse_nodes_in_k_group_py - 2017.08.01 at 12h 21m 34s.xml">
+      <configuration name="Unittests in reverse_nodes_in_k_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_reverse_nodes_in_k_group_py - 2017.08.01 at 12h 24m 03s.xml">
+      <configuration name="Unittests in reverse_nodes_in_k_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_reverse_nodes_in_k_group_py - 2017.08.01 at 12h 24m 12s.xml">
+      <configuration name="Unittests in reverse_nodes_in_k_group.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1588,9 +1589,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="956" y="-876" width="1349" height="832" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22723795" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28921193" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261694" sideWeight="0.5176991" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1598,8 +1598,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25749558" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5411061" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24910007" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35434175" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52100843" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35434175" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.464986" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20545869" sideWeight="0.5056" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2319,12 +2319,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/misc/reverse_nodes_in_k_group.py</url>
-          <line>44</line>
+          <line>93</line>
           <option name="timeStamp" value="237" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/misc/reverse_nodes_in_k_group.py</url>
-          <line>74</line>
+          <line>123</line>
           <option name="timeStamp" value="238" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -3232,6 +3232,16 @@
           <line>71</line>
           <option name="timeStamp" value="521" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/reverse_nodes_in_k_group.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="522" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/reverse_nodes_in_k_group.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="523" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -3240,19 +3250,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="522" />
+      <option name="time" value="524" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/merge_sorted_array.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/insert_interval.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -3627,8 +3629,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mjbeto/maximal_square.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="56" selection-end-column="30" />
+        <state relative-caret-position="443">
+          <caret line="52" column="37" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/reverse_nodes_in_k_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-545">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>

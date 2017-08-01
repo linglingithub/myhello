@@ -35,7 +35,56 @@ from util.list_node import ListNode
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+
+class Solution:
+    # @param head, a ListNode
+    # @param k, an integer
+    # @return a ListNode
+    def reverseKGroup(self, head, k):
+        # Write your code here
+        if not head or k < 2:
+            return head
+        dummy = ListNode(-1)
+        dummy.next = head
+        start = head
+        preHead = dummy
+        while True:
+            head, tail, postTail = self.get_k_nodes(start, k)
+            if not tail:
+                break
+            head, tail = self.reverse_node_list(head, tail)
+            preHead.next = head
+            tail.next = postTail
+            start = postTail
+            preHead = tail
+        return dummy.next
+
+    def get_k_nodes(self, start, k):
+        head, tail, postTail = start, start, None
+        if not head:
+            return head, tail, postTail
+        cnt = 1
+        while cnt < k:
+            tail = tail.next
+            if not tail:
+                break
+            cnt += 1
+        if not tail:
+            return head, None, None
+        return head, tail, tail.next
+
+    def reverse_node_list(self, head, tail):
+        _newTail = [head]
+        left, right = head, head.next
+        while right != tail:
+            tmp = right.next
+            right.next = left
+            left = right
+            right = tmp
+        right.next = left
+        return tail, _newTail[0]
+
+class Solution1(object):
     def reverseKGroup(self, head, k): # 85ms, 37%, pay attention to link details, trial and error process
         """
         :type head: ListNode
