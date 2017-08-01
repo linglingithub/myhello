@@ -68,7 +68,7 @@ class Solution:
             tail = tail.next
             if not tail:
                 break
-            cnt += 1
+            cnt += 1   # should be cnt , not k here, careful on the typo
         if not tail:
             return head, None, None
         return head, tail, tail.next
