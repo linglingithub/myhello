@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/regular_expression_matching.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/letter_combinations_of_a_phone_number.py" afterPath="$PROJECT_DIR$/misc/letter_combinations_of_a_phone_number.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/search_a_2D_matrix.py" afterPath="$PROJECT_DIR$/misc/search_a_2D_matrix.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mjbeto/course_schedule.py" afterPath="$PROJECT_DIR$/mjbeto/course_schedule.py" />
     </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -215,6 +214,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sumIII__5_.coverage" NAME="Unittests in combination_sumIII (5) Coverage Results" MODIFIED="1477614245520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_symmetric_tree__1_.coverage" NAME="Unittests in symmetric_tree (1) Coverage Results" MODIFIED="1481565975160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_restore_ip_addresses__2_.coverage" NAME="Unittests in restore_ip_addresses (2) Coverage Results" MODIFIED="1481164229384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_regular_expression_matching_py.coverage" NAME="Unittests in regular_expression_matching.py Coverage Results" MODIFIED="1501574197444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_one_edit_distance_locked__1_.coverage" NAME="Unittests in one_edit_distance_locked (1) Coverage Results" MODIFIED="1479865613802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_maximum_depth_of_binary_tree.coverage" NAME="Unittests in maximum_depth_of_binary_tree Coverage Results" MODIFIED="1481598635616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$GroupTypeBConverter.coverage" NAME="GroupTypeBConverter Coverage Results" MODIFIED="1440195413469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -284,6 +284,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_MinimumPathSum.coverage" NAME="Unittests in MinimumPathSum Coverage Results" MODIFIED="1480528712542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_pow_x_n.coverage" NAME="Unittests in pow_x_n Coverage Results" MODIFIED="1477028240826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_restore_ip_addresses__3_.coverage" NAME="Unittests in restore_ip_addresses (3) Coverage Results" MODIFIED="1481164614165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_for_SolutionTester_test_case8.coverage" NAME="Unittests for SolutionTester.test_case8 Coverage Results" MODIFIED="1501399321920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_candy__4_.coverage" NAME="Unittests in candy (4) Coverage Results" MODIFIED="1482975735783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_copy_books_SolutionTester_test_case4__1_.coverage" NAME="Unittests for copy_books.SolutionTester.test_case4 (1) Coverage Results" MODIFIED="1495238977534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mjbeto" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_maximum_subarray__4_.coverage" NAME="Unittests in maximum_subarray (4) Coverage Results" MODIFIED="1479532629132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -388,12 +389,13 @@
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTestor_test_case1.coverage" NAME="Unittest SolutionTestor.test_case1 Coverage Results" MODIFIED="1474934747640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_kth_smallest_sum_in_two_sorted_arrays_SolutionTester_test_case4__1_.coverage" NAME="Unittests for kth_smallest_sum_in_two_sorted_arrays.SolutionTester.test_case4 (1) Coverage Results" MODIFIED="1495128871269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mjbeto" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_expression_expand_SolutionTester_test_case4__3_.coverage" NAME="Unittests for expression_expand.SolutionTester.test_case4 (3) Coverage Results" MODIFIED="1493614820064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mjbeto" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_for_SolutionTester_test_case8__1_.coverage" NAME="Unittests for SolutionTester.test_case8 (1) Coverage Results" MODIFIED="1501436828796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_binary_tree_level_order_traversalII.coverage" NAME="Unittests in binary_tree_level_order_traversalII Coverage Results" MODIFIED="1481580865700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_SolutionTest__1_.coverage" NAME="Unittests in SolutionTest (1) Coverage Results" MODIFIED="1470290701252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_combination_sumII__1_.coverage" NAME="Unittests in combination_sumII (1) Coverage Results" MODIFIED="1477601648062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_insertion_sort_list__3_.coverage" NAME="Unittests in insertion_sort_list (3) Coverage Results" MODIFIED="1475535809239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_LongestPalindromicSubstring__3_.coverage" NAME="Unittests in LongestPalindromicSubstring (3) Coverage Results" MODIFIED="1473897681760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
-    <SUITE FILE_PATH="coverage/testhello$Unittests_in_letter_combinations_of_a_phone_number_py.coverage" NAME="Unittests in letter_combinations_of_a_phone_number.py Coverage Results" MODIFIED="1501395940189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_letter_combinations_of_a_phone_number_py.coverage" NAME="Unittests in letter_combinations_of_a_phone_number.py Coverage Results" MODIFIED="1501396226413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_binary_tree_maximum_path_sum__1_.coverage" NAME="Unittests in binary_tree_maximum_path_sum (1) Coverage Results" MODIFIED="1478410997355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case2.coverage" NAME="Unittest SolutionTester.test_case2 Coverage Results" MODIFIED="1483650680877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$class_instance.coverage" NAME="class_instance Coverage Results" MODIFIED="1481652777908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
@@ -725,31 +727,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="implement_strStr.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/implement_strStr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="search_a_2D_matrix.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/search_a_2D_matrix.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="945">
               <caret line="63" column="23" lean-forward="false" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_a_2D_matrixII.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/search_a_2D_matrixII.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -808,18 +790,38 @@
       <file leaf-file-name="course_schedule.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjbeto/course_schedule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+            <state relative-caret-position="555">
+              <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="letter_combinations_of_a_phone_number.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="letter_combinations_of_a_phone_number.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/letter_combinations_of_a_phone_number.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="85" lean-forward="false" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="regular_expression_matching.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/regular_expression_matching.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="48" column="73" lean-forward="false" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aaa.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/aaa.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="47" selection-end-column="53" />
+              <caret line="9" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -877,7 +879,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/2sum_group/two_sum.py" />
         <option value="$PROJECT_DIR$/data/course_schedule_case4.ini.py" />
         <option value="$PROJECT_DIR$/data/course_schedule_case4.ini" />
         <option value="$PROJECT_DIR$/data/course_schedule_case5.ini" />
@@ -928,6 +929,7 @@
         <option value="$PROJECT_DIR$/misc/search_a_2D_matrix.py" />
         <option value="$PROJECT_DIR$/mjbeto/course_schedule.py" />
         <option value="$PROJECT_DIR$/misc/letter_combinations_of_a_phone_number.py" />
+        <option value="$PROJECT_DIR$/misc/regular_expression_matching.py" />
       </list>
     </option>
   </component>
@@ -938,10 +940,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="110" />
-    <option name="y" value="25" />
-    <option name="width" value="1400" />
-    <option name="height" value="877" />
+    <option name="x" value="41" />
+    <option name="y" value="28" />
+    <option name="width" value="1349" />
+    <option name="height" value="832" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -995,7 +997,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1053,6 +1054,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1111,55 +1113,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in letter_combinations_of_a_phone_number.py">
-    <configuration default="false" name="Unittests in pow_x_n.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/pow_x_n.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in search_in_rotated_sorted_array.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/search_in_rotated_sorted_array.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in search_in_rotated_sorted_arrayII.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/search_in_rotated_sorted_arrayII.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in regular_expression_matching.py">
     <configuration default="false" name="Unittests in search_a_2D_matrix.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1190,6 +1144,54 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/letter_combinations_of_a_phone_number.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in regular_expression_matching.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/regular_expression_matching.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests for SolutionTester.test_case8" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;SolutionTester.test_case8&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests for SolutionTester.test_case8 (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;SolutionTester.test_case8&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -1493,19 +1495,19 @@
       <item index="2" class="java.lang.String" itemvalue="Python.coins_in_a_line.py" />
       <item index="3" class="java.lang.String" itemvalue="Python.flattern_binary_tree" />
       <item index="4" class="java.lang.String" itemvalue="Python.var_scope" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in pow_x_n.py" />
-      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in search_in_rotated_sorted_array.py" />
-      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests in search_in_rotated_sorted_arrayII.py" />
-      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests in search_a_2D_matrix.py" />
-      <item index="9" class="java.lang.String" itemvalue="Python tests.Unittests in letter_combinations_of_a_phone_number.py" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in search_a_2D_matrix.py" />
+      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in letter_combinations_of_a_phone_number.py" />
+      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests in regular_expression_matching.py" />
+      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case8" />
+      <item index="9" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case8 (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in letter_combinations_of_a_phone_number.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in search_a_2D_matrix.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in search_in_rotated_sorted_arrayII.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in search_in_rotated_sorted_array.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in pow_x_n.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in regular_expression_matching.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case8 (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.test_case8" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in letter_combinations_of_a_phone_number.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in search_a_2D_matrix.py" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -1546,35 +1548,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_letter_combinations_of_a_phone_number_py - 2017.07.29 at 23h 25m 40s.xml">
-      <configuration name="Unittests in letter_combinations_of_a_phone_number.py" configurationId="tests" />
+    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.07.31 at 18h 01m 36s.xml">
+      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_search_a_2D_matrix_py - 2017.07.26 at 23h 16m 21s.xml">
-      <configuration name="Unittests in search_a_2D_matrix.py" configurationId="tests" />
+    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.07.31 at 18h 01m 46s.xml">
+      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_search_a_2D_matrix_py - 2017.07.26 at 23h 16m 57s.xml">
-      <configuration name="Unittests in search_a_2D_matrix.py" configurationId="tests" />
+    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.07.31 at 18h 10m 19s.xml">
+      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_search_a_2D_matrix_py - 2017.07.26 at 23h 18m 03s.xml">
-      <configuration name="Unittests in search_a_2D_matrix.py" configurationId="tests" />
+    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.07.31 at 18h 12m 35s.xml">
+      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_search_a_2D_matrix_py - 2017.07.26 at 23h 18m 33s.xml">
-      <configuration name="Unittests in search_a_2D_matrix.py" configurationId="tests" />
+    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 00h 45m 55s.xml">
+      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_search_in_rotated_sorted_arrayII_py - 2017.07.26 at 21h 57m 28s.xml">
-      <configuration name="Unittests in search_in_rotated_sorted_arrayII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 00h 46m 54s.xml">
+      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_search_in_rotated_sorted_arrayII_py - 2017.07.26 at 21h 59m 24s.xml">
-      <configuration name="Unittests in search_in_rotated_sorted_arrayII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 00h 48m 08s.xml">
+      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_search_in_rotated_sorted_arrayII_py - 2017.07.26 at 21h 59m 38s.xml">
-      <configuration name="Unittests in search_in_rotated_sorted_arrayII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 00h 52m 20s.xml">
+      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_search_in_rotated_sorted_array_py - 2017.07.26 at 18h 13m 14s.xml">
-      <configuration name="Unittests in search_in_rotated_sorted_array.py" configurationId="tests" />
+    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 00h 54m 46s.xml">
+      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_search_in_rotated_sorted_array_py - 2017.07.26 at 18h 15m 12s.xml">
-      <configuration name="Unittests in search_in_rotated_sorted_array.py" configurationId="tests" />
+    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 00h 56m 37s.xml">
+      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1587,19 +1589,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="110" y="25" width="1400" height="877" extended-state="0" />
+    <frame x="41" y="28" width="1349" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24889544" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22723795" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33968255" sideWeight="0.51872075" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261694" sideWeight="0.5176991" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33992094" sideWeight="0.48956084" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34033614" sideWeight="0.48230088" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25749558" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5411061" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24910007" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3565341" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42897728" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35460994" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52100843" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20545869" sideWeight="0.5056" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1894,17 +1896,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/misc/letter_combinations_of_a_phone_number.py</url>
-          <line>137</line>
+          <line>151</line>
           <option name="timeStamp" value="106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/misc/letter_combinations_of_a_phone_number.py</url>
-          <line>128</line>
+          <line>142</line>
           <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/misc/letter_combinations_of_a_phone_number.py</url>
-          <line>198</line>
+          <line>212</line>
           <option name="timeStamp" value="108" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -3227,6 +3229,11 @@
           <line>40</line>
           <option name="timeStamp" value="520" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/regular_expression_matching.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="521" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -3235,18 +3242,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="521" />
+      <option name="time" value="522" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/util/interval.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/remove_duplicates_from_sorted_arrayII.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
@@ -3388,13 +3388,6 @@
         <state relative-caret-position="705">
           <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/aaa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -3545,7 +3538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3553,7 +3545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3614,16 +3605,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mjbeto/course_schedule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        <state relative-caret-position="555">
+          <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/misc/letter_combinations_of_a_phone_number.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="85" lean-forward="false" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/aaa.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="47" selection-end-column="53" />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/regular_expression_matching.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="48" column="73" lean-forward="false" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
           <folding />
         </state>
       </provider>
