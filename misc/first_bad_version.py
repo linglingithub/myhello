@@ -33,10 +33,35 @@ Easy
 # The isBadVersion API is already defined for you.
 # @param version, an integer
 # @return a bool
+
+
+
 def isBadVersion(version):
     pass
 
 class Solution(object):
+    def firstBadVersion(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        if not n:
+            return -1
+        l, r = 0, n
+        last = -1
+        while l <= r:
+            mid = (l+r)/2
+            if mid == last:
+                return mid
+            if isBadVersion(mid):
+                r = mid
+                last = mid
+            else:
+                l = mid + 1
+        return last
+
+
+class Solution1(object):
     def firstBadVersion(self, n): #39ms, 67%
         """
         :type n: int
@@ -71,6 +96,40 @@ def main():
 if __name__ == "__main__":
     main()
 
+"""
 
+A good warning to me to use start+(end-start)/2 to avoid overflow
+Before this problem, I have always use
+
+  mid = (start+end)) / 2;
+To get the middle value, but this can caused OVERFLOW !
+
+when start and end are all about INT_MAX , then (start+end) of course will be overflow !
+
+To avoid the problem we can use
+
+  mid =  start+(end-start)/2;
+Here is the AC implementation
+
+// Forward declaration of isBadVersion API.
+bool isBadVersion(int version);
+
+class Solution {
+public:
+    int firstBadVersion(int n) {
+        int start=0, end=n;
+        cout<<end-start<<end;
+        while(end-start>1){
+            int mid=start+(end-start)/2;
+            /** mid = (start+end)) / 2; **/
+            if(isBadVersion(mid))  end=mid;
+            else  start=mid;
+        }
+        return end;
+    }
+};
+
+
+"""
 
 #-*- coding:utf-8 -*-
