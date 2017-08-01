@@ -26,13 +26,43 @@ Hard Maximal Rectangle
 """
 
 
-
 class Solution:
     #param matrix: a matrix of 0 and 1
     #return: an integer
     def maxSquare(self, matrix):
+        # write your code here
+        if not matrix or not matrix[0]:
+             return 0
+        m, n = len(matrix), len(matrix[0])
+        dp = [[matrix[i][j] for j in range(n)] for i in range(m)]
+        result = 0
+        # !!! can't only init as 0, cause following start from row 1, col 1
+        # miss the case of sinle row or single column
+        for i in range(m):
+            if matrix[i][0] == 1:
+                result = 1
+                break
+        if result == 0:
+            for j in range(n):
+                if matrix[0][j] == 1:
+                    result = 1
+                    break
+        # start propagating dp
+        for i in range(1, m):
+            for j in range(1, n):
+                if matrix[i][j] == 0:
+                    continue
+                dp[i][j] = min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1]) + 1
+                result = max(result, dp[i][j])
+        return result * result
+
+
+class Solution1:
+    #param matrix: a matrix of 0 and 1
+    #return: an integer
+    def maxSquare(self, matrix):
         """
-        Main idea is to under stand the dp status and relationship for square of smaller neighbors
+        Main idea is to understand the dp status and relationship for square of smaller neighbors
         1. dp[i][j] is the length of square whose bottom-right point is at (i,j)
         2. dp[i][j] = min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1])+1
         3. Note the initial status of first row, col, and the init value of result
