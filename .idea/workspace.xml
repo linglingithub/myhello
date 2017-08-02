@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/binary_search_tree_iterator.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/generator_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/lowest_common_ancestor_of_a_binary_tree.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/lowest_common_ancestor_of_a_bst.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/generator_test.py" afterPath="$PROJECT_DIR$/test/generator_test.py" />
     </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -578,6 +579,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_convert_linked_list_to_BST__2_.coverage" NAME="Unittests in convert_linked_list_to_BST (2) Coverage Results" MODIFIED="1481916649990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSum__1_.coverage" NAME="Unittests in ThreeSum (1) Coverage Results" MODIFIED="1472572358006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_permutation_sequence.coverage" NAME="Unittests in permutation_sequence Coverage Results" MODIFIED="1479320276378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_lowest_common_ancestor_of_a_binary_tree_py.coverage" NAME="Unittests in lowest_common_ancestor_of_a_binary_tree.py Coverage Results" MODIFIED="1501709299600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_word_break__1_.coverage" NAME="Unittests in word_break (1) Coverage Results" MODIFIED="1483059023257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_maximum_average_subarray_SolutionTester_test_case3.coverage" NAME="Unittests for maximum_average_subarray.SolutionTester.test_case3 Coverage Results" MODIFIED="1494030420800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mjbeto" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_TwoSumIITester.coverage" NAME="Unittests in TwoSumIITester Coverage Results" MODIFIED="1472061603842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -730,46 +732,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="letter_combinations_of_a_phone_number.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/letter_combinations_of_a_phone_number.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="85" lean-forward="false" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="regular_expression_matching.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/regular_expression_matching.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="77" column="86" lean-forward="false" selection-start-line="77" selection-start-column="86" selection-end-line="77" selection-end-column="86" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="maximal_square.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mjbeto/maximal_square.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reverse_nodes_in_k_group.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/reverse_nodes_in_k_group.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="78" column="28" lean-forward="false" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="first_bad_version.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/first_bad_version.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -794,7 +756,7 @@
         <entry file="file://$PROJECT_DIR$/misc/binary_search_tree_iterator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="274">
-              <caret line="131" column="31" lean-forward="true" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
+              <caret line="131" column="31" lean-forward="false" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -804,17 +766,59 @@
         <entry file="file://$PROJECT_DIR$/test/generateParentheses.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+              <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generator_test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="generator_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/generator_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="1753">
+              <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lowest_common_ancestor_of_a_bst.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/lowest_common_ancestor_of_a_bst.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-606">
+              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="61" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lowest_common_ancestor_of_a_binary_tree.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/lowest_common_ancestor_of_a_binary_tree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="214" column="42" lean-forward="true" selection-start-line="214" selection-start-column="42" selection-end-line="214" selection-end-column="42" />
+              <folding>
+                <element signature="e#15#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="case.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4725">
+              <caret line="328" column="0" lean-forward="false" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tree_node.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/tree_node.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-239">
+              <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -882,8 +886,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py" />
-        <option value="$PROJECT_DIR$/misc/longest_palindrome.py" />
         <option value="$PROJECT_DIR$/mjbeto/course_scheduleII.py" />
         <option value="$PROJECT_DIR$/mjbeto/first_position_unique_character.py" />
         <option value="$PROJECT_DIR$/misc/longest_palindromic_subsequence.py" />
@@ -932,7 +934,9 @@
         <option value="$PROJECT_DIR$/misc/first_bad_version.py" />
         <option value="$PROJECT_DIR$/test/int_long.py" />
         <option value="$PROJECT_DIR$/misc/binary_search_tree_iterator.py" />
+        <option value="$PROJECT_DIR$/misc/lowest_common_ancestor_of_a_bst.py" />
         <option value="$PROJECT_DIR$/test/generator_test.py" />
+        <option value="$PROJECT_DIR$/misc/lowest_common_ancestor_of_a_binary_tree.py" />
       </list>
     </option>
   </component>
@@ -943,10 +947,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="954" />
-    <option name="y" value="-869" />
-    <option name="width" value="1349" />
-    <option name="height" value="832" />
+    <option name="x" value="896" />
+    <option name="y" value="-991" />
+    <option name="width" value="1402" />
+    <option name="height" value="969" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1028,6 +1032,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testhello" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testhello" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="venv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -1062,18 +1084,18 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/linglin/PycharmProjects/testhello/util/aaa.py" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/misc" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/mjbeto" />
+      <recent name="$PROJECT_DIR$/util" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/misc" />
       <recent name="$PROJECT_DIR$/misc/2sum_group" />
       <recent name="$PROJECT_DIR$/old" />
       <recent name="$PROJECT_DIR$/util" />
       <recent name="$PROJECT_DIR$/test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/mjbeto" />
-      <recent name="$PROJECT_DIR$/misc" />
-      <recent name="$PROJECT_DIR$/util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1088,23 +1110,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.generator_test">
-    <configuration default="false" name="Unittests in regular_expression_matching.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/regular_expression_matching.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in lowest_common_ancestor_of_a_binary_tree.py">
     <configuration default="false" name="Unittests in reverse_nodes_in_k_group.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1176,6 +1182,22 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in lowest_common_ancestor_of_a_binary_tree.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/lowest_common_ancestor_of_a_binary_tree.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -1479,19 +1501,19 @@
       <item index="2" class="java.lang.String" itemvalue="Python.coins_in_a_line.py" />
       <item index="3" class="java.lang.String" itemvalue="Python.flattern_binary_tree" />
       <item index="4" class="java.lang.String" itemvalue="Python.var_scope" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in regular_expression_matching.py" />
-      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in reverse_nodes_in_k_group.py" />
-      <item index="7" class="java.lang.String" itemvalue="Python.int_long" />
-      <item index="8" class="java.lang.String" itemvalue="Python.generateParentheses" />
-      <item index="9" class="java.lang.String" itemvalue="Python.generator_test" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in reverse_nodes_in_k_group.py" />
+      <item index="6" class="java.lang.String" itemvalue="Python.int_long" />
+      <item index="7" class="java.lang.String" itemvalue="Python.generateParentheses" />
+      <item index="8" class="java.lang.String" itemvalue="Python.generator_test" />
+      <item index="9" class="java.lang.String" itemvalue="Python tests.Unittests in lowest_common_ancestor_of_a_binary_tree.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.generator_test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.generateParentheses" />
-        <item index="2" class="java.lang.String" itemvalue="Python.int_long" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in reverse_nodes_in_k_group.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in regular_expression_matching.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in lowest_common_ancestor_of_a_binary_tree.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python.generator_test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.generateParentheses" />
+        <item index="3" class="java.lang.String" itemvalue="Python.int_long" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in reverse_nodes_in_k_group.py" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -1532,35 +1554,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 00h 46m 54s.xml">
-      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
+    <history-entry file="Unittests_in_lowest_common_ancestor_of_a_binary_tree_py - 2017.08.02 at 10h 42m 54s.xml">
+      <configuration name="Unittests in lowest_common_ancestor_of_a_binary_tree.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 00h 48m 08s.xml">
-      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
+    <history-entry file="Unittests_in_lowest_common_ancestor_of_a_binary_tree_py - 2017.08.02 at 10h 48m 46s.xml">
+      <configuration name="Unittests in lowest_common_ancestor_of_a_binary_tree.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 00h 52m 20s.xml">
-      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
+    <history-entry file="Unittests_in_lowest_common_ancestor_of_a_binary_tree_py - 2017.08.02 at 10h 50m 12s.xml">
+      <configuration name="Unittests in lowest_common_ancestor_of_a_binary_tree.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 00h 54m 46s.xml">
-      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
+    <history-entry file="Unittests_in_lowest_common_ancestor_of_a_binary_tree_py - 2017.08.02 at 10h 52m 02s.xml">
+      <configuration name="Unittests in lowest_common_ancestor_of_a_binary_tree.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 00h 56m 37s.xml">
-      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
+    <history-entry file="Unittests_in_lowest_common_ancestor_of_a_binary_tree_py - 2017.08.02 at 10h 52m 31s.xml">
+      <configuration name="Unittests in lowest_common_ancestor_of_a_binary_tree.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_regular_expression_matching_py - 2017.08.01 at 12h 18m 31s.xml">
-      <configuration name="Unittests in regular_expression_matching.py" configurationId="tests" />
+    <history-entry file="Unittests_in_lowest_common_ancestor_of_a_binary_tree_py - 2017.08.02 at 10h 56m 26s.xml">
+      <configuration name="Unittests in lowest_common_ancestor_of_a_binary_tree.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_reverse_nodes_in_k_group_py - 2017.08.01 at 12h 18m 40s.xml">
-      <configuration name="Unittests in reverse_nodes_in_k_group.py" configurationId="tests" />
+    <history-entry file="Unittests_in_lowest_common_ancestor_of_a_binary_tree_py - 2017.08.02 at 10h 56m 48s.xml">
+      <configuration name="Unittests in lowest_common_ancestor_of_a_binary_tree.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_reverse_nodes_in_k_group_py - 2017.08.01 at 12h 21m 34s.xml">
-      <configuration name="Unittests in reverse_nodes_in_k_group.py" configurationId="tests" />
+    <history-entry file="Unittests_in_lowest_common_ancestor_of_a_binary_tree_py - 2017.08.02 at 10h 58m 02s.xml">
+      <configuration name="Unittests in lowest_common_ancestor_of_a_binary_tree.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_reverse_nodes_in_k_group_py - 2017.08.01 at 12h 24m 03s.xml">
-      <configuration name="Unittests in reverse_nodes_in_k_group.py" configurationId="tests" />
+    <history-entry file="Unittests_in_lowest_common_ancestor_of_a_binary_tree_py - 2017.08.02 at 11h 02m 09s.xml">
+      <configuration name="Unittests in lowest_common_ancestor_of_a_binary_tree.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_reverse_nodes_in_k_group_py - 2017.08.01 at 12h 24m 12s.xml">
-      <configuration name="Unittests in reverse_nodes_in_k_group.py" configurationId="tests" />
+    <history-entry file="Unittests_in_lowest_common_ancestor_of_a_binary_tree_py - 2017.08.02 at 14h 28m 19s.xml">
+      <configuration name="Unittests in lowest_common_ancestor_of_a_binary_tree.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1573,19 +1595,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="954" y="-869" width="1349" height="832" extended-state="0" />
+    <frame x="896" y="-991" width="1402" height="969" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28921193" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.304103" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261694" sideWeight="0.5176991" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36554623" sideWeight="0.48230088" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37015277" sideWeight="0.48230088" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25749558" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5411061" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24910007" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36834735" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.464986" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37250292" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46415982" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20545869" sideWeight="0.5056" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3228,6 +3250,16 @@
           <line>62</line>
           <option name="timeStamp" value="523" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/lowest_common_ancestor_of_a_binary_tree.py</url>
+          <line>95</line>
+          <option name="timeStamp" value="524" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/lowest_common_ancestor_of_a_binary_tree.py</url>
+          <line>148</line>
+          <option name="timeStamp" value="525" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -3236,33 +3268,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="524" />
+      <option name="time" value="526" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/2sum_group/two_sum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/2sum_group/two_sumII.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/2sum_group/two_sumIII.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/2sum_group/three_sum_closest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
@@ -3442,14 +3452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4725">
-          <caret line="328" column="0" lean-forward="false" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/pow_x_n.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -3598,6 +3600,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/misc/binary_search_tree_iterator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="131" column="31" lean-forward="false" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/generateParentheses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/util/aaa.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -3606,27 +3624,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/binary_search_tree_iterator.py">
+    <entry file="file://$PROJECT_DIR$/misc/lowest_common_ancestor_of_a_bst.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="131" column="31" lean-forward="true" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/generateParentheses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        <state relative-caret-position="-606">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="61" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/generator_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="1753">
+          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/tree_node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-239">
+          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4725">
+          <caret line="328" column="0" lean-forward="false" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/lowest_common_ancestor_of_a_binary_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="214" column="42" lean-forward="true" selection-start-line="214" selection-start-column="42" selection-end-line="214" selection-end-column="42" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
