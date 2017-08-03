@@ -10,6 +10,7 @@ class IniFileUtil(object):
         from util.ini_file_util import IniFileUtil
         params = IniFileUtil.read_into_dict("backpack_case6.ini")
         nums = IniFileUtil.string_to_int_list(params.get("nums"))
+        # nums = IniFileUtil.string_to_int_list_list(params.get("nums"))   # for matrix input
         m = int(params.get("m"))
     
     """
