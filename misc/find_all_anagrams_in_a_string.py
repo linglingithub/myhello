@@ -22,6 +22,8 @@ Output:
 Explanation:
 The substring with start index = 0 is "cba", which is an anagram of "abc".
 The substring with start index = 6 is "bac", which is an anagram of "abc".
+
+
 Example 2:
 
 Input:
@@ -41,7 +43,106 @@ Easy
 
 
 class Solution(object):
-    def findAnagrams_ref_dontUnderstand(self, s, p):
+    def findAnagrams(self, s, p):  # self rewrite according to ref
+        if not s or not p:
+            return []
+        result = []
+        from collections import Counter
+        char_cnts = Counter(p)
+        left, right = 0, 0
+        total_cnt = len(p)
+        while right < len(s):
+            char = s[right]
+            if char_cnts[char] > 0: # still needs the char
+                total_cnt -= 1
+            char_cnts[char] = char_cnts.get(char, 0) - 1
+            if right >= len(p)-1:
+                if total_cnt == 0:
+                    result.append(left)
+                lchar = s[left]
+                if char_cnts[lchar] >= 0:
+                    total_cnt += 1
+                char_cnts[lchar] += 1
+                left += 1
+            right += 1
+        return result
+
+
+
+
+
+    def findAnagrams_self(self, s, p):
+        """
+        self, basic idea, 
+        use the window to keep track of the target chars and counts(no non-target chars),
+        use total_cnts to maintain that only valid number of (no more than required for each target char) chars are counted
+        :param s: 
+        :param p: 
+        :return: 
+        """
+        if not s or not p:
+            return []
+        from collections import Counter
+        char_cnts = Counter(p)
+        total_cnts = 0
+        window = {}
+        left, right = 0, 0
+        result = []
+        while right < len(s):
+            char = s[right]
+            tmp_window_debug = s[left:right+1]
+            if char in char_cnts:
+                window[char] = window.get(char, 0) + 1
+                if window.get(char) <= char_cnts[char]:
+                    total_cnts += 1
+            if right-left+1 == len(p):
+                if total_cnts == len(p):
+                    result.append(left)
+                #else:   # should not put in else here, every time should check lchar, otherwise wrong for case1
+                lchar = s[left]
+                if lchar in char_cnts:
+                    if window[lchar] <= char_cnts[lchar]: # should do this before window[lchar] -= 1
+                        total_cnts -= 1
+                    window[lchar] -= 1
+                left += 1   # don't forget this !!!
+            right += 1
+        return result
+
+    def findAnagrams_wrong(self, s, p):
+        if not s or not p:
+            return []
+        from collections import Counter
+        counts = Counter(p)
+        left, right = 0, 0
+        result = []
+        count = len(p)
+        import copy
+        dict = copy.deepcopy(counts)
+        while right < len(s):
+            char = s[right]
+            if char not in dict:
+                right += 1
+                left = right
+                dict = copy.deepcopy(counts)
+                continue
+
+            if dict.get(char) > 0:
+                count -= 1
+                dict[char] -= 1
+
+
+            if count == 0:
+                result.append(left)
+            if right - left == len(p)-1:
+                dict[s[left]] += 1
+                count += 1
+                left += 1
+            right += 1
+        return result
+
+
+
+    def findAnagrams_ref_explanation_below(self, s, p):  # _ref_
 
         ls, lp = len(s), len(p)
         count = lp
@@ -50,14 +151,15 @@ class Solution(object):
         ans = []
         for i in range(ls):
             char = s[i]
-            if cp[s[i]] >=1 :
+            tmp_debug_window = s[i-lp+1: i+1]
+            if cp[char] >=1 :
                 count -= 1
-            cp[s[i]] -= 1
+            cp[char] -= 1
             if i >= lp:
                 char_l = s[i - lp]
-                if cp[s[i - lp]] >= 0:
+                if cp[char_l] >= 0:
                     count += 1
-                cp[s[i - lp]] += 1
+                cp[char_l] += 1
             if count == 0:
                 ans.append(i - lp + 1)
         return ans
@@ -250,5 +352,44 @@ class Solution(object):
             if count == 0:
                 ans.append(i - lp + 1)
         return ans
+        
+        
+=======================================================
+        
+public List<Integer> findAnagrams(String s, String p) {
+    List<Integer> list = new ArrayList<>();
+    if (s == null || s.length() == 0 || p == null || p.length() == 0) return list;
+    
+    int[] hash = new int[256]; //character hash
+    
+    //record each character in p to hash
+    for (char c : p.toCharArray()) {
+        hash[c]++;
+    }
+    
+    //two points, initialize count to p's length
+    int left = 0, right = 0, count = p.length();
+    
+    while (right < s.length()) {
+        //move right everytime, if the character exists in p's hash, decrease the count
+        //current hash value >= 1 means the character is existing in p
+        
+        if (hash[s.charAt(right++)]-- >= 1) count--; 
+        
+        //when the count is down to 0, means we found the right anagram
+        //then add window's left to result list
+        
+        if (count == 0) list.add(left);
+    
+        //if we find the window's size equals to p, then we have to move left (narrow the window) to find the new match window
+        //++ to reset the hash because we kicked out the left
+        //only increase the count if the character is in p
+        //the count >= 0 indicate it was original in the hash, cuz it won't go below 0
+        
+        if (right - left == p.length() && hash[s.charAt(left++)]++ >= 0) count++;
+    }
+    return list;
+}        
+        
 
 """

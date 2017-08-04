@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mjbeto/anagrams.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py" afterPath="$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py" />
     </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +32,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_validate_binary_search_tree__3_.coverage" NAME="Unittests in validate_binary_search_tree (3) Coverage Results" MODIFIED="1481223319430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_simplify_path.coverage" NAME="Unittests in simplify_path Coverage Results" MODIFIED="1479857684072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_merge_sorted_array.coverage" NAME="Unittests in merge_sorted_array Coverage Results" MODIFIED="1475000837382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
-    <SUITE FILE_PATH="coverage/testhello$Unittests_in_find_all_anagrams_in_a_string_py.coverage" NAME="Unittests in find_all_anagrams_in_a_string.py Coverage Results" MODIFIED="1498542365122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_find_all_anagrams_in_a_string_py.coverage" NAME="Unittests in find_all_anagrams_in_a_string.py Coverage Results" MODIFIED="1501870043484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_reverse_linked_list__3_.coverage" NAME="Unittests in reverse_linked_list (3) Coverage Results" MODIFIED="1481088955919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_divide_two_integers__4_.coverage" NAME="Unittests in divide_two_integers (4) Coverage Results" MODIFIED="1476990338408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_gray_code__1_.coverage" NAME="Unittests in gray_code (1) Coverage Results" MODIFIED="1481055993100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -220,7 +219,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_maximum_depth_of_binary_tree.coverage" NAME="Unittests in maximum_depth_of_binary_tree Coverage Results" MODIFIED="1481598635616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$GroupTypeBConverter.coverage" NAME="GroupTypeBConverter Coverage Results" MODIFIED="1440195413469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_candy__1_.coverage" NAME="Unittests in candy (1) Coverage Results" MODIFIED="1482976194242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
-    <SUITE FILE_PATH="coverage/testhello$Unittests_in_anagrams_py.coverage" NAME="Unittests in anagrams.py Coverage Results" MODIFIED="1501732867119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_anagrams_py.coverage" NAME="Unittests in anagrams.py Coverage Results" MODIFIED="1501732961237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_next_permutation__1_.coverage" NAME="Unittests in next_permutation (1) Coverage Results" MODIFIED="1478212984428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittest_SolutionTester_test_case1.coverage" NAME="Unittest SolutionTester.test_case1 Coverage Results" MODIFIED="1482359105343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_rotate_image__1_.coverage" NAME="Unittests in rotate_image (1) Coverage Results" MODIFIED="1478629623683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -749,17 +748,17 @@
         <entry file="file://$PROJECT_DIR$/mjbeto/paint_houseII.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="236">
-              <caret line="204" column="40" lean-forward="true" selection-start-line="204" selection-start-column="40" selection-end-line="204" selection-end-column="40" />
+              <caret line="204" column="40" lean-forward="false" selection-start-line="204" selection-start-column="40" selection-end-line="204" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="find_all_anagrams_in_a_string.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="find_all_anagrams_in_a_string.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+            <state relative-caret-position="166">
+              <caret line="45" column="59" lean-forward="false" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -775,11 +774,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="anagrams.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="anagrams.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjbeto/anagrams.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="73" selection-end-column="21" />
+            <state relative-caret-position="325">
+              <caret line="74" column="21" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -889,7 +888,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/continuous_subarray_sumII_case3.ini" />
         <option value="$PROJECT_DIR$/mjbeto/continuous_subarray_sumII.py" />
         <option value="$PROJECT_DIR$/mjbeto/knight_shortest_path.py" />
         <option value="$PROJECT_DIR$/misc/remove_substring_recursively.py" />
@@ -940,6 +938,7 @@
         <option value="$PROJECT_DIR$/mjbeto/paint_houseII.py" />
         <option value="$PROJECT_DIR$/misc/group_anagrams.py" />
         <option value="$PROJECT_DIR$/mjbeto/anagrams.py" />
+        <option value="$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py" />
       </list>
     </option>
   </component>
@@ -950,10 +949,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="46" />
-    <option name="y" value="95" />
-    <option name="width" value="1392" />
-    <option name="height" value="770" />
+    <option name="x" value="48" />
+    <option name="y" value="119" />
+    <option name="width" value="1379" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1109,26 +1108,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in anagrams.py">
-    <configuration default="false" name="generator_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/generator_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in find_all_anagrams_in_a_string.py">
     <configuration default="false" name="Unittests in lowest_common_ancestor_of_a_binary_tree.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1190,6 +1170,22 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/mjbeto/anagrams.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in find_all_anagrams_in_a_string.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
@@ -1494,19 +1490,19 @@
       <item index="2" class="java.lang.String" itemvalue="Python.coins_in_a_line.py" />
       <item index="3" class="java.lang.String" itemvalue="Python.flattern_binary_tree" />
       <item index="4" class="java.lang.String" itemvalue="Python.var_scope" />
-      <item index="5" class="java.lang.String" itemvalue="Python.generator_test" />
-      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in lowest_common_ancestor_of_a_binary_tree.py" />
-      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests in paint_houseII.py" />
-      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.setUp" />
-      <item index="9" class="java.lang.String" itemvalue="Python tests.Unittests in anagrams.py" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in lowest_common_ancestor_of_a_binary_tree.py" />
+      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in paint_houseII.py" />
+      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.setUp" />
+      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests in anagrams.py" />
+      <item index="9" class="java.lang.String" itemvalue="Python tests.Unittests in find_all_anagrams_in_a_string.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in anagrams.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.setUp" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in paint_houseII.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in lowest_common_ancestor_of_a_binary_tree.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python.generator_test" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in find_all_anagrams_in_a_string.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in anagrams.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for SolutionTester.setUp" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in paint_houseII.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in lowest_common_ancestor_of_a_binary_tree.py" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -1547,35 +1543,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_SolutionTester_setUp - 2017.08.02 at 20h 59m 50s.xml">
-      <configuration name="Unittests for SolutionTester.setUp" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.08.04 at 10h 12m 32s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_anagrams_py - 2017.08.02 at 20h 59m 55s.xml">
-      <configuration name="Unittests in anagrams.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.08.04 at 10h 23m 31s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_anagrams_py - 2017.08.02 at 21h 01m 07s.xml">
-      <configuration name="Unittests in anagrams.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.08.04 at 10h 23m 34s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_paint_houseII_py - 2017.08.02 at 17h 46m 21s.xml">
-      <configuration name="Unittests in paint_houseII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.08.04 at 10h 27m 39s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_paint_houseII_py - 2017.08.02 at 17h 46m 41s.xml">
-      <configuration name="Unittests in paint_houseII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.08.04 at 10h 31m 49s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_paint_houseII_py - 2017.08.02 at 18h 12m 15s.xml">
-      <configuration name="Unittests in paint_houseII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.08.04 at 10h 33m 05s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_paint_houseII_py - 2017.08.02 at 18h 12m 26s.xml">
-      <configuration name="Unittests in paint_houseII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.08.04 at 10h 33m 06s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_paint_houseII_py - 2017.08.02 at 18h 12m 59s.xml">
-      <configuration name="Unittests in paint_houseII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.08.04 at 10h 35m 03s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_paint_houseII_py - 2017.08.02 at 18h 14m 42s.xml">
-      <configuration name="Unittests in paint_houseII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.08.04 at 10h 39m 15s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_paint_houseII_py - 2017.08.02 at 18h 16m 18s.xml">
-      <configuration name="Unittests in paint_houseII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_find_all_anagrams_in_a_string_py - 2017.08.04 at 11h 07m 23s.xml">
+      <configuration name="Unittests in find_all_anagrams_in_a_string.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1588,20 +1584,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="95" width="1392" height="770" extended-state="0" />
+    <frame x="48" y="119" width="1379" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261694" sideWeight="0.5176991" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33435583" sideWeight="0.48230088" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18389058" sideWeight="0.5217391" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30990416" sideWeight="0.48230088" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25749558" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15030675" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5429448" sideWeight="0.48127925" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30592594" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18541034" sideWeight="0.47826087" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40609637" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6594982" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24910007" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46415982" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51975685" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20545869" sideWeight="0.5056" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3095,32 +3091,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py</url>
-          <line>166</line>
+          <line>268</line>
           <option name="timeStamp" value="484" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py</url>
-          <line>173</line>
+          <line>275</line>
           <option name="timeStamp" value="485" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py</url>
-          <line>149</line>
+          <line>251</line>
           <option name="timeStamp" value="487" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py</url>
-          <line>151</line>
+          <line>253</line>
           <option name="timeStamp" value="488" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py</url>
-          <line>79</line>
+          <line>181</line>
           <option name="timeStamp" value="489" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py</url>
-          <line>52</line>
+          <line>154</line>
           <option name="timeStamp" value="490" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -3258,6 +3254,11 @@
           <line>139</line>
           <option name="timeStamp" value="526" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="528" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -3266,7 +3267,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="527" />
+      <option name="time" value="529" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -3641,15 +3642,7 @@
     <entry file="file://$PROJECT_DIR$/mjbeto/paint_houseII.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
-          <caret line="204" column="40" lean-forward="true" selection-start-line="204" selection-start-column="40" selection-end-line="204" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+          <caret line="204" column="40" lean-forward="false" selection-start-line="204" selection-start-column="40" selection-end-line="204" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -3664,8 +3657,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mjbeto/anagrams.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="73" selection-end-column="21" />
+        <state relative-caret-position="325">
+          <caret line="74" column="21" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/find_all_anagrams_in_a_string.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="45" column="59" lean-forward="false" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
           <folding />
         </state>
       </provider>
