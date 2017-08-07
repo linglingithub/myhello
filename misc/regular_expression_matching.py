@@ -319,4 +319,31 @@ LeetCode作者给的解法，非常巧妙：
 
 http://leetcode.com/2011/09/regular-expression-matching.html
 
+
+
+==================
+
+http://buttercola.blogspot.com/2014/10/leetcode-regular-expression-matching.html
+
+
+
+A DP Solution:
+2-sequence problem:
+ -- dp[s.length() + 1][p.length() + 1], where dp[i][j] means the first i characters from string i matches the first j characters in string j. 
+ -- Initial state: dp[0][0] = true, e.g. "" -> "", true. 
+                        dp[i][0] = false, i >= 1, any string cannot match a empty string 
+                        dp[0][i], if (p.charAt(j) == '*'), dp[0][j] = dp[0][j - 2] 
+
+-- Transit function: 
+      -- If p.charAt(j) != '*'. Then IF s.charAt(i - 1) == p.charAt(j - 1) || p.charAt(j - 1) == '.'. 
+            -- dp[i][j] = dp[i - 1][j - 1];
+      -- Else  // p.charAt(j - 1) == "*"
+           -- If s.charAt(i - 1) != p.charAt(j - 2) && p.charAt(j - 2) != '.' 
+               Then dp[i][j] = dp[i][j - 2] // zero matched, e.g. s = acdd, p = acb*dd. 
+           -- Else 
+                Then dp[i][j] = dp[i][j - 2]  ||  // zero matched
+                                       dp[i][j - 1] || // 1 matched
+                                       dp[i - 1][j] // 2+ matched
+
+
 """
