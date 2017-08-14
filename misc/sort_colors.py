@@ -37,6 +37,42 @@ import unittest
 
 
 class Solution(object):
+    def sortColors(self, nums):
+        # write your code here
+        if not nums or len(nums) == 1:
+            return
+        left, mid, right = 0, 0, len(nums)
+        while mid < right:
+            tmp = nums[mid]
+            if tmp == 0:
+                nums[left], nums[mid] = nums[mid], nums[left]
+                left += 1
+                mid += 1
+            elif tmp == 2:
+                right -= 1
+                nums[mid], nums[right] = nums[right], nums[mid]
+            else:
+                mid += 1
+
+    def sortColors1(self, nums):
+        # write your code here
+        if not nums:
+            return None
+        left, mid, right = -1, 0, len(nums)
+        while mid < right:
+            tmp = nums[mid]
+            if tmp == 0:  # wrong here, when mid=0 and tmp=0
+                left += 1
+                if mid == left:  # need to add this check for the above case
+                    mid += 1
+                    continue
+                nums[left], nums[mid] = nums[mid], nums[left]
+            elif tmp == 2:
+                right -= 1
+                nums[right], nums[mid] = nums[mid], nums[right]
+            else:
+                mid += 1
+
     def sortColors1(self, nums): #66ms, 14%; 45ms, 68%
         """
         :type nums: List[int]
@@ -84,7 +120,7 @@ class Solution(object):
 
 
     # http://fisherlei.blogspot.com/2013/01/leetcode-sort-colors.html
-    def sortColors(self, nums):  #45ms, 68%
+    def sortColors_ref(self, nums):  #45ms, 68%
         """
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
