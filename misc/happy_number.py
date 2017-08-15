@@ -33,7 +33,25 @@ Easy
 
 
 class Solution(object):
-    def isHappy(self, n): #45ms, 88%
+
+    def isHappy(self, n):
+        if n < 0:
+            return False
+        visited = {}
+        while n not in visited:
+            if n == 1:
+                return True
+            visited[n] = 1
+            tmp = 0
+            while n > 0:
+                x = n % 10
+                tmp += x*x
+                n /= 10
+            n = tmp
+            #print tmp, visited
+        return False
+
+    def isHappy1(self, n): #45ms, 88%
         """
         :type n: int
         :rtype: bool
@@ -41,10 +59,10 @@ class Solution(object):
         if n < 0:
             return False
         visited = {}
-        while str(n) not in visited: # should be str() here
+        while n not in visited: # should be str() here
             if n == 1:
                 return True
-            visited[str(n)] = 1
+            visited[n] = 1
             tmp = 0
             while n > 0:
                 x = n % 10
