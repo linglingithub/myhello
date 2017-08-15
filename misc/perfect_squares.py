@@ -30,7 +30,78 @@ import unittest
 import collections
 
 
-class Solution(object):
+class Solution:
+    """
+    @param: n: a positive integer
+    @return: An integer
+    """
+    def numSquares(self, n): # since recursion exceeds maximum depth, try to do iterative way, 20+%
+        """
+        init with perfect square itself
+        then from 2 to n
+        2 = 1 + 1
+        3 = 1 + 2
+        4 
+        5 = 1 + 4 or 4 + 1
+        6 = 1 + 5 or 4 + 2
+        7 = 1 + 6 or 4 + 2
+        8 = 1 + 7 or 4 + 4 
+        9
+        10 = 1 + 9 or 4 + 6 or 9 + 1
+        ....
+        and try to remove some repeated calculation, like 5 (1+4 and 4+1), 10 (1+9 and 9 + 1), 
+        when n = j*j + i, search can stop where j*j>n/2
+        
+        :param n: 
+        :return: 
+        """
+        if n <= 1:
+            return n
+        i = 0
+        _res = {}
+        while i ** 2 <= n:
+            _res[i ** 2] = 1
+            i += 1
+        if n in _res:
+            return _res[n]
+        for i in range(2, n+1):
+            if i in _res:
+                continue
+            j = 1
+            while j*j <= i/2:
+                tmp = _res[i-j*j] + 1
+                _res[i] = min(_res[i], tmp) if i in _res else tmp
+                j += 1
+        return _res[n]
+
+
+    def numSquares_recursionExceed(self, n): # case 3, too deep recursion, not good
+        # write your code here
+        if n <= 1:
+            return n
+        i = 0
+        _res = {}
+        while i ** 2 <= n:
+            _res[i ** 2] = 1
+            i += 1
+        if n in _res:
+            return _res[n]
+        self.helper(n, _res)
+        return _res[n]
+
+    def helper(self, n, res):
+        if n in res:
+            return res[n]
+        j = 1
+        while j * j < n:
+            # res[n] = min(res[n-j**2]+1, res[n])  # wrong way to write, key error
+            tmp = self.helper(n - j * j, res) + 1
+            res[n] = min(tmp, res[n]) if n in res else tmp
+            j += 1
+        return res[n]
+
+
+class Solution1(object):
     _dp = {}
     def numSquares(self, n):
         """
@@ -142,6 +213,12 @@ class SolutionTester(unittest.TestCase):
         result = self.sol.numSquares(nums)
         self.assertEqual(answer, result)
 
+    def test_case3(self): #RuntimeError: maximum recursion depth exceeded
+        nums = 8829
+        answer = 2
+        result = self.sol.numSquares(nums)
+        self.assertEqual(answer, result)
+
 
 def main():
     suite = unittest.TestLoader().loadTestsFromTestCase(SolutionTester)
@@ -153,6 +230,11 @@ if __name__ == "__main__":
 
 
 """
+This is a dp problem. The key is to find the relation which is dp[i] = min(dp[i], dp[i-square]+1). 
+For example, dp[5]=dp[4]+1=1+1=2.
+
+==========================================================================================
+
 (1)
 题目分析： 乍一看题目，比较天真的想法是，先从不大于n的最大的完全平方数开始组合，如果和超过了n，就换小一点的完全平方数。但问题是，最后如果凑
 不齐的话，只能添加很多1，总量上就不是最少的了。例如12，题目中给的例子是4+4+4，需要3个完全平方数。如果从最大的开始组合，那么是9+1+1+1，需要
