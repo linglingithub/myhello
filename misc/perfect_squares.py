@@ -35,7 +35,9 @@ class Solution:
     @param: n: a positive integer
     @return: An integer
     """
-    def numSquares(self, n): # since recursion exceeds maximum depth, try to do iterative way, 20+%
+
+    def numSquares_self(self,
+                        n):  # since recursion exceeds maximum depth, try to do iterative way, 20+%; TLE on lint, case 4
         """
         init with perfect square itself
         then from 2 to n
@@ -51,7 +53,7 @@ class Solution:
         ....
         and try to remove some repeated calculation, like 5 (1+4 and 4+1), 10 (1+9 and 9 + 1), 
         when n = j*j + i, search can stop where j*j>n/2
-        
+
         :param n: 
         :return: 
         """
@@ -64,15 +66,76 @@ class Solution:
             i += 1
         if n in _res:
             return _res[n]
-        for i in range(2, n+1):
+        for i in range(2, n + 1):
             if i in _res:
                 continue
             j = 1
-            while j*j <= i/2:
-                tmp = _res[i-j*j] + 1
+            while j * j <= i / 2:
+                tmp = _res[i - j * j] + 1
                 _res[i] = min(_res[i], tmp) if i in _res else tmp
                 j += 1
         return _res[n]
+
+
+
+
+    def numSquares_math(self, n):  # ref, math way
+        """
+        这道题说是给我们一个正整数，求它最少能由几个完全平方数组成。这道题是考察四平方和定理，to be honest, 这是我第一次听说这个定理，
+        天啦撸，我的数学是语文老师教的么?! 闲话不多扯，回来做题。先来看第一种很高效的方法，根据四平方和定理，任意一个正整数均可表示为4个
+        整数的平方和，其实是可以表示为4个以内的平方数之和，那么就是说返回结果只有1,2,3或4其中的一个，首先我们将数字化简一下，由于一个数如
+        果含有因子4，那么我们可以把4都去掉，并不影响结果，比如2和8,3和12等等，返回的结果都相同，读者可自行举更多的栗子。还有一个可以化简
+        的地方就是，如果一个数除以8余7的话，那么肯定是由4个完全平方数组成，这里就不证明了，因为我也不会证明，读者可自行举例验证。那么做完
+        两步后，一个很大的数有可能就会变得很小了，大大减少了运算时间，下面我们就来尝试的将其拆为两个平方数之和，如果拆成功了那么就会返回
+        1或2，因为其中一个平方数可能为0. (注：由于输入的n是正整数，所以不存在两个平方数均为0的情况)。注意下面的!!a + !!b这个表达式，可
+        能很多人不太理解这个的意思，其实很简单，感叹号!表示逻辑取反，那么一个正整数逻辑取反为0，再取反为1，所以用两个感叹号!!的作用就是看
+        a和b是否为正整数，都为正整数的话返回2，只有一个是正整数的话返回1
+        
+        int numSquares(int n) {
+            int ub = sqrt(n);
+            for (int a=0; a<=ub; ++a) {
+                for (int b=a; b<=ub; ++b) {
+                    int c = sqrt(n - a*a - b*b);
+                    if (a*a + b*b + c*c == n)
+                        return !!a + !!b + !!c;
+                }
+            }
+            return 4;
+        }
+        
+        Explanation
+
+I happen to have given a little talk about just this topic a while back in a number theory seminar. This problem is completely solved, in the sense of being reduced to simple checks of a number's prime factorization. A natural number is...
+
+... a square if and only if each prime factor occurs to an even power in the number's prime factorization.
+... a sum of two squares if and only if each prime factor that's 3 modulo 4 occurs to an even power in the number's prime factorization.
+... a sum of three squares if and only if it's not of the form 4a(8b+7) with integers a and b.
+... a sum of four squares. Period. No condition. You never need more than four.
+Of course single squares can also be identified by comparing a given number with the square of the rounded root of the number.
+
+The problem statement says "1, 4, 9, 16, ...", for some reason apparently excluding 0, but it really is a perfect square and the above theorems do consider it one. With that, you can for example always extend a sum of two squares a2+b2 to the sum of three squares a2+b2+02. Put differently, if n isn't a sum of three squares, then it also isn't a sum of two squares. So you can read the above statements as "... a sum of m (or fewer) squares". Thanks to ruben3 for asking about this in the comments.
+
+In my above solutions, I first divide the given number by 4 as often as possible and then do the three-squares check. Dividing by 4 doesn't affect the other checks, and the n % 8 == 7 is cheaper than the prime factorization, so this saves time in cases where we do need four squares.
+
+Armed with just the knowledge that you never need more than four squares, it's also easy to write O(n) solutions, e.g.:
+        
+        :param n: 
+        :return: 
+        """
+        while n % 4 == 0:
+            n /= 4
+        if n % 8 == 7:
+            return 4
+
+        for i in xrange(n+1):
+            temp = i * i
+            if temp <= n:
+                if int((n - temp)** 0.5 ) ** 2 + temp == n:
+                    return 1 + (0 if temp == 0 else 1)
+            else:
+                break
+        return 3
+
 
 
     def numSquares_recursionExceed(self, n): # case 3, too deep recursion, not good
@@ -100,6 +163,22 @@ class Solution:
             j += 1
         return res[n]
 
+
+class Solution_ref(object):  # from leetcode discussion, runs 90+% on leetcode, still TLE on lint
+    _dp = [0]
+
+    def numSquares(self, n):
+        """
+        https://discuss.leetcode.com/topic/23812/static-dp-c-12-ms-python-172-ms-ruby-384-ms
+        The comma here seems to change the expression ( int val) into an iterable (actually tuple) and can be appended to
+        the end of a list???, if removed runs error
+        :param n: 
+        :return: 
+        """
+        dp = self._dp
+        while len(dp) <= n:
+            dp += min(dp[-i * i] for i in range(1, int(len(dp) ** 0.5 + 1))) + 1,
+        return dp[n]
 
 class Solution1(object):
     _dp = {}
@@ -219,6 +298,12 @@ class SolutionTester(unittest.TestCase):
         result = self.sol.numSquares(nums)
         self.assertEqual(answer, result)
 
+    def test_case4(self): # TLE, 51% pass on lint, local runs 15s+
+        nums = 100000
+        answer = 2
+        result = self.sol.numSquares(nums)
+        self.assertEqual(answer, result)
+
 
 def main():
     suite = unittest.TestLoader().loadTestsFromTestCase(SolutionTester)
@@ -230,6 +315,17 @@ if __name__ == "__main__":
 
 
 """
+解法I：数论（Number Theory）
+
+时间复杂度：O(sqrt n)
+
+四平方和定理(Lagrange's Four-Square Theorem)：所有自然数至多只要用四个数的平方和就可以表示。
+
+参考链接：https://leetcode.com/discuss/56982/o-sqrt-n-in-ruby-and-c
+
+
+==========================================================================================
+
 This is a dp problem. The key is to find the relation which is dp[i] = min(dp[i], dp[i-square]+1). 
 For example, dp[5]=dp[4]+1=1+1=2.
 
@@ -475,6 +571,38 @@ public:
     }
 };
 More...
+
+========================================================================================================================
+
+动态规划
+复杂度
+时间 O(N^2) 空间 O(N)
+
+思路
+如果一个数x可以表示为一个任意数a加上一个平方数bｘb，也就是x=a+bｘb，那么能组成这个数x最少的平方数个数，就是能组成a最少的平方数个数加上1
+（因为b*b已经是平方数了）。
+
+代码
+public class Solution {
+    public int numSquares(int n) {
+        int[] dp = new int[n+1];
+        // 将所有非平方数的结果置最大，保证之后比较的时候不被选中
+        Arrays.fill(dp, Integer.MAX_VALUE);
+        // 将所有平方数的结果置1
+        for(int i = 0; i * i <= n; i++){
+            dp[i * i] = 1;
+        }
+        // 从小到大找任意数a
+        for(int a = 0; a <= n; a++){
+            // 从小到大找平方数bｘb
+            for(int b = 0; a + b * b <= n; b++){
+                // 因为a+b*b可能本身就是平方数，所以我们要取两个中较小的
+                dp[a + b * b] = Math.min(dp[a] + 1, dp[a + b * b]);
+            }
+        }
+        return dp[n];
+    }
+}
 
 """
 #-*- coding:utf-8 -*-
