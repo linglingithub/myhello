@@ -59,6 +59,21 @@ Related Problems
 
 class Solution:
 
+    def lengthOfLIS_non_decreasing(self, nums): #  what if non-decreasing, allowing repeated vals? check case 01
+        if not nums:
+            return 0  # require 0 as output, not -1
+        dp = [nums[0]]
+        for i in range(1,len(nums)):
+            tmp = nums[i]
+            if dp[-1] <= tmp:  # increasing use <, non-decreasing use <=
+                dp.append(tmp)
+                continue
+            idx = self.find_pos(dp, tmp)
+            if tmp < dp[idx]:
+                dp[idx] = tmp
+        return len(dp)
+
+
     """
     for all nums, to find LIS, dp way uses repeated search for j in [0,i] to find previous LIS that can be part of new LIS.
     How to solve it in another way? Ideally, the best shorter LIS that can be candidate to form longer LIS is the one that
@@ -268,6 +283,12 @@ class Solution1:
 class SolutionTester(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
+
+    def test_case01(self):  # self, what if non-decreasing? allow repeated vals
+        nums = [5, 4, 5, 5, 5, 5,5,5,1, 2, 3]
+        answer = 7  # 3, if  increasing, [1, 2, 3]
+        result = self.sol.lengthOfLIS(nums)
+        self.assertEqual(answer, result)
 
     def test_case1(self):
         nums = [5, 4, 1, 2, 3] # 2,3,4,1,0
