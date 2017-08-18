@@ -58,11 +58,74 @@ Related Problems
 """
 
 class Solution:
+
     """
+    for all nums, to find LIS, dp way uses repeated search for j in [0,i] to find previous LIS that can be part of new LIS.
+    How to solve it in another way? Ideally, the best shorter LIS that can be candidate to form longer LIS is the one that
+    with smaller ending number. Therefore, another way to divide and solve the problem is to find LIS of different lengths
+    and keep the record of smallest ending number. 
+    In that case, the dynamic (length will increase) array dp[i] stores the ending number of LIS of different length 
+    (dp[i] for length i+1). and for sure the dp[i] will be an increasing array, and binary search can be applied.
+    Then then final length of the dp array means the largest length of LIS.
+    
+    Scanning nums, for each num, 
+    (1) biggest or mepty dp[], then insert to the end
+    (2) use binary search to find the idx in dp that dp[idx] is the smallest value that is bigger than num 
+        all dp[:idx] are smaller than num, all dp[idx:] are bigger than num. and replace dp[idx] with smaller value, the num.
+    
+    """
+    def lengthOfLIS(self, nums): # ref idea, using binary search, 68%
+        if not nums:
+            return 0  # require 0 as output, not -1
+        dp = [nums[0]]
+        for i in range(1,len(nums)):
+            tmp = nums[i]
+            if dp[-1] < tmp:
+                dp.append(tmp)
+                continue
+            idx = self.find_pos(dp, tmp)
+            if tmp < dp[idx]:
+                dp[idx] = tmp
+        return len(dp)
+
+    def find_pos(self, dp, target):
+        """
+        find idx in dp where dp[0:idx] are smaller than target and dp[idx:] are equal to or bigger than target 
+        :param dp: 
+        :param target: 
+        :return: 
+        """
+        l, r = 0, len(dp)-1
+        last = r
+        while l < r:
+            mid = l + (r-l)/2
+            if dp[mid] == target:
+                return mid
+            elif dp[mid] < target:
+                l = mid + 1
+            else:
+                if mid == last:
+                    return mid
+                r = mid
+                last = mid
+        return l
+
+
+
+
+
+
+
+
+
+    """
+    dp idea, dp[i] means the length of the LIS that ends at i. for dp[i+1], tring for find in all j so that 
+    in all 0<=j <=i (dp[0]...dp[i]), nums[j] is smaller than nums[i+1] and dp[i+1] = max(dp[j]+1). 
+    complexity: O(N^2)
     @param nums: The integer array
     @return: The length of LIS (longest increasing subsequence)
     """
-    def longestIncreasingSubsequence(self, nums):
+    def longestIncreasingSubsequence_dp(self, nums):
         # write your code here
         if not nums:
             return 0
@@ -276,6 +339,45 @@ whether to choose this one or not, ?
 '''
 
 """
+
+http://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
+
+The observation is, when we encounter new smallest element in the array, it can be a potential candidate to start new 
+sequence.
+
+From the observations, we need to maintain lists of increasing sequences.
+
+In general, we have set of active lists of varying length. We are adding an element A[i] to these lists. We scan the 
+lists (for end elements) in decreasing order of their length. We will verify the end elements of all the lists to find 
+a list whose end element is smaller than A[i] (floor value).
+
+Our strategy determined by the following conditions,
+
+1. If A[i] is smallest among all end 
+   candidates of active lists, we will start 
+   new active list of length 1.
+2. If A[i] is largest among all end candidates of 
+  active lists, we will clone the largest active 
+  list, and extend it by A[i].
+
+3. If A[i] is in between, we will find a list with 
+  largest end element that is smaller than A[i]. 
+  Clone and extend this list by A[i]. We will discard all
+  other lists of same length as that of this modified list.
+
+
+
+
+
+
+
+
+
+
+
+
+=============================================
+
  O(nlogn) ways:
 
 
@@ -442,6 +544,63 @@ public:
 
 注意
 二分搜索时如果在tails数组中，找到我们要插入的数，也直接返回那个结尾的下标，虽然这时候更新这个结尾没有意义，但少了些判断简化了逻辑
+
+========================================================================
+
+
+Java/Python Binary search O(nlogn) time with explanation
+tails is an array storing the smallest tail of all increasing subsequences with length i+1 in tails[i].
+For example, say we have nums = [4,5,6,3], then all the available increasing subsequences are:
+
+len = 1   :      [4], [5], [6], [3]   => tails[0] = 3
+len = 2   :      [4, 5], [5, 6]       => tails[1] = 5
+len = 3   :      [4, 5, 6]            => tails[2] = 6
+We can easily prove that tails is a increasing array. Therefore it is possible to do a binary search in tails array to find the one needs update.
+
+Each time we only do one of the two:
+
+(1) if x is larger than all tails, append it, increase the size by 1
+(2) if tails[i-1] < x <= tails[i], update tails[i]
+Doing so will maintain the tails invariant. The the final answer is just the size.
+
+Java
+
+public int lengthOfLIS(int[] nums) {
+    int[] tails = new int[nums.length];
+    int size = 0;
+    for (int x : nums) {
+        int i = 0, j = size;
+        while (i != j) {
+            int m = (i + j) / 2;
+            if (tails[m] < x)
+                i = m + 1;
+            else
+                j = m;
+        }
+        tails[i] = x;
+        if (i == size) ++size;
+    }
+    return size;
+}
+// Runtime: 2 ms
+Python
+
+def lengthOfLIS(self, nums):
+    tails = [0] * len(nums)
+    size = 0
+    for x in nums:
+        i, j = 0, size
+        while i != j:
+            m = (i + j) / 2
+            if tails[m] < x:
+                i = m + 1
+            else:
+                j = m
+        tails[i] = x
+        size = max(i + 1, size)
+    return size
+
+# Runtime: 48 ms
 
 
 """
