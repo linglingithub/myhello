@@ -42,6 +42,65 @@ class Solution(object):
         :type p: str
         :rtype: bool
         """
+        if not s:
+            return not p or p == "*"
+        if p == "*":
+            return True
+        m, n = len(s), len(p)
+        # init dp
+        dp = [[False for _ in range(n + 1)] for _ in range(m + 1)]
+        dp[0][0] = True
+        # init for '' to 'lll*lll' case
+        for i in range(1, n + 1):
+            if p[i - 1] == "*":
+                dp[0][i] = dp[0][i - 1]
+        # propagate dp
+        for i in range(1, m + 1):
+            for j in range(1, n + 1):
+                if s[i - 1] == p[j - 1] or p[j - 1] == "?":
+                    dp[i][j] = dp[i - 1][j - 1]
+                elif p[j - 1] == "*":
+                    dp[i][j] = dp[i - 1][j - 1] or dp[i][j-1] or dp[i-1][j]   # * make 1 or 0, or any sequence
+                    # if not dp[i][j]:
+                    #     for k in range(i):
+                    #         dp[i][j] |= dp[k][j-1]
+                else:  # different letters
+                    dp[i][j] = False
+        return dp[m][n]
+
+
+    def isMatch_TLE(self, s, p): # AC on lint, TLE on leet for case 9, local runs 1s 412ms
+        """
+        :type s: str
+        :type p: str
+        :rtype: bool
+        """
+        if not s:
+            return not p or p == "*"
+        if p == "*":
+            return True
+        m, n = len(s), len(p)
+        # init dp
+        dp = [[False for _ in range(n + 1)] for _ in range(m + 1)]
+        dp[0][0] = True
+        # init for '' to 'lll*lll' case
+        for i in range(1, n + 1):
+            if p[i - 1] == "*":
+                dp[0][i] = dp[0][i - 1]
+
+        # propagate dp
+        for i in range(1, m + 1):
+            for j in range(1, n + 1):
+                if s[i - 1] == p[j - 1] or p[j - 1] == "?":
+                    dp[i][j] = dp[i - 1][j - 1]
+                elif p[j - 1] == "*":
+                    dp[i][j] = dp[i - 1][j - 1] or dp[i][j-1]
+                    if not dp[i][j]:                         # here means dp[i-1][j] ( don't lookback so many steps!!!)
+                        for k in range(i):                   # think about when i is smaller, these are alreay covered,
+                            dp[i][j] |= dp[k][j-1]           # therefore, only need to lookback at dp[i-1][j]
+                else:  # different letters
+                    dp[i][j] = False
+        return dp[m][n]
 
     def isMatch_ref(self, s, p): #145ms, 73%
         """
@@ -66,7 +125,7 @@ class Solution(object):
         if pPointer==len(p): return True
         return False
 
-    def isMatch_ref_TLE(self, s, p): #2805ms, 0.76%, sometimes TLE for case8
+    def isMatch_ref_TLE(self, s, p): #2805ms, 0.76%, sometimes TLE for case8 / not TLE 20170821
         """
         :type s: str
         :type p: str
@@ -148,6 +207,12 @@ class SolutionTester(unittest.TestCase):
         result = self.sol.isMatch(s, p)
         self.assertEqual(answer, result)
 
+    def test_case9(self):
+        s = "aabbabbaabbbbaabaabaaabaaaabbabaabbaaaaaababaaaaaaaaabaaaaababbbaabbbabbbbabbbbbbabbbbbbabbababbbbaabababbabababbaabbaabbbaaababaabbaaaabababbbbbaabaaabaaaaaabaaaabaabbaabbbbabbaabbaabbabbaabbabaabbbb"
+        p = "bbb***bba*ab**a*b***b*a**a*****a***b*a**a***b*b***b****b*ba*a***bbb******ba*bbb*a***aba**ab*****b****ab"
+        answer = False
+        result = self.sol.isMatch(s, p)
+        self.assertEqual(answer, result)
 
 def main():
     suite = unittest.TestLoader().loadTestsFromTestCase(SolutionTester)
