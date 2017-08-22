@@ -43,12 +43,41 @@ Easy Merge Intervals
 
 
 # Definition for an interval.
-# class Interval(object):
-#     def __init__(self, s=0, e=0):
-#         self.start = s
-#         self.end = e
+class Interval(object):
+    def __init__(self, s=0, e=0):
+        self.start = s
+        self.end = e
+
 
 class Solution(object):
+    def insert(self, intervals, newInterval):
+        """
+        Important to thinks about corner cases.
+        :type intervals: List[Interval]
+        :type newInterval: Interval
+        :rtype: List[Interval]
+        """
+        if not intervals:
+            return [newInterval]
+        left, right, n = 0, 0, len(intervals)
+        while left < n and intervals[left].end < newInterval.start:  # left included
+            left += 1
+        right = left
+        while right < n and intervals[right].start <= newInterval.end: # right excluded
+            right += 1
+        if left == 0 and intervals[0].start > newInterval.end:  # opposite case for case4 !!!
+            return [newInterval] + intervals
+
+        if left == n: # add for case4
+            return intervals + [newInterval]
+
+        s = min(intervals[left].start, newInterval.start) # think about case4 !!!
+        e = max(intervals[right-1].end, newInterval.end)   # single interval, override by whoe newInterval, other corner cases?
+        mergeInterval = Interval(s, e)
+        return intervals[:left] + [mergeInterval] + intervals[right:]
+
+
+class Solution1(object):
     def insert(self, intervals, newInterval):
         """
         :type intervals: List[Interval]
@@ -103,7 +132,17 @@ class SolutionTester(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
 
-    def test_case03(self):   # =====> wrong output as [[1,5], [1,5]]
+    def test_case04(self):   # =====> Line 22: IndexError: list index out of range
+        nums = [[1,5]]
+        newinv = [2,3]
+        answer = [[1,5]]
+        from util.interval import Interval
+        result = self.sol.insert(Interval.generate_intervals(nums), Interval(newinv[0], newinv[1]))
+        result = Interval.generate_list(result)
+        self.assertEqual(answer, result)
+
+
+    def test_case3(self):   # =====> wrong output as [[1,5], [1,5]]
         nums = [[1,5]]
         newinv = [2,3]
         answer = [[1,5]]
@@ -175,7 +214,8 @@ public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
 
 Solution 1: (7 lines, 88 ms)
 
-Collect the intervals strictly left or right of the new interval, then merge the new one with the middle ones (if any) before inserting it between left and right ones.
+Collect the intervals strictly left or right of the new interval, then merge the new one with the middle ones (if any) 
+before inserting it between left and right ones.
 
 def insert(self, intervals, newInterval):
     s, e = newInterval.start, newInterval.end
@@ -187,7 +227,8 @@ def insert(self, intervals, newInterval):
     return left + [Interval(s, e)] + right
 Solution 2: (8 lines, 84 ms)
 
-Same algorithm as solution 1, but different implementation with only one pass and explicitly collecting the to-be-merged intervals.
+Same algorithm as solution 1, but different implementation with only one pass and explicitly collecting the to-be-merged 
+intervals.
 
 def insert(self, intervals, newInterval):
     s, e = newInterval.start, newInterval.end
