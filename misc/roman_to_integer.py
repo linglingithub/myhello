@@ -1,3 +1,4 @@
+#coding=utf-8
 """
 Roman to Integer
 
@@ -30,7 +31,7 @@ class Solution(object):
         result = 0
         for i in range(len(s)):
             result = result + r2i_dict[s[i]]
-            if i > 0 and r2i_dict[s[i]] > r2i_dict[s[i-1]]:
+            if i > 0 and r2i_dict[s[i]] > r2i_dict[s[i-1]]:  # deal with reversed weight order
                 result = result - 2*r2i_dict[s[i-1]]
         return result
 
@@ -60,3 +61,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+"""
+罗马数字是拼凑成的, 如
+
+XXXII -- 32
+LXIII -- 63
+DCCVII -- 707
+
+大权重的字母排在前面。需要注意有倒序出现的时候，
+
+4 = IV
+LXIX= 69， 
+XLVI = 46
+
+后一个数字减去前一个数字， 一般在9 和4出现的时候 
+
+"""
