@@ -57,7 +57,7 @@ class Solution(object):
         """
         if not root or not p or not q:
             return None
-        while root and (root.val-p.val) * (root.val-q.val) > 0:
+        while root and (root.val-p.val) * (root.val-q.val) > 0:  # simplified code, exit when < (differnt subtree) or = (LCA is one of them)
             root = root.left if root.val>p.val else root.right
         return root
 
