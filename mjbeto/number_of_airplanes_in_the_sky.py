@@ -40,8 +40,29 @@ class Interval(object):
         self.end = end
 
 
-
 class Solution:
+    # @param airplanes, a list of Interval
+    # @return an integer
+    def countOfAirplanes(self, airplanes):
+        if not airplanes:
+            return 0
+        res = 0
+        timeline = []
+        for plane in airplanes:
+            timeline.append((plane.start, 1))
+            timeline.append((plane.end, -1))
+        timeline.sort(key=lambda x: (x[0], x[1]))  # sort according to starting time, when one start is same with another end, put ending one first
+        cnt = 0
+        for point in timeline:
+            if point[1] == 1:
+                cnt += 1
+                res = max(res, cnt)
+            else:
+                cnt -= 1
+        return res
+
+
+class Solution1:
     # @param airplanes, a list of Interval
     # @return an integer
     def countOfAirplanes(self, airplanes):
