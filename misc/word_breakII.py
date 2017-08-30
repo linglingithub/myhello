@@ -235,6 +235,201 @@ public class Solution {
 }
 
 
+=====================================================================================================================
+
+
+http://www.cnblogs.com/yuzhangcmu/p/4037299.html
+
+解答1 (dfs)：
+让我们来继续切切切吧！
+
+本题与上一题Word Break思路类似，但是一个是DP,一个是DFS。
+让我们来回顾一下DP与DFS的区别：
+DP是Bottom-up 而DFS是TOP-DOWN.
+
+在本题的DFS中，我们这样定义：
+用刀在字符串中切一刀。左边是i个字符，右边是len-i个字符。
+i: 1- len
+如果： 左边是字典里的词，右边是可以wordbreak的，那么把左边的字符串加到右边算出来的List中，生成新的list返回。
+1. Base case:
+当输入字符串为空的时候，应该给出一个空解。这个很重要，否则这个递归是不能运行的。
+2. 递归的时候，i应该从1开始递归，因为我们要把这个问题分解为2个部分，如果你左边给0，那就是死循环。
+
+记忆：
+为了加快DFS的速度，我们应该添加记忆，也就是说，算过的字符串不要再重复计算。举例子：
+apple n feng
+app len feng
+如果存在以上2种划分，那么feng这个字符串会被反复计算，在这里至少计算了2次。我们使用一个Hashmap把对应字符串的解记下来，这样就能避免重复的计算。 否则这一道题目会超时。
+
+
+复制代码
+ 1 // 我们用DFS来解决这个问题吧 
+ 2     public static List<String> wordBreak1(String s, Set<String> dict) {
+ 3         HashMap<String, List<String>> map = new HashMap<String, List<String>>();
+ 4         if (s == null || s.length() == 0 || dict == null) {
+ 5             return null;
+ 6         }
+ 7 
+ 8         return dfs(s, dict, map);
+ 9     }
+10 
+11     // 解法1：我们用DFS来解决这个问题吧 
+12     public static List<String> dfs(String s, Set<String> dict, HashMap<String, List<String>> map) {
+13         if (map.containsKey(s)) {
+14             return map.get(s);
+15         }
+16 
+17         List<String> list = new ArrayList<String>();
+18         int len = s.length();
+19 
+20         if (len == 0) {
+21             list.add("");
+22         } else {
+23             // i 表示左边字符串的长度
+24             for (int i = 1; i <= len; i++) {
+25                 String sub = s.substring(0, i);
+26 
+27                 // 左边的子串可以为空，或是在字典内
+28                 if (!dict.contains(sub)) {
+29                     continue;
+30                 }
+31 
+32                 // 字符串划分为2边，计算右边的word break.
+33                 List<String> listRight = dfs(s.substring(i, len), dict, map);
+34 
+35                 // 右边不能break的时候，我们跳过.
+36                 if (listRight.size() == 0) {
+37                     continue;
+38                 }
+39 
+40                 // 把左字符串加到右字符串中，形成新的解.
+41                 for (String r: listRight) {
+42                     StringBuilder sb = new StringBuilder();
+43                     sb.append(sub);
+44                     if (i != 0 && i != len) {
+45                         // 如果左边为空，或是右边为空，不需要贴空格
+46                         sb.append(" ");
+47                     }
+48                     sb.append(r);
+49                     list.add(sb.toString());
+50                 }
+51             }
+52         }
+53 
+54         map.put(s, list);
+55         return list;
+56     }
+复制代码
+
+解答2： dfs2：
+参考了http://blog.csdn.net/fightforyourdream/article/details/38530983的 解法，我们仍然使用主页君用了好多次的递归模板。但是在LeetCode中超时，在进入DFS时加了一个『判断是不是wordBreak』的判断，终于过了。这是一种DFS+剪枝的解法
+
+ View Code
+ 
+
+解答3： dfs3：
+
+感谢http://fisherlei.blogspot.com/2013/11/leetcode-wordbreak-ii-solution.html的解释，我们可以加一个boolean的数组，b[i]表示从i到len的的字串可不可以进行word break. 如果我们在当前根本没有找到任何的word， 也就表明这一串是不能word break的，记一个false在数组里。这样下次进入dfs这里的时候，直接就返回一个false.通过这个剪枝我们也可以减少复杂度。
+
+ View Code
+ 
+
+解答4： DP解法：
+
+感谢大神的解法： https://gist.github.com/anonymous/92e5e613aa7b5ce3d4c5 以后再慢慢研究
+
+主页君自己也写了一个先用动规算出哪些区间是可以解的，然后在DFS的时候，先判断某区间能否word break，如果不可以，直接退出。
+
+
+复制代码
+ 1     /*
+ 2     // 解法4：先用DP来求解某些字段是否能word break，然后再做 
+ 3     */
+ 4     // 我们用DFS来解决这个问题吧 
+ 5     public static List<String> wordBreak4(String s, Set<String> dict) {
+ 6         if (s == null || s.length() == 0 || dict == null) {
+ 7             return null;
+ 8         }
+ 9         
+10         List<String> ret = new ArrayList<String>();
+11         
+12         List<String> path = new ArrayList<String>();
+13         
+14         int len = s.length();
+15         
+16         // i: 表示从i索引开始的字串可以word break.
+17         boolean[] D = new boolean[len + 1];
+18         D[len] = true;
+19         for (int i = len - 1; i >= 0; i--) {
+20             for (int j = i; j <= len - 1; j++) {
+21                 // 左边从i 到 j
+22                 D[i] = false;
+23                 if (D[j + 1] && dict.contains(s.substring(i, j + 1))) {
+24                     D[i] = true;
+25                     break;
+26                 }
+27             }
+28         }
+29 
+30         dfs4(s, dict, path, ret, 0, D);
+31         
+32         return ret;
+33     }
+34 
+35     public static void dfs4(String s, Set<String> dict, 
+36             List<String> path, List<String> ret, int index,
+37             boolean canBreak[]) {
+38         int len = s.length();
+39         if (index == len) {
+40             // 结束了。index到了末尾
+41             StringBuilder sb = new StringBuilder();
+42             for (String str: path) {
+43                 sb.append(str);
+44                 sb.append(" ");
+45             }
+46             // remove the last " "
+47             sb.deleteCharAt(sb.length() - 1);
+48             ret.add(sb.toString());
+49             return;
+50         }
+51         
+52         // if can't break, we exit directly.
+53         if (!canBreak[index]) {
+54             return;
+55         }
+56 
+57         for (int i =  index; i < len; i++) {
+58             // 注意这些索引的取值。左字符串的长度从0到len
+59             String left = s.substring(index, i + 1);
+60             if (!dict.contains(left)) {
+61                 // 如果左字符串不在字典中，不需要继续递归
+62                 continue;
+63             }
+64             
+65             // if can't find any solution, return false, other set it 
+66             // to be true;
+67             path.add(left);
+68             dfs4(s, dict, path, ret, i + 1, canBreak);
+69             path.remove(path.size() - 1);
+70         }
+71 
+72     }
+复制代码
+ 
+
+比较与测试：
+
+这里贴一下各种解法的时间：
+
+Test
+Computing time with DFS1: 7830.0 millisec.
+Computing time with DFS2: 6400.0 millisec.
+Computing time with DFS3: 4728.0 millisec.
+Computing time with DFS4: 4566.0 millisec.
+
+
+可见，四个方法里最好的是第四个，建议面试时可以采用第四个。如有错误，敬请指正。
+
 """
 
 
