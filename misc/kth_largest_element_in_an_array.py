@@ -66,19 +66,19 @@ class Solution(object):
         """
         if not nums or k > len(nums):
             return None
-        left, right = 0, len(nums)-1
-        while left < right: # ---
-            pivot = nums[right]
-            i = left-1
-            j = left
+        left, right = 0, len(nums)-1 # current partition range [left, right]
+        while left < right: # while partition range >1, if only one, then return result
+            pivot = nums[right]    # last num of current partition range as pivot
+            i = left-1    # 'good' array's ending pos ( good means eles bigger than pivot ) ,starting as -1 cause not found yet
+            j = left      # the current num to be compared with pivot, start from left and ends on right-1
             while j < right:
-                if nums[j] > pivot:
+                if nums[j] > pivot:   # if bigger, than swap to good array end+1
                     i += 1
                     nums[i], nums[j] = nums[j], nums[i]
                 j += 1 # don't forget this
-            i += 1
+            i += 1      # all good eles bigger than pivot found, now put pivot to where it should be, which is i + 1
             nums[i], nums[right] = nums[right], nums[i]
-            if i == k - 1:
+            if i == k - 1:       # after partition, i is the pos of pivot, compare with k, then adjust the partition range
                 return nums[i]
             elif i > k - 1:
                 right = i - 1
