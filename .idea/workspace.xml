@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/multiprocessing_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/multiprocessing_test2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/multiprocessing_test3_pool.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/multiprocessing_test4_subprocess.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/testhello.iml" afterPath="$PROJECT_DIR$/.idea/testhello.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/threading_test2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/threading_test3.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/threading_test.py" afterPath="$PROJECT_DIR$/test/threading_test.py" />
     </list>
@@ -374,7 +370,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_copy_booksII_py.coverage" NAME="Unittests in copy_booksII.py Coverage Results" MODIFIED="1495261911364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_string_to_integer__2_.coverage" NAME="Unittests in string_to_integer (2) Coverage Results" MODIFIED="1474409228867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_group_anagrams.coverage" NAME="Unittests in group_anagrams Coverage Results" MODIFIED="1478628443736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
-    <SUITE FILE_PATH="coverage/testhello$threading_test.coverage" NAME="threading_test Coverage Results" MODIFIED="1504801710054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/testhello$threading_test.coverage" NAME="threading_test Coverage Results" MODIFIED="1505848614132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_divide_two_integers.coverage" NAME="Unittests in divide_two_integers Coverage Results" MODIFIED="1476926571098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_search_in_rotated_sorted_array__1_.coverage" NAME="Unittests in search_in_rotated_sorted_array (1) Coverage Results" MODIFIED="1480642713238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_wood_cut_SolutionTester_test_case7__1_.coverage" NAME="Unittests for wood_cut.SolutionTester.test_case7 (1) Coverage Results" MODIFIED="1493864632696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mjbeto" />
@@ -396,6 +392,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_SolutionTester_test_case1__1_.coverage" NAME="Unittests for SolutionTester.test_case1 (1) Coverage Results" MODIFIED="1495919863319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_unique_binary_search_trees__3_.coverage" NAME="Unittests in unique_binary_search_trees (3) Coverage Results" MODIFIED="1476748766900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_wood_cut_SolutionTester_test_case6.coverage" NAME="Unittests for wood_cut.SolutionTester.test_case6 Coverage Results" MODIFIED="1493864772940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mjbeto" />
+    <SUITE FILE_PATH="coverage/testhello$threading_test3.coverage" NAME="threading_test3 Coverage Results" MODIFIED="1505867589409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/testhello$subsets.coverage" NAME="subsets Coverage Results" MODIFIED="1459885020032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_word_search__1_.coverage" NAME="Unittests in word_search (1) Coverage Results" MODIFIED="1480398507129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$reverse_integer.coverage" NAME="reverse_integer Coverage Results" MODIFIED="1473965555442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -588,6 +585,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_LRU_cache_py.coverage" NAME="Unittests in LRU_cache.py Coverage Results" MODIFIED="1502948569717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$RemoveComma.coverage" NAME="RemoveComma Coverage Results" MODIFIED="1433969314368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_convert_linked_list_to_BST__1_.coverage" NAME="Unittests in convert_linked_list_to_BST (1) Coverage Results" MODIFIED="1481918725691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$threading_test2.coverage" NAME="threading_test2 Coverage Results" MODIFIED="1505866910418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_wood_cut_SolutionTester_test_case4.coverage" NAME="Unittests for wood_cut.SolutionTester.test_case4 Coverage Results" MODIFIED="1493864461525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mjbeto" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_copy_books_SolutionTester_test_case3.coverage" NAME="Unittests for copy_books.SolutionTester.test_case3 Coverage Results" MODIFIED="1495240735571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mjbeto" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_rotate_list.coverage" NAME="Unittests in rotate_list Coverage Results" MODIFIED="1479355260004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -775,11 +773,29 @@
       <file leaf-file-name="threading_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/threading_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="31" column="51" lean-forward="false" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
-              <folding>
-                <element signature="e#372#388#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="397">
+              <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="threading_test2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/threading_test2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="104" column="26" lean-forward="false" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="threading_test3.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/threading_test3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -806,7 +822,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="multiprocessing_test3_pool.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="multiprocessing_test3_pool.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/multiprocessing_test3_pool.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -828,16 +844,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="word_pattern.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/word_pattern.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="game_of_life.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/game_of_life.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -853,26 +859,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
               <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="word_patternII.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/word_patternII.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aaa.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/aaa.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -930,8 +916,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/random_pick_index.py" />
-        <option value="$PROJECT_DIR$/data/russian_doll_envelopes_case2.ini" />
         <option value="$PROJECT_DIR$/misc/linked_list_random_node.py" />
         <option value="$PROJECT_DIR$/misc/shuffle_an_array.py" />
         <option value="$PROJECT_DIR$/data/build_post_office_case2.ini" />
@@ -973,7 +957,6 @@
         <option value="$PROJECT_DIR$/misc/coin_change.py" />
         <option value="$PROJECT_DIR$/misc/coin_changeII.py" />
         <option value="$PROJECT_DIR$/mjbeto/flatten_2D_vector.py" />
-        <option value="$PROJECT_DIR$/test/threading_test.py" />
         <option value="$PROJECT_DIR$/mjbeto/add_operators.py" />
         <option value="$PROJECT_DIR$/misc/word_pattern.py" />
         <option value="$PROJECT_DIR$/misc/word_patternII.py" />
@@ -981,6 +964,9 @@
         <option value="$PROJECT_DIR$/test/multiprocessing_test2.py" />
         <option value="$PROJECT_DIR$/test/multiprocessing_test4_subprocess.py" />
         <option value="$PROJECT_DIR$/test/multiprocessing_test3_pool.py" />
+        <option value="$PROJECT_DIR$/test/threading_test.py" />
+        <option value="$PROJECT_DIR$/test/threading_test2.py" />
+        <option value="$PROJECT_DIR$/test/threading_test3.py" />
       </list>
     </option>
   </component>
@@ -991,8 +977,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="114" />
-    <option name="y" value="23" />
+    <option name="x" value="1109" />
+    <option name="y" value="-945" />
     <option name="width" value="1326" />
     <option name="height" value="833" />
   </component>
@@ -1155,61 +1141,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.multiprocessing_test4_subprocess">
-    <configuration default="false" name="Unittests in word_patternII.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/word_patternII.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="multiprocessing_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/multiprocessing_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="multiprocessing_test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/multiprocessing_test2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.threading_test3">
     <configuration default="false" name="multiprocessing_test3_pool" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1243,6 +1175,63 @@
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/multiprocessing_test4_subprocess.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="threading_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/threading_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="threading_test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/threading_test2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="threading_test3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/threading_test3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -1549,19 +1538,19 @@
       <item index="2" class="java.lang.String" itemvalue="Python.coins_in_a_line.py" />
       <item index="3" class="java.lang.String" itemvalue="Python.flattern_binary_tree" />
       <item index="4" class="java.lang.String" itemvalue="Python.var_scope" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in word_patternII.py" />
-      <item index="6" class="java.lang.String" itemvalue="Python.multiprocessing_test" />
-      <item index="7" class="java.lang.String" itemvalue="Python.multiprocessing_test2" />
-      <item index="8" class="java.lang.String" itemvalue="Python.multiprocessing_test3_pool" />
-      <item index="9" class="java.lang.String" itemvalue="Python.multiprocessing_test4_subprocess" />
+      <item index="5" class="java.lang.String" itemvalue="Python.multiprocessing_test3_pool" />
+      <item index="6" class="java.lang.String" itemvalue="Python.multiprocessing_test4_subprocess" />
+      <item index="7" class="java.lang.String" itemvalue="Python.threading_test" />
+      <item index="8" class="java.lang.String" itemvalue="Python.threading_test2" />
+      <item index="9" class="java.lang.String" itemvalue="Python.threading_test3" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.multiprocessing_test4_subprocess" />
-        <item index="1" class="java.lang.String" itemvalue="Python.multiprocessing_test3_pool" />
-        <item index="2" class="java.lang.String" itemvalue="Python.multiprocessing_test2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.multiprocessing_test" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in word_patternII.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python.threading_test3" />
+        <item index="1" class="java.lang.String" itemvalue="Python.threading_test2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.threading_test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.multiprocessing_test4_subprocess" />
+        <item index="4" class="java.lang.String" itemvalue="Python.multiprocessing_test3_pool" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -1643,18 +1632,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="114" y="23" width="1326" height="833" extended-state="0" />
-    <editor active="true" />
+    <frame x="1109" y="-945" width="1326" height="833" extended-state="1" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24844237" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21495327" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36374408" sideWeight="0.5221818" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42657343" sideWeight="0.4778182" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5006993" sideWeight="0.4778182" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25726143" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35900474" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24910007" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37515527" sideWeight="0.47826087" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3745624" sideWeight="0.47826087" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3902098" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20545869" sideWeight="0.5056" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -3457,27 +3445,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/remove_invalid_parentheses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="67" column="76" lean-forward="false" selection-start-line="67" selection-start-column="76" selection-end-line="67" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/sparse_matrix_multiplication.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="797">
-          <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/binary_tree_vertical_order_traversal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1381">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/wildcard_matching.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
@@ -3804,16 +3771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/threading_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="31" column="51" lean-forward="false" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
-          <folding>
-            <element signature="e#372#388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/multiprocessing_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -3847,6 +3804,49 @@
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/threading_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/venv3/lib/python3.6/site-packages/pip/_vendor/lockfile/sqlitelockfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+          <folding>
+            <marker date="1505840256000" expanded="true" signature="1049:1220" ph="create table... locks" />
+            <marker date="1505840256000" expanded="true" signature="1962:2123" ph="insert into locks... " />
+            <marker date="1505840256000" expanded="true" signature="2330:2406" ph="select * fro... locks" />
+            <marker date="1505840256000" expanded="true" signature="2643:2721" ph="delete from " />
+            <marker date="1505840256000" expanded="true" signature="3039:3115" ph="select * fro... locks" />
+            <marker date="1505840256000" expanded="true" signature="4293:4359" ph="delete from " />
+            <marker date="1505840256000" expanded="true" signature="4537:4613" ph="select uniqu... locks" />
+            <marker date="1505840256000" expanded="true" signature="4786:4852" ph="select * fro... locks" />
+            <marker date="1505840256000" expanded="true" signature="5053:5168" ph="select * fro... locks" />
+            <marker date="1505840256000" expanded="true" signature="5364:5428" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/threading_test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="104" column="26" lean-forward="false" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/threading_test3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
