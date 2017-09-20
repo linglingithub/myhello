@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/threading_test2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/threading_test3.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/misc/count_inversion.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/threading_test.py" afterPath="$PROJECT_DIR$/test/threading_test.py" />
     </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -377,6 +375,7 @@
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_permutations.coverage" NAME="Unittests in permutations Coverage Results" MODIFIED="1478027159139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_ThreeSumSmaller__4_.coverage" NAME="Unittests in ThreeSumSmaller (4) Coverage Results" MODIFIED="1472599646888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_unique_paths__1_.coverage" NAME="Unittests in unique_paths (1) Coverage Results" MODIFIED="1479756573977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
+    <SUITE FILE_PATH="coverage/testhello$Unittests_in_count_inversion_py.coverage" NAME="Unittests in count_inversion.py Coverage Results" MODIFIED="1505948467800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_in_HouseRobber_py.coverage" NAME="Unittests in HouseRobber.py Coverage Results" MODIFIED="1497381910859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/testhello$Unittests_for_implement_queue_by_two_stacks_SolutionTester_test_case1__1_.coverage" NAME="Unittests for implement_queue_by_two_stacks.SolutionTester.test_case1 (1) Coverage Results" MODIFIED="1493605991337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mjbeto" />
     <SUITE FILE_PATH="coverage/testhello$longest_substring_without_repeating_characters.coverage" NAME="longest_substring_without_repeating_characters Coverage Results" MODIFIED="1495069982348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/misc" />
@@ -790,11 +789,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="threading_test3.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="threading_test3.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/threading_test3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="405">
+              <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="count_inversion.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/misc/count_inversion.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -844,11 +853,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game_of_life.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/game_of_life.py">
+      <file leaf-file-name="aaa.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/aaa.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="69" column="13" lean-forward="false" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+            <state relative-caret-position="195">
+              <caret line="13" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -916,7 +925,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/linked_list_random_node.py" />
         <option value="$PROJECT_DIR$/misc/shuffle_an_array.py" />
         <option value="$PROJECT_DIR$/data/build_post_office_case2.ini" />
         <option value="$PROJECT_DIR$/misc/sort_colors.py" />
@@ -967,6 +975,7 @@
         <option value="$PROJECT_DIR$/test/threading_test.py" />
         <option value="$PROJECT_DIR$/test/threading_test2.py" />
         <option value="$PROJECT_DIR$/test/threading_test3.py" />
+        <option value="$PROJECT_DIR$/misc/count_inversion.py" />
       </list>
     </option>
   </component>
@@ -977,10 +986,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1109" />
-    <option name="y" value="-945" />
-    <option name="width" value="1326" />
-    <option name="height" value="833" />
+    <option name="x" value="929" />
+    <option name="y" value="-960" />
+    <option name="width" value="1464" />
+    <option name="height" value="920" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1080,6 +1089,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testhello" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testhello" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="misc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -1141,26 +1164,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.threading_test3">
-    <configuration default="false" name="multiprocessing_test3_pool" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/multiprocessing_test3_pool.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in count_inversion.py">
     <configuration default="false" name="multiprocessing_test4_subprocess" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1235,6 +1239,22 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in count_inversion.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/count_inversion.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -1538,19 +1558,19 @@
       <item index="2" class="java.lang.String" itemvalue="Python.coins_in_a_line.py" />
       <item index="3" class="java.lang.String" itemvalue="Python.flattern_binary_tree" />
       <item index="4" class="java.lang.String" itemvalue="Python.var_scope" />
-      <item index="5" class="java.lang.String" itemvalue="Python.multiprocessing_test3_pool" />
-      <item index="6" class="java.lang.String" itemvalue="Python.multiprocessing_test4_subprocess" />
-      <item index="7" class="java.lang.String" itemvalue="Python.threading_test" />
-      <item index="8" class="java.lang.String" itemvalue="Python.threading_test2" />
-      <item index="9" class="java.lang.String" itemvalue="Python.threading_test3" />
+      <item index="5" class="java.lang.String" itemvalue="Python.multiprocessing_test4_subprocess" />
+      <item index="6" class="java.lang.String" itemvalue="Python.threading_test" />
+      <item index="7" class="java.lang.String" itemvalue="Python.threading_test2" />
+      <item index="8" class="java.lang.String" itemvalue="Python.threading_test3" />
+      <item index="9" class="java.lang.String" itemvalue="Python tests.Unittests in count_inversion.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.threading_test3" />
-        <item index="1" class="java.lang.String" itemvalue="Python.threading_test2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.threading_test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.multiprocessing_test4_subprocess" />
-        <item index="4" class="java.lang.String" itemvalue="Python.multiprocessing_test3_pool" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in count_inversion.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python.threading_test3" />
+        <item index="2" class="java.lang.String" itemvalue="Python.threading_test2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.threading_test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.multiprocessing_test4_subprocess" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -1591,26 +1611,26 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_add_operators_py - 2017.09.15 at 00h 14m 15s.xml">
-      <configuration name="Unittests in add_operators.py" configurationId="tests" />
+    <history-entry file="Unittests_in_count_inversion_py - 2017.09.20 at 11h 13m 41s.xml">
+      <configuration name="Unittests in count_inversion.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_add_operators_py - 2017.09.15 at 00h 16m 50s.xml">
-      <configuration name="Unittests in add_operators.py" configurationId="tests" />
+    <history-entry file="Unittests_in_count_inversion_py - 2017.09.20 at 15h 56m 37s.xml">
+      <configuration name="Unittests in count_inversion.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_add_operators_py - 2017.09.15 at 00h 17m 57s.xml">
-      <configuration name="Unittests in add_operators.py" configurationId="tests" />
+    <history-entry file="Unittests_in_count_inversion_py - 2017.09.20 at 15h 57m 35s.xml">
+      <configuration name="Unittests in count_inversion.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_word_patternII_py - 2017.09.16 at 23h 55m 28s.xml">
-      <configuration name="Unittests in word_patternII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_count_inversion_py - 2017.09.20 at 15h 58m 14s.xml">
+      <configuration name="Unittests in count_inversion.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_word_patternII_py - 2017.09.16 at 23h 57m 14s.xml">
-      <configuration name="Unittests in word_patternII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_count_inversion_py - 2017.09.20 at 16h 00m 48s.xml">
+      <configuration name="Unittests in count_inversion.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_word_patternII_py - 2017.09.16 at 23h 57m 50s.xml">
-      <configuration name="Unittests in word_patternII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_count_inversion_py - 2017.09.20 at 16h 01m 06s.xml">
+      <configuration name="Unittests in count_inversion.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_word_patternII_py - 2017.09.16 at 23h 58m 00s.xml">
-      <configuration name="Unittests in word_patternII.py" configurationId="tests" />
+    <history-entry file="Unittests_in_count_inversion_py - 2017.09.20 at 16h 01m 07s.xml">
+      <configuration name="Unittests in count_inversion.py" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_word_patternII_py - 2017.09.16 at 23h 58m 03s.xml">
       <configuration name="Unittests in word_patternII.py" configurationId="tests" />
@@ -1632,18 +1652,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1109" y="-945" width="1326" height="833" extended-state="1" />
+    <frame x="929" y="-960" width="1464" height="920" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21495327" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19409283" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36374408" sideWeight="0.5221818" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5006993" sideWeight="0.4778182" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29052368" sideWeight="0.4778182" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25726143" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35900474" sideWeight="0.5033003" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24910007" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3745624" sideWeight="0.47826087" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3902098" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3734266" sideWeight="0.47826087" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39011705" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20545869" sideWeight="0.5056" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3432,6 +3452,11 @@
           <line>39</line>
           <option name="timeStamp" value="576" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/misc/count_inversion.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="577" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -3440,19 +3465,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="577" />
+      <option name="time" value="578" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/wildcard_matching.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="74" column="20" lean-forward="false" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/find_the_celebrity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -3731,14 +3748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/aaa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/word_patternII.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -3844,8 +3853,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/threading_test3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="405">
+          <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/aaa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/count_inversion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
           <folding />
         </state>
       </provider>
