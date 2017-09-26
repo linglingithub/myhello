@@ -3,4 +3,5 @@
 .idea/workspace.xml
 *.pyc
 **/workspace.xml
-
+test/venv/
+test/venv3/
