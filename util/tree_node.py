@@ -175,20 +175,20 @@ class TreeNode(object):
 def test_case1():
     bfs_str = '5,#,4,8,#,11,null,13,4,#,7,2,null,null,5,1,#'
     root = TreeNode.generate_bt_from_string(bfs_str)
-    print root
+    print(root)
 
 
 def test_case2():
     vals = [5,4,8,11,None,13,4,7,2,None,None,None,None,5]
     root = TreeNode.generate_bt_from_list(vals)
-    print root
+    print(root)
 
 def test1_case3():
     #bfs_str = "20,6,#,#,4"
     #bfs_str = "20,6,1,#,4, 3"
     bfs_str = "20,6,1,#,4, 2,3,41,42,#,#, #, 32"
     root = TreeNode.generate_bt_from_string_standard(bfs_str)
-    print root
+    print(root)
 
 
 if __name__ == '__main__':
