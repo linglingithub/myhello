@@ -163,6 +163,6 @@ def main():
 if __name__ == "__main__":
     # main()
     for i in range(5):
-        print i
+        print(i)
         if i < 2:
             i += 1

@@ -114,7 +114,7 @@ class SolutionTester(unittest.TestCase):
             [-1, 0, 0, 1],
         ]
         result = self.sol.fourSum(nums, target)
-        print "result of case 1: ====== ", result
+        print("result of case 1: ====== ", result)
         self.assertEqual(answer.sort(), result.sort())
 
     def test_case2(self):
@@ -122,7 +122,7 @@ class SolutionTester(unittest.TestCase):
         target = -1
         answer = [[-4,0,1,2],[-1,-1,0,1]]
         result = self.sol.fourSum(nums, target)
-        print "result of case 2: ====== ", result
+        print("result of case 2: ====== ", result)
         self.assertEqual(answer.sort(), result.sort())
 
 
