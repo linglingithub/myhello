@@ -26,6 +26,7 @@ import unittest
 class Solution(object):
     def isPowerOfTwo(self, n): #52ms, 43%
         """
+        power of two (only 1 with all trailing 0s ) vs. even number (lowest digit is 0)
         :type n: int
         :rtype: bool
         """
