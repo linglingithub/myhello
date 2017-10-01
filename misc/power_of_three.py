@@ -217,26 +217,12 @@ If you are interested in my other posts, please feel free to check my Github pag
 
 class Solution(object):
     def isPowerOfThree(self, n):
-        """
-        :type n: int
-        :rtype: bool
-        """
         if n <= 0:
             return False
         while n%3 == 0:
             n /= 3
         return n == 1
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
+
 思路二
 
 先不考虑进一步的要求，用递归的做法也尝试一下。
