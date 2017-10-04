@@ -61,8 +61,9 @@ Easy Flatten Binary Tree to Linked List
 class NestedIterator(object):
     def __init__(self, nestedList):
         # Initialize your data structure here.
-        if not nestedList:
-            raise Exception("Can't create iterator over None or empty inputs!")
+        # if not nestedList:
+            # raise Exception("Can't create iterator over None or empty inputs!")
+        # # ok to raise exception in lintcode, on leetcode just ignore
         self.data = []
         self.idx = 0
         _tmp = [ele for ele in nestedList]
