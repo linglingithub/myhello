@@ -27,15 +27,23 @@ Power of Two Power of Four
 
 """
 
+import math
 
 class Solution(object):
     def isPowerOfThree(self, n):
-        """        
+        #1162261467 is 3 ^ 19, 3 ^ 20 is bigger than int
+        #return (n > 0 and 1162261467 % n == 0)
+        maxPowerOfThree = math.pow(3, int(math.log(0x7fffffff) / math.log(3)))
+        return (n > 0 and maxPowerOfThree % n == 0)
+
+    def isPowerOfThree_wrong(self, n):
+        """  
+        precision not good enough, case2
         :type n: int
         :rtype: bool
         """
         import math
-        return n > 0 and 3 ** (math.log(n, 3)) == n
+        return n > 0 and float(3 ** float(math.log(n, 3))) == float(n)
 
 
 
@@ -49,6 +57,11 @@ class SolutionTester(unittest.TestCase):
         result = self.sol.isPowerOfThree(nums)
         self.assertEqual(answer, result)
 
+    def test_case2(self):
+        nums = 243   #float(3 ** float(math.log(n, 3))) = 242.99999999999977
+        answer = True
+        result = self.sol.isPowerOfThree(nums)
+        self.assertEqual(answer, result)
 
 def main():
     suite = unittest.TestLoader().loadTestsFromTestCase(SolutionTester)
