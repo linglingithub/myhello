@@ -72,14 +72,14 @@ class ex_10:
     class Z(K1, K2, K3): pass
 
 def merge(seqs):
-    print '\n\nCPL[%s]=%s' % (seqs[0][0],seqs),
+    print( '\n\nCPL[%s]=%s' % (seqs[0][0],seqs),)
     res = []; i=0
     while 1:
       nonemptyseqs=[seq for seq in seqs if seq]
       if not nonemptyseqs: return res
-      i+=1; print '\n',i,'round: candidates...',
+      i+=1; print( '\n',i,'round: candidates...',)
       for seq in nonemptyseqs: # find merge candidates among seq heads
-          cand = seq[0]; print ' ',cand,
+          cand = seq[0]; print (' ',cand,)
           nothead=[s for s in nonemptyseqs if cand in s[1:]]
           if nothead: cand=None #reject candidate
           else: break
@@ -94,8 +94,8 @@ def mro(C):
 
 def print_mro(C):
     #print '\nMRO[%s]=%s' % (C,mro(C))
-    print '\nMRO[%s]=%s' % (C, C.__mro__)
-    print '\nP22 MRO[%s]=%s' % (C,C.mro())
+    print ('\nMRO[%s]=%s' % (C, C.__mro__))
+    print('\nP22 MRO[%s]=%s' % (C,C.mro()))
 
 #print_mro(ex_9.Z)
 #print_mro(ex_2.Z)
