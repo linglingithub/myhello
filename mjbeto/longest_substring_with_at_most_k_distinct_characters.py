@@ -77,8 +77,8 @@ class SolutionTester(unittest.TestCase):
             config.readfp(fin)
             s = config.get("data", "s")
             k = int(config.get("data", "k"))
-            print type(s), s
-            print type(k), k
+            print(type(s), s)
+            print (type(k), k)
 
         answer = 4
         result = self.sol.lengthOfLongestSubstringKDistinct(s, k)
