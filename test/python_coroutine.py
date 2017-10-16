@@ -41,14 +41,15 @@ def consumer():
     print("=== first line in consumer")
     r = 'init r'
     while True:
-        n = yield r  #consumer通过yield拿到消息，处理，又通过yield把结果传回；
-        if not n:
+        print("[CONSUMER] inside true")
+        a = yield r  #consumer通过yield拿到消息，处理，又通过yield把结果传回；
+        if not a:
             return
-        print('[CONSUMER] Consuming %s...' % n)
-        r = '200 OK @ ' + str(n)
+        print('[CONSUMER] Consuming %s...' % a)
+        r = '200 OK @ ' + str(a)
 
 def produce(c):
-    print("=== first line in produce")
+    print("=== first line in produce, to send to consumer...")
     x = c.send(None)   #首先调用c.send(None)启动生成器
     print("first return from consumer:  ", x)
     n = 0
@@ -60,7 +61,7 @@ def produce(c):
     c.close()  #produce决定不生产了，通过c.close()关闭consumer，整个过程结束; this will go to consumer yield line and return
 
 c = consumer() # consumer函数是一个generato
-print("generating consumer: ", c)
+print("[main] generating consumer: ", c)
 produce(c)  # 把一个consumer传入produce
 
 
