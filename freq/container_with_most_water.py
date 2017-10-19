@@ -22,6 +22,8 @@ class Solution(object):
 
     def maxArea(self, height):
         """
+        The wall itself does not take volumn ( can be ignored if there are walls in between left and right )
+        So the volumn is determined only by min(height_left, height_right) * (right-left)
         http://bangbingsyb.blogspot.com/2014/11/leetcode-container-with-most-water.html
         :param height:
         :return:

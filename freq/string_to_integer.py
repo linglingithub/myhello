@@ -359,3 +359,31 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+"""
+
+I think we only need to handle four cases:
+
+discards all leading whitespaces
+sign of the number
+overflow
+invalid input
+Is there any better solution? Thanks for pointing out!
+
+int atoi(const char *str) {
+    int sign = 1, base = 0, i = 0;
+    while (str[i] == ' ') { i++; }
+    if (str[i] == '-' || str[i] == '+') {
+        sign = 1 - 2 * (str[i++] == '-'); 
+    }
+    while (str[i] >= '0' && str[i] <= '9') {
+        if (base >  INT_MAX / 10 || (base == INT_MAX / 10 && str[i] - '0' > 7)) {
+            if (sign == 1) return INT_MAX;
+            else return INT_MIN;
+        }
+        base  = 10 * base + (str[i++] - '0');
+    }
+    return base * sign;
+}
+
+"""

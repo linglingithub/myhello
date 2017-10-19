@@ -78,3 +78,10 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+"""
+https://leetcode.com/articles/longest-common-prefix/
+
+
+
+"""
