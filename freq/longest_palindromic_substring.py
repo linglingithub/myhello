@@ -22,6 +22,20 @@ class Solution:
     # @param {string} s input string
     # @return {string} the longest palindromic substring
     def longestPalindrome(self, s):
+        if not s:
+            return ""
+        n = len(s)
+        res = s[0]  # not "", should be signle first char, case4
+        dp = [ [True if i>=j else False for j in range(n)] for i in range(n)]  # thinks about when dp[i+1][j-1] comes to left >= right
+        for i in range(n-2, -1, -1):  # think about how dp goes, i should start from n-1 downward
+            for j in range(i+1, n):
+                dp[i][j] = True if s[i] == s[j] and dp[i+1][j-1] else False
+                if dp[i][j] and j-i+1 > len(res):
+                    res = s[i: j+1]
+        return res
+
+
+    def longestPalindrome1(self, s):
         # Write your code here
         if not s:
             return ""
@@ -43,7 +57,7 @@ class Solution:
                 r += 1
             else:
                 break
-        res = s[l + 1: r]
+        res = s[l + 1: r]  #note here should use l+1, r, because s[l] != l[r] and it breaks the loop
         return res
 
 
@@ -159,6 +173,12 @@ class SolutionTester(unittest.TestCase):
     def test_case4(self):
         s = "lcnvoknqgejxbfhijmxglisfzjwbtvhodwummdqeggzfczmetrdnoetmcydwddmtubcqmdjwnpzdqcdhplxtezctvgnpobnnscrmeqkwgiedhzsvskrxwfyklynkplbgefjbyhlgmkkfpwngdkvwmbdskvagkcfsidrdgwgmnqjtdbtltzwxaokrvbxqqqhljszmefsyewwggylpugmdmemvcnlugipqdjnriythsanfdxpvbatsnatmlusspqizgknabhnqayeuzflkuysqyhfxojhfponsndytvjpbzlbfzjhmwoxcbwvhnvnzwmkhjxvuszgtqhctbqsxnasnhrusodeqmzrlcsrafghbqjpyklaaqximcjmpsxpzbyxqvpexytrhwhmrkuybtvqhwxdqhsnbecpfiudaqpzsvfaywvkhargputojdxonvlprzwvrjlmvqmrlftzbytqdusgeupuofhgonqoyffhmartpcbgybshllnjaapaixdbbljvjomdrrgfeqhwffcknmcqbhvulwiwmsxntropqzefwboozphjectnudtvzzlcmeruszqxvjgikcpfclnrayokxsqxpicfkvaerljmxchwcmxhtbwitsexfqowsflgzzeynuzhtzdaixhjtnielbablmckqzcccalpuyahwowqpcskjencokprybrpmpdnswslpunohafvminfolekdleusuaeiatdqsoatputmymqvxjqpikumgmxaxidlrlfmrhpkzmnxjtvdnopcgsiedvtfkltvplfcfflmwyqffktsmpezbxlnjegdlrcubwqvhxdammpkwkycrqtegepyxtohspeasrdtinjhbesilsvffnzznltsspjwuogdyzvanalohmzrywdwqqcukjceothydlgtocukc"
         answer = "lbabl"
+        result = self.sol.longestPalindrome(s)
+        self.assertEqual(answer, result)
+
+    def test_case5(self):  # ====>
+        s = "a"
+        answer = "a"
         result = self.sol.longestPalindrome(s)
         self.assertEqual(answer, result)
 
