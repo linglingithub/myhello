@@ -37,6 +37,27 @@ import math
 class Solution(object):
     def reverse(self, x):
         """
+        !!! -1 % 10 = 9 in python
+        :type x: int
+        :rtype: int
+        """
+        int_min = - (1 << 31)
+        int_max = (1 << 31) - 1
+        res = 0
+        is_negative = x < 0
+        if is_negative:
+            x = -x
+        while x > 0:
+            res = res * 10 + (x % 10)
+            x = int(x/10)
+            if is_negative and res > int_max+1 or not is_negative and res > int_max:
+                return 0
+        return -res if is_negative else res
+
+
+
+    def reverse2(self, x):
+        """
         :type x: int
         :rtype: int
         """
