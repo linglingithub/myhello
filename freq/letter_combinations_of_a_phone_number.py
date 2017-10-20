@@ -1,5 +1,5 @@
 """
-Letter Combinations of a Phone Number
+17. Letter Combinations of a Phone Number
 
 
 Given a digit string, return all possible letter combinations that the number could represent.
@@ -222,3 +222,48 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+"""
+
+Complexity analysis
+
+http://www.cnblogs.com/yrbbest/p/4433742.html
+
+==> dfs: space O(n)
+...
+
+二刷：
+
+比较容易的dfs + backtracking。就是在遍历digits的同时对每个数字可能代表的字符做回溯。也有相应的BFS version，放在reference里
+
+这里复杂度的计算主要参考了UBC AI课程的lecture notes。假设DFS的 path深度是n，branching factor是m那么DFS的
+
+Time Complexity 就是 O(b^m)， Space Complexity为 O(bm)。 而对相同的图， BFS的Time Complexity
+
+也是O(b^m)， Space Complexity则为 O(b^m)。
+
+When is DFS appropriate? space is restricted solutions tend to occur at the same depth in the tree you know how to order 
+nodes in the list of neighbours so that solutions will be found relatively quickly
+
+When is DFS inappropriate? some paths have infinite length the graph contains cycles some solutions are very deep, while 
+others are very shallow
+
+When is BFS appropriate? space is not a problem it’s necessary to find the solution with the fewest arcs although all 
+solutions may not be shallow, at least some are there may be infinite paths
+
+When is BFS inappropriate? space is limited all solutions tend to be located deep in the tree the branching factor is very large
+
+Java:
+
+
+Time Complexity - O(3n)， Space Complexity - O(n)。
+
+==================================================================
+
+http://www.lifeincode.net/programming/leetcode-letter-combinations-of-a-phone-number-java/
+
+Assuming the average number of letters on every number is m, and the length of digits string is n, then the complexity 
+is O(m^n).
+
+
+"""
