@@ -48,10 +48,14 @@ class Solution(object):
         """
         :type n: int
         :rtype: List[str]
+        
         """
+        if n<=0:
+            return []
         ans = []
         str = ""
         stack = 0
+
         self.dfs3(stack, n, str, ans, n, n)
         return ans
 
@@ -101,7 +105,7 @@ class Solution(object):
 
         def dfs_parentheses(indx, one_str, open, result):
             if indx == 2 * n:
-                print one_str
+                #print one_str
                 result.append(one_str)
                 return
             else:
@@ -135,21 +139,21 @@ class SolutionTestor(unittest.TestCase):
           "(())()",
           "()(())",
           "()()()"
-        ].sort()
-        result = self.sol.generateParenthesis(n).sort()
-        self.assertEqual(answer, result)
+        ]
+        result = self.sol.generateParenthesis(n)
+        self.assertEqual(sorted(answer), sorted(result))
 
     def test_case2(self):
         n = 0
         answer = []
         result = self.sol.generateParenthesis(n)
-        self.assertEqual(answer, result)
+        self.assertEqual(sorted(answer), sorted(result))
 
     def test_case3(self): # ====> Output Limit Exceeded, Last executed input: 8
-        n = 8
-        answer = [""]
+        n = 2
+        answer = ["()()", "(())"]
         result = self.sol.generateParenthesis(n)
-        self.assertEqual(answer, result)
+        self.assertEqual(sorted(answer), sorted(result))
 
 
 def main():
@@ -158,3 +162,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+"""
+Two main constraints when dfs:
+(1) when adding ), make sure that ( should be no less than )
+(2) when adding (, as long as they are no more than n
+
+"""
