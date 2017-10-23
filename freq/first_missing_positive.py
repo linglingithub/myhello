@@ -23,9 +23,38 @@ Hard
 
 """
 
-
-
 class Solution(object):
+    def firstMissingPositive(self, nums):
+        """
+        The purpose is to put smaller positive to the target position,
+        then scan the list again and find the first (smallest) missing positive
+        :type nums: List[int]
+        :rtype: int
+        """
+        if not nums:
+            return 1
+        i, n = 0, len(nums)
+        while i < n:
+            if nums[i] >= i + 1 or nums[i] <= 0: # should be > i+1 here, not ==
+                i += 1
+            else:
+                idx = nums[i] - 1
+                tmp = nums[idx]
+                if tmp == nums[i]:
+                    i += 1
+                    continue
+                else:
+                    nums[idx], nums[i] = nums[i], tmp
+                    # if the swapped new val does not make nums[i] a good one (nums[i] >= i + 1 or nums[i] <= 0) ,
+                    # then need to continue swapping
+                    # when swapping, remember to re-check the condition after swapping
+
+        for i in range(len(nums)):
+            if nums[i] != i+1:
+                return i+1
+        return len(nums)+1
+
+class Solution1(object):
 
     def firstMissingPositive(self, nums): #48ms, 57%
         """
@@ -63,10 +92,10 @@ class Solution(object):
             if nums[i] <= 0 or nums[i] > i+1:
                 continue
             else:
-                print "swapping -- ", i, nums[i], nums[nums[i]-1]
+                print("swapping -- ", i, nums[i], nums[nums[i]-1])
                 nums[nums[i]-1], nums[i] = nums[i], nums[nums[i]-1]
                 #one swap is not enough, nums[i]-1 may also need further swap after swap, check case6
-        print nums
+        print(nums)
         for i in range(len(nums)):
             if nums[i] != i+1:
                 return i+1
@@ -108,7 +137,7 @@ class Solution(object):
                 A[i] = A[A[i]-1]
                 A[t-1] = t
             i = i+1
-        for i in xrange(n):
+        for i in range(n):
             if A[i]!=i+1:
                 return i+1
         return n+1
@@ -149,7 +178,7 @@ class SolutionTester(unittest.TestCase):
         result = self.sol.firstMissingPositive(nums)
         self.assertEqual(answer, result)
 
-    def test_case6(self): #======>
+    def test_case06(self): #======>
         nums = [11,1,6,11,5,5,-6,9,-3,9,5,4,2,-8,16,-6,-4,2,3]
         answer = 7
         result = self.sol.firstMissingPositive(nums)
