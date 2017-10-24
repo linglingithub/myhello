@@ -30,6 +30,40 @@ import unittest
 
 
 class Solution(object):
+    def canJump(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        if not nums:
+            return -1
+        furthest = 0
+        for i in range(len(nums)):
+            if furthest >= i:
+                furthest = max(furthest, nums[i] + i)
+                if furthest >= len(nums) - 1:
+                    return True
+            else:
+                return False
+        return False
+
+    def canJump_TLE(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        cur = 0
+        n = len(nums)
+        reach = [False for _ in range(n)]
+        reach[0] = True
+        for i in range(1, n):
+            for j in range(i - 1, -1, -1):
+                if reach[j] and nums[j] + j >= i:
+                    reach[i] = True
+                    break
+        return reach[n - 1]
+
+class Solution1(object):
 
     def canJump(self, nums): #49ms, 96%
         """
@@ -1589,7 +1623,11 @@ class SolutionTester(unittest.TestCase):
         result = self.sol.canJump(input)
         self.assertEqual(answer, result)
 
-
+    def test_case6(self):  #====> TLE, 
+        input = [0]
+        answer = True
+        result = self.sol.canJump(input)
+        self.assertEqual(answer, result)
 
 
 def main():

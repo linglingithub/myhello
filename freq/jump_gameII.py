@@ -33,6 +33,44 @@ import unittest
 
 
 class Solution(object):
+    def jump(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if len(nums) == 1:  # add protection
+            return 0
+        jumps = 0
+        reach = 0
+        max_reach = reach
+        n = len(nums)
+        for i in range(n):
+            if reach < i and max_reach >= i:
+                jumps += 1
+                reach = max_reach
+            tmp = i + nums[i]
+            max_reach = max(max_reach, tmp)
+            if max_reach >= n - 1:
+                return jumps + 1  # if len == 1, then should not + 1 here, add protection before
+        return -1
+
+    def jump_TLE(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        n = len(nums)
+        dp = [n for _ in range(n)]  # not good to init as -1
+        dp[0] = 0
+        for i in range(n):  # shoud also include 0, not (1, n)
+            tmp = min(nums[i] + i, n - 1)
+            jump = dp[i] + 1
+            for j in range(i + 1, tmp + 1):
+                dp[j] = min(dp[j], jump)
+        return dp[n - 1]
+
+
+class Solution1(object):
 
     def jump1(self, nums): #ref, 55ms, 94%
         """
@@ -198,6 +236,30 @@ if __name__ == "__main__":
 
 
 """
+
+http://bangbingsyb.blogspot.com/2014/11/leetcode-jump-game-i-ii.html
+
+同样可以用greedy解决。与I不同的是，求的不是对每个i，从A[0:i]能跳到的最远距离；而是计算跳了k次后能达到的最远距离，这里的通项公式为：
+
+d[k] = max(i+A[i])     d[k-2] < i <= d[k-1]
+
+class Solution {
+public:
+    int jump(int A[], int n) {
+        int curMax = 0, njumps = 0, i = 0;
+        while(curMax<n-1) {
+            int lastMax = curMax;
+            for(; i<=lastMax; i++) 
+                curMax = max(curMax,i+A[i]);
+            njumps++;
+            if(lastMax == curMax) return -1;
+        }
+        return njumps;
+    }
+};
+
+
+======================================================================================================================
 
 这题不同于上一题，只要求我们得到最少的跳跃次数，所以铁定能走到终点的，我们仍然使用贪心法，
 
