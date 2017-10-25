@@ -1,5 +1,5 @@
 """
-Next Permutation
+31. Next Permutation
 
 Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
 
@@ -23,6 +23,39 @@ import unittest
 
 
 class Solution(object):
+    def nextPermutation(self, nums):
+        """
+        find the first reversed order from right --> '12543', pos = 2,  ; 53421, pos = 2 , 54321, 54123； 543122, pos=
+        if pos = 0, reverse whole list
+        else: swap pos-1 and [pos:] 中比pos-1大的最小数，n-1, then sort the [pos:] part --> 13542, 
+        (ref: 最后是不需要sort的，因为换过去之后，后面已经是按降序排列了，所以直接reverse就可以了。???)
+        :type nums: List[int]
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
+        if not nums:
+            return []
+        n = len(nums)
+        i = n - 1
+        while i > 0 and nums[i] <= nums[i - 1]:  # should add = here, for equal vals, case7
+            i -= 1
+        if i == 0:
+            nums.reverse()
+            return
+        min_bigger = self.find(nums, i - 1)
+        nums[i-1], nums[min_bigger] = nums[min_bigger], nums[i-1] # not i, i-1 is the pos to be swapped
+        nums[i:] = reversed(nums[i:])  # not exactly in place, create a shallow copy of nums[i:]
+
+    def find(self, nums, pos):
+        target = nums[pos]
+        i = pos+1 # can't init as pos, otherwise dead loop
+        while i < len(nums):
+            if nums[i] > target:
+                i += 1
+            else:
+                break   # don't forget to add break, otherwise dead loop for case 5
+        return i - 1
+
+class Solution1(object):
     def nextPermutation(self, nums): # 66ms, 82.19% --- 72ms, 57.19%
         """
         Trying to find the lexicographical order
@@ -100,6 +133,12 @@ class SolutionTester(unittest.TestCase):
     def test_case6(self):  # ====>
         nums = [1,5,1]
         answer = [5,1,1]
+        self.sol.nextPermutation(nums)
+        self.assertEqual(answer, nums)
+
+    def test_case07(self):  # ====>
+        nums = [5,1,1]
+        answer = [1,1,5]
         self.sol.nextPermutation(nums)
         self.assertEqual(answer, nums)
 
