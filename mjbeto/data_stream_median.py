@@ -4,7 +4,7 @@ import unittest
 
 """
 
-Data Stream Median ( -- leetcode : 295. Fine Medium from Data Stream)
+Data Stream Median ( -- leetcode : 295. Fine Mediam from Data Stream)
 
 Numbers keep coming, return the median of numbers at every time a new number added.
 

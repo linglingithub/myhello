@@ -24,6 +24,8 @@ class Solution:
     """
 
     def strStr(self, source, target):
+
+    def strStr1(self, source, target):
         # write your code here
         if target == "":
             return 0

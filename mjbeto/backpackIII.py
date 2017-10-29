@@ -40,15 +40,15 @@ class Solution:
         self.fill(nums, vals, m, dp)
         return dp[m]
 
-    def fill(self, nums, vals, size, dp):
-        if size == 0 or size>0 and dp[size] != 0:
-            return dp[size]
+    def fill(self, nums, vals, bag, dp):
+        if bag == 0 or bag>0 and dp[bag] != 0:
+            return dp[bag]
         for i in range(len(nums)):
             weight = nums[i]
             val = vals[i]
-            if size >= weight:
-                dp[size] = max(self.fill(nums, vals, size-weight, dp) + val, dp[size])
-        return dp[size]  # don't forget to return value here
+            if bag >= weight:
+                dp[bag] = max(self.fill(nums, vals, bag-weight, dp) + val, dp[bag])
+        return dp[bag]  # don't forget to return value here
 
 
 

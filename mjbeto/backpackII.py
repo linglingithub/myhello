@@ -40,11 +40,11 @@ class Solution:
         dp = [0 for _ in range(m+1)]
         for i in range(len(nums)):
             for j in range(m, 0, -1):
-                weight = nums[i]
+                size = nums[i]
                 val = vals[i]
-                size = j
-                if size >= weight:
-                    dp[size] = max(dp[size], dp[size-weight] + val)
+                bag = j
+                if bag >= size:
+                    dp[bag] = max(dp[bag], dp[bag-size] + val)
         #return max(dp)  # result can directly be dp[m]
         return dp[m]
 
