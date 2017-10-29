@@ -30,6 +30,93 @@ import unittest
 
 
 class Solution(object):
+    def combinationSum_ref(self, candidates, target): # won't pass case2 (case by self), but AC online
+        res = []
+        candidates.sort()
+        self.dfs(candidates, target, 0, [], res)
+        return res
+
+    def dfs(self, nums, target, index, path, res):
+        if target < 0:
+            return  # backtracking
+        if target == 0:
+            res.append(path)
+            return
+        for i in range(index, len(nums)):
+            self.dfs(nums, target - nums[i], i, path + [nums[i]], res)
+
+    def combinationSum(self, candidates, target):
+        """
+        :type candidates: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
+        if not candidates or target <= 0:
+            return []
+        res = []
+        candidates = list(set(candidates))
+        candidates.sort()
+        self.helper(candidates, target, 0, [], res)
+        return res
+
+    def helper(self, nums, target, idx, combi, res):
+        if target == 0:
+            res.append(combi)
+            return
+        if idx >= len(nums) or nums[idx] > target:
+            return
+        for i in range(idx, len(nums)):
+            val = nums[i]
+            if val > target:
+                break
+            k = 1
+            while k * val <= target:
+                remain = target - k * val
+                # if remain <= val:
+                    # # k += 1   # wrong if put remain <= val then continue, remain can be 0, just check == case to remove duplicates
+                    # # continue  # avoid duplicates like (2,2)
+                    # break
+                self.helper(nums, remain, i + 1, combi + [val] * k, res)  # should be i+1, not idx+1
+                k += 1
+
+class Solution_wrong(object):
+    def combinationSum(self, candidates, target):
+        """
+        should not use dp trying to break down target, hard to remove duplicated combis
+        :type candidates: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
+        if not candidates or target <= 0:
+            return []
+        combis = {}
+        m = len(candidates)
+        dp = [False for _ in range(target + 1)]
+        dp[0] = True
+        combis[0] = [[]]
+        for i in range(m):
+            for j in range(target):
+                val = candidates[i]
+                if val > j:
+                    continue
+                k = 1
+                while k * val <= j:
+                    if dp[j - k * val]:  # can have duplicates here, eg, 1*2 + 4, 2*2 + 2, 3*2; same for 2+5, 3+4
+                        dp[j] = True
+                        self.update_combi(combis, j, j - k * val, [val] * k)
+                    k += 1
+        return combis[target] if combis[target] else []
+
+    def update_combi(self, combis, target, smaller, numlist):
+        if not combis.get(target):
+            combis[target] = []
+        for small_list in combis[smaller]:
+            copylist = [x for x in small_list]
+            copylist.extend(numlist)
+            combis[target].append(copylist)
+
+
+class Solution1(object):
     def combinationSum(self, candidates, target): #109ms, 77.13%, pass more parameters than _slower,
         """
         :type candidates: List[int]
@@ -150,6 +237,15 @@ class SolutionTester(unittest.TestCase):
         nums = [2, 2,2, 3, 6, 7,7,7,7]
         target = 7
         answer = [[7], [2, 2, 3]]
+        result = self.sol.combinationSum(nums, target)
+        answer.sort()
+        result.sort()
+        self.assertEqual(answer, result)
+
+    def test_case03(self):
+        nums = [2, 3, 5]
+        target = 8
+        answer = [[2,2,2,2], [2,3,3], [3,5]]
         result = self.sol.combinationSum(nums, target)
         answer.sort()
         result.sort()

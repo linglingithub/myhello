@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7a00e0-b50a-4c1b-a362-cbfc105253f5" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/implement_strStr.py" afterPath="$PROJECT_DIR$/misc/implement_strStr.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/misc/maximal_rectangle.py" afterPath="$PROJECT_DIR$/misc/maximal_rectangle.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mjbeto/backpackII.py" afterPath="$PROJECT_DIR$/mjbeto/backpackII.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mjbeto/backpackIII.py" afterPath="$PROJECT_DIR$/mjbeto/backpackIII.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mjbeto/data_stream_median.py" afterPath="$PROJECT_DIR$/mjbeto/data_stream_median.py" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freq/sort_mergesort.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/misc/combination_sum.py" afterPath="$PROJECT_DIR$/freq/combination_sum.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/misc/combination_sumII.py" afterPath="$PROJECT_DIR$/freq/combination_sumII.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/misc/combination_sumIII.py" afterPath="$PROJECT_DIR$/freq/combination_sumIII.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/misc/combination_sumIV.py" afterPath="$PROJECT_DIR$/freq/combination_sumIV.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/testhello.iml" afterPath="$PROJECT_DIR$/.idea/testhello.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
     </list>
     <ignored path="testhello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -809,107 +820,201 @@
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="testhello" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="decode_string.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/freq/decode_string.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1380">
               <caret line="92" column="51" lean-forward="false" selection-start-line="92" selection-start-column="51" selection-end-line="92" selection-end-column="51" />
               <folding />
+=======
+      <file leaf-file-name="count_of_smaller_numbers_after_self.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/freq/count_of_smaller_numbers_after_self.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+              <folding>
+                <element signature="e#3840#111499#0" expanded="false" />
+              </folding>
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="backpack.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjbeto/backpack.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="930">
               <caret line="63" column="29" lean-forward="false" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
               <folding />
+=======
+      <file leaf-file-name="combination_sum.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/freq/combination_sum.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-23">
+              <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+              <folding>
+                <element signature="e#2495#3778#0" expanded="false" />
+                <element signature="e#3810#7112#0" expanded="false" />
+              </folding>
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="backpackII.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjbeto/backpackII.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
               <caret line="36" column="63" lean-forward="false" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
               <folding />
+=======
+      <file leaf-file-name="combination_sumII.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/freq/combination_sumII.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="34" column="74" lean-forward="false" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+              <folding>
+                <element signature="e#1468#1755#0" expanded="false" />
+                <element signature="e#1818#2314#0" expanded="false" />
+                <element signature="e#2380#2838#0" expanded="false" />
+              </folding>
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="backpackVI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjbeto/backpackVI.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+=======
+      <file leaf-file-name="combination_sumIII.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/freq/combination_sumIII.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="573">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="backpackIII.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjbeto/backpackIII.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="705">
               <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
               <folding />
+=======
+      <file leaf-file-name="combination_sumIV.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/freq/combination_sumIV.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="107" column="25" lean-forward="false" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+              <folding>
+                <element signature="e#2011#2991#0" expanded="false" />
+              </folding>
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="backpackIV.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjbeto/backpackIV.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+=======
+      <file leaf-file-name="my_decoratorIII.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/my_decoratorIII.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="backpackV.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjbeto/backpackV.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
               <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+=======
+      <file leaf-file-name="add_two_numbers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/freq/add_two_numbers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="coin_change.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/misc/coin_change.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="366">
               <caret line="56" column="24" lean-forward="false" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
+=======
+      <file leaf-file-name="median_of_two_sorted_arrays.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/median_of_two_sorted_arrays.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="coin_changeII.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/coin_changeII.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
               <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+=======
+      <file leaf-file-name="case.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/unittest/case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="652" column="0" lean-forward="false" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="maximal_rectangle.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/misc/maximal_rectangle.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+=======
+      <file leaf-file-name="suite.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/unittest/suite.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
               <folding />
             </state>
           </provider>
@@ -970,11 +1075,39 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/misc/reverse_string.py" />
+        <option value="$PROJECT_DIR$/misc/power_of_two.py" />
+        <option value="$PROJECT_DIR$/misc/power_of_four.py" />
+        <option value="$PROJECT_DIR$/freq/reverse_bits.py" />
+        <option value="$PROJECT_DIR$/freq/rotate_array.py" />
+        <option value="$PROJECT_DIR$/freq/missing_ranges.py" />
+        <option value="$PROJECT_DIR$/util/point_2d.py" />
+        <option value="$PROJECT_DIR$/freq/max_points_on_a_line.py" />
+        <option value="$PROJECT_DIR$/freq/longest_consecutive_sequence.py" />
+        <option value="$PROJECT_DIR$/freq/delete_node_in_a_linked_list.py" />
+        <option value="$PROJECT_DIR$/freq/palindrome_linked_list.py" />
+        <option value="$PROJECT_DIR$/freq/intersection_of_two_arrays.py" />
+        <option value="$PROJECT_DIR$/freq/intersection_of_two_arraysII.py" />
+        <option value="$PROJECT_DIR$/misc/power_of_three.py" />
+        <option value="$PROJECT_DIR$/freq/odd_even_linked_list.py" />
+        <option value="$PROJECT_DIR$/mjbeto/flatten_nested_list_iterator.py" />
+        <option value="$PROJECT_DIR$/misc/the_skyline_problem.py" />
+        <option value="$PROJECT_DIR$/test/threading_test1.py" />
+        <option value="$PROJECT_DIR$/test/threading_g4g2.py" />
+        <option value="$PROJECT_DIR$/test/threading_g4g3.py" />
+        <option value="$PROJECT_DIR$/test/test_byvalue_byref.py" />
+        <option value="$PROJECT_DIR$/test/mro.py" />
+        <option value="$PROJECT_DIR$/freq/longest_substring_with_at_least_K_repeating_characters.py" />
+        <option value="$PROJECT_DIR$/mjbeto/longest_substring_with_at_most_k_distinct_characters.py" />
+        <option value="$PROJECT_DIR$/test/concurrent_test.py" />
+        <option value="$PROJECT_DIR$/test/concurrent_test/single.py" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
         <option value="$PROJECT_DIR$/test/concurrent_test/single_main.py" />
         <option value="$PROJECT_DIR$/test/concurrent_test/lock_directly_with.py" />
         <option value="$PROJECT_DIR$/test/concurrent_test/cv.py" />
         <option value="$PROJECT_DIR$/misc/combination_sumII.py" />
-        <option value="$PROJECT_DIR$/misc/combination_sum.py" />
         <option value="$PROJECT_DIR$/test/python_coroutine.py" />
         <option value="$PROJECT_DIR$/test/python_coroutine2.py" />
         <option value="$PROJECT_DIR$/misc/guess_number_higher_or_lower.py" />
@@ -989,6 +1122,7 @@
         <option value="$PROJECT_DIR$/test/test_asyncio.py" />
         <option value="$PROJECT_DIR$/test/test_asyncio1.py" />
         <option value="$PROJECT_DIR$/misc/median_of_two_sorted_arrays.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/misc/longest_palindromic_substring.py" />
         <option value="$PROJECT_DIR$/freq/longest_palindromic_substring.py" />
         <option value="$PROJECT_DIR$/misc/reverse_integer.py" />
@@ -1021,6 +1155,15 @@
         <option value="$PROJECT_DIR$/freq/decode_string.py" />
         <option value="$PROJECT_DIR$/mjbeto/backpackII.py" />
         <option value="$PROJECT_DIR$/mjbeto/backpackIII.py" />
+=======
+        <option value="$PROJECT_DIR$/freq/count_of_smaller_numbers_after_self.py" />
+        <option value="$PROJECT_DIR$/misc/combination_sum.py" />
+        <option value="$PROJECT_DIR$/freq/sort_mergesort.py" />
+        <option value="$PROJECT_DIR$/freq/combination_sum.py" />
+        <option value="$PROJECT_DIR$/freq/combination_sumII.py" />
+        <option value="$PROJECT_DIR$/freq/combination_sumIII.py" />
+        <option value="$PROJECT_DIR$/freq/combination_sumIV.py" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
       </list>
     </option>
   </component>
@@ -1031,10 +1174,17 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="53" />
     <option name="y" value="94" />
     <option name="width" value="1363" />
     <option name="height" value="787" />
+=======
+    <option name="x" value="174" />
+    <option name="y" value="79" />
+    <option name="width" value="1585" />
+    <option name="height" value="983" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1088,6 +1238,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
@@ -1132,6 +1283,36 @@
           </PATH>
         </subPane>
       </pane>
+=======
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="testhello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testhello" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testhello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testhello" type="462c0819:PsiDirectoryNode" />
+              <item name="freq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testhello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testhello" type="462c0819:PsiDirectoryNode" />
+              <item name="misc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testhello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testhello" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1140,7 +1321,7 @@
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/mathjoy_test/mathjoy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="126" />
@@ -1161,22 +1342,22 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/linglin/PycharmProjects/testhello/util/aaa.py" />
+    <property name="SearchEverywhereHistoryKey" value="com&#9;FILE&#9;file://C:/projs/testhello/misc/combination_sumII.py&#10;decorator&#9;FILE&#9;file://C:/projs/testhello/test/my_decorator.py&#10;combination&#9;FILE&#9;file://C:/projs/testhello/misc/combination_sum.py" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/freq" />
-      <recent name="$PROJECT_DIR$/misc" />
-      <recent name="$PROJECT_DIR$/misc/2sum_group" />
-      <recent name="$PROJECT_DIR$/old" />
-      <recent name="$PROJECT_DIR$/util" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/misc" />
       <recent name="$PROJECT_DIR$/mjbeto" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/util" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projs\testhello\freq\" />
+      <recent name="$PROJECT_DIR$/freq" />
+      <recent name="$PROJECT_DIR$/misc" />
+      <recent name="$PROJECT_DIR$/misc/2sum_group" />
+      <recent name="$PROJECT_DIR$/old" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1191,24 +1372,100 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python tests.Unittests in backpackII.py">
     <configuration default="false" name="Unittests in hamming_distance.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager" selected="Python tests.Unittests in combination_sumIV.py">
+    <configuration name="ThreeSum main" type="tests" factoryName="Unittests">
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/2sum_group/three_sum.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
+<<<<<<< HEAD
       <option name="_new_target" value="&quot;$PROJECT_DIR$/freq/hamming_distance.py&quot;" />
+=======
+      <option name="_new_legacyInformationCopiedToNew" value="true" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/freq/2sum_group/three_sum.py&quot;" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
     </configuration>
+<<<<<<< HEAD
     <configuration default="false" name="fibonacci_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration name="Unittests in combination_sumII.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/freq" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/freq/combination_sumII.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="Unittests in combination_sumIV.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/freq" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/freq/combination_sumIV.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="Unittests in combination_sum.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/freq" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/freq/combination_sum.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="Unittests in median_of_two_sorted_arrays.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -1221,6 +1478,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/freq/fibonacci_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -1228,52 +1486,91 @@
       <method />
     </configuration>
     <configuration default="false" name="Unittests in next_permutation.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+=======
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/misc/median_of_two_sorted_arrays.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
+<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+=======
+      <option name="WORKING_DIRECTORY" value="" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+<<<<<<< HEAD
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/freq/next_permutation.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="false" name="Unittests in decode_string.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+=======
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
+<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+=======
+      <option name="WORKING_DIRECTORY" value="" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+<<<<<<< HEAD
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/freq/decode_string.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="false" name="Unittests in backpackII.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+=======
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+<<<<<<< HEAD
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/mjbeto/backpackII.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
+=======
+      <module name="testhello" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1339,38 +1636,6 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <module name="testhello" />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -1385,26 +1650,6 @@
       <scripts />
       <node-interpreter value="project" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
@@ -1457,140 +1702,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration default="false" name="ThreeSum main" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/2sum_group/three_sum.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_pattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_legacyInformationCopiedToNew" value="true" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/freq/2sum_group/three_sum.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="max_tree" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mjbeto/max_tree.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="coins_in_a_line.py" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mjbeto/coins_in_a_line.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="flattern_binary_tree" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mjbeto/flatten_binary_tree to_linked_list.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="var_scope" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testhello" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/var_scope.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <list size="10">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.max_tree" />
-      <item index="2" class="java.lang.String" itemvalue="Python.coins_in_a_line.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python.flattern_binary_tree" />
-      <item index="4" class="java.lang.String" itemvalue="Python.var_scope" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in hamming_distance.py" />
-      <item index="6" class="java.lang.String" itemvalue="Python.fibonacci_test" />
-      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests in next_permutation.py" />
-      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests in decode_string.py" />
-      <item index="9" class="java.lang.String" itemvalue="Python tests.Unittests in backpackII.py" />
-    </list>
-    <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in backpackII.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in decode_string.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in next_permutation.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python.fibonacci_test" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in hamming_distance.py" />
-      </list>
-    </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1611,6 +1722,138 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
+    <configuration name="coins_in_a_line.py" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mjbeto/coins_in_a_line.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="flattern_binary_tree" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mjbeto/flatten_binary_tree to_linked_list.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="max_tree" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mjbeto/max_tree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="sort_mergesort" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/freq" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/freq/sort_mergesort.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="var_scope" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testhello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/var_scope.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="10">
+<<<<<<< HEAD
+      <item index="0" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
+      <item index="1" class="java.lang.String" itemvalue="Python.max_tree" />
+      <item index="2" class="java.lang.String" itemvalue="Python.coins_in_a_line.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python.flattern_binary_tree" />
+      <item index="4" class="java.lang.String" itemvalue="Python.var_scope" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in hamming_distance.py" />
+      <item index="6" class="java.lang.String" itemvalue="Python.fibonacci_test" />
+      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests in next_permutation.py" />
+      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests in decode_string.py" />
+      <item index="9" class="java.lang.String" itemvalue="Python tests.Unittests in backpackII.py" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in backpackII.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in decode_string.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in next_permutation.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python.fibonacci_test" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in hamming_distance.py" />
+=======
+      <item index="0" class="java.lang.String" itemvalue="Python.max_tree" />
+      <item index="1" class="java.lang.String" itemvalue="Python.coins_in_a_line.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python.flattern_binary_tree" />
+      <item index="3" class="java.lang.String" itemvalue="Python.var_scope" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.ThreeSum main" />
+      <item index="5" class="java.lang.String" itemvalue="Python.sort_mergesort" />
+      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in median_of_two_sorted_arrays.py" />
+      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests in combination_sum.py" />
+      <item index="8" class="java.lang.String" itemvalue="Python tests.Unittests in combination_sumII.py" />
+      <item index="9" class="java.lang.String" itemvalue="Python tests.Unittests in combination_sumIV.py" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in combination_sumIV.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in combination_sumII.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in combination_sum.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python.sort_mergesort" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in median_of_two_sorted_arrays.py" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -1629,6 +1872,7 @@
     <servers />
   </component>
   <component name="TestHistory">
+<<<<<<< HEAD
     <history-entry file="Unittests_in_backpackII_py - 2017.10.27 at 08h 46m 09s.xml">
       <configuration name="Unittests in backpackII.py" configurationId="tests" />
     </history-entry>
@@ -1658,6 +1902,37 @@
     </history-entry>
     <history-entry file="Unittests_in_next_permutation_py - 2017.10.24 at 21h 49m 00s.xml">
       <configuration name="Unittests in next_permutation.py" configurationId="tests" />
+=======
+    <history-entry file="Unittests_in_combination_sumII_py - 2017.10.28 at 18h 39m 43s.xml">
+      <configuration name="Unittests in combination_sumII.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_combination_sumII_py - 2017.10.28 at 18h 39m 54s.xml">
+      <configuration name="Unittests in combination_sumII.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_combination_sumII_py - 2017.10.28 at 20h 35m 34s.xml">
+      <configuration name="Unittests in combination_sumII.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_combination_sumII_py - 2017.10.28 at 20h 36m 25s.xml">
+      <configuration name="Unittests in combination_sumII.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_combination_sumII_py - 2017.10.28 at 20h 36m 58s.xml">
+      <configuration name="Unittests in combination_sumII.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_combination_sumII_py - 2017.10.28 at 20h 38m 54s.xml">
+      <configuration name="Unittests in combination_sumII.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_combination_sumII_py - 2017.10.28 at 20h 39m 37s.xml">
+      <configuration name="Unittests in combination_sumII.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_combination_sumII_py - 2017.10.28 at 20h 40m 05s.xml">
+      <configuration name="Unittests in combination_sumII.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_combination_sumII_py - 2017.10.28 at 20h 42m 00s.xml">
+      <configuration name="Unittests in combination_sumII.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_combination_sumIV_py - 2017.10.28 at 22h 29m 01s.xml">
+      <configuration name="Unittests in combination_sumIV.py" configurationId="tests" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1670,6 +1945,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="53" y="94" width="1363" height="787" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18849356" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
@@ -1682,7 +1958,20 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24910007" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.67264575" sideWeight="0.4685484" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4063927" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
+=======
+    <frame x="174" y="79" width="1585" height="983" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2422237" sideWeight="0.4944" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40843216" sideWeight="0.5250368" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25726143" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33948338" sideWeight="0.5033003" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38745388" sideWeight="0.4749632" order="5" side_tool="false" content_ui="tabs" x="79" y="280" width="1346" height="395" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24884182" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6863469" sideWeight="0.46907216" order="12" side_tool="false" content_ui="tabs" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20545869" sideWeight="0.5056" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53136533" sideWeight="0.49058148" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955465" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1694,8 +1983,9 @@
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6594982" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289941" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289941" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2166,23 +2456,23 @@
           <option name="timeStamp" value="160" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/misc/combination_sum.py</url>
-          <line>94</line>
+          <url>file://$PROJECT_DIR$/freq/combination_sum.py</url>
+          <line>181</line>
           <option name="timeStamp" value="162" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/misc/combination_sumII.py</url>
-          <line>47</line>
+          <url>file://$PROJECT_DIR$/freq/combination_sumII.py</url>
+          <line>115</line>
           <option name="timeStamp" value="163" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/misc/combination_sumIII.py</url>
-          <line>78</line>
+          <url>file://$PROJECT_DIR$/freq/combination_sumIII.py</url>
+          <line>99</line>
           <option name="timeStamp" value="164" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/misc/combination_sumIII.py</url>
-          <line>73</line>
+          <url>file://$PROJECT_DIR$/freq/combination_sumIII.py</url>
+          <line>94</line>
           <option name="timeStamp" value="165" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -3656,6 +3946,7 @@
           <option name="timeStamp" value="636" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+<<<<<<< HEAD
           <url>file://$PROJECT_DIR$/freq/longest_palindromic_substring.py</url>
           <line>163</line>
           <option name="timeStamp" value="638" />
@@ -3695,6 +3986,32 @@
           <line>48</line>
           <option name="timeStamp" value="649" />
         </line-breakpoint>
+=======
+          <url>file://$PROJECT_DIR$/freq/combination_sum.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="640" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/freq/combination_sum.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="641" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/freq/combination_sum.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="642" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/freq/combination_sumII.py</url>
+          <line>143</line>
+          <option name="timeStamp" value="645" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/freq/combination_sumII.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="646" />
+        </line-breakpoint>
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -3703,11 +4020,16 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
+<<<<<<< HEAD
       <option name="time" value="650" />
+=======
+      <option name="time" value="647" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/freq/longest_common_prefix.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
@@ -3776,6 +4098,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/freq/merge_k_sorted_lists.py">
+=======
+    <entry file="file://$PROJECT_DIR$/freq/palindrome_linked_list.py">
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-648">
           <caret line="70" column="45" lean-forward="true" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
@@ -3942,6 +4267,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/freq/hamming_distance.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -3966,6 +4292,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/freq/word_break.py">
+=======
+    <entry file="file://$PROJECT_DIR$/test/python_coroutine.py">
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1635">
           <caret line="109" column="35" lean-forward="false" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
@@ -3988,6 +4317,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/freq/longest_increasing_subsequence.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1284">
@@ -4000,6 +4330,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/aaa.py">
+=======
+    <entry file="file:///usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py" />
+    <entry file="file://$PROJECT_DIR$/freq/top_k_frequent_elements.py">
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
@@ -4023,52 +4357,151 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/misc/maximal_rectangle.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="150">
           <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding />
+=======
+        <state relative-caret-position="1495">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/freq/decode_string.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1380">
           <caret line="92" column="51" lean-forward="false" selection-start-line="92" selection-start-column="51" selection-end-line="92" selection-end-column="51" />
           <folding />
+=======
+        <state relative-caret-position="23">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mjbeto/backpackIII.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="705">
           <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+=======
+        <state relative-caret-position="3979">
+          <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freq/longest_substring_without_repeating_characters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/mjbeto/backpackIV.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+=======
+    <entry file="file://$PROJECT_DIR$/test/test_asyncio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="21" column="89" lean-forward="false" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_asyncio1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mjbeto/data_stream_median.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="33" column="3" lean-forward="false" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/misc/median_of_two_sorted_arrays.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freq/count_of_smaller_numbers_after_self.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="e#3840#111499#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freq/add_two_numbers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/mjbeto/backpackV.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+=======
+    <entry file="file://$PROJECT_DIR$/test/my_decoratorIV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/my_decoratorII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/my_decorator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/mjbeto/backpackII.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="63" lean-forward="false" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
+=======
+    <entry file="file://$PROJECT_DIR$/test/my_decoratorIII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/mjbeto/backpackVI.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -4081,23 +4514,92 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="63" column="29" lean-forward="false" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+=======
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/unittest/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3266">
+          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/freq/sort_mergesort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freq/combination_sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+          <folding>
+            <element signature="e#2495#3778#0" expanded="false" />
+            <element signature="e#3810#7112#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="652" column="0" lean-forward="false" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/misc/coin_changeII.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+=======
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/unittest/suite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/misc/coin_change.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="56" column="24" lean-forward="false" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
+=======
+    <entry file="file://$PROJECT_DIR$/freq/combination_sumII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="34" column="74" lean-forward="false" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+          <folding>
+            <element signature="e#1468#1755#0" expanded="false" />
+            <element signature="e#1818#2314#0" expanded="false" />
+            <element signature="e#2380#2838#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freq/combination_sumIII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+>>>>>>> 646400b044319e0fba89961c53b8bb6a528cb0f8
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freq/combination_sumIV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="107" column="25" lean-forward="false" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+          <folding>
+            <element signature="e#2011#2991#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
