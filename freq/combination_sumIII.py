@@ -36,8 +36,29 @@ Hide Similar Problems (M) Combination Sum
 import unittest
 
 
-
 class Solution(object):
+    def combinationSum3(self, k, n):
+        """
+        :type k: int
+        :type n: int
+        :rtype: List[List[int]]
+        """
+        if k <= 0 or n <= 0:
+            return []
+        res = []
+        self.helper(k, n, [], 1, res)
+        return res
+
+    def helper(self, cnt, remain, combi, idx, res):
+        if cnt == 0 and remain == 0:
+            res.append(combi)
+        if cnt < 0 or remain < 0 or remain < idx:
+            return
+        for num in range(idx, 10):
+            self.helper(cnt - 1, remain - num, combi + [num], num + 1, res)  # should be num+1, not idx+1
+
+
+class Solution1(object):
     def combinationSum3(self, k, n): # 49ms, 79.67%, remove if before each calling, make it faster
         """
         :type k: int

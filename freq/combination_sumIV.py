@@ -60,6 +60,55 @@ import unittest
 
 
 class Solution(object):
+    def combinationSum4(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        if not nums or target <= 0:
+            return 0
+        dp = [0 for _ in range(target + 1)]
+        dp[0] = 1  # important, otherwise result will be all 0
+        nums.sort()  # important, otherwise can't use if num>i then break in the following
+        for i in range(target + 1):
+            for num in nums:
+                if num > i:
+                    break
+                if i - num >= 0:
+                    dp[i] += dp[i - num]
+        return dp[target]
+
+    def combinationSum_wrong(self, nums, target):
+        """
+        this is actually combination with unlimited cnts for ele in nums
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        if not nums or target <= 0:
+            return 0
+        dp = [0 for _ in range(target + 1)]
+        # dp[0] = 1 # should add this
+        for num in nums:
+            if num > target:  # should add this check, otherwise out of index, and more efficient
+                break
+            # for j in range(target-num, 0, -1):  # can't go reversed order, think about 1+1=2, when [1], dp[2] = 1 too
+            #     # if dp[j] > 0:
+            #     dp[j+num] += dp[j]
+            dp[num] += 1
+            for j in range(1, target + 1):
+                if j + num > target:
+                    break
+                dp[j + num] += dp[j]
+                print("num, j, dp == ", num, j, dp)
+
+
+                # dp[num] += 1  # put latest, not to pollute updating other dp[j+num] values
+        return dp[target]
+
+class Solution1(object):
+
     def combinationSum4(self, nums, target): #49ms, 96.54%
         """
         combinationSum4(x): f(x)
@@ -83,7 +132,7 @@ class Solution(object):
     def combinationSum4_ref(self, nums, target): #65ms, 72%
         # a different way to think about the dp. not as fast though
         dp = [1] + [0] * target
-        for i in xrange(target + 1):
+        for i in range(target + 1):
             for x in nums:
                 if i + x <= target:
                     dp[i + x] += dp[i]
