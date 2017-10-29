@@ -194,3 +194,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+"""
+http://www.cnblogs.com/grandyang/p/5705750.html
+
+"""
