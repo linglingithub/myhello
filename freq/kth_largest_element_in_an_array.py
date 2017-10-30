@@ -56,8 +56,80 @@ Easy Median
 """
 
 
-
 class Solution(object):
+    def findKthLargest(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        if not nums:
+            return []
+        l, r = 0, len(nums) - 1
+        pos = self.quick_select(nums, l, r)
+        while pos != k - 1:
+            print("pos: ", pos, nums)
+            if pos < k - 1:
+                pos = self.quick_select(nums, pos + 1, r)
+            else:
+                pos = self.quick_select(nums, l, pos - 1)
+        return nums[k - 1]
+
+    def quick_select(self, nums, l, r):
+        """
+        bigger -> smaller
+        """
+        if l == r:
+            return l
+        i, j = l - 1, r - 1  # i for the end of good parts ( bigger vals)
+        pivot = nums[r]
+        # if i == j:
+        #     if nums[i] < nums[r]:
+        #         nums[i], nums[r] = nums[r], nums[j]
+        #     return r
+        while i < r:
+            while i + 1 <= j and nums[i + 1] > pivot:
+                i += 1
+            while j > i and nums[j] < pivot:
+                # can't put <= here, otherwise wrong for case4, infinite loop because
+                # duplicated values are not sorted, checkout stdout
+                # hint -==> when looking for max kth value, do NOT miss out the bigger or equal values,
+                # therefore, for nums[j] that == pivot should be moved to left good part too
+                j -= 1
+            # print("l, r, == i, j ==: ", l, r, i, j)
+            if i >= j:
+                break
+            nums[i + 1], nums[j] = nums[j], nums[i + 1]
+            # print("nums: ", nums)
+            i += 1
+        if i + 1 <= r:  # should include =
+            nums[i + 1], nums[r] = nums[r], nums[i + 1]
+            i += 1  # don't forget this
+        # print("sorted nums: ", nums)
+        return i
+
+    def findKthLargest1(self, nums, k):
+        """
+        using min- heap
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        import heapq
+        heap = []
+        for num in nums:
+            #print("status... ", heap)
+            if len(heap) < k:
+                heapq.heappush(heap, num)
+                continue   # important !!!
+            if num > heap[0]:
+                tmp = heapq.heappop(heap)
+                heapq.heappush(heap, num)
+                #print("poping... ", tmp, heap)
+        return heap[0]
+
+
+class Solution1(object):
     def findKthLargest(self, nums, k): #quick select
         """
         :type nums: List[int]
@@ -111,7 +183,7 @@ class Solution(object):
         heap = []
         for num in nums:
             heapq.heappush(heap, num)
-        for _ in xrange(len(nums)-k):
+        for _ in range(len(nums)-k):
             heapq.heappop(heap)
         return heapq.heappop(heap)
 
@@ -164,6 +236,13 @@ class SolutionTester(unittest.TestCase):
         nums = [1,2,3,4,5]
         k = 5
         answer = 1
+        result = self.sol.findKthLargest(nums, k)
+        self.assertEqual(answer, result)
+
+    def test_case4(self):
+        nums = [3,2,3,1,2,4,5,5,6,7,7,8,2,3,1,1,1,10,11,5,6,2,4,7,8,5,6]
+        k = 20
+        answer = 2
         result = self.sol.findKthLargest(nums, k)
         self.assertEqual(answer, result)
 
