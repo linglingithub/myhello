@@ -41,14 +41,84 @@ Hard
 
 import unittest
 
+
 class TrieNode(object):
+    def __init__(self):
+        self.children = {}
+        self.is_word = False
+        self.used_word = False
+
+
+class Trie(object):
+    def __init__(self, node):
+        self.root = node
+
+    def add_word(self, word):
+        cur = self.root
+        for char in word:
+            if char not in cur.children:
+                cur.children[char] = TrieNode()
+            cur = cur.children[char]
+        cur.is_word = True
+
+    def is_word(self, word):
+        cur = self.root
+        for char in word:
+            cur = cur.children.get(char, None)
+            if not cur:
+                return False
+        return cur.is_word
+
+
+class Solution(object):
+    def findWords(self, board, words):
+        """
+        :type board: List[List[str]]
+        :type words: List[str]
+        :rtype: List[str]
+        """
+        if not board or not board[0]:
+            return []
+        res = []
+        root = TrieNode()
+        tree = Trie(root)
+        for word in words:
+            tree.add_word(word)
+
+        for i in range(len(board)):
+            for j in range(len(board[0])):
+                self.dfs(board, i, j, root, "", res)
+        return res  # remove repeated words from board, list(set(res))
+
+    def dfs(self, board, x, y, node, chars, res):
+        # if node.is_word:   # should not do it here, will cause duplicated results
+        #     res.append(chars)
+        #     return
+        if not (0 <= x < len(board) and 0 <= y < len(board[0])) or board[x][y] == '.':
+            return
+        tmp = board[x][y]
+        if tmp in node.children:
+            board[x][y] = "."
+            delta = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+            next_node = node.children.get(tmp)
+            if next_node.is_word:
+                if not next_node.used_word:
+                    res.append(chars + tmp)
+                    next_node.used_word = True  # add this dynamically to avoid repeated words
+            for dx, dy in delta:
+                nx, ny = x + dx, y + dy
+                self.dfs(board, nx, ny, next_node, chars + tmp, res)
+            board[x][y] = tmp
+
+
+class TrieNode1(object):
     def __init__(self):
         self.children = {}
         self.is_word = False
         self.new_word = True  # add this for case4, duplicated results
 
 
-class TrieTree(object):
+class TrieTree1(object):
     def __init__(self):
         self.root = TrieNode()
 
@@ -85,7 +155,7 @@ class TrieTree(object):
 
 
 
-class Solution(object): #722ms, 28% --> TLE (once) --> 24% --> 22%, 35%, 29%, 27%
+class Solution1(object): #722ms, 28% --> TLE (once) --> 24% --> 22%, 35%, 29%, 27%
     def findWords(self, board, words):
         """
         :type board: List[List[str]]

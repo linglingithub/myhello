@@ -30,6 +30,43 @@ import unittest
 
 
 class Solution(object):
+    def exist(self, board, word):
+        """
+        :type board: List[List[str]]
+        :type word: str
+        :rtype: bool
+        """
+        if not board or not board[0]:
+            return False
+        m, n = len(board), len(board[0])
+        for i in range(m):
+            for j in range(n):
+                if self.dfs(board, word, i, j, 0):
+                    return True
+        return False
+
+    def dfs(self, board, word, x, y, idx):
+        res = False
+        if idx == len(word):
+            return True
+        delta = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+        if board[x][y] == word[idx]:
+            if idx == len(word) - 1:  # add this check so [["a"]], "a" case is good
+                return True
+            tmp = board[x][y]
+            board[x][y] = '.'
+            for dx, dy in delta:
+
+                nx, ny = x + dx, y + dy
+                # print("nx, ny: ", x, y, nx, ny)
+                if 0 <= nx < len(board) and 0 <= ny < len(board[0]) and board[nx][ny] != '.':  # not system design
+                    res = self.dfs(board, word, nx, ny, idx + 1)
+                    if res:
+                        break
+            board[x][y] = tmp
+        return res
+
+class Solution1(object):
     def exist(self, board, word):  #315ms, 79%, use matrix as mask to save time, use
         """
         :type board: List[List[str]]
@@ -236,7 +273,31 @@ def main():
 if __name__ == "__main__":
     main()
 
+"""
+public boolean exist(char[][] board, String word) {
+    char[] w = word.toCharArray();
+    for (int y=0; y<board.length; y++) {
+    	for (int x=0; x<board[y].length; x++) {
+    		if (exist(board, y, x, w, 0)) return true;
+    	}
+    }
+    return false;
+}
 
+private boolean exist(char[][] board, int y, int x, char[] word, int i) {
+	if (i == word.length) return true;
+	if (y<0 || x<0 || y == board.length || x == board[y].length) return false;
+	if (board[y][x] != word[i]) return false;
+	board[y][x] ^= 256;
+	boolean exist = exist(board, y, x+1, word, i+1)
+		|| exist(board, y, x-1, word, i+1)
+		|| exist(board, y+1, x, word, i+1)
+		|| exist(board, y-1, x, word, i+1);
+	board[y][x] ^= 256;
+	return exist;
+}
+
+"""
 
 #-*- coding:utf-8 -*-
 #coding=utf-8
