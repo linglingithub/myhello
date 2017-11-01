@@ -40,7 +40,77 @@ from util.tree_node import TreeNode
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
+    def isSymmetric(self, root):
+        """
+        iterative way with STACK
+        :type root: TreeNode
+        :rtype: bool
+        """
+        if not root:
+            return True
+        stack = []
+        stack.append((root.left, root.right))
+
+        while stack:
+            left, right = stack.pop()
+            if not left and not right:
+                continue
+            if not left and right or left and not right or left and right and left.val != right.val:
+                return False
+            stack.append((left.left, right.right))
+            stack.append((left.right, right.left))
+        return True
+
+    def isSymmetric2(self, root):
+        """
+        iterative way with QUEUE
+        :type root: TreeNode
+        :rtype: bool
+        """
+        if not root:
+            return True
+        from collections import deque
+        queue = deque()
+        queue.append(root.left)
+        queue.append(root.right)
+
+        while queue:
+            left = queue.popleft()
+            right = queue.popleft()
+            if not left and not right:
+                continue
+            if not left and right or left and not right or left and right and left.val != right.val:
+                return False
+            queue.append(left.left)
+            queue.append(right.right)
+            queue.append(left.right)
+            queue.append(right.left)
+        return True
+
+
+    def isSymmetric1(self, root):
+        """
+        recursive way
+        :type root: TreeNode
+        :rtype: bool
+        """
+        if not root:
+            return True
+        return self.helper(root.left, root.right)
+
+    def helper(self, left, right):
+        if not left and not right:
+            return True
+        if left and not right or right and not left:
+            return False
+        if left.val != right.val:
+            return False
+        return self.helper(left.left, right.right) and self.helper(left.right, right.left)
+
+
+class Solution1(object):
     def isSymmetric(self, root): #recursive way, 49ms, 56%
         """
         :type root: TreeNode
@@ -129,7 +199,58 @@ def main():
 if __name__ == "__main__":
     main()
 
+"""
 
+
+python iterative way
+
+# Iteratively Solution
+class Solution:
+  def isSymmetric(self, root):
+    if root is None:
+      return True
+
+    stack = [[root.left, root.right]]
+
+    while len(stack) > 0:
+      pair = stack.pop()
+      left = pair[0]
+      right = pair[1]
+
+      if left is None and right is None:
+        continue
+      if left is None or right is None:
+        return False
+      if left.val == right.val:
+        stack.append([left.left, right.right])
+        stack.append([left.right, right.left])
+      else:
+        return False
+    return True
+
+
+java version iterative way
+
+ public boolean isSymmetric(TreeNode root) {
+        Queue<TreeNode> q = new LinkedList<TreeNode>();
+        if(root == null) return true;
+        q.add(root.left);
+        q.add(root.right);
+        while(q.size() > 1){
+            TreeNode left = q.poll(),
+                     right = q.poll();
+            if(left== null&& right == null) continue;
+            if(left == null ^ right == null) return false;
+            if(left.val != right.val) return false;
+            q.add(left.left);
+            q.add(right.right);
+            q.add(left.right);
+            q.add(right.left);            
+        }
+        return true;
+    }
+
+"""
 
 #-*- coding:utf-8 -*-
 #coding=utf-8
