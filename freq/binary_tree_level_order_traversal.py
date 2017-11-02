@@ -40,7 +40,31 @@ from util.tree_node import TreeNode
 #         self.right = None
 
 
-class Solution:
+class Solution(object):
+    def levelOrder(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
+        if not root:
+            return []
+        res = []
+        queue = [root]
+        while queue:
+            children = []
+            cur = []
+            while queue:  # no need to modify que, for better efficiency, just use for node in queue is good
+                tmp = queue.pop(0)
+                cur.append(tmp.val)
+                if tmp.left:
+                    children.append(tmp.left)
+                if tmp.right:
+                    children.append(tmp.right)
+            res.append(cur)
+            queue = children
+        return res
+
+class Solution2:
     """
     @param root: The root of binary tree.
     @return: Level order in a list of lists of integers
