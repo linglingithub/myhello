@@ -44,7 +44,96 @@ LFU Cache Design In-Memory File System Design Compressed String Iterator
 """
 
 
+class DoubleLinkedNode(object):
+    def __init__(self, key, val):
+        self.key = key
+        self.val = val
+        self.pre = None
+        self.next = None
+
+
+class DoubledLinkedList(object):
+    def __init__(self, head):
+        self.head = head
+        self.tail = head
+
+    def move_to_head(self, node):
+        old_pre = node.pre
+        old_next = node.next
+        old_pre.next = old_next
+        if old_next:
+            old_next.pre = old_pre
+        else:
+            self.tail = old_pre
+        self.insert(node)
+
+    def remove_tail(self):
+        tmp = self.tail
+        old_pre = self.tail.pre
+        old_pre.next = None
+        self.tail.pre = None
+        self.tail = old_pre
+        return tmp.key
+
+    def insert(self, node):
+        tmp = self.head.next
+        self.head.next = node
+        node.pre = self.head
+        node.next = tmp
+        if tmp:
+            tmp.pre = node
+        else:
+            self.tail = node
+
+
 class LRUCache(object):
+    def __init__(self, capacity):
+        """
+        :type capacity: int
+        """
+        self.max_cnt = capacity
+        self.cnt = 0
+        self.vals = {}
+        dummy = DoubleLinkedNode('dummy', -1)
+        self.linked_list = DoubledLinkedList(dummy)
+
+    def get(self, key):
+        """
+        :type key: int
+        :rtype: int
+        """
+        node = self.vals.get(key, None)
+        if node:
+            self.linked_list.move_to_head(node)
+            return node.val  # don't forget this
+        return -1
+
+    def put(self, key, value):
+        """
+        :type key: int
+        :type value: int
+        :rtype: void
+        """
+        node = self.vals.get(key, None)
+        if node:
+            # should update the key, val here, old same key might have new val!!!
+            node.val = value  # !!!important
+            self.linked_list.move_to_head(node)
+            return  # no need to return, but should return to quit !!!!
+            # return node.val    # no need to return
+        node = DoubleLinkedNode(key, value)
+        if self.cnt >= self.max_cnt:
+            old_key = self.linked_list.remove_tail()
+            #print("old_key", old_key)
+            del self.vals[old_key]
+            self.cnt -= 1
+        self.vals[key] = node
+        self.linked_list.insert(node)
+        self.cnt += 1
+
+####################################################################################
+
+class LRUCache1(object):
     def __init__(self, capacity):
         """
         :type capacity: int
