@@ -27,7 +27,52 @@ Easy
 import unittest
 
 
-class Solution:
+class Solution(object):
+
+    def isPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        if not s:
+            return True
+        i, j = 0, len(s)-1
+        while i < j:
+            while i < j and not s[i].isalnum():
+                i += 1
+            while i < j and not s[j].isalnum():
+                j -= 1
+            if i < j and s[i].lower() != s[j].lower():
+                return False
+            i += 1
+            j -= 1
+        return True
+
+    def isPalindrome1(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        if not s:
+            return True
+        i, j = 0, len(s) - 1
+        while i < j:
+            while i < len(s) and not self.is_letter_num(s[i]):  # don't forget to check i, j boundary
+                i += 1
+            while j >= 0 and not self.is_letter_num(s[j]):
+                j -= 1
+            if i < j and s[i].lower() != s[j].lower():  # check i, j valid here
+                return False
+            i += 1  # don't forget to move i, j
+            j -= 1
+        return True
+
+    def is_letter_num(self, char):
+        if '0' <= char <= '9' or 'a' <= char <= 'z' or 'A' <= char <= "Z":
+            return True
+        return False
+
+class Solution1:
     # @param {string} s A string
     # @return {boolean} Whether the string is a valid palindrome
     def isPalindrome(self, s):
