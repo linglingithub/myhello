@@ -29,7 +29,42 @@ from util.list_node import ListNode
 #         self.val = x
 #         self.next = None
 
-class Solution:
+class Solution(object):
+    def reverseList(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        if not head:
+            return
+        return self.reverse(None, head)
+
+    def reverse(self, left, head):
+        if not head:
+            return left
+        mid = head
+        right = mid.next
+        mid.next = left
+        return self.reverse(mid, right)
+
+    def reverseList_iter(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        if not head:
+            return
+        left, mid = head, head.next
+        left.next = None  # important for the first node, otherwise wrong for TLE
+        right = None
+        while mid:
+            right = mid.next
+            mid.next = left
+            left = mid
+            mid = right
+        return left
+
+class Solution2:
     """
     @param head: The first node of the linked list.
     @return: You should return the head of the reversed linked list. 
@@ -133,7 +168,7 @@ class SolutionTester(unittest.TestCase):
         nums = [1,2,3,4,5]
         answer = [5,4,3,2,1]
         result = self.sol.reverseList(ListNode.parseArray2List(nums))
-        print ListNode.parseList2Array(result)
+        prin( ListNode.parseList2Array(result))
         self.assertEqual(answer, ListNode.parseList2Array(result))
 
 
