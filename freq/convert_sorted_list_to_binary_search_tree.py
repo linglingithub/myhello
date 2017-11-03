@@ -116,6 +116,53 @@ def main():
 if __name__ == "__main__":
     main()
 
+"""
+three ways
+(1) if extra O(n) space allowed, convert to array, then do BST generation
+(2) if not, use slow/fast pointer to find mid link node, gen root, then recursively generate left child and right child.
+boundary to check head and tail of the linked node 
+(3) similar to (2), but instead of slow/faster pointer, count the number of nodes, then everytime just do one pointer,
+and go count/2 steps.
 
+
+private ListNode node;
+
+public TreeNode sortedListToBST(ListNode head) {
+	if(head == null){
+		return null;
+	}
+	
+	int size = 0;
+	ListNode runner = head;
+	node = head;
+	
+	while(runner != null){
+		runner = runner.next;
+		size ++;
+	}
+	
+	return inorderHelper(0, size - 1);
+}
+
+public TreeNode inorderHelper(int start, int end){
+	if(start > end){
+		return null;
+	}
+	
+	int mid = start + (end - start) / 2;
+	TreeNode left = inorderHelper(start, mid - 1);
+	
+	TreeNode treenode = new TreeNode(node.val);
+	treenode.left = left;
+	node = node.next;
+
+	TreeNode right = inorderHelper(mid + 1, end);
+	treenode.right = right;
+	
+	return treenode;
+}
+
+
+"""
 
 #-*- coding:utf-8 -*-

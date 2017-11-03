@@ -24,7 +24,30 @@ from util.tree_node import TreeNode
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
+    def sortedArrayToBST(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: TreeNode
+        """
+        if not nums:
+            return None
+        return self.gen_tree(nums, 0, len(nums) - 1)
+
+    def gen_tree(self, nums, left, right):
+        if left > right:
+            return None
+        if left == right:
+            return TreeNode(nums[left])
+        mid = left + int((right - left) / 2)
+        root = TreeNode(nums[mid])
+        root.left = self.gen_tree(nums, left, mid - 1)
+        root.right = self.gen_tree(nums, mid + 1, right)
+        return root
+
+
+class Solution1(object):
     def sortedArrayToBST(self, nums): #92ms, 77%
         """
         :type nums: List[int]
