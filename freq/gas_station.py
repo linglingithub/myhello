@@ -25,8 +25,45 @@ Medium
 
 import unittest
 
-
 class Solution(object):
+    def canCompleteCircuit(self, gas, cost):
+        """
+        :type gas: List[int]
+        :type cost: List[int]
+        :rtype: int
+        """
+        if sum(gas) < sum(cost):
+            return -1
+        idx = 0
+        res = 0
+        diff_sum = 0
+        while idx < len(gas):
+            if diff_sum < 0:
+                diff_sum = 0
+                res = idx
+            diff_sum += gas[idx] - cost[idx]
+            idx += 1
+        return res if diff_sum >= 0 else -1
+
+    def canCompleteCircuit_wrong(self, gas, cost):
+        """
+        :type gas: List[int]
+        :type cost: List[int]
+        :rtype: int
+        """
+        if sum(gas) < sum(cost):
+            return -1
+        diff = [gas[i] - cost[i] for i in range(len(gas))]
+        min_diff = 0
+        min_idx = 0
+        for i in range(len(diff)):
+            if diff[i] <= min_diff:
+                min_diff = diff[i]
+                min_idx = i
+        return (min_idx+1) % len(diff)
+
+
+class Solution1(object):
     def canCompleteCircuit(self, gas, cost): #55ms, 36.1%
         """
         :type gas: List[int]
@@ -72,6 +109,20 @@ class SolutionTester(unittest.TestCase):
         self.assertEqual(answer, result)
 
 
+    def test_case3(self):
+        gas = [1,2,3]
+        cost = [3,2,2]
+        answer = -1
+        result = self.sol.canCompleteCircuit(gas, cost)
+        self.assertEqual(answer, result)
+
+    def test_case4(self):
+        gas = [2, 3, 1]
+        cost = [3, 1, 2]
+        answer = 1
+        result = self.sol.canCompleteCircuit(gas, cost)
+        self.assertEqual(answer, result)
+
 def main():
     suite = unittest.TestLoader().loadTestsFromTestCase(SolutionTester)
     unittest.TextTestRunner(verbosity=2).run(suite)
@@ -98,7 +149,8 @@ diff[i] = gas[i] – cost[i]  0<=i <n
 
 2. 如果能，这个起点在哪里？
 
-第一个问题，很简单，我对diff数组做个加和就好了，leftGas = ∑diff[i]， 如果最后leftGas是正值，那么肯定存在这么一个起始点。如果是负值，那说明，油的损耗大于油的供给，不可能有解。得到第一个问题的答案只需要O(n)。
+第一个问题，很简单，我对diff数组做个加和就好了，leftGas = ∑diff[i]， 如果最后leftGas是正值，那么肯定存在这么一个起始点。如果是负值，
+那说明，油的损耗大于油的供给，不可能有解。得到第一个问题的答案只需要O(n)。
 
 对于第二个问题，起点在哪里？
 
