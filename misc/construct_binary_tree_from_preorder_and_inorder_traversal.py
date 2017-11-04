@@ -28,7 +28,29 @@ sys.setrecursionlimit(10000)
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
+    def buildTree(self, preorder, inorder):
+        """
+        :type preorder: List[int]
+        :type inorder: List[int]
+        :rtype: TreeNode
+        """
+        return self.helper(preorder, inorder, 0, len(preorder) - 1, 0, len(preorder) - 1)
+
+    def helper(self, preorder, inorder, l1, r1, l2, r2):
+        if l1 > r1:
+            return None
+        root = TreeNode(preorder[l1])
+        idx = l2
+        while idx <= r2 and inorder[idx] != preorder[l1]:
+            idx += 1
+        lsize = idx - l2
+        root.left = self.helper(preorder, inorder, l1 + 1, l1 + lsize, l2, idx)
+        root.right = self.helper(preorder, inorder, l1 + lsize + 1, r1, idx + 1, r2)
+        return root
+
+class Solution1(object):
 
     # http://chaoren.is-programmer.com/posts/44860.html discussion
     # slicing of the list will create new list, the original ones won't be release in RAM, will cause overflow
@@ -103,3 +125,15 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+"""
+
+def buildTree(self, preorder, inorder):
+    if inorder:
+        ind = inorder.index(preorder.pop(0))
+        root = TreeNode(inorder[ind])
+        root.left = self.buildTree(preorder, inorder[0:ind])
+        root.right = self.buildTree(preorder, inorder[ind+1:])
+        return root
+
+"""
