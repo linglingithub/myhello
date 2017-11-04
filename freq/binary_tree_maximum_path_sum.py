@@ -34,6 +34,27 @@ from util.tree_node import TreeNode
 #         self.right = None
 
 class Solution(object):
+    def maxPathSum(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        res = [None]
+        self.helper(root, res)
+        return res[0]
+
+    def helper(self, root, res):
+        if not root:
+            return 0
+        v1 = root.val
+        v2 = self.helper(root.left, res)
+        v3 = self.helper(root.right, res)
+        tmp = max(v1, v1 + v2, v1 + v3, v1 + v2 + v3)
+        # can't put v1+v2+v3 into return value for parent calculation, can use for max res
+        res[0] = max(tmp, res[0]) if res[0] is not None else tmp
+        return max(v1, v1 + v2, v1 + v3)  # return tmp is wrong
+
+class Solution1(object):
     def maxPathSum(self, root): # 142ms, 93.03%
         """
         :type root: TreeNode
