@@ -39,6 +39,73 @@ from util.tree_node import TreeNode
 #         self.right = None
 
 class Solution(object):
+    def zigzagLevelOrder(self, root):
+        """
+        use a stack
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
+        if not root:
+            return []
+        stack = [root]
+        res = []
+        forward = True
+        while stack:
+            res.append([])
+            children = []
+            while stack:
+                node = stack.pop()
+                res[-1].append(node.val)
+                if forward:
+                    if node.left:
+                        children.append(node.left)
+                    if node.right:
+                        children.append(node.right)
+                else:
+                    if node.right:
+                        children.append(node.right)
+                    if node.left:
+                        children.append(node.left)
+
+            stack = children
+            forward = not forward  # don't forget this
+        return res
+
+    def zigzagLevelOrder1(self, root):
+        """
+        use a queue
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
+        if not root:
+            return []
+        level = [root]
+        res = []
+        forward = True
+        while level:
+            res.append([])
+            children = []
+            if forward:
+                for node in level:
+                    res[-1].append(node.val)
+                    if node.left:
+                        children.append(node.left)
+                    if node.right:
+                        children.append(node.right)
+            else:
+                for i in range(len(level)-1, -1, -1):
+                    node = level[i]
+                    res[-1].append(node.val)
+                    if node.right:
+                        children.insert(0, node.right)
+                    if node.left:
+                        children.insert(0, node.left)
+            level = children
+            forward = not forward  # don't forget this
+        return res
+
+
+class Solution1(object):
     def zigzagLevelOrder(self, root): # 39ms, 86%, change to shuffle the way to insert into level,
         """
         [1,23,45 67]
