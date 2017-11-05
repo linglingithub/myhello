@@ -19,6 +19,26 @@ import unittest
 
 
 class Solution(object):
+    def wordBreak(self, s, wordDict):
+        """
+        :type s: str
+        :type wordDict: List[str]
+        :rtype: bool
+        """
+        n = len(s)
+        dp = [False for _ in range(n+1)]
+        dp[0] = True
+        for i in range(1, n+1):
+            for j in range(i):
+                if dp[j] and s[j:i] in wordDict:
+                    # note!!! should use j, i here for s[], in dp, i, j means length, in s, should minus one
+                    # originally use s[j+1, i+1] was wrong
+                    dp[i] = True
+                    break
+            #print("dp: ", dp)
+        return dp[n]
+
+class Solution1(object):
     def wordBreak1(self, s, wordDict): #48ms, 76%
         """
         :type s: str
@@ -108,6 +128,8 @@ dp[0] = true
 dp[i] = true if and only if:
 1. 存在一个i-1>=k>=0，使s[k:i-1]存在于dict中。
 2. s[0: k-1]可以被break，即dp[k] = true。
+
+
 
 """
 

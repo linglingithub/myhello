@@ -27,6 +27,111 @@ import unittest
 
 
 class Solution(object):
+    def wordBreak(self, s, wordDict):
+        if not s:
+            return []
+        cache = {}
+        self.parse_str(s, 0, wordDict, cache)
+        return cache.get(0, [])
+
+    def parse_str(self, s, idx, wordDict, cache):
+        # print(idx, " -- ", cache)
+        if idx in cache:
+            return cache[idx]
+        tmp = []
+        if s[idx:] in wordDict:   # compare to method2, should be s[idx:] instead of s
+            tmp.append(s[idx:])
+        for i in range(idx, len(s) - 1):  # i start from idx
+            substr = s[idx:i + 1]    # substr from idx
+            if substr not in wordDict:
+                continue
+            right_list = self.parse_str(s, i + 1, wordDict, cache)
+            for right_path in right_list:
+                tmp.append(substr + " " + right_path)
+        cache[idx] = tmp
+        return cache[idx]
+
+    def wordBreak2(self, s, wordDict):
+        if not s:
+            return []
+        cache = {}
+        self.parse_str(s, wordDict, cache)
+        return cache.get(s, [])
+
+    def parse_str2(self, s, wordDict, cache):
+        if s in cache:
+            return cache[s]
+        tmp = []
+        if s in wordDict:
+            tmp.append(s)
+        for i in range(0, len(s) - 1):
+            substr = s[:i + 1]
+            if substr not in wordDict:
+                continue
+            right = s[i + 1:]
+            right_list = self.parse_str2(right, wordDict, cache)
+            for right_path in right_list:
+                tmp.append(substr + " " + right_path)
+        cache[s] = tmp
+        return tmp
+
+    def wordBreak1(self, s, wordDict):
+        if not s:
+            return []
+        res = []
+        cache = self.init_right_breakable(s, wordDict)
+        self.helper(s, 0, [], wordDict, cache, res)
+        return res
+
+    def init_right_breakable(self, s, wordDict):
+        cache = {len(s): True}
+        for i in range(len(s) - 1, -1, -1):
+            for j in range(i, len(s)):
+                substr = s[i: j + 1]
+                if substr in wordDict and cache.get(j + 1):
+                    cache[i] = True
+                    break
+        return cache
+
+    def helper(self, s, idx, path, wordDict, cache, res):
+        if idx >= len(s):
+            res.append(" ".join(path))
+            return
+        for i in range(idx, len(s)):
+            substr = s[idx: i + 1]
+            if substr in wordDict and cache.get(i + 1):
+                self.helper(s, i + 1, path + [substr], wordDict, cache, res)
+
+    def wordBreak_TLE(self, s, wordDict):
+        """
+        :type s: str
+        :type wordDict: List[str]
+        :rtype: List[str]
+        """
+        res = []
+        self.helper(s, 0, [], res, wordDict)
+        return res
+
+    def helper_TLE2(self, s, idx, path, res, wordDict):
+        if idx >= len(s):
+            res.append(" ".join(path))
+            return
+        for w in wordDict:
+            wlen = len(w)
+            if wlen + idx - 1 <= len(s) and s[idx: idx + wlen] == w:
+                self.helper(s, idx + wlen, path + [w], res, wordDict)
+
+    def helper_TLE(self, s, idx, path, res, wordDict):
+        if idx >= len(s):
+            res.append(" ".join(path))
+            return
+        for i in range(idx, len(s)):
+            substr = s[idx: i + 1]
+            if substr in wordDict:
+                self.helper(s, i + 1, path + [substr], res, wordDict)
+
+
+class Solution1(object):
     def wordBreak(self, s, wordDict): #write according to ref2, 352ms, 8.6%
         """
         :type s: str
@@ -429,6 +534,20 @@ Computing time with DFS4: 4566.0 millisec.
 
 
 可见，四个方法里最好的是第四个，建议面试时可以采用第四个。如有错误，敬请指正。
+
+====================
+
+
+    def wordBreak(self, s, wordDict):
+        memo = {len(s): ['']}
+        def sentences(i):
+            if i not in memo:
+                memo[i] = [s[i:j] + (tail and ' ' + tail)
+                           for j in range(i+1, len(s)+1)
+                           if s[i:j] in wordDict
+                           for tail in sentences(j)]
+            return memo[i]
+        return sentences(0)    
 
 """
 
