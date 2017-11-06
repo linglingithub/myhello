@@ -51,6 +51,22 @@ from util.tree_link_node import TreeLinkNode
 #         self.next = None
 
 class Solution:
+    # @param root, a tree link node
+    # @return nothing
+    def connect(self, root):
+        if not root:
+            return
+        next_head = root.left
+        while root:
+            if root.left:
+                root.left.next = root.right
+                if root.next:
+                    root.right.next = root.next.left
+            root = root.next
+        self.connect(next_head)
+
+
+class Solution1:
     # @param root, a tree link nodeprojected_score
     # @return nothing
     def connect(self, root): #155ms, 6%, 85ms, 74%
