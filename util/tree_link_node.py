@@ -142,13 +142,13 @@ class TreeLinkNode(object):
 def test_case1():
     bfs_str = '5,#,4,8,#,11,null,13,4,#,7,2,null,null,5,1,#'
     root = TreeLinkNode.generate_bt_from_string(bfs_str)
-    print root
+    print(root)
 
 
 def test_case2():
     vals = [5,4,8,11,None,13,4,7,2,None,None,None,None,5]
     root = TreeLinkNode.generate_bt_from_list(vals)
-    print root
+    print(root)
 
 def test_case3():
     vals = [1,2,3,4,5,6,7]
@@ -162,9 +162,9 @@ def test_case3():
     node5.next = node6
     node6.next = node7
     answer = [1, None, 2,3, None, 4,5,6,7, None]
-    print "answer: ", answer
+    print("answer: ", answer)
     result = TreeLinkNode.bfs_node_by_next(root)
-    print "result:", result
+    print("result:", result)
 
 
 if __name__ == '__main__':

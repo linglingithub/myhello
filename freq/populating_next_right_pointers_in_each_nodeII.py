@@ -44,6 +44,58 @@ from util.tree_link_node import TreeLinkNode
 #         self.next = None
 
 class Solution:
+    # @param root, a tree link node
+    # @return nothing
+    def connect(self, root):
+        """
+        1. since head for next level is not sure where to start, good to use dummy node 
+        2. since not full BST, instead of looking ahead to track next, good to use tail for keeping previous child level node
+        """
+        if not root:
+            return
+        dummy = TreeLinkNode(-1)
+        while root:
+            tail = dummy
+            node = root
+            while node:
+                tail.next = node.left
+                if tail.next:
+                    tail = tail.next
+                tail.next = node.right
+                if tail.next:
+                    tail = tail.next
+                node = node.next
+            root = dummy.next
+
+    def connect1(self, root):
+        if not root:
+            return
+        next_head = None
+        while root:
+            # find next level head
+            if not next_head:
+                next_head = root.left or root.right
+            # make sure root has at least one child
+            if not (root.left or root.right):
+                root = root.next
+                continue
+            # find the next node at current level that has at least one child
+            has_child = root.next
+            while has_child and not (has_child.left or has_child.right):
+                has_child = has_child.next
+            # build next link for children
+            if root.left and root.right:
+                root.left.next = root.right
+                root.right.next = (has_child.left or has_child.right) if has_child else None
+            elif root.left:
+                root.left.next = (has_child.left or has_child.right) if has_child else None
+            else:
+                root.right.next = (has_child.left or has_child.right) if has_child else None
+            # important!!! don't forget , update root
+            root = has_child
+        self.connect(next_head)
+
+class Solution1:
     # @param root, a tree link nodeprojected_score
     # @return nothing
     def connect3(self, root): # O(1) space, 92ms, 85%
@@ -153,3 +205,35 @@ if __name__ == "__main__":
 
 #-*- coding:utf-8 -*-
 #coding=utf-8
+
+"""
+
+The algorithm is a BFS or level order traversal. We go through the tree level by level. node is the pointer in the 
+parent level, tail is the tail pointer in the child level.
+The parent level can be view as a singly linked list or queue, which we can traversal easily with a pointer.
+Connect the tail with every one of the possible nodes in child level, update it only if the connected node is not nil.
+Do this one level by one level. The whole thing is quite straightforward.
+
+Python
+
+def connect(self, node):
+    tail = dummy = TreeLinkNode(0)
+    while node:
+        tail.next = node.left
+        if tail.next:
+            tail = tail.next
+        tail.next = node.right
+        if tail.next:
+            tail = tail.next
+        node = node.next
+        if not node:
+            tail = dummy
+            node = dummy.next
+
+
+# 61 / 61 test cases passed.
+# Status: Accepted
+# Runtime: 100 ms
+# 95.26%
+
+"""
