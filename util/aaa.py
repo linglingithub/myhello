@@ -10,7 +10,7 @@ import unittest
 
 
 class Solution(object):
-    def searchInsert(self, nums):
+    def testm(self, nums):
         """
         :type nums: List[int]
         :type target: int
@@ -25,7 +25,7 @@ class SolutionTester(unittest.TestCase):
     def test_case1(self):
         nums = 1
         answer = 1
-        result = self.sol.searchInsert(nums)
+        result = self.sol.testm(nums)
         self.assertEqual(answer, result)
 
 
