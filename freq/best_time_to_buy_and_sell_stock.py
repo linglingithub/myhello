@@ -34,8 +34,30 @@ Easy
 
 import unittest
 
-
 class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        if not prices:
+            return 0
+        res = 0
+        # low = high = prices[0]
+        low = prices[0]
+        for num in prices[1:]:
+            # if num > high:
+            #     high = num
+            # actually no need to record high, max profit is recorded by res already
+            # high in the past has no reason to keep
+            if num > low:
+                res = max(num-low, res)
+                continue
+            if num < low:
+                low = num
+        return res
+
+class Solution1(object):
     def maxProfit(self, prices):
         # write your code here
         if not prices or len(prices) < 2:

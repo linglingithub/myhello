@@ -29,6 +29,29 @@ import unittest
 
 
 class Solution(object):
+    def generate(self, numRows):
+        """
+        :type numRows: int
+        :rtype: List[List[int]]
+        """
+        if numRows <= 0:
+            return []
+        row = [1]
+        result = [row]
+        row_cnt = 1
+        while row_cnt < numRow:
+            tmp = [1]
+            last = result[-1]
+            for i in range(len(last) - 1):
+                tmp.append(last[i] + last[i + 1])
+            tmp.append(1)
+            result.append(tmp)
+            row_cnt += 1
+        return result
+
+
+
+class Solution1(object):
 
     def generate1(self, numRows): #42ms, 56%
         """

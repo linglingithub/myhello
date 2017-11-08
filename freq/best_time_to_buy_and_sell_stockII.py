@@ -28,8 +28,38 @@ Medium
 
 import unittest
 
-
 class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        if not prices:
+            return 0
+        res = 0
+        slow = fast = 0
+        for i in range(1, len(prices)):
+            res += max(0, prices[i]-prices[i-1])
+        return res
+
+    def maxProfit1(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        if not prices:
+            return 0
+        res = 0
+        slow = fast = 0
+        while fast < len(prices):
+            while fast < len(prices)-1 and prices[fast] < prices[fast+1]:
+                fast += 1
+            res += prices[fast] - prices[slow]
+            fast += 1
+            slow = fast
+        return res
+
+class Solution1(object):
     def maxProfit(self, prices):#52ms, 45%
         """
         :type prices: List[int]
