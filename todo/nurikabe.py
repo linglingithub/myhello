@@ -29,27 +29,31 @@ class SolutionTester(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
 
+
     def test_case1(self):
         nums = [
-            [1,1,0,0],
-            [1,1,1,0],
-            [0,1,1,0],
-            [0,0,0,1],
+            '.#2.1',
+            '.....',
+            '#2.#.',
+            '...2.',
+            '#2..1',
         ]
-        answer = 2
+        answer = True
         result = self.sol.searchInsert(nums)
         self.assertEqual(answer, result)
 
     def test_case2(self):
         nums = [
-            [1,0,0,0],
-            [0,1,0,0],
-            [0,0,1,0],
-            [0,0,0,1],
+            '..2.1',
+            '..#..',
+            '#2.#.',
+            '...2.',
+            '#2..1',
         ]
-        answer = 4
+        answer = False  # there is 2*2 water, and the water group is disconnected with other water
         result = self.sol.searchInsert(nums)
         self.assertEqual(answer, result)
+
 
 
 def main():
