@@ -31,6 +31,27 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
+        if not nums:
+            return 0
+        vals = {}
+        nums.sort()
+        res = 0
+        for i in range(len(nums)):
+            if i > 0 and nums[i] == nums[i-1]:
+                if nums[i] == k / 2:
+                    if vals.get(nums[i]) == 1:
+                        vals[nums[i]] = 2
+                        res += 1
+                    else:
+                        vals[nums[i]] = vals.get(nums[i], 0) + 1
+                continue
+            target = k - nums[i]
+            if target in vals and k not in vals:
+                res += 1
+            vals[nums[i]] = 1
+        return res
+
+
 
 
 class SolutionTester(unittest.TestCase):
@@ -44,10 +65,24 @@ class SolutionTester(unittest.TestCase):
         result = self.sol.find_pair_cnt(nums, k)
         self.assertEqual(answer, result)
 
-    def test_case2(self):
-        nums = [7,6,6,3,9,3,5,1]
+    def test_case02(self):
+        nums = [6,6,3,9,3,5,1]
         k = 12
         answer = 2
+        result = self.sol.find_pair_cnt(nums, k)
+        self.assertEqual(answer, result)
+
+    def test_case3(self):
+        nums = [0, 2, 2, 2, 4]
+        k = 4
+        answer = 2
+        result = self.sol.find_pair_cnt(nums, k)
+        self.assertEqual(answer, result)
+
+    def test_case4(self):
+        nums = [ 2, 2]
+        k = 4
+        answer = 1
         result = self.sol.find_pair_cnt(nums, k)
         self.assertEqual(answer, result)
 
