@@ -5,7 +5,8 @@ import unittest
 """
 Input:
 n : size of matrix
-zombies: n * n matrix with values 0 or 1,  where [i][j] means zombie i knows zombie j, two way relation, which means [i][j] = [j][i]
+zombies: n * n matrix with values 0 or 1,  where [i][j] means zombie i knows zombie j, two way relation, which means 
+[i][j] = [j][i]
 [i][i] always 1
 
 
@@ -23,6 +24,9 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
+         
+
+
 
 
 class SolutionTester(unittest.TestCase):
