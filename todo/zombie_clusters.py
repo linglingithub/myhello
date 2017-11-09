@@ -3,23 +3,17 @@
 import unittest
 
 """
+
 Input:
-2d grid, with some numbers and blank space, to solve it, fill the blank places with . or #
-'.': water
-'#': island
-
-constraits:
-no 2*2 blocks of water
-no other characters in the grid (only ., #, number), no space left
-all water is connected ( up-down-left-right, not diagonally)
-each connected group of islands contains exactly one number square
-
-
-the problem is not to solve, but to check if the input is a valid solve.
+n : size of matrix
+zombies: n * n matrix with values 0 or 1,  where [i][j] means zombie i knows zombie j, two way relation, which means 
+[i][j] = [j][i]
+[i][i] always 1
 
 
 Output:
-True or False ( if the puzzle is valid )
+find zombie cluster count
+
 
 """
 
