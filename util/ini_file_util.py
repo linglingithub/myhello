@@ -1,4 +1,4 @@
-import ConfigParser
+from configparser import *
 import os
 from collections import OrderedDict
 
@@ -18,12 +18,12 @@ class IniFileUtil(object):
 
     @classmethod
     def read_into_dict(cls, filename):
-        config = ConfigParser.RawConfigParser(allow_no_value=True)
+        config = RawConfigParser(allow_no_value=True)
         data_file = os.path.join(IniFileUtil.DATA_FOLDER, filename)
-        print "DEBUG ===== loading ini file: ", data_file
+        print("DEBUG ===== loading ini file: ", data_file)
         with open(data_file) as fin:
             config.readfp(fin)
-            print config.sections()
+            print(config.sections())
             return config._sections["data"]
 
     @classmethod
