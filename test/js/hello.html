@@ -1,0 +1,23 @@
+<head>
+
+    <script type='text/javascript'>
+        hot = function hot() {
+            alert('Sweat.')
+        }
+        cold  = function cold() {
+            alert('Shiver.')
+        }
+
+        function swap() {
+            temp = hot
+            hot = cold
+            cold = temp
+            alert('Swapped.')
+        }
+    </script>
+</head>
+<body>
+    <button onclick="hot();">Hot</button>
+    <button onclick="cold();">Cold</button>
+    <button onclick="swap();">Swap</button>
+</body>
