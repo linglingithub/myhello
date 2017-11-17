@@ -1,0 +1,31 @@
+<head>
+
+    <script type='text/javascript'>
+
+        function temperature() {
+            return current
+        }
+
+        hot = function hot() {
+            alert('Hot.')
+        }
+
+        cold  = function cold() {
+            alert('Cold.')
+        }
+
+        current = hot
+
+        function swap() {
+            if(current == hot) {
+              current = cold
+            } else {
+              current = hot
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="funct = temperature()();">Temperature</button>
+    <button onclick="swap();">Swap</button>
+</body>
