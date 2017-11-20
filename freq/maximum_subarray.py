@@ -27,8 +27,64 @@ Medium
 
 import unittest
 
-
 class Solution(object):
+
+    def maxSubArray(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if not nums:
+            return -1
+        dp = nums[0]
+        result = dp
+        for i in range(1, len(nums)):
+            dp = max(dp, 0)+nums[i]
+            result = max(dp, result)
+        return result
+
+    def maxSubArray1(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if not nums:
+            return -1
+        dp = [num for num in nums]
+        for i in range(1, len(nums)):
+            dp[i] = max(dp[i-1]+nums[i], dp[i])
+        return max(dp)
+
+    def maxSubArray_divideandconconquer(self, A):
+
+        n = len(A)
+        if n == 0:
+            return 0
+        return self.maxSubArrayHelperFunction(A, 0, n - 1)
+
+    def maxSubArrayHelperFunction(self, A, left, right):
+        if right == left:
+            return A[left]
+        middle = (left + right) / 2
+        leftans = self.maxSubArrayHelperFunction(A, left, middle)
+        rightans = self.maxSubArrayHelperFunction(A, middle + 1, right)
+        leftmax = A[middle]
+        rightmax = A[middle + 1]
+        temp = 0
+        for i in range(middle, left - 1, -1):
+            temp += A[i]
+            if temp > leftmax:
+                leftmax = temp
+
+        temp = 0
+        for i in range(middle + 1, right + 1):
+            temp += A[i]
+            if temp > rightmax:
+                rightmax = temp
+
+        return max(max(leftans, rightans), leftmax + rightmax)
+
+class Solution1(object):
 
     def maxSubArray(self, nums):
         # write your code here
