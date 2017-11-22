@@ -28,6 +28,44 @@ import unittest
 
 class Solution(object):
     def wordBreak(self, s, wordDict):
+        """
+        :type s: str
+        :type wordDict: List[str]
+        :rtype: List[str]
+        """
+        if not s or not wordDict:
+            return []
+        res = []
+        n = len(s)
+        dp = [None for _ in range(n)]
+        self.helper(s, 0, "", wordDict, dp)
+        return dp[0]
+
+    def helper(self, s, idx, path, wordDict, dp):
+        if idx >= len(s):
+            return None
+        if dp[idx] is not None:
+            return dp[idx]
+        combi = []
+        if s[idx:] in wordDict:
+            # tmp = path+" "+s[idx:] if path else s[idx:]  # wrong
+            tmp = s[idx:]
+            combi.append(tmp)
+        for i in range(idx, len(s) - 1):
+            substr = s[idx: i + 1]
+            if substr in wordDict:
+                rights = self.helper(s, i + 1, path + " " + substr if path else substr, wordDict, dp)
+                for right in rights:
+                    # tmp = path+" "+substr + " "+ right if path else substr + " "+ right  # wrong
+                    tmp = substr + " " + right
+                    # print  path, "===", tmp
+                    combi.append(tmp)
+        dp[idx] = combi
+        # print "idx: ", idx, dp[idx]
+        return dp[idx]
+
+class Solution1(object):
+    def wordBreak(self, s, wordDict):
         if not s:
             return []
         cache = {}

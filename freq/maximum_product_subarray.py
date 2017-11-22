@@ -25,7 +25,25 @@ Medium
 import unittest
 
 
-class Solution:
+class Solution(object):
+    def maxProduct(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if not nums:
+            return 0
+        dp_max = [x for x in nums]
+        dp_min = [x for x in nums]
+        for i in range(1, len(nums)):
+            tmp1 = dp_max[i - 1] * nums[i]
+            tmp2 = dp_min[i - 1] * nums[i]
+            dp_max[i] = max(dp_max[i], tmp1, tmp2)
+            dp_min[i] = min(dp_min[i], tmp1, tmp2)
+
+        return max(dp_max)
+
+class Solution1:
     # @param nums: an integer[]
     # @return: an integer
     def maxProduct(self, nums):
