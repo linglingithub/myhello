@@ -124,6 +124,104 @@ if __name__ == "__main__":
     main()
 
 """
+self:
+for the O(m+n) way, think it this way:
+
+take starting point at (0, m-1) for example, ie the left bottom corner,
+every time move one row or one column, because you can eliminate one row or one column, (actually right part of row and 
+upper part of column). current point at (i, j) means that the future searching area is (x<=i, y>=j)
+
+============================================================================================================================================
+
+
+http://bookshadow.com/weblog/2015/07/23/leetcode-search-2d-matrix-ii/
+
+O(m + n)解法：
+从矩阵的右上角(屏幕坐标系）开始，执行两重循环
+
+外循环递增枚举每行，内循环递减枚举列
+
+Python代码：
+class Solution:
+    # @param {integer[][]} matrix
+    # @param {integer} target
+    # @return {boolean}
+    def searchMatrix(self, matrix, target):
+        y = len(matrix[0]) - 1
+        for x in range(len(matrix)):
+            while y and matrix[x][y] > target:
+                y -= 1
+            if matrix[x][y] == target:
+                return True
+        return False
+
+O(m * logn)解法：
+循环枚举行，二分查找列
+
+Python代码：
+class Solution:
+    # @param {integer[][]} matrix
+    # @param {integer} target
+    # @return {boolean}
+    def searchMatrix(self, matrix, target):
+        y = len(matrix[0]) - 1
+        def binSearch(nums, low, high):
+            while low <= high:
+                mid = (low + high) / 2
+                if nums[mid] > target:
+                    high = mid - 1
+                else:
+                    low = mid + 1
+            return high
+        for x in range(len(matrix)):
+            y = binSearch(matrix[x], 0, y)
+            if matrix[x][y] == target:
+                return True
+        return False
+
+O(n ^ 1.58)解法：
+参考：https://leetcode.com/discuss/47528/c-with-o-m-n-complexity
+
+分治法，以矩形中点为基准，将矩阵拆分成左上，左下，右上，右下四个区域
+
+若中点值 < 目标值，则舍弃左上区域，从其余三个区域再行查找
+
+若中点值 > 目标值，则舍弃右下区域，从其余三个区域再行查找
+
+时间复杂度递推式：T(n) = 3T(n/2) + c
+
+相关博文：http://articles.leetcode.com/2010/10/searching-2d-sorted-matrix-part-ii.html
+
+Java代码：
+public class Solution {
+    public boolean searchMatrix(int[][] matrix, int target) {
+        int n=matrix.length, m=matrix[0].length;
+        return helper(matrix,0,n-1,0,m-1,target);
+    }
+    boolean helper(int[][] matrix, int rowStart, int rowEnd, int colStart, int colEnd, int target ){
+        if(rowStart>rowEnd||colStart>colEnd){
+            return false;
+        }
+        int rm=(rowStart+rowEnd)/2, cm=(colStart+colEnd)/2;
+        if(matrix[rm][cm]== target){
+            return true;
+        }
+        else if(matrix[rm][cm] >target){
+            return helper(matrix, rowStart, rm-1,colStart, cm-1,target)||
+                helper(matrix,  rm, rowEnd, colStart,cm-1,target) ||
+                helper(matrix, rowStart, rm-1,cm, colEnd,target);
+        }
+        else{
+            return helper(matrix, rm+1, rowEnd, cm+1,colEnd,target)||
+                helper(matrix,  rm+1, rowEnd, colStart,cm,target) ||
+                helper(matrix, rowStart, rm,cm+1, colEnd,target);
+        }
+    
+}
+
+
+============================================================================================================================================
+
 
 在行和列排序好的二维数组中查找目标数字。这里我们用了一个很巧妙的方法，从矩阵的右上角开始找，相当于把这个元素当作mid，目标比mid大，则
 row + 1，小则col + 1，相等则返回mid。也是类似二分查找的思想。
