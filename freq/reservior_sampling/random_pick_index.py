@@ -33,7 +33,32 @@ Medium
 """
 import random
 
+
 class Solution(object):
+    def __init__(self, nums):
+        """
+
+        :type nums: List[int]
+        :type numsSize: int
+        """
+        self.nums = nums
+
+    def pick(self, target):
+        """
+        :type target: int
+        :rtype: int
+        """
+        res = -1
+        cnt = 0
+        for idx in range(len(self.nums)):
+            if self.nums[idx] == target:
+                cnt += 1
+                lottery = random.randint(1, cnt)
+                if lottery == 1:
+                    res = idx
+        return res
+
+class Solution1(object):
     def __init__(self, nums): # AC, beats 50+%
         """
         reservoir sampling way, according to ref idea
@@ -115,6 +140,66 @@ if __name__ == "__main__":
 #-*- coding:utf-8 -*-
 
 """
+
+http://rainykat.blogspot.com/2017/01/leetcodef-398-random-pick-indexdesgin.html
+
+思路： use random to ensure equal possibility, key point is save extra space.
+解法1: for easier understanding, we create arraylist to store all index of target, and count total,
+           Then we use random  from [0,total), to equally pick any element in the array  
+Complexity: O(N)time O(m)space - # of target in nums
+
+public class Solution {
+    int[] nums;
+    Random rand;
+    public Solution(int[] nums) {
+        this.nums = nums;
+        this.rand = new Random();
+    }
+    public int pick(int target) {
+        int total = 0;//total index match target
+        int res = -1;
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == target) {
+                total++;
+                list.add(i);
+            }
+        }
+        res = list.get(rand.nextInt(total)); //int in [0,total)
+        return res;
+    }
+}
+
+解法2: To use no extra space, we pick the index in place.
+             (Reservoir Sampling) update by 1/total in the loop
+             靠前的index一开始选中的几率高，但是后面loop剩的多被replace的几率也高
+             举例有5个元素：
+             对于第二个index来说，1/2（pick）*2/3(replace)*3/4(replace)*4/5(replace) = 1/5;
+             对于最后一个index来说，就是 1/5(pick) = 1/total.
+public class Solution {
+    int[] nums;
+    Random rand;
+    public Solution(int[] nums) {
+        this.nums = nums;
+        this.rand = new Random();
+    }
+    public int pick(int target) {
+        int total = 0;//total index match target
+        int res = -1;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == target) {
+                total++;
+                int x = rand.nextInt(total);//[0,total)
+                if(x == 0){
+                    res = i;
+                }
+            }
+        }
+        return res;
+    }
+}
+
+=============================================
 
 What on earth is meant by too much memory?
 Because I've made a rather naive map-of-index-lists Java solution and it was happily accepted by the OJ. So far I see 
