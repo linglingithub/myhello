@@ -34,8 +34,47 @@ Medium Combination Sum
 """
 
 
-
 class Solution:
+    """
+    @param: num: a string contains only digits 0-9
+    @param: target: An integer
+    @return: return all possibilities
+    """
+
+    def addOperators(self, nums, target):
+        # write your code here
+        if not nums:
+            return []
+        res = []
+        self.helper(nums, target, 0, 0, 0, "", res)
+        return res
+
+    def helper(self, nums, target, idx, whole_val, preval, opstr, res):
+        if idx >= len(nums):
+            if target == 0:
+                res.append(opstr)
+            return
+        for i in range(idx, len(nums)):
+            delta = int(nums[idx: i + 1])
+            if (delta == 0 and i > idx) or (delta > 0 and nums[idx] == '0'):
+                break
+            if idx == 0:
+                # because add operators BETWEEN digits, so when idx == 0, only +
+                # and need to deal with the opstr
+                self.helper(nums, target - delta, i + 1, whole_val + delta, delta, opstr \
+                            + str(delta), res)
+                continue
+
+            # +
+            self.helper(nums, target - delta, i + 1, whole_val + delta, delta, opstr + "+" + str(delta), res)
+            # -
+            self.helper(nums, target + delta, i + 1, whole_val - delta, -delta, opstr + "-" + str(delta), res)
+            # *
+            self.helper(nums, target + preval - preval * delta, i + 1, whole_val - preval + preval * delta,
+                        preval * delta, opstr + "*" + str(delta), res)
+
+
+class Solution1:
     # @param {string} num a string contains only digits 0-9
     # @param {int} target an integer
     # @return {string[]} return all possibilities
@@ -84,7 +123,7 @@ class SolutionTester(unittest.TestCase):
         self.sol = Solution()
 
 
-    def test_case04(self):
+    def test_case4(self):
         nums, target = "00", 0
         answer = ["0+0", "0-0", "0*0"]
         result = self.sol.addOperators(nums, target)
