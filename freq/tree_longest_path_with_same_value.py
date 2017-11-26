@@ -59,13 +59,13 @@ class Solution:
             pa, pb = E[i*2], E[i*2+1]
             neighbors[pa-1].append(pb-1)
             neighbors[pb-1].append(pa-1)
-        res = []
+        self.res = [0]
         visited = [False for _ in range(n)]
         for node in range(n):
             if not visited[node]:
                 join_path, single_path = self.helper(A, neighbors, node, visited)
-                res.append(max(join_path, single_path))
-        return max(res)
+                self.res.append(max(join_path, single_path))
+        return max(self.res)
 
     def helper(self, A, neighbors, node, visited):
         visited[node] = True
@@ -81,11 +81,17 @@ class Solution:
         # every node has at most 3 neighbors, and one is as previous, the other two will do dfs and combine if ok -- WRONG
         # actually above thought wrong, description did not say binary tree, may have more than 2 expanding neighbors
         if len(node_paths) >= 2:  # only say a tree,
-            return sum(node_paths), node_paths[0]
+            join_path = node_paths[0]+node_paths[1]
+            single_path = node_paths[0]
         elif len(node_paths) == 1:
-            return node_paths[0], node_paths[0]
+            join_path = node_paths[0]
+            single_path = node_paths[0]
         else:
-            return 0, 0
+            join_path, single_path = 0, 0
+        # important, need to add join_path to res, otherwise wrong, see case 5
+        if max(self.res) < max(join_path, single_path):
+            self.res.append(max(join_path, single_path))
+        return join_path, single_path
 
 
 
@@ -164,6 +170,23 @@ class SolutionTester(unittest.TestCase):
         a = [1,1,1,2,2]
         e = [1,2,3,1,2,4,2,5]
         answer = 2
+        result = self.sol.LongestPathWithSameValue(a, e)
+        self.assertEqual(answer, result)
+
+    def test_case4(self):
+        from util.ini_file_util import IniFileUtil
+        params = IniFileUtil.read_into_dict("tree_longest_path_with_same_value_case4.ini")
+        a = IniFileUtil.string_to_int_list(params.get("a"))
+        e = IniFileUtil.string_to_int_list(params.get("e"))
+        # nums = IniFileUtil.string_to_int_list_list(params.get("nums"))   # for matrix input
+        answer = int(params.get("answer"))  # 35
+        result = self.sol.LongestPathWithSameValue(a, e)
+        self.assertEqual(answer, result)
+
+    def test_case05(self):
+        a = [1,1,1,1,1,1]
+        e = [1,2,2,3,2,4,3,5,4,6]
+        answer = 4
         result = self.sol.LongestPathWithSameValue(a, e)
         self.assertEqual(answer, result)
 
