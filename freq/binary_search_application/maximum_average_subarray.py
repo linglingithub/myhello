@@ -72,7 +72,8 @@ class Solution:
                 # not k, should be k-1 here, because for subsum of length(k+1), already need to check if
                 # subsum[i] >= min_pre in the next loop, so on the first time index reach k-1(the length is k), we
                 # need to record the min_pre
-                min_pre = min(min_pre, subsum[i-k+1])
+                pre_idx = i-k+1
+                min_pre = min(min_pre, subsum[pre_idx])
                 # after i >= k, start to record possible 'prefix' subarray that have lower value (can be excluded from
                 # maximum average subarray)
         return False  # mid should be smaller, so that a continuous k subarray can be found
