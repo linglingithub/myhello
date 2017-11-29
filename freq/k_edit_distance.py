@@ -39,6 +39,56 @@ class Solution:
     # @param {int} k an integer
     # @return {string[]} output all the stirngs that meet the requirements
     def kDistance(self, words, target, k):
+        #if not words or not target:    # wrong for case 3, when target is ""
+        if not words:
+            return []
+        trie = TrieNode()
+        for word in words:
+            TrieNode.add_word(trie, word)
+        n = len(target)
+        dp = [i for i in range(n + 1)]
+        res = []
+        self.check_edit_distance(trie, target, k, res, dp)
+        return res
+
+    def check_edit_distance(self, node, target, k, res, dp):
+        if node.is_word and dp[len(target)] <= k:
+            res.append(node.word)
+        for char, child in node.children.items():
+            next_dp = [x for x in dp]   # here can be 0 for _ in range, no need to copy dp
+            next_dp[0] = dp[0] + 1    # !!!! important, otherwise wrong, case 4
+            for j in range(1, len(target)+1):
+                if char == target[j-1]:
+                    next_dp[j] = dp[j-1]
+                else:
+                    next_dp[j] = min(dp[j-1], dp[j], next_dp[j-1]) + 1
+            self.check_edit_distance(child, target, k, res, next_dp)
+
+
+class TrieNode(object):
+    def __init__(self):
+        self.children = {}
+        self.is_word = False
+        self.word = ""
+
+    @classmethod
+    def add_word(cls, root, word):
+        node = root
+        for char in word:
+            if char not in node.children:
+                node.children[char] = TrieNode()
+            node = node.children[char]
+        node.is_word = True
+        node.word = word
+
+
+
+class Solution1:
+    # @param {string[]} words a set of strings
+    # @param {string} target a target string
+    # @param {int} k an integer
+    # @return {string[]} output all the stirngs that meet the requirements
+    def kDistance(self, words, target, k):
         # Write your code here
         trie_root = TrieNode()
         for word in words:
@@ -76,7 +126,7 @@ class Solution:
             self.find(child, target, k, node_ed, result)
 
 
-class TrieNode(object):
+class TrieNode1(object):
     def __init__(self):
         self.children = {}
         self.is_word = False
@@ -101,6 +151,22 @@ class TrieNode(object):
 class SolutionTester(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
+
+    def test_case4(self):   #===>
+        words = ["abc","abd","abcd","adc","mart","ka","rma","kaarmmaa","km","kpm","kmp","pmaa"]
+        target = "karma"
+        k = 3
+        answer = ["ka","kaarmmaa","km","kmp","kpm","mart","rma"]
+        result = self.sol.kDistance(words, target, k)
+        self.assertEqual(sorted(answer), sorted(result))
+
+    def test_case3(self):
+        words = ["a","b","ab","cd","abc","defg"]
+        target = ""
+        k = 2
+        answer =["a","ab","b","cd"]
+        result = self.sol.kDistance(words, target, k)
+        self.assertEqual(sorted(answer), sorted(result))
 
     def test_case2(self):
         words = ["a","b","ba","babbab", ""]
