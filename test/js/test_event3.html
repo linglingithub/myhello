@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button data-toggle-id="subscribe-mail">
+  Show the subscription form
+</button>
+
+<button data-toggle-id1="subscribe-mail">
+  Show the subscription form 1 without data-toggle-id, id1 instead
+</button>
+
+<form id="subscribe-mail" hidden>
+  Your mail: <input type="email">
+</form>
+
+<script>
+  document.addEventListener('click', function(event) {
+    let id = event.target.dataset.toggleId;
+    if (!id) alert("haha");
+
+    let elem = document.getElementById(id);
+
+    elem.hidden = !elem.hidden;
+  });
+</script>
+
+</body>
+</html>
+
+
+<!--
+https://javascript.info/event-delegation
+
+
+-->

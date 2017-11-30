@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="menu">
+  <button data-action="save">Save</button>
+  <button data-action="load">Load</button>
+  <button data-action="search">Search</button>
+</div>
+
+<script>
+  class Menu {
+    constructor(elem) {
+      this._elem = elem;
+      elem.onclick = this.onClick.bind(this); // (*)
+    }
+
+    save() {
+      alert('saving');
+    }
+
+    load() {
+      alert('loading');
+    }
+
+    search() {
+      alert('searching');
+    }
+
+    onClick(event) {
+      let action = event.target.dataset.action;
+      if (action) {
+        this[action]();
+      }
+    };
+  }
+
+  new Menu(menu);
+</script>
+</body>
+</html>
+
+
+<!--
+https://javascript.info/event-delegation
+
+
+Benefits:
+
+Simplifies initialization and saves memory: no need to add many handlers.
+Less code: when adding or removing elements, no need to add/remove handlers.
+DOM modifications: we can mass add/remove elements with innerHTML and alike.
+
+
+The delegation has its limitations of course:
+
+First, the event must be bubbling. Some events do not bubble. Also, low-level handlers should not use
+event.stopPropagation().
+Second, the delegation may add CPU load, because the container-level handler reacts on events in any place of the
+container, no matter if they interest us or not. But usually the load is negligible, so we don’t take it into account.
+
+
+https://www.sitepoint.com/javascript-event-delegation-is-easier-than-you-think/
+
+What are the pros and cons?
+The benefits of JavaScript event delegation are:
+
+There are less event handlers to setup and reside in memory. This is the big one; better performance and less crashing.
+There’s no need to re-attach handlers after a DOM update. If your page content is generated dynamically, via Ajax for
+example, you don’t need to add and remove event handlers as elements are loaded or unloaded.
+The potential problems may be less clear, but once you are aware of them they’re easily avoided:
+
+There’s a risk your event management code could become a performance bottleneck, so keep it as lean as possible.
+Not all events bubble. The blur, focus, load and unload events don’t bubble like other events. The blur and focus events
+can actually be accessed using the capturing phase (in browsers other than IE) instead of the bubbling phase but that’s
+a story for another day.
+You need caution when managing some mouse events. If your code is handling the mousemove event you are in serious risk
+of creating a performance bottleneck because the mousemove event is triggered so often. The mouseout event has a quirky
+behaviour that is difficult to manage with event delegation.
+
+
+-->
