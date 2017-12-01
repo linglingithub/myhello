@@ -3,7 +3,36 @@
  *
  * In arrow functions, this retains the value of the enclosing lexical context's this. In global code, it will be set to the global object:
  *
- * enclosing lexical context:
+ * lexical environments:  (?? scope ? a part of  execution context)
+ * A Lexical Environment is a specification type used to define the association of Identifiers to specific variables
+ * and functions based upon the lexical nesting structure of ECMAScript code. A Lexical Environment consists of an
+ * Environment Record and a possibly null reference to an outer Lexical Environment.
+ *
+ *
+ * http://es5.github.io/#x10.3
+ *
+ * When control is transferred to ECMAScript executable code, control is entering an execution context.
+ * Active execution contexts logically form a stack.
+ *
+ * An execution context contains whatever state is necessary to track the execution progress of its associated code.
+ * In addition, each execution context has the state components listed in Table 19.
+
+Table 19 —Execution Context State Components
+Component  ----- Purpose
+
+ LexicalEnvironment
+Identifies the Lexical Environment used to resolve identifier references made by code within this execution context.
+
+ VariableEnvironment
+Identifies the Lexical Environment whose environment record holds bindings created by VariableStatements and FunctionDeclarations within this execution context.
+
+ ThisBinding
+The value associated with the this keyword within ECMAScript code associated with this execution context.
+
+
+
+ *
+ *
  */
 
 var globalObject = this;
