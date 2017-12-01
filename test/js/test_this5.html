@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<body>
+
+<button onclick="alert(this.tagName.toLowerCase());">
+  Show this
+</button>
+The above alert shows button. Note however that only the outer code has its this set this way:
+when this is inside a function, then it is global / window.
+
+<button onclick="alert((function() { return this; })());">
+  Show inner this
+</button>
+
+<script type="text/javascript" src="test_this5.js"></script>
+</body>
+</html>

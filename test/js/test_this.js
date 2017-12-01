@@ -1,6 +1,7 @@
 /**
- * Created by linglin on 11/30/17.
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
  */
+
 function f() {
   return this.a;
 }
