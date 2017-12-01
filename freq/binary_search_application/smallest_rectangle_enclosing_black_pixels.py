@@ -58,13 +58,15 @@ class Solution:
         found = False
         while low < high:
             mid = low + int((high - low) / 2)
-            if mid == last:
-                # return mid  #wrong for case 2
-                if find_min:
-                    return mid
-                else:
-                    return high
-            last = mid
+            found = False   # don't forget to reset here
+
+            # if mid == last:
+            #     # return mid  #wrong for case 2
+            #     if find_min:
+            #         return mid
+            #     else:
+            #         return high
+            # last = mid
             if search_col:
                 for i in range(len(image)):
                     if image[i][mid] == '1':  # should be str here
@@ -80,13 +82,32 @@ class Solution:
                     high = mid
                 else:
                     low = mid
+                    if low == last:   # special case here, need to think all different cases carefully
+                        #if and found in low+1:
+                        found_in_high = False
+                        if search_col:
+                            for i in range(len(image)):
+                                if image[i][low+1] == '1':  # should be str here
+                                    found_in_high = True
+                                    break
+                        else:
+                            for j in range(len(image[0])):
+                                if image[low+1][j] == '1':
+                                    found_in_high = True
+                                    break
+                        if found_in_high:
+                            return low + 1
+                        else:
+                            return low    # don't forget this else
+                last = mid
             else:
                 if find_min:
                     low = mid + 1
                 else:
                     high = mid - 1
 
-        return high if find_min else low
+        return low
+        #return high if find_min else low
 
 
 class SolutionTester(unittest.TestCase):
@@ -105,7 +126,7 @@ class SolutionTester(unittest.TestCase):
         self.assertEqual(answer, result)
 
 
-    def test_case02(self):   # ===>
+    def test_case2(self):   # ===>
         nums = [
             "1111111101",
             "1000000101",
