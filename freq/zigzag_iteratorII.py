@@ -100,3 +100,10 @@ if __name__ == "__main__":
 
 
 #-*- coding:utf-8 -*-
+
+"""
+
+http://massivealgorithms.blogspot.com/2015/06/zigzag-iterator-techinterview.html
+
+
+"""
