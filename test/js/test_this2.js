@@ -1,7 +1,8 @@
 /**
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
  *
- * In arrow functions, this retains the value of the enclosing lexical context's this. In global code, it will be set to the global object:
+ * In arrow functions, this retains the value of the enclosing lexical context's this. In global code, it will be set
+ * to the global object:
  *
  * lexical environments:  (?? scope ? a part of  execution context)
  * A Lexical Environment is a specification type used to define the association of Identifiers to specific variables
