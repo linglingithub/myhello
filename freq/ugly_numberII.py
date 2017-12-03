@@ -29,8 +29,73 @@ Similar Questions
 Merge k Sorted Lists Count Primes Ugly Number Perfect Squares Super Ugly Number 
 
 """
-
+import heapq
 class Solution(object):
+    def nthUglyNumber(self, n):  #ref idea, 20%
+        """
+        :type n: int
+        :rtype: int
+        """
+        factors = [2, 3, 5]
+        k = len(factors)
+        # record which idx of ugly numbers are used for individual factor
+        idx_list = [0 for _ in range(k)]
+        # record current val of induvidual factor, cause ugly[0] is 1, so init as 1*factor = factor for each
+        val_list = [factor for factor in factors]
+
+        ugly = [1 for _ in range(n)]
+        for i in range(1, n):
+            # need to record current_min
+            current_min = min(val_list)
+            ugly[i] = current_min
+            # should update ugly earlier at here, cause the val_list and idx_list should be calculated upon updated ugly
+            # need to check all val_list for possible same values
+            for j in range(k):
+                if val_list[j] == current_min:
+                    idx_list[j] += 1
+                    val_list[j] = factors[j] * ugly[idx_list[j]]
+        return ugly[n - 1]
+
+    def nthUglyNumber2(self, n):   # a little better,  8% +
+        """
+        :type n: int
+        :rtype: int
+        """
+        factors = [2, 3, 5]
+        cnt = 0
+        heap = [1]
+        res = 1
+        vals = {1: True}
+        while cnt < n:
+            res = heapq.heappop(heap)
+            del vals[res]
+            cnt += 1
+            for factor in factors:
+                v = factor * res
+                if v not in vals:
+                    heapq.heappush(heap, v)
+                    vals[v] = True
+        return res
+
+    def nthUglyNumber1(self, n):  # really slow, 0.5%
+        """
+        :type n: int
+        :rtype: int
+        """
+        factors = [2, 3, 5]
+        cnt = 1
+        heap = [2, 3, 5]
+        last = 1
+        while cnt < n:
+            tmp = heapq.heappop(heap)
+            if last != tmp:
+                cnt += 1
+                last = tmp
+                for factor in factors:
+                    heapq.heappush(heap, factor * last)
+        return last
+
+class Solution1(object):
     def nthUglyNumber(self, n):  # ref idea, 90+%
         """
         1, 2，3，4, 5，6，8，9，10，
@@ -115,12 +180,31 @@ Assume you have Uk, the kth ugly number. Then Uk+1 must be Min(L1 * 2, L2 * 3, L
 这道题是之前那道Ugly Number 丑陋数的延伸，这里让我们找到第n个丑陋数，还好题目中给了很多提示，基本上相当于告诉我们解法了，根据提示中的信息，
 我们知道丑陋数序列可以拆分为下面3个子列表：
 
-(1) 1×2, 2×2, 3×2, 4×2, 5×2, …
-(2) 1×3, 2×3, 3×3, 4×3, 5×3, …
-(3) 1×5, 2×5, 3×5, 4×5, 5×5, …
+(1) 1x2,  2x2, 2x2, 3x2, 3x2, 4x2, 5x2...
+(2) 1x3,  1x3, 2x3, 2x3, 2x3, 3x3, 3x3...
+(3) 1x5,  1x5, 1x5, 1x5, 2x5, 2x5, 2x5...
+仔细观察上述三个列表，我们可以发现每个子列表都是一个丑陋数分别乘以2,3,5，而要求的丑陋数就是从已经生成的序列中取出来的，我们每次都从三个列表中取出当前最小的那个加入序列，请参见代码如下：
 
-仔细观察上述三个列表，我们可以发现每个子列表都是一个丑陋数分别乘以2,3,5，而要求的丑陋数就是从已经生成的序列中取出来的，我们每次都从三个列表
-中取出当前最小的那个加入序列，请参见代码如下：
+ 
+
+复制代码
+class Solution {
+public:
+    int nthUglyNumber(int n) {
+        vector<int> res(1, 1);
+        int i2 = 0, i3 = 0, i5 = 0;
+        while (res.size() < n) {
+            int m2 = res[i2] * 2, m3 = res[i3] * 3, m5 = res[i5] * 5;
+            int mn = min(m2, min(m3, m5));
+            if (mn == m2) ++i2;
+            if (mn == m3) ++i3;
+            if (mn == m5) ++i5;
+            res.push_back(mn);
+        }
+        return res.back();
+    }
+};
+复制代码
 
 """
 

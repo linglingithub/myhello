@@ -33,23 +33,41 @@ Happy Number Count Primes Ugly Number II
 class Solution(object):
     def isUgly(self, num):
         """
-        2，3，5，6，8，9，10，
         :type num: int
         :rtype: bool
         """
-        for divisor in 2, 3, 5:
-            while num % divisor == 0:
-                num /= divisor
-        return num == 1
-
+        if num <= 0:
+            return False
+        factors = [2, 3, 5]
+        while num != 1:
+            changed = False
+            for factor in factors:
+                if num % factor == 0:
+                    num /= factor
+                    changed = True
+            if num != 1 and not changed:
+                return False
+        return True
 
 class SolutionTester(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
 
     def test_case1(self):
-        nums = 1
-        answer = 1
+        nums = 0
+        answer = False
+        result = self.sol.isUgly(nums)
+        self.assertEqual(answer, result)
+
+    def test_case2(self):
+        nums = 8
+        answer = True
+        result = self.sol.isUgly(nums)
+        self.assertEqual(answer, result)
+
+    def test_case3(self):
+        nums = 14
+        answer = False
         result = self.sol.isUgly(nums)
         self.assertEqual(answer, result)
 
@@ -63,5 +81,22 @@ if __name__ == "__main__":
     main()
 
 
+"""
 
+def isUgly(self, num):
+    if num <= 0:
+        return False
+    for x in [2, 3, 5]:
+        while num % x == 0:
+            num = num / x
+    return num == 1
+
+==================
+
+for p in 2, 3, 5:
+    while num % p == 0 < num:
+        num /= p
+return num == 1
+
+"""
 #-*- coding:utf-8 -*-
