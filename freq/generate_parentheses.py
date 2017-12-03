@@ -23,6 +23,31 @@ import unittest
 
 
 class Solution(object):
+    def generateParenthesis(self, n):
+        """
+        :type n: int
+        :rtype: List[str]
+        """
+        # write your code here
+        if n < 1:
+            return []
+        res = []
+        self.generate(n, n, "", res)
+        return res
+
+    def generate(self, left, right, pares, res):
+        # left should be equal or less than right
+        if left == 0 and right == 0:
+            res.append(pares)
+            return
+        if left == right:
+            self.generate(left - 1, right, pares + "(", res)
+        elif left < right:
+            if left > 0:
+                self.generate(left - 1, right, pares + "(", res)
+            self.generate(left, right - 1, pares + ")", res)
+
+class Solution1(object):
     def generateParenthesis(self, n): # faster
         def dfs(open, left, right, one_str, result):
             if open<0:
