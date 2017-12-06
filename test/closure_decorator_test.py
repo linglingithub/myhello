@@ -37,7 +37,8 @@ def my_counter1():
 
 def my_counter2(val):
     def increase():
-        # val += 1   # can't do this, won't keep state of val
+        # val = val + 1  # can't do this, won't keep state of val, val on the right can't be resolved
+        #val += 1   # can't do this, won't keep state of val
         return val + 3
     return increase
 
