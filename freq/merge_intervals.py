@@ -34,7 +34,43 @@ Insert Interval Meeting Rooms Meeting Rooms II Teemo Attacking Add Bold Tag in S
 #         self.start = s
 #         self.end = e
 
-class Solution(object):
+class Solution:
+    """
+    @param: intervals: interval list.
+    @return: A new interval list.
+    """
+    def merge(self, intervals):
+        # write your code here
+        if not intervals or len(intervals) <= 1:
+            return intervals
+        intervals.sort(key=lambda x: (x.start, x.end))
+        result = [intervals[0]]
+        for tmp in intervals[1:]:
+            if result[-1].end >= tmp.start:
+                result[-1].end = max(result[-1].end, tmp.end)
+            else:
+                result.append(tmp)
+        return result
+
+    def merge1(self, intervals):
+        # write your code here
+        if not intervals or len(intervals) <= 1:
+            return intervals
+        intervals.sort(key=lambda x: (x.start, x.end))
+        start, end = intervals[0].start, intervals[0].end
+        result = []
+        for i in range(1, len(intervals)):
+            tmp = intervals[i]
+            if end >= tmp.start:
+                end = max(end, tmp.end)
+            else:
+                result.append([start, end])
+                start, end = tmp.start, tmp.end
+        # don't forget the last step !!!
+        result.append([start, end])
+        return result
+
+class Solution1(object):
     def merge(self, intervals):
         """
         :type intervals: List[Interval]
