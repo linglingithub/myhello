@@ -40,7 +40,79 @@ import random
 import time
 
 
+
 class Solution(object):  # ref
+    def wiggleSort(self, nums):
+        """
+        用快排的思想查找中位数，然后再合并两边。
+        最坏复杂度O(n^2)，平均复杂度O(n)
+        :param nums: 
+        :return: 
+        """
+        n = len(nums) - 1
+        medium = self.findMedium(nums, 0, n - 1, (n + 1) >> 1)
+        s = 0
+        t = n - 1
+        mid_index = (n + 1) >> 1
+        temp = [0 for _ in range(n)]
+        for i in range(n):
+            if nums[i] < medium:
+                temp[s] = nums[i]
+                s += 1
+            elif nums[i] > medium:
+                temp[t] = nums[i]
+                t -= 1
+
+        while s < mid_index:
+            temp[s] = medium
+            s += 1
+        while t >= mid_index:
+            temp[t] = medium
+            t -= 1
+
+        t = n
+        for i in range(n):
+            if i & 1 == 0:  # for odd idx
+                s -= 1
+                nums[i] = temp[s]
+            else:           # for even idx
+                t -= 1
+                nums[i] = temp[t]
+
+
+    def findMedium(self, nums, left, right, k):
+        if left >= right:
+            return nums[right]
+        i = self.partition(nums, left, right)
+        cnt = i - left + 1
+        if cnt == k:
+            return nums[i]
+        elif cnt > k:
+            return self.findMedium(nums, left, i - 1, k)
+        else:
+            return self.findMedium(nums, i + 1, right, k - cnt)
+
+
+    def partition(self, nums, left, right):
+        val = nums[left]
+        i, j = left, right + 1
+        while True:
+            i += 1
+            while i < right and nums[i] < val:
+                i += 1
+            j -= 1
+            while j > left and nums[j] > val:
+                j -= 1
+            if i >= j:
+                break
+            nums[i], nums[j] = nums[j], nums[i]
+        nums[left], nums[j] = nums[j], nums[left]
+        return j
+
+
+
+
+class Solution1(object):  # ref
     def wiggleSort(self, nums):
         """
         :type nums: List[int]
