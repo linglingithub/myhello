@@ -74,6 +74,12 @@ class SolutionTester(unittest.TestCase):
         result = self.sol.rainbowSort(nums)
         self.assertEqual(answer, result)
 
+    def test_case4(self):
+        nums = [1,  1, -1, 1]
+        answer = [1,1,-1, 1]
+        result = self.sol.rainbowSort(nums)
+        self.assertEqual(answer, result)
+
 def main():
     suite = unittest.TestLoader().loadTestsFromTestCase(SolutionTester)
     unittest.TextTestRunner(verbosity=2).run(suite)
