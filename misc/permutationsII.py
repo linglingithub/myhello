@@ -29,7 +29,7 @@ class Solution(object):
     --- but there is actually a insertion way, see ref3, try to understand it.
     """
 
-    def permuteUnique(self, nums):  # 168ms, 20.36%
+    def permuteUnique(self, nums):  # 143ms, 29%
         """
         :type nums: List[int]
         :type target: int
@@ -46,12 +46,15 @@ class Solution(object):
         if len(permu) == len(nums):
             result.append(permu)
             return
+        nums_bak = [x for x in nums[idx:]]
+        nums[idx:] = sorted(nums[idx:])
         for i in range(idx, len(nums)):
             if i > idx and nums[i] == nums[i - 1]:
                 continue
             nums[i], nums[idx] = nums[idx], nums[i]
-            self.dfs(result, permu + [nums[i]], nums, idx+1)
+            self.dfs(result, permu + [nums[idx]], nums, idx+1)
             nums[i], nums[idx] = nums[idx], nums[i]
+        nums[idx:] = nums_bak
 
     def permuteUnique_ref(self, num): # 105ms, 96.18%
         length = len(num)
@@ -135,7 +138,7 @@ class Solution(object):
         for n in nums:
             new_ans = []
             for l in ans:
-                for i in xrange(len(l) + 1):
+                for i in range(len(l) + 1):
                     new_ans.append(l[:i] + [n] + l[i:])
                     if i < len(l) and l[i] == n: break  # handles duplication
             ans = new_ans
@@ -297,6 +300,42 @@ class SolutionTester(unittest.TestCase):
           [1,1,2],
           [1,2,1],
           [2,1,1]
+        ]
+        result = self.sol.permuteUnique(nums)
+        answer.sort()
+        result.sort()
+        self.assertEqual(answer, result)
+
+    def test_case2(self):
+        nums = [1,1,2,3]
+        answer = [
+            [1,1,2,3],
+            [1,1,3,2],
+            [1,2,1,3],
+            [1,2,3,1],
+            [1,3,1,2],
+            [1,3,2,1],
+            [2,1,1,3],
+            [2,1,3,1],
+            [2,3,1,1],
+            [3,1,1,2],
+            [3,1,2,1],
+            [3,2,1,1]
+        ]
+        result = self.sol.permuteUnique(nums)
+        answer.sort()
+        result.sort()
+        self.assertEqual(answer, result)
+
+    def test_case3(self):
+        nums = [1,2,3]
+        answer = [
+          [1,2,3],
+          [1,3,2],
+          [2,1,3],
+          [2,3,1],
+          [3,1,2],
+          [3,2,1]
         ]
         result = self.sol.permuteUnique(nums)
         answer.sort()
