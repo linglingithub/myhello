@@ -11,10 +11,10 @@ class myClass(object):
 
 
 if __name__ == '__main__':
-    print f1(1)
-    print f1(2)
-    print f1(3)
+    print(f1(1))
+    print(f1(2))
+    print(f1(3))
     mc = myClass()
-    print mc.f2(1)
-    print mc.f2(2)
-    print mc.f2(3)
+    print(mc.f2(1))
+    print(mc.f2(2))
+    print(mc.f2(3))
