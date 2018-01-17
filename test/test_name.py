@@ -105,4 +105,16 @@ name:  __main__
 /Users/linglin/PycharmProjects/testhello/test ['/Users/linglin/PycharmProjects/testhello/test', '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/usr/local/lib/python3.6/site-packages']
 argv[0]:  test/test_name.py
 
+=======================
+
+LingLins-MacBook-Pro:testhello linglin$ cd test
+LingLins-MacBook-Pro:test linglin$ python3 test_name.py 3
+this is fib2 in test_name.
+name:  __main__
+__package__:  None
+/Users/linglin/PycharmProjects/testhello/test ['/Users/linglin/PycharmProjects/testhello/test', '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/usr/local/lib/python3.6/site-packages']
+argv[0]:  test_name.py
+LingLins-MacBook-Pro:test linglin$ 
+
+
 """
