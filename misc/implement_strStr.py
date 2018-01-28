@@ -112,7 +112,8 @@ http://blog.csdn.net/v_july_v/article/details/7041827
 
 KMP, BM, Sunday --> about O(n) 
 
-上文中，我们已经介绍了KMP算法和BM算法，这两个算法在最坏情况下均具有线性的查找时间。但实际上，KMP算法并不比最简单的c库函数strstr()快多少，而BM算法虽然通常比KMP算法快，但BM算法也还不是现有字符串查找算法中最快的算法，本文最后再介绍一种比BM算法更快的查找算法即Sunday算法。
+上文中，我们已经介绍了KMP算法和BM算法，这两个算法在最坏情况下均具有线性的查找时间。但实际上，KMP算法并不比最简单的c库函数strstr()快多少，
+而BM算法虽然通常比KMP算法快，但BM算法也还不是现有字符串查找算法中最快的算法，本文最后再介绍一种比BM算法更快的查找算法即Sunday算法。
 
     Sunday算法由Daniel M.Sunday在1990年提出，它的思想跟BM算法很相似：
 
@@ -124,16 +125,18 @@ KMP, BM, Sunday --> about O(n)
     1. 刚开始时，把模式串与文本串左边对齐：
 substring searching algorithm
 search
-^
-    2. 结果发现在第2个字符处发现不匹配，不匹配时关注文本串中参加匹配的最末位字符的下一位字符，即标粗的字符 i，因为模式串search中并不存在i，所以模式串直接跳过一大片，向右移动位数 = 匹配串长度 + 1 = 6 + 1 = 7，从 i 之后的那个字符（即字符n）开始下一步的匹配，如下图：
+^     ^ (u != e, so go to next char after 'search', that is 'i', but i is not in 'search', go next to 'n', left align on 'n')
+    2. 结果发现在第2个字符处发现不匹配，不匹配时关注文本串中参加匹配的最末位字符的下一位字符，即标粗的字符 i，因为模式串search中并不存在i，
+    所以模式串直接跳过一大片，向右移动位数 = 匹配串长度 + 1 = 6 + 1 = 7，从 i 之后的那个字符（即字符n）开始下一步的匹配，如下图：
 
 substring searching algorithm
-　　　 search
-　　　　^
-    3. 结果第一个字符就不匹配，再看文本串中参加匹配的最末位字符的下一位字符，是'r'，它出现在模式串中的倒数第3位，于是把模式串向右移动3位（r 到模式串末尾的距离 + 1 = 2 + 1 =3），使两个'r'对齐，如下：
+　　　  search
+　　　　^     ^ (n != s, need to right shift, 'r' is the next char, 'r' in 'search' [-3] (right most in 'search') pos, right shift 6-3 = 3)
+    3. 结果第一个字符就不匹配，再看文本串中参加匹配的最末位字符的下一位字符，是'r'，它出现在模式串中的倒数第3位，于是把模式串向右移动3位
+    （r 到模式串末尾的距离 + 1 = 2 + 1 =3），使两个'r'对齐，如下：
 substring searching algorithm
-　　　　  search
-　　　　　　　^
+　　　　   search
+　　　　　 　　^
 
     4. 匹配成功。
 
