@@ -94,6 +94,7 @@ only runs if the module is executed as the “main” file:
 LingLins-MacBook-Pro:testhello linglin$ python3 -m test.test_name 3
 this is fib2 in test_name.
 name:  __main__
+__package__:  test
  ['', '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/usr/local/lib/python3.6/site-packages']
 argv[0]:  /Users/linglin/PycharmProjects/testhello/test/test_name.py
 
@@ -102,6 +103,7 @@ argv[0]:  /Users/linglin/PycharmProjects/testhello/test/test_name.py
 LingLins-MacBook-Pro:testhello linglin$ python3 test/test_name.py 3
 this is fib2 in test_name.
 name:  __main__
+__package__:  None
 /Users/linglin/PycharmProjects/testhello/test ['/Users/linglin/PycharmProjects/testhello/test', '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/usr/local/lib/python3.6/site-packages']
 argv[0]:  test/test_name.py
 
@@ -115,6 +117,14 @@ __package__:  None
 /Users/linglin/PycharmProjects/testhello/test ['/Users/linglin/PycharmProjects/testhello/test', '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/usr/local/lib/python3.6/site-packages']
 argv[0]:  test_name.py
 LingLins-MacBook-Pro:test linglin$ 
+
+=======================
+
+LingLins-MacBook-Pro:test linglin$ python3 -m test_name.py 3
+/usr/local/opt/python3/bin/python3.6: Error while finding module specification for 'test_name.py' (AttributeError: module 'test_name' has no attribute '__path__')
+
+LingLins-MacBook-Pro:test linglin$ python3 -m .test_name.py 3
+/usr/local/opt/python3/bin/python3.6: Relative module names not supported
 
 
 """
