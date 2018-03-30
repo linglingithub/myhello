@@ -37,8 +37,70 @@ Medium
 """
 
 
+class WordDictionary:
+    def __init__(self):
+        """
+        Initialize your data structure here.
+        """
+        self._root = TrieNode()
 
-class WordDictionary(object): #59%
+    def addWord(self, word):
+        """
+        Adds a word into the data structure.
+        :type word: str
+        :rtype: void
+        """
+        if not word:
+            return
+        node = self._root
+        for char in word:
+            if char not in node.children:
+                node.children[char] = TrieNode()
+            node = node.children.get(char)
+        node.is_word = True
+
+    def search(self, word):
+        """
+        Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter.
+        :type word: str
+        :rtype: bool
+        """
+        return self._dfs(word, 0, self._root)
+
+    def _dfs(self, word, idx, node):
+        """
+        Recursively search for the target word in trie tree
+        """
+        if not node:
+            return False
+        if idx >= len(word):
+            return node.is_word
+        char = word[idx]
+        if char != '.':
+            return self._dfs(word, idx + 1, node.children.get(char))
+        else:
+            for xchar in node.children.keys():
+                if self._dfs(word, idx + 1, node.children.get(xchar)):
+                    return True
+        return False
+
+
+class TrieNode:
+    def __init__(self):
+        """
+        Initialize the trienode here.
+        """
+        self.children = {}
+        self.is_word = False
+
+
+# Your WordDictionary object will be instantiated and called as such:
+# obj = WordDictionary()
+# obj.addWord(word)
+# param_2 = obj.search(word)
+
+
+class WordDictionary1(object): #59%
 
     def __init__(self):
         """
@@ -86,7 +148,7 @@ class WordDictionary(object): #59%
             return False
 
 
-class TrieNode(object):
+class TrieNode1(object):
     def __init__(self):
         self.children = {}
         self.is_word = False
