@@ -29,7 +29,7 @@ Medium
 import unittest
 
 from util.tree_node import TreeNode
-
+from collections import deque
 
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -38,7 +38,35 @@ from util.tree_node import TreeNode
 #         self.left = None
 #         self.right = None
 
+
+
 class Solution(object):
+    def inorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        if not root:
+            return []
+        result = []
+        stack = deque()
+        node = root
+        while node or stack:
+            self.push_left(node, stack)
+            if stack:
+                node = stack.pop()  # not popleft!!!
+                result.append(node.val)
+                node = node.right
+        return result
+
+    def push_left(self, node, stack):
+        while node:
+            stack.append(node)
+            node = node.left
+
+
+
+class Solution1(object):
     def inorderTraversal(self, root): #iterative way, 59ms, 15% --> 36ms, 73%
         """
         :type root: TreeNode
