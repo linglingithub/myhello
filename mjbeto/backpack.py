@@ -37,9 +37,38 @@ Medium Backpack II
 
 """
 
-
-
 class Solution:
+    def backPack(self, m, nums):
+        """
+        dp[i][j]: the max value that first i items) can fill with bag size j
+        dp[i][j] = max( 1. (dp[i-1][j-nums[i]] + nums[i]), 2. no put ) if (j - nums[i] >= 0);  else (dp[i-1][j] i.e. no put)
+        i: small to bigger
+        j: small to bigger
+        dp[0][0] = 0
+        dp[i][0] = 0
+        dp[0][j] = 0
+        i: [0, len(nums)] , nums[i - 1]
+        j: [0, m]
+        :param m:
+        :param num:
+        :return:
+        """
+        if not m or not nums:
+            return 0
+        dp = [[0 for _ in range(m + 1)] for _ in range(len(nums) + 1)]
+        for i in range(1, len(nums) + 1):
+            for j in range(1, m + 1):
+                dp[i][j] = dp[i - 1][j]    # should init as this, can't only put when else, optimal value can also come from no-put
+                if nums[i - 1] <= j:
+                    dp[i][j] = max(dp[i][j], nums[i - 1] + dp[i - 1][j - nums[i - 1]])
+                # else:
+                #     dp[i][j] = dp[i - 1][j]
+        return dp[len(nums)][m]
+
+
+
+
+class Solution1:
     # @param m: An integer m denotes the size of a backpack
     # @param A: Given n items with size A[i]
     # @return: The maximum size
