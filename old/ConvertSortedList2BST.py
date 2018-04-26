@@ -54,4 +54,4 @@ if __name__ == '__main__':
 
     sol = Solution()
     tr = sol.sortedListToBST(lhead)
-    print tr
+    print(tr)

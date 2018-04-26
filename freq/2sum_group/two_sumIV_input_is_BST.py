@@ -2,6 +2,7 @@
 
 import unittest
 
+from util.tree_node import TreeNode
 """
 
 653. Two Sum IV - Input is a BST
@@ -54,7 +55,66 @@ Two Sum Two Sum II - Input array is sorted Two Sum III - Data structure design
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+from collections import deque
+
+class Solution:
+    def findTarget(self, root, k):
+        """
+        :type root: TreeNode
+        :type k: int
+        :rtype: bool
+        """
+        if not root:
+            return False
+        left_gen = self.get_bigger(root)
+        right_gen = self.get_smaller(root)
+        left = next(left_gen)
+        right = next(right_gen)
+        while left != right:
+            tmp = left.val + right.val
+            if tmp == k:
+                return True
+            elif tmp < k:
+                left = next(left_gen)
+            else:
+                right = next(right_gen)
+        return False
+
+    def get_bigger(self, root):
+        """Generator method to return next bigger node in the tree. Traverse inorder.
+        Assumptions: root is not None
+
+        """
+        stack = deque()
+        node = root
+        while node or stack:
+            while node:
+                stack.append(node)
+                node = node.left
+            if stack:
+                node = stack.pop()
+                yield node
+                node = node.right
+        return None
+
+    def get_smaller(self, root):
+        """Generator method to return next smaller node in the tree. Reverse traverse inorder.
+
+        """
+        stack = deque()
+        node = root
+        while node or stack:
+            while node:
+                stack.append(node)
+                node = node.right
+            if stack:
+                node = stack.pop()
+                yield node
+                node = node.left
+        return None
+
+
+class Solution1(object):
     def findTarget(self, root, n):
         if not root:
             return None
@@ -75,11 +135,20 @@ class SolutionTester(unittest.TestCase):
         self.sol = Solution()
 
     def test_case1(self):
-        nums = 1
-        answer = 1
-        result = self.sol.testm(nums)
+        nums = [5, 3, 6, 2, 4, None, 7]
+        target = 9
+        root = TreeNode.generate_bt_from_list(nums)
+        answer = True
+        result = self.sol.findTarget(root, target)
         self.assertEqual(answer, result)
 
+    def test_case2(self):
+        nums = [5, 3, 6, 2, 4, None, 7]
+        target = 28
+        root = TreeNode.generate_bt_from_list(nums)
+        answer = False
+        result = self.sol.findTarget(root, target)
+        self.assertEqual(answer, result)
 
 def main():
     suite = unittest.TestLoader().loadTestsFromTestCase(SolutionTester)
