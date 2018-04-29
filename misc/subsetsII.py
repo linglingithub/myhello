@@ -30,6 +30,60 @@ import unittest
 
 
 class Solution:
+    def subsetsWithDup_wrong(self, nums):
+        """Return subsets of nums, which might have duplicates in it.
+        :type nums: List[int]
+        :rtype: List[List[int]]
+
+        [1, 2, 2],
+        1. sort the nums to make same elements consecutive.
+        2. do regular subset, but try to skip the ele that is repated value if it's ???.
+
+        2,2,2
+        1,1,1
+        1,1,0
+        1,0,0
+        0,0,0
+
+
+        1, 1, 1
+        1, 1, 0
+        1, 0, 1 --->
+        1, 0, 0
+        0, 1, 1 --
+        0, 1, 0 --
+        0, 0, 1 --
+        0, 0, 0
+
+        """
+        if not nums:
+            return []
+        result = []
+        self.helper(nums, 0, [], result)
+        return result
+
+    def helper(self, nums, idx, cur, result):
+        if idx == len(nums):
+            result.append(cur)
+            return
+        # check if it's repeated value with previous one
+        if idx == 0 or nums[idx] != nums[idx - 1]:
+            self.helper(nums, idx + 1, cur + [nums[idx]], result)
+            self.helper(nums, idx + 1, cur, result)  # !!! does not take current one
+        else:
+            # repeated with previous one
+            #  --> !!! here idx is already the 2nd element of repeated values, if trying to look forward, then the if
+            # should do look forward way
+            # process untill end or find the next non-repeating value
+            end = idx
+            while end + 1 < len(nums) and nums[end + 1] == nums[end]:
+                end += 1
+            for i in range(idx, end + 1):
+                self.helper(nums, end + 1, cur + nums[idx: i + 1], result)
+            self.helper(nums, end + 1, cur, result)  # !!! does not take any repeated one
+
+
+class Solution1:
     """
     @param S: A set of numbers.
     @return: A list of lists. All valid subsets.

@@ -31,7 +31,32 @@ Medium
 import unittest
 
 
-class Solution(object):
+class Solution:
+    def subsets(self, nums):
+        """Return the subsets with given array nums
+        :type nums: List[int]
+        :rtype: List[List[int]]
+
+        [] or None => []
+        [1,2] => [[], [1], [2], [1, 2]]
+
+        Assumptions: no duplicates in nums
+        """
+        result = []
+        if not nums:
+            return result
+        self.helper(nums, 0, [], result)
+        return result
+
+    def helper(self, nums, idx, cur, result):
+        if idx == len(nums):
+            result.append(cur)
+            return  # !!!!! so important, don't forget
+        self.helper(nums, idx + 1, cur, result)
+        self.helper(nums, idx + 1, cur + [nums[idx]], result)
+
+
+class Solution1(object):
     def subsets(self, S): # recursive way
         # write your code here
         if not S:
