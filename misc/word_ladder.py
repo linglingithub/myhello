@@ -34,10 +34,251 @@ Medium
 """
 
 import unittest
+from collections import deque, defaultdict
+
+class Solution:
+
+    def ladderLength(self, beginWord, endWord, wordList):  # 124ms
+        """
+        :type beginWord: str
+        :type endWord: str
+        :type wordList: List[str]
+        :rtype: int
+        """
+        def make_p2w(word_list, w_idxs):
+            """Creates a map of all combinations of words with missing letters mapped
+            to all words in the list that match that pattern.
+            E.g. hot -> {'_ot': ['hot'], 'h_t': ['hot'], 'ho_': ['hot']}
+            """
+            p2w = defaultdict(list)
+
+            for word in word_list:
+                # for i in range(len(word)):
+                for i, j in w_idxs:
+                    p = word[:i] + "_" + word[i + 1:]
+                    p2w[p].append(word)
+            return p2w
+
+        def bfs_words(begin, end,  w_idxs, p2w):
+            queue = deque([(begin, 1)])
+            visited = set([begin])
+            while queue:
+                # Get the next node to explore from the top of the queue
+                word, depth = queue.popleft()
+
+                # Get the node's children
+                # By recreating all possible patterns for that string
+                # for i in range(len(word)):
+                for i, j in w_idxs:
+                    p = word[:i] + "_" + word[i + 1:]
+                    neighbor_words = p2w[p]
+                    # Iterate through children
+                    for nw in neighbor_words:
+                        # Goal check (before adding to the queue)
+                        if nw == end:
+                            return depth+1
+                        if nw not in visited:
+                            # Add to visited
+                            # These is no reason to wait to mark nodes as visited. Because this is
+                            # a BFS, once a node has been seen that is the earliest it could have
+                            # possibly been seen so any other path to that node would either be
+                            # longer or the same length as what we've already observed.
+                            visited.add(nw)
+                            # Add to the end of the queue
+                            queue.append((nw, depth+1))
+            return 0
+
+        if endWord not in wordList:
+            return 0
+        if beginWord == endWord:
+            return 1
+        # Get word length and character indexes
+        wl = len(beginWord)
+        w_indexes = [x for x in zip(range(wl), range(1, wl+1))]
+        # Preprocess words into a map
+        patterns2words = make_p2w(wordList + [beginWord], w_indexes)
+        # Do the search
+        return bfs_words(beginWord, endWord, w_indexes, patterns2words)
+
+    def ladderLength1(self, beginWord, endWord, wordList):  # ref
+
+        def make_p2w(word_list, w_idxs):
+            """Creates a map of all combinations of words with missing letters mapped
+            to all words in the list that match that pattern.
+            E.g. hot -> {'_ot': ['hot'], 'h_t': ['hot'], 'ho_': ['hot']}
+            """
+            p2w = defaultdict(word_list)
+
+            for word in word_list:
+                for i, j in w_idxs:
+                    p = word[:i] + "_" + word[j:]
+                    p2w[p].append(word)
+            return p2w
+
+        def bfs_words(begin, end, w_idxs, p2w):
+            queue = deque([(begin, 1)])
+            visited = set([begin])
+
+            while queue:
+                # Get the next node to explore from the top of the queue
+                word, depth = queue.popleft()
+
+                # Get the node's children
+                # By recreating all possible patterns for that string
+                for i,j in w_idxs:
+                    p = word[:i] + "_" + word[j:]
+                    neighbor_words = p2w[p]
+                    # Iterate through children
+                    for nw in neighbor_words:
+                        if nw not in visited:
+                            # Goal check (before adding to the queue)
+                            if nw == end:
+                                return depth+1
+                            # Add to visited
+                            # These is no reason to wait to mark nodes as visited. Because this is
+                            # a BFS, once a node has been seen that is the earliest it could have
+                            # possibly been seen so any other path to that node would either be
+                            # longer or the same length as what we've already observed.
+                            visited.add(nw)
+                            # Add to the end of the queue
+                            queue.append((nw, depth+1))
+            return 0
+
+        # Get word length and character indexes
+        wl = len(beginWord)
+        w_indexes = zip(range(wl), range(1, wl+1))
+        # Preprocess words into a map
+        patterns2words = make_p2w(wordList | set([beginWord, endWord]), w_indexes)
+        # Do the search
+        return bfs_words(beginWord, endWord, w_indexes, patterns2words)
+
+    def ladderLength1(self, beginWord, endWord, wordList): # 144ms
+        """
+        :type beginWord: str
+        :type endWord: str
+        :type wordList: List[str]
+        :rtype: int
+        """
+        def construct_dict(word_list):
+            d = {}
+            for word in word_list:
+                for i in range(len(word)):
+                    s = word[:i] + "_" + word[i+1:]
+                    d[s] = d.get(s, []) + [word]
+            return d
+
+        def bfs_words(begin, end, dict_words):
+            queue, visited = deque([(begin, 1)]), set()
+            while queue:
+                word, steps = queue.popleft()
+                if word == endWord:
+                    return steps
+                if word not in visited:
+                    visited.add(word)
+                    for i in range(len(word)):
+                        s = word[:i] + "_" + word[i+1:]
+                        neigh_words = dict_words.get(s, [])
+                        for neigh in neigh_words:
+                            if neigh not in visited:
+                                queue.append((neigh, steps + 1))
+            return 0
+
+        d = construct_dict(wordList)
+        return bfs_words(beginWord, endWord, d)
+
+    def ladderLength_self(self, beginWord, endWord, wordList):  # 468ms
+        """
+        Assumptions:
+            1) all words in lower case
+            2) all words have same length
+            3) all words have only letters a-z
+        :param beginWord:
+        :param endWord:
+        :param wordList:
+        :return:
+        """
+        if endWord not in wordList:
+            return 0
+        cost = 0
+        queue = deque([beginWord])
+        wordList = set(wordList)
+        while queue:
+            level_size = len(queue)
+            cost += 1
+            for _ in range(level_size):
+                cur = queue.popleft()
+                if cur == endWord:
+                    return cost
+                for i in range(len(cur)):
+                    for nch in "abcdefghijklmnopqrstuvwxy":
+                        nword = cur[: i] + nch + cur[i + 1:]
+                        if nword in wordList:
+                            wordList.remove(nword)
+                            queue.append(nword)
+        return 0
 
 
-class Solution(object):
-    def ladderLength(self, beginWord, endWord, wordList): #ref, leetcode has problem with this problem
+    def ladderLength_TLE(self, beginWord, endWord, wordList):  # local runs 60+s for case 2
+        """
+        :type beginWord: str
+        :type endWord: str
+        :type wordList: List[str]
+        :rtype: int
+        """
+        # sanity check
+        if not wordList or endWord not in wordList:
+            return 0
+        # corner case for beginWord already in wordList:
+        if beginWord == endWord and beginWord in wordList:
+            return -1 # or what ?
+        # queue for BFS
+        queue = deque()
+        # visited for check visited word in wordList
+        visited = set()
+        # init queue and visited
+        queue.append(beginWord)
+        visited.add(beginWord)
+        cost = 1
+        # check level by level the char change
+        while queue:
+            level_size = len(queue)
+            cost += 1
+            for _ in range(level_size):
+                cur = queue.popleft()
+                for i in range(len(cur)):
+                    for nch in 'abcdefghijklmnopqrstuvwxyz':
+                        candidate = cur[: i] + nch + cur[i + 1 :]
+                        # if candidate is the endWord
+                        if candidate == endWord:
+                            return cost
+                        if candidate in wordList and candidate not in visited:
+                            visited.add(candidate)
+                            queue.append(candidate)
+        return 0
+
+class Solution1(object):
+    def ladderLength(self, beginWord, endWord, wordList): #ref, 488ms
+        """
+        :type beginWord: str
+        :type endWord: str
+        :type wordList: List[str]
+        :rtype: int
+        """
+        wordList = set(wordList)
+        queue = deque([[beginWord, 1]])
+        while queue:
+            word, length = queue.popleft()
+            if word == endWord:
+                return length
+            for i in range(len(word)):
+                for c in 'abcdefghijklmnopqrstuvwxyz':
+                    next_word = word[:i] + c + word[i+1:]
+                    if next_word in wordList:
+                        wordList.remove(next_word)
+                        queue.append([next_word, length + 1])
+        return 0
+
+    def ladderLength1(self, beginWord, endWord, wordList): #ref, leetcode has problem with this problem
         """
         :type beginWord: str
         :type endWord: str
@@ -77,6 +318,16 @@ class SolutionTester(unittest.TestCase):
         b = 'cog'
         wordList = ["hot","dot","dog","lot","log","cog"]
         answer = 5
+        result = self.sol.ladderLength(a, b, wordList)
+        self.assertEqual(answer, result)
+
+    def test_case2(self):
+        a = 'sand'
+        b = 'acne'
+        from util.ini_file_util import IniFileUtil
+        params = IniFileUtil.read_into_dict("word_ladder_case2.ini")
+        wordList = IniFileUtil.string_to_string_list(params.get("wordlist"))
+        answer = 11
         result = self.sol.ladderLength(a, b, wordList)
         self.assertEqual(answer, result)
 

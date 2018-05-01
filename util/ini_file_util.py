@@ -38,6 +38,17 @@ class IniFileUtil(object):
         return result
 
     @classmethod
+    def string_to_string_list(cls, instr):
+        import re
+        tokens = re.split(',| |\[|\]|\"', instr)
+        result = []
+        # tokens = instr.split(",[]")
+        for token in tokens:
+            if token != "" and token != '' and token != '\"':
+                result.append(str(token))
+        return result
+
+    @classmethod
     def string_to_int_list_list(cls, instr):
         """
         out put is like [[5,9], [1,3], ....]
