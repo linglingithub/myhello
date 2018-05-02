@@ -1,6 +1,7 @@
 #coding=utf-8
 
 import unittest
+from collections import defaultdict, deque
 
 """
 
@@ -29,7 +30,43 @@ Medium Topological Sorting
 
 
 """
+class Solution:
+    def canFinish(self, numCourses, prereqs):
+        """
+        Assuptions: no duplicated edges.
+        Model the problem as finding topological ordering of a directed graph.
+        Time: O(|E| + |V|)
+        :type numCourses: int
+        :type prerequisites: List[List[int]]
+        :rtype: bool
+        """
+        if not numCourses or not prereqs:
+            return True
+        indegrees = [0 for _ in range(numCourses)]
+        edges = defaultdict(list)  # {node : [neis whoes prereq has node]}
+        queue = deque()
+        self.preprocess(numCourses, prereqs, indegrees, edges, queue)
+        course_taken = 0
+        while queue:
+            cur = queue.popleft()
+            course_taken += 1
+            neis = edges[cur]  # list of courses ids like [0, 2, 5...]
+            if not neis:
+                continue
+            for nei in neis:
+                indegrees[nei] -= 1
+                if indegrees[nei] == 0:
+                    queue.append(nei)
+        return course_taken == numCourses
 
+    def preprocess(self, numCourses, prereqs, indegrees, edges, queue):
+        # traverse all edges (prereqs), init the indegrees, edges, and queue
+        for pre, post in prereqs:
+            indegrees[post] += 1
+            edges[pre].append(post)
+        for node in range(len(indegrees)):
+            if indegrees[node] == 0:
+                queue.append(node)
 
 class Solution_DFS2_notgood_local_online:
     def dfs(self, v, visit, gr):
