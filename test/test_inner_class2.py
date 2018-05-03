@@ -14,6 +14,7 @@ class D:
             # return val_in_d * 5  # unresolved val_in_d
             a = D.val_in_d * 5
             print(a)
+            print(D.val_in_d, self.outer, D)
             return self.outer.val_in_d * 5
 
 

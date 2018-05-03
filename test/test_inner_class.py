@@ -12,6 +12,7 @@ class Human:
 
     class Head:
         def talk(self):
+            print("talk_self: ", self)
             return 'talking...'
 
     class Brain:
@@ -24,3 +25,6 @@ if __name__ == '__main__':
     print(guido.name)
     print(guido.head.talk())
     print(guido.brain.think())
+    print(guido,guido.brain)
+    print(Human.Brain, guido.Brain)
+    print(Human.Brain(), guido.Brain())
