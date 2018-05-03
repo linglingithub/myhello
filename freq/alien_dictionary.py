@@ -83,6 +83,15 @@ class Solution:  # change queue to heap
     3. if sorted nodes contains the same number of nodes in the graph (all letters)
         return sorted result, otherwise ""
 
+    Time:
+        build graph, traverse each word and compare each letter: O(word * average word length)
+        BFS topological sort: O(|V| + |E|)
+    Space:
+        indegrees: O(letter count) --> const?
+        letter_set: O(letter count) --> const?
+        neighbor dict: O(|E|)
+        priority queue: O(|V|)
+
     @param words: a list of words
     @return: a string which is correct order
     """

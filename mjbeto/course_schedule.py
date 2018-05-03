@@ -31,7 +31,35 @@ Medium Topological Sorting
 
 """
 class Solution:
-    def canFinish(self, numCourses, prereqs):
+    def canFinish(self, numCourses, prereqs):  # DFS way
+        if not prereqs:
+            return True
+        can_finish = [0 for _ in range(numCourses)]   # 1: yes, 0: unchecked, -1: checked and has dependends
+        # process edges
+        depends = defaultdict(set)
+        for pre, post in prereqs:
+            depends[post].add(pre)
+        # DFS to check every courses
+        for course in range(numCourses):
+            if not self.helper(course, can_finish, depends):
+                return False
+        return True
+
+    def helper(self, course, can_finish, depends):
+        if can_finish[course] == 1:
+            return True
+        if can_finish[course] == -1:  # loop dependence, should return false
+            return False
+        can_finish[course] = -1
+        for nei in depends[course]:
+            if not self.helper(nei, can_finish, depends):
+                return False
+        # if all dependends can finish, then current course can be finished
+        can_finish[course] = 1
+        return True
+
+
+    def canFinish_BFS(self, numCourses, prereqs):
         """
         Assuptions: no duplicated edges.
         Model the problem as finding topological ordering of a directed graph.
@@ -122,7 +150,7 @@ class Solution_DFS_TLEonline_maxstacklocal(object):
 
 
 
-class Solution(object):
+class Solution1(object):
     def canFinish(self, numCourses, prerequisites): # BFS idea
         """
         remember: key difference, 

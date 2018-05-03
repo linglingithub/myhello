@@ -35,10 +35,10 @@ You may assume that there are no duplicate edges in the input prerequisites.
 
 
 """
-
+from collections import defaultdict
 
 class Solution(object):
-    def findOrder(self, numCourses, prerequisites):
+    def findOrder_BFS(self, numCourses, prerequisites):
         """
         :type numCourses: int
         :type prerequisites: List[List[int]]
@@ -78,6 +78,36 @@ class Solution(object):
         return result if courses == numCourses else []
 
 
+    def findOrder(self, numCourses, prereqs):  # DFS way, 52ms, 100%!! 0503
+        if not prereqs:
+            return [x for x in range(numCourses)]
+        can_finish = [0 for _ in range(numCourses)]   # 1: yes, 0: unchecked, -1: checked and has dependends
+        # process edges
+        depends = defaultdict(set)
+        for pre, post in prereqs:
+            depends[post].add(pre)
+        # DFS to check every courses
+        result = []
+        for course in range(numCourses):
+            if not self.helper(course, can_finish, depends, result):
+                return []
+        return [x for x in reversed(result)]
+
+    def helper(self, course, can_finish, depends, result):
+        if can_finish[course] == 1:
+            return True
+        if can_finish[course] == -1:  # loop dependence, should return false
+            return False
+        can_finish[course] = -1
+        for nei in depends[course]:
+            if not self.helper(nei, can_finish, depends, result):
+                return False
+        # if all dependends can finish, then current course can be finished
+        can_finish[course] = 1
+        result.append(course)
+        return True
+
+
 class SolutionTester(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
@@ -109,7 +139,7 @@ class SolutionTester(unittest.TestCase):
         nums = [[1,0],[2,0],[3,1],[3,2]]
         answers = [[0, 1,2,3], [0,2,1,3]]
         result = self.sol.findOrder(n, nums)
-        print result
+        print(result)
         #self.assertEqual(answer, result)
         self.assertTrue(result in answers)
 
@@ -126,38 +156,6 @@ if __name__ == "__main__":
 #-*- coding:utf-8 -*-
 
 """
-some DFS code can be accepted by leetcode, by error on lintcode (probabaly maximum recursive times, n = 100001)
-one of the codes is like following
 
-下面我们来看DFS的解法，也需要建立有向图，还是用二维数组来建立，和BFS不同的是，我们像现在需要一个一维数组visit来记录访问状态，大体思路是，
-先建立好有向图，然后从第一个门课开始，找其可构成哪门课，暂时将当前课程标记为已访问，然后对新得到的课程调用DFS递归，直到出现新的课程已经访问
-过了，则返回false，没有冲突的话返回true，然后把标记为已访问的课程改为未访问。代码如下：
-
-    def dfs(self, v, visit, gr):
-        if visit[v] == 1:
-            return True
-        visit[v] = -1;
-        for i in gr[v]:
-            if visit[i] == -1 or not self.dfs(i, visit, gr):
-                return False
-        visit[v] = 1
-        return True
-     
-    # @param {integer} numCourses
-    # @param {integer[][]} prerequisites
-    # @return {boolean}
-    def canFinish(self, numCourses, prerequisites):
-        gr = [[] for x in range(numCourses)]
-        visit = [0 for x in range(numCourses)]
-         
-        for p in prerequisites:
-            if p[0] not in gr[p[1]]:
-                gr[p[1]].append(p[0])
-                 
-        for v in range(numCourses):
-            if visit[v]!=1:
-                if not self.dfs(v, visit, gr):
-                    return False
-        return True
 
 """
