@@ -33,11 +33,178 @@ Hash Table Sort
 Similar Questions 
 H-Index II 
 
+
+Followup:
+when nums is increasing, how to output h-index of every moment?
+--> basic idea, use heapq method, when new element comes in , 
+compare it with the latest h-index, update total_count and h-index accordingly?
 """
+import heapq
+import random
+
+class Solution:
+    def hIndex_binary_search(self, citations):  # also 100% ???
+        """
+        Assumptions: ciatations are all non-negative
+        [1, 101, 102, 103, 105] 4
+        [1, 1, 1, 1] 1
+        [1, 1, 2] 1
+        [1] 1 !!! not 0
+
+        original target: find the max value of h that in a sorted array, arr[len(arr) - h] >= h
+        mid = len(arr) - h, arr[mid] >= len(arr) - mid
+
+        time: O(nlogn)
+        space: O(1)
+
+        :type citations: List[int]
+        :rtype: int
+        """
+        if not citations:
+            return 0
+        citations.sort()
+        result = 0
+        l, r, n = 0, len(citations) - 1, len(citations)
+        while l <= r:
+            mid = l + (r - l) // 2
+            if citations[mid] >= n - mid:
+                result = n - mid
+                r = mid - 1
+            else:
+                l = mid + 1
+        return result
+
+
+    def hIndex_quick_select(self, citations):  # acc as 92%
+        """
+        Assumptions: ciatations are all non-negative
+        [1, 101, 102, 103, 105] 4
+        [1, 1, 1, 1] 1
+        [1, 1, 2] 1
+        [1] 1 !!! not 0
+
+        original target: find the max value of h that in a sorted array, arr[len(arr) - h] >= h
+        quiick select: pos = len(arr) - h, above transform into arr[pos] >= len(arr) - pos, find the min pos
+
+        Time: O(nlogn)
+        Space: O(1)
+
+        :type citations: List[int]
+        :rtype: int
+        """
+        if not citations:
+            return 0
+        #citations.sort()  !!! no need
+        result = 0
+        l, r = 0, len(citations) - 1
+        while l <= r:
+            pos = self.partition(citations, l, r)
+            if citations[pos] >= len(citations) - pos:
+                result = len(citations) - pos  # !!! not pos
+                r = pos - 1
+            else:
+                l = pos + 1
+        return result
+
+    def partition(self, arr, l, r):
+        idx = random.randint(l, r)
+        arr[r], arr[idx] = arr[idx], arr[r]
+        pivot = arr[r]
+        i, j = l, r - 1  # from [i:] should be >= pivot, pivot will be place on i
+        while i <= j:
+            if arr[i] < pivot:
+                i += 1
+            elif arr[j] >= pivot:
+                j -= 1
+            else:
+                arr[i], arr[j] = arr[j], arr[i]
+                i += 1
+                j -= 1
+        arr[i], arr[r] = arr[r], arr[i]
+        return i
+
+    def hIndex_heap(self, citations):  # AC as 100%
+        """
+        Assumptions: ciatations are all non-negative
+        [1, 101, 102, 103, 105] 4
+        [1, 1, 1, 1] 1
+        [1, 1, 2] 1
+        [1] 1 !!! not 0
+
+        Time: O(n) + O(nlogn) => O(nlogn)
+        Space: O(1)
+        :type citations: List[int]
+        :rtype: int
+        """
+        result = len(citations)
+        heapq.heapify(citations)
+        while citations:
+            cur = heapq.heappop(citations)
+            if cur >= result:
+                break
+            else:
+                result -= 1
+        return result
+
+    def hIndex_bucket_sort(self, citations):  # also AC as 100% ??? leetcode issue?
+        """
+        Assumptions: ciatations are all non-negative
+        [1, 101, 102, 103, 105] 4
+        [1, 1, 1, 1] 1
+        [1, 1, 2] 1
+        [1] 1 !!! not 0
+        Time: O(n)
+        Space: O(n)
+
+        :type citations: List[int]
+        :rtype: int
+        """
+        if not citations:
+            return 0
+        n = len(citations)
+        buckets = [0 for _ in range(n + 1)]
+        # bucket[i]: number of paper with i citations
+        for val in citations:
+            if val >= n:
+                buckets[n] += 1
+            else:
+                buckets[val] += 1
+        cit_sum = 0
+        for hidx in range(n, -1, -1):
+            cit_sum += buckets[hidx]
+            if cit_sum >= hidx:
+                return hidx
+        return 0
+
+    def hIndex_sort_loop(self, citations):
+        """
+        Assumptions: ciatations are all non-negative
+        [1, 101, 102, 103, 105] 4
+        [1, 1, 1, 1] 1
+        [1, 1, 2] 1
+        [1] 1 !!! not 0
+
+        Time: O(nlogn) + O(n) ==> O(nlogn)
+        Space: O(logn) + O(1) ==> O(logn)
+
+        :type citations: List[int]
+        :rtype: int
+        """
+        if not citations:
+            return 0
+        n = len(citations)
+        citations.sort()
+        i = n
+        while i > 0:  # i: the h index, range [0, n], but in the loop only down to 1
+            if citations[n - i] < i: # according to case 4, < instead of <=
+                i -= 1
+            else:
+                break
+        return i
 
 
 
-class Solution(object):
+class Solution1(object):
 
     def hIndex(self, citations):  # no sorting, use extra O(n) space, time O(n)
         """
@@ -89,8 +256,14 @@ class SolutionTester(unittest.TestCase):
         result = self.sol.hIndex(nums)
         self.assertEqual(answer, result)
 
-    def test_case02(self):
+    def test_case2(self):
         nums = [2,1]
+        answer = 1
+        result = self.sol.hIndex(nums)
+        self.assertEqual(answer, result)
+
+    def test_case03(self):
+        nums = [1]
         answer = 1
         result = self.sol.hIndex(nums)
         self.assertEqual(answer, result)
@@ -108,6 +281,9 @@ if __name__ == "__main__":
 #-*- coding:utf-8 -*-
 
 """
+
+http://massivealgorithms.blogspot.com/2015/09/h-index-leetcode-training-dragons-hard.html
+
 
 排序法
 复杂度
