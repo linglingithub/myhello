@@ -1,4 +1,3 @@
-__author__ = 'linglin'
 
 """
 Input: excel file in .xlsx format, with tabs starting with "lc_***", where *** will be parsed into int id of learning centers.
@@ -10,7 +9,6 @@ from collections import defaultdict
 import json
 
 
-grade_outline_xls = "Downloads/Afficient English Language Arts Chapter Outline.xlsx"
 
 HOME = os.path.expanduser("~")
 SHEET_PREFIX = "lc_"
