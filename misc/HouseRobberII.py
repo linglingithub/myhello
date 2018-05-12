@@ -29,9 +29,39 @@ Medium
 
 """
 
+class Solution:
+    def rob(self, nums):
+        """
+        Basic idea, consider two cases nums[0 : n - 2] and nums[1 : n - 1]
+        :type nums: List[int]
+        :rtype: int
+        """
+        if not nums:
+            return 0
+        n = len(nums)
+        if n == 1:
+            return nums[0]
+        if n == 2:
+            return max(nums[0], nums[1])
+        if n == 3:
+            return max(nums[0], nums[1], nums[2])
+        dp = [0 for _ in range(n)]
+        dp[0] = nums[0]
+        dp[1] = max(nums[0], nums[1])
+        # check nums[0 : n - 2]
+        for i in range(2, n - 1):
+            dp[i] = max(dp[i - 1], dp[i - 2] + nums[i])
+        result = dp[n - 2]
+        # check nums[1 : n - 1]
+        dp[1] = nums[1]
+        dp[2] = max(nums[1], nums[2])
+        for i in range(3, n):
+            dp[i] = max(dp[i - 1], dp[i - 2] + nums[i])
+        result = max(result, dp[n - 1])
+        return result
 
 
-class Solution(object):
+class Solution1(object):
     def rob(self, nums): #38ms, 88%
         """
         Take nums as two arrays, nums[0:n-1], nums[1:n] , which means the first house is robbed / not robbed
@@ -48,6 +78,7 @@ class Solution(object):
         if n < 3:  #shoud move before dp init, see case 3
             return max(nums[0], nums[1])
 
+        # for nums[0: n - 2]
         dp = [0 for _ in range(n-1)]
         dp[0] = nums[0]
         dp[1] = max(nums[1], nums[0])
@@ -55,6 +86,7 @@ class Solution(object):
             dp[i] = max(dp[i-2]+nums[i], dp[i-1])
         result = dp[n-2]
 
+        # for nums[1: n - 1]
         dp[0] = nums[1]
         dp[1] = max(nums[1], nums[2])
         for i in range(2, n-1):

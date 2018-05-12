@@ -52,7 +52,47 @@ Medium
 
 from util.tree_node import TreeNode
 
-class Solution(object):
+
+class Solution:
+    def rob(self, root):
+        """
+        Basic idea: DFS, with memerization of treenodes' rob max val
+        for a given node:
+        dp[node] = max(dp[node.left] + dp[node.right], node.val + sum(dp[node.grandchildren])
+
+        Time: O(n)
+        Space: O(n)
+
+        :type root: TreeNode
+        :rtype: int
+        """
+        if not root:
+            return 0
+        dp = {}  # (node, maxval) store the max rob val of subtree with node as root
+        dp[None] = 0  # add a default value of key None here to make code cleaner, like dp[root.left]
+        self.dfs(root, dp)
+        return dp[root]
+
+    def dfs(self, root, dp):
+        # if not root:
+        #     return 0
+        if root in dp:
+            return dp[root]
+        self.dfs(root.left, dp)
+        self.dfs(root.right, dp)
+        lsum = 0
+        rsum = 0
+        if root.left:
+            lsum += self.dfs(root.left.left, dp)
+            lsum += self.dfs(root.left.right, dp)
+        if root.right:
+            rsum += self.dfs(root.right.left, dp)
+            rsum += self.dfs(root.right.right, dp)
+        dp[root] = max(root.val + lsum + rsum, dp[root.left] + dp[root.right])
+        return dp[root]
+
+
+class Solution1(object):
 
     def rob(self, root): # idea same as rob1, rewrite code,  88ms, 55%; 500 + ms on lint
         money = {}

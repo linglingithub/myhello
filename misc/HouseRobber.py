@@ -31,6 +31,47 @@ Easy
 
 
 class Solution:
+    def rob(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        Time: O(n)
+        Space: O(1)
+
+        """
+        if not nums:
+            return 0
+        n = len(nums)
+        if n == 1:
+            return nums[0]
+        dp = [0 for _ in range(n)]
+        dp[0] = nums[0]
+
+        dp[1] = max(nums[0], nums[1])
+
+        for i in range(2, n):
+            dp[i] = max(dp[i - 1], dp[i - 2] + nums[i])
+        return dp[n - 1]
+
+    def rob1(self, nums):  # save space to O(1), but a little slower than n length array
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if not nums:
+            return 0
+        n = len(nums)
+        if n == 1:
+            return nums[0]
+
+        dp = [0 for _ in range(3)]
+        dp[0] = nums[0]
+        dp[1] = max(nums[0], nums[1])
+        for i in range(2, n):
+            dp[i % 3] = max(dp[(i - 1) % 3], dp[(i - 2) % 3] + nums[i])
+        return dp[(n - 1) % 3]
+
+class Solution1:
     # @param A: a list of non-negative integers.
     # return: an integer
     def houseRobber(self, A):  # O(n) time, O(1) space
