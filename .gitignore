@@ -13,3 +13,5 @@ workspace.xml
 **/workspace.xml
 test/venv/
 test/venv3/
+**/venv3/
+
