@@ -42,11 +42,18 @@ Related Topics
 DFS
 """
 
+from collections import defaultdict
+
 
 class Solution:
+    DIRS = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+
     def largestIsland(self, grid):
         """
         Basic idea:
+        normal case, the 0 grid next to the biggest island will make the max result
+        spaceal cases: if the 0 grid will connect two (or MORE) islands that with max SUM of islands' area, then it's the result
+
         status: cur_island_id, margin_cells ( in a defaultdict ((x,y), [island_size]))
         1) DFS on all possible island, and output the island's size, the margin cells, mark original grid as the island id
         2) check all the margin_cells to find the target margin_cell with global max of sum(island_size)
@@ -55,6 +62,7 @@ class Solution:
         1) mepty grid, return 0
         2) when margin_cells are empty, return grid size ( all island cells)
         3) ??anything else?
+        4) !!!!! when all 0 grid, margin_cells are also empty as 2), but result = 1, should has a flag to tell !!!
 
         Time: O(size of grid)
         Space: O(size of grid) -- possible same magnitude as the size of grid
@@ -62,7 +70,52 @@ class Solution:
         :type grid: List[List[int]]
         :rtype: int
         """
+        if not grid or not grid[0]:
+            return 0
+        island_id = 2  # current island_id
+        margin_cells = defaultdict(list)  # global margin cells
+        has_island = False  # !!!
 
+        # traverse and dfs on grid to mark island, and process
+        for i in range(len(grid)):
+            for j in range(len(grid[0])):
+                if grid[i][j] == 1:
+                    has_island = True  # !!!
+                    cur_margin_cells = set()
+                    cur_island_area = [0]
+                    self.dfs(grid, i, j, island_id, cur_margin_cells, cur_island_area)
+                    self.process_margins(margin_cells, cur_margin_cells, cur_island_area)
+                    island_id += 1
+
+        # process all margin_cells and get result
+        if not margin_cells:
+            return len(grid) * len(grid[0]) if has_island else 1  # !!!!
+        result = 0
+        for cell, island_area_list in margin_cells.items():
+            result = max(result, sum(island_area_list))
+        return result + 1  # !!! don't forget + 1
+
+    def dfs(self, grid, x, y, island_id, cur_margin_cells, cur_island_area):
+        # boarder check
+        if x < 0 or x >= len(grid) or y < 0 or y >= len(grid[0]):
+            return
+        if grid[x][y] == 1:
+            # island cell
+            cur_island_area[0] += 1
+            grid[x][y] = island_id
+            # expand in 4 DIRS and dfs
+            for (dx, dy) in self.DIRS:  # !!! need to use self. here
+                self.dfs(grid, x + dx, y + dy, island_id, cur_margin_cells, cur_island_area)
+        elif grid[x][y] == 0:
+            # margin cell
+            cur_margin_cells.add((x, y))
+        else:
+            # other island cell
+            return
+
+    def process_margins(self, margin_cells, cur_margin_cells, cur_island_area):
+        for (x, y) in cur_margin_cells:
+            margin_cells[(x, y)].append(cur_island_area[0])
 
 
 class SolutionTester(unittest.TestCase):
