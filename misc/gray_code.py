@@ -32,7 +32,27 @@ Medium
 import unittest
 
 
-class Solution(object):
+class Solution:
+    def grayCode(self, n):
+        """
+        :type n: int
+        :rtype: List[int]
+        """
+        if n < 0:
+            return []
+        return self.helper(n)
+
+    def helper(self, n):
+        if n == 0:
+            return [0]
+        result = self.helper(n - 1)
+        high = 1 << (n - 1)
+        for i in range(len(result) - 1, -1, -1):
+            result.append(result[i] + high)
+        return result
+
+
+class Solution1(object):
     def grayCode(self, n): #46ms, 59%
         """
         :type n: int
