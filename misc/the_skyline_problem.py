@@ -50,14 +50,200 @@ Divide and Conquer Heap Binary Indexed Tree Segment Tree
 
 """
 
+import functools, heapq
 
-class Solution(object):
+
+class Solution_REF(object):
     def getSkyline(self, buildings):
+        events = sorted(buildings + [[b[1], float("inf"), 0] for b in buildings])
+        skyline, curb = [], [(0, float("inf"))]
+        for L, R, H in events:
+            top = curb[0][0]
+            while curb[0][1]<= L:
+                heapq.heappop(curb)
+            if H > 0:
+                heapq.heappush(curb,(-H, R))
+            if top != curb[0][0]:
+                if skyline and L == skyline[-1][0]:
+                    skyline[-1][1] = -curb[0][0]
+                else:
+                    skyline.append([L, -curb[0][0]])
+        return skyline
+
+
+class Solution(object):  # AC, second time TLE ==> AC, 2.47%, after remove inner class ==> after change remove process, to 40+%,
+    def getSkyline(self, buildings):  # TLE on last case, 35/36 cases passed
         """
+        Basic idea:
+        1. parse input into (x, height, true -- start / false -- close)
+        2. sort the converted input according to (x, height)
+        3. scan through the inputs, keep current height according to input, when there is changing point, put it to result
+        when open: check height with current height, if bigger, append a new start point, else continue
+                    -- remember to add to height candidates....
+        when clopse: check next height ---> so need to maintain a heap or stack or some structure for potential heights???
+        ?? how to store height candidates and keep height order and (quick/or not quickly) remove?
+
+        Time: O(nlogn) + O(n^2)
+
         :type buildings: List[List[int]]
         :rtype: List[List[int]]
         """
-        
+        if not buildings:
+            return []
+        # process inputs
+        points = self._process_buildings(buildings) # sort points, and merge building when necessary
+        # result and status bookkeepoing
+        result = []
+        heights = [0]  # insert a 0 height for no building case
+        for point in points:
+            if point[2]:
+                if -point[1] > -heights[0]:
+                    if result and result[-1][0] == point[0]:      # add if for [-1] here for cases 4
+                        result[-1] = [point[0], -point[1]]
+                    else:
+                        result.append([point[0], -point[1]])
+                heapq.heappush(heights, point[1])  # inorder to make a max heap, use -height, and point[1] is already -height,
+            else:
+                self._remove_point(heights, point) # find and reomve buildingpoint with same height
+                if -point[1] > -heights[0]:
+                    # result.append([point.x, -heights[0][0]]) # add new interval for new current height
+                    if result and result[-1][0] == point[0]:      # add if for [-1] here for cases 4
+                        result[-1] = [point[0], -heights[0]]
+                    else:
+                        result.append([point[0], -heights[0]])
+
+        return result
+
+    def _process_buildings(self, buildings):
+        points = []
+        for build in buildings:
+            a = (build[0], -build[2], True)
+            b = (build[1], -build[2], False)
+            points.append(a)
+            points.append(b)
+        points.sort()
+        # merge if necessary, only for open and close ones, ignore repeated ones, main method will cover
+        merged = []
+        i = 0
+        while i < len(points) - 1:
+            a, b = points[i], points[i + 1]  # !!! miss case 3 because forget i + 1 here
+            if a[0] == b[0] and a[1] == b[1] and a[2] == (not b[2]):
+                i += 2
+                continue
+            merged.append(a)
+            i += 1
+        if i == len(points) - 1:
+            merged.append(points[-1])
+        return merged
+
+    def _remove_point(self, heights, point):
+        for i in range(len(heights)):
+            if (point[1]) == (heights[i]):
+                heights[i] = heights[-1]
+                heights.pop()
+                if i < len(heights):
+                    heapq._siftup(heights, i)
+                    heapq._siftdown(heights, 0, i)
+                break
+
+    def _remove_point1(self, heights, point):
+        for i in range(len(heights)):
+            if (point[1]) == (heights[i]):
+                del heights[i]
+                break
+        heapq.heapify(heights)
+
+
+class Solution1(object):
+    def getSkyline(self, buildings):  # TLE on last case, 35/36 cases passed
+        """
+        Basic idea:
+        1. parse input into (x, height, true -- start / false -- close)
+        2. sort the converted input according to (x, height)
+        3. scan through the inputs, keep current height according to input, when there is changing point, put it to result
+        when open: check height with current height, if bigger, append a new start point, else continue
+                    -- remember to add to height candidates....
+        when clopse: check next height ---> so need to maintain a heap or stack or some structure for potential heights???
+        ?? how to store height candidates and keep height order and (quick/or not quickly) remove?
+
+        Time: O(nlogn) + O(n^2)
+
+        :type buildings: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        if not buildings:
+            return []
+        # process inputs
+        points = self._process_buildings(buildings) # sort points, and merge building when necessary
+        # result and status bookkeepoing
+        result = []
+        heights = [(0, Solution.BuildingPoint(-1, 0, True))]  # insert a 0 height for no building case
+        for point in points:
+            if point.open:
+                if point.height > -heights[0][0]:
+                    if result and result[-1][0] == point.x:      # add if for [-1] here for cases 4
+                        result[-1] = [point.x, point.height]
+                    else:
+                        result.append([point.x, point.height])
+                heapq.heappush(heights, (-point.height, point))  # inorder to make a max heap, use -height
+            else:
+                self._remove_point(heights, point) # find and reomve buildingpoint with same height
+                if point.height > -heights[0][0]:
+                    # result.append([point.x, -heights[0][0]]) # add new interval for new current height
+                    if result and result[-1][0] == point.x:      # add if for [-1] here for cases 4
+                        result[-1] = [point.x, -heights[0][0]]
+                    else:
+                        result.append([point.x, -heights[0][0]])
+
+        return result
+
+    def _process_buildings(self, buildings):
+        points = []
+        for build in buildings:
+            a = Solution.BuildingPoint(build[0], build[2], True)
+            b = Solution.BuildingPoint(build[1], build[2], False)
+            points.append(a)
+            points.append(b)
+        points.sort()
+        # merge if necessary, only for open and close ones, ignore repeated ones, main method will cover
+        merged = []
+        i = 0
+        while i < len(points) - 1:
+            a, b = points[i], points[i + 1]  # !!! miss case 3 because forget i + 1 here
+            if a.x == b.x and a.height == b.height and a.open == (not b.open):
+                i += 2
+                continue
+            merged.append(a)
+            i += 1
+        if i == len(points) - 1:
+            merged.append(points[-1])
+        return merged
+
+    def _remove_point(self, heights, point):
+        for i in range(len(heights)):
+            if point.height == -(heights[i][0]):
+                del heights[i]
+                break
+        heapq.heapify(heights)
+
+
+    @functools.total_ordering
+    class BuildingPoint:
+        def __init__(self, x, height, open=True):
+            self.x = x
+            self.height = height
+            self.open = open
+
+        def __lt__(self, other):
+            return (self.x, -self.height, self.open) < (other.x, -other.height, other.open)  # make open one's first to avoid case 2
+            # !!! use -height to make higher ones go first
+            #return (self.x, self.height, not self.open) < (other.x, other.height, not other.open)
+
+        def __eq__(self, other):
+            return self.x == other.x and self.height == other.height and self.open == other.open
+
+
+
 
 
 
@@ -71,6 +257,23 @@ class SolutionTester(unittest.TestCase):
         result = self.sol.getSkyline(nums)
         self.assertEqual(answer, result)
 
+    def test_case2(self):
+        nums = [ [2, 9, 10], [9, 12, 15]]
+        answer = [[2,10],[9,15],[12,0]]  # wrong output as [[2,10],[9,0],[9,15],[12,0]] !!! note there should be cases points are one same x!!!
+        result = self.sol.getSkyline(nums)
+        self.assertEqual(answer, result)
+
+    def test_case3(self):
+        nums = [[0,2,3],[2,5,3]]
+        answer = [[0,3],[5,0]]  # wrong output as [[0,3],[2,0],[2,3],[5,0]]  # !!! still should check similar case 2, __lt__ is not enough
+        result = self.sol.getSkyline(nums)
+        self.assertEqual(answer, result)
+
+    def test_case4(self):
+        nums = [[1,2,1],[1,2,2],[1,2,3]]
+        answer = [[1,3],[2,0]]   # wrong output as [[1,3],[2,2],[2,1],[2,0]]  !!! when appending to result, always check
+        result = self.sol.getSkyline(nums)
+        self.assertEqual(answer, result)
 
 def main():
     suite = unittest.TestLoader().loadTestsFromTestCase(SolutionTester)
@@ -81,6 +284,44 @@ if __name__ == "__main__":
     main()
 
 """
+This is a Python version of my modification of dong.wang.1694's brilliant C++ solution. It sweeps from left to right. 
+But it doesn't only keep heights of "alive buildings" in the priority queue and it doesn't remove them as soon as their 
+building is left behind. Instead, (height, right) pairs are kept in the priority queue and they stay in there as long 
+as there's a larger height in there, not just until their building is left behind.
+
+In each loop, we first check what has the smaller x-coordinate: adding the next building from the input, or removing 
+the next building from the queue. In case of a tie, adding buildings wins, as that guarantees correctness 
+(think about it :-). We then either add all input buildings starting at that x-coordinate or we remove all 
+queued buildings ending at that x-coordinate or earlier (remember we keep buildings in the queue as long as they're 
+"under the roof" of a larger actually alive building). And then, if the current maximum height in the queue differs 
+from the last in the skyline, we add it to the skyline.
+
+
+from heapq import *
+class Solution:
+    #def getSkyline(self, buildings):
+    def getSkyline(self, LRH):
+        skyline = []
+        i, n = 0, len(LRH)
+        liveHR = []
+        while i < n or liveHR:
+            if not liveHR or i < n and LRH[i][0] <= -liveHR[0][1]:
+                x = LRH[i][0]
+                while i < n and LRH[i][0] == x:
+                    heappush(liveHR, (-LRH[i][2], -LRH[i][1]))
+                    i += 1
+            else:
+                x = -liveHR[0][1]
+                while liveHR and -liveHR[0][1] <= x:
+                    heappop(liveHR)
+            height = len(liveHR) and -liveHR[0][0]
+            if not skyline or height != skyline[-1][1]:
+                skyline += [x, height],
+        return skyline
+        
+        
+
+
 http://www.cnblogs.com/grandyang/p/4534586.html
 这道题一打开又是图又是这么长的题目的，看起来感觉应该是一道相当复杂的题，但是做完之后发现也就那么回事，虽然我不会做，是学习的别人的解法。
 这道求天际线的题目应该算是比较新颖的题，要是非要在之前的题目中找一道类似的题，也就只有 Merge Intervals 合并区间了吧，但是与那题不同的是，
