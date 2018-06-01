@@ -51,7 +51,12 @@ class Solution(object):
             --- dp[x][y] means [x:y] are bursted, and thus [k] is left as LAST step, NOT the FIRST and then merge
             --- this way, dp[][] physical meaning holds true
         ==> add surrounding [1] to both ends of input array, and i , j work on [1..len(nums)]
-        base case: dp[i][i] = balloons[i]
+        base case: dp[i][i] = balloons[i] ==> THIS is not TRUE, single balloon can have DIFFERENT neighbor, not as single
+
+        Time: O(n^3)
+        Space: O(n^2)
+
+
 
         :type nums: List[int]
         :rtype: int
