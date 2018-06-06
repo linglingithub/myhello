@@ -78,14 +78,14 @@ def integers():
     """Infinite sequence of integers."""
     i = 1
     while True:
-        print "integers | inside integer: ", i
+        print("integers | inside integer: ", i)
         yield i
-        print "integers | to increase i: ", i
+        print("integers | to increase i: ", i)
         i = i + 1
 
 def squares():
     for i in integers():
-        print "inside squares: ", i
+        print("inside squares: ", i)
         yield i * i
 
 def take(n, seq):
@@ -94,15 +94,15 @@ def take(n, seq):
     result = []
     try:
         for i in range(n):
-            print "--> loop of take: ", i
+            print("--> loop of take: ", i)
             result.append(seq.next())
-            print "<-- loop one done."
+            print("<-- loop one done.")
     except StopIteration:
-        print "--- inside StopIteration! ",
+        print("--- inside StopIteration! ")
         pass
     return result
 
-print take(5, squares()) # prints [1, 4, 9, 16, 25]
+print(take(5, squares())) # prints [1, 4, 9, 16, 25]
 
 
 """
