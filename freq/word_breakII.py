@@ -465,14 +465,17 @@ app len feng
 复制代码
 
 解答2： dfs2：
-参考了http://blog.csdn.net/fightforyourdream/article/details/38530983的 解法，我们仍然使用主页君用了好多次的递归模板。但是在LeetCode中超时，在进入DFS时加了一个『判断是不是wordBreak』的判断，终于过了。这是一种DFS+剪枝的解法
+参考了http://blog.csdn.net/fightforyourdream/article/details/38530983的 解法，我们仍然使用主页君用了好多次的递归模板。
+但是在LeetCode中超时，在进入DFS时加了一个『判断是不是wordBreak』的判断，终于过了。这是一种DFS+剪枝的解法
 
  View Code
  
 
 解答3： dfs3：
 
-感谢http://fisherlei.blogspot.com/2013/11/leetcode-wordbreak-ii-solution.html的解释，我们可以加一个boolean的数组，b[i]表示从i到len的的字串可不可以进行word break. 如果我们在当前根本没有找到任何的word， 也就表明这一串是不能word break的，记一个false在数组里。这样下次进入dfs这里的时候，直接就返回一个false.通过这个剪枝我们也可以减少复杂度。
+感谢http://fisherlei.blogspot.com/2013/11/leetcode-wordbreak-ii-solution.html的解释，我们可以加一个boolean的数组，
+b[i]表示从i到len的的字串可不可以进行word break. 如果我们在当前根本没有找到任何的word， 也就表明这一串是不能word break的，
+记一个false在数组里。这样下次进入dfs这里的时候，直接就返回一个false.通过这个剪枝我们也可以减少复杂度。
 
  View Code
  
