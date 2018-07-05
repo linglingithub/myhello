@@ -32,4 +32,4 @@ recursion.
 
 instance = UpperOut("somedir/somefile.txt")
 #instance.write("test")
-print instance
+print(instance)

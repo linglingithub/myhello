@@ -28,6 +28,7 @@ In Javascript, everything is function, so very different
 
 print('=============================================')
 
+
 def my_counter1():
     inner_val = 0
 
@@ -35,12 +36,14 @@ def my_counter1():
         return inner_val + 1
     return increase
 
+
 def my_counter2(val):
     def increase():
         # val = val + 1  # can't do this, won't keep state of val, val on the right can't be resolved
         #val += 1   # can't do this, won't keep state of val
         return val + 3
     return increase
+
 
 def my_counter(start=0):
     def increase():

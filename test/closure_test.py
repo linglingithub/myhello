@@ -21,7 +21,8 @@ def count():  # this will return 1, 4, 9
     return fs
 
 
-f1, f2, f3 = count()
+f1, f2, f3 = count_999()
+#f1, f2, f3 = count()
 
 print(f1())
 print(f2())

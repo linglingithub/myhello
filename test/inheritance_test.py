@@ -2,17 +2,17 @@
 
 class First(object):
     def __init__(self):
-        print "first"
+        print("first")
 
 class Second(object):
     def __init__(self):
-        print "second"
+        print("second")
 
 class Third(First, Second):
     def __init__(self):
         super(Third, self).__init__()
         #super().__init__()
-        print "that's it"
+        print("that's it")
 
 
 a = Third()
@@ -82,14 +82,14 @@ class ex_9:
     class Z(K1,K2,K3): pass
 
 def merge(seqs):
-    print '\n\nCPL[%s]=%s' % (seqs[0][0],seqs),
+    print('\n\nCPL[%s]=%s' % (seqs[0][0],seqs)),
     res = []; i=0
     while 1:
       nonemptyseqs=[seq for seq in seqs if seq]
       if not nonemptyseqs: return res
-      i+=1; print '\n',i,'round: candidates...',
+      i+=1; print('\n',i,'round: candidates...'),
       for seq in nonemptyseqs: # find merge candidates among seq heads
-          cand = seq[0]; print ' ',cand,
+          cand = seq[0]; print(' ',cand,)
           nothead=[s for s in nonemptyseqs if cand in s[1:]]
           if nothead: cand=None #reject candidate
           else: break
@@ -100,11 +100,11 @@ def merge(seqs):
 
 def mro(C):
     "Compute the class precedence list (mro) according to C3"
-    return merge([[C]]+map(mro,C.__bases__)+[list(C.__bases__)])
+    return merge([[C]]+ map(mro,C.__bases__)+[list(C.__bases__)])
 
 def print_mro(C):
-    print '\nMRO[%s]=%s' % (C,mro(C))
-    print '\nP22 MRO[%s]=%s' % (C,C.mro())
+    print('\nMRO[%s]=%s' % (C,mro(C)))
+    print('\nP22 MRO[%s]=%s' % (C,C.mro()))
 
 print_mro(ex_9.Z)
 

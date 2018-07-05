@@ -20,8 +20,8 @@ class DefaultDict(dict):
 
 d = DefaultDict()
 d['florp'] = 127
-print d
-print d['hfjd']  # i thinks this is the difference, when a key is missing, no error will happen and [] is returned.
+print(d)
+print(d['hfjd'])  # i thinks this is the difference, when a key is missing, no error will happen and [] is returned.
 # compare with the nomal dict than trying to access a key and value where the key is missing.
 
 
@@ -31,9 +31,9 @@ dictionary will automatically be instantiated with a list.
 
 """
 
-print
+print()
 
 a = {}
 a['florp'] = 231
-print a
-print a['32321']  # this will result in a KeyError
+print(a)
+print(a['32321'])  # this will result in a KeyError
