@@ -17,7 +17,7 @@ def multipliers():
     return [lambda x: i * x for i in range(4)]
 
 
-print [m(2) for m in multipliers()]
+print([m(2) for m in multipliers()])
 
 """
 The output of the above code will be [6, 6, 6, 6] (not [0, 2, 4, 6]).
@@ -56,22 +56,22 @@ def multipliers():
   return [partial(mul, i) for i in range(4)]
 
 """
-print "============== compare =============="
+print("============== compare ==============")
 
 def multipliers():
   for i in range(4): yield lambda x : i * x
 
 
-print [m(2) for m in multipliers()]
+print([m(2) for m in multipliers()])
 
-print "============== compare =============="
+print("============== compare ==============")
 
 def multipliers():
   return [lambda x, i=i : i * x for i in range(4)]
 
-print [m(2) for m in multipliers()]
+print([m(2) for m in multipliers()])
 
-print "============== compare =============="
+print("============== compare ==============")
 
 from functools import partial
 from operator import mul
@@ -79,4 +79,4 @@ from operator import mul
 def multipliers():
   return [partial(mul, i) for i in range(4)]
 
-print [m(2) for m in multipliers()]
+print([m(2) for m in multipliers()])
