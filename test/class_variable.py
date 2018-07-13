@@ -5,12 +5,12 @@ class Bar(object):
         self.__zap = 1  # double underscore means this is a private variable
 
 a = Bar()
-print a.__dict__
+print(a.__dict__)
 
-print a._Bar__zap # can access
+print(a._Bar__zap) # can access
 #print a.__zap # will throw error
 
-print "####################"
+print("####################")
 
 class Person(object):
     all_names = []
@@ -21,5 +21,5 @@ class Person(object):
 
 joe = Person('Joe')
 bob = Person('Bob')
-print Person.all_names
+print(Person.all_names)
 ## ['Joe', 'Bob']

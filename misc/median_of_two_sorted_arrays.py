@@ -27,8 +27,48 @@ Difficulty: Hard
 
 
 import unittest
+import sys
 
-class Solution(object):
+class Solution:
+    def findMedianSortedArrays(self, nums1, nums2):
+        """
+        assume: nums1 and nums2 are not null,
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: float
+        """
+        total_len = len(nums1) + len(nums2)
+        if (total_len % 2):
+            # odd length
+            return self._findKth(nums1, nums2, total_len // 2 + 1)
+        else:
+            # even length
+            return (self._findKth(nums1, nums2, total_len // 2) + self._findKth(nums1, nums2, total_len // 2 + 1) ) * 0.5
+
+    def _findKth(self, nums1, nums2, k):
+        if not nums1:
+            return nums2[k - 1]
+        if not nums2:
+            return nums1[k - 1]
+        return self._helper(nums1, 0, len(nums1) - 1, nums2, 0, len(nums2) - 1, k)
+
+    def _helper(self, nums1, l1, r1, nums2, l2, r2, k):
+        if l1 > r1:
+            return nums2[l2 + k - 1]
+        if l2 > r2:
+            return nums1[l1 + k - 1]
+        if k == 1:
+            return min(nums1[l1], nums2[l2])
+        count = k // 2
+        mid1 = nums1[l1 + count - 1] if l1 + count - 1 <= r1 else sys.maxsize
+        mid2 = nums2[l2 + count - 1] if l2 + count - 1 <= r2 else sys.maxsize
+        if mid1 <= mid2:
+            return self._helper(nums1, l1 + count, r1, nums2, l2, r2, k - count)
+        else:
+            return self._helper(nums1, l1, r1, nums2, l2 + count, r2, k - count)
+
+
+class Solution2(object):
     def findMedianSortedArrays(self, nums1, nums2):
         """
         :type nums1: List[int]

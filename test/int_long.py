@@ -1,11 +1,11 @@
 #coding=utf-8
 import sys
-print "sys.maxsize: ", sys.maxsize
-print "type: ", type(sys.maxsize)
-print "+1: ", sys.maxsize+1
-print "type after +1: ", type(sys.maxsize+1)
-print "float(\"inf\"): ", float("inf")
-print float("inf") > sys.maxsize
+print("sys.maxsize: ", sys.maxsize)
+print("type: ", type(sys.maxsize))
+print("+1: ", sys.maxsize+1)
+print("type after +1: ", type(sys.maxsize+1))
+print("float(\"inf\"): ", float("inf"))
+print(float("inf") > sys.maxsize)
 
 """
 http://www.geeksforgeeks.org/what-is-maximum-possible-value-of-an-integer-in-python/

@@ -17,13 +17,13 @@ What will be the ouput of lines 2, 4, 6, and 8? Explain your answer.
 """
 
 list = [ [ ] ] * 5
-print list  # output?
+print(list)  # output?
 list[0].append(10)
-print list  # output?
+print(list)  # output?
 list[1].append(20)
-print list  # output?
+print(list)  # output?
 list.append(30)
-print list  # output?
+print(list)  # output?
 
 """
 

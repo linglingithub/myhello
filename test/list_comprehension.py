@@ -15,7 +15,7 @@ included in the new list since it is at an odd index (i.e., 3) in the original l
 a = [2,3534,43,43,24,65,7,2]
 answer = [2,24]
 
-print [x for x in a[::2] if x%2==0]
+print([x for x in a[::2] if x%2==0])
 
 """
 A simple solution to this problem would be as follows
