@@ -24,6 +24,32 @@ Hard
 
 """
 
+class Solution_Jing:
+    def trap(self, heights):
+        """Find the max trapped water with given heights of a list of bars
+        Basic idea:
+        use two pointers to track heighest bars from left and right, cause the bars determine the water volumn
+        move the lower bar between the left and right side, keep track of the highest bar encountered so far.
+        Here assume that bar has no width, NO THE SAME as the original leetcode problem
+        :param heights: [int]
+        :return: int
+        """
+        if not heights or len(heights) < 2:
+            return 0
+        result = 0
+        l, r = 0, len(heights) - 1
+        lmax, rmax = heights[0], heights[-1]
+        while l < r:
+            if lmax <= rmax:
+                result += lmax
+                l += 1
+                lmax = max(lmax, heights[l])
+            else:
+                result += rmax
+                r -= 1
+                rmax = max(rmax, heights[r])
+            print(result)
+        return result
 
 
 class Solution(object):
